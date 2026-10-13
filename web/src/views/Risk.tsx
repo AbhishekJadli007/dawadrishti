@@ -4,7 +4,7 @@ import { api, axis, fmtInt, fmtPct, tipStyle } from '../api'
 import { Badge, Card, SectionTitle, Spinner } from '../components/ui'
 import { useView } from '../mode'
 
-const COL: Record<string, string> = { 'Attention model (ML)': '#22d3ee', 'DawaDrishti ML model': '#22d3ee', 'DawaDrishti risk order': '#22d3ee', 'Most past failures': '#f59e0b', 'Most recent failure': '#a78bfa', 'First in, first out': '#f59e0b', Random: '#3f4659' }
+const COL: Record<string, string> = { 'Attention model (ML)': '#0d9488', 'DawaDrishti ML model': '#0d9488', 'DawaDrishti risk order': '#0d9488', 'Most past failures': '#f59e0b', 'Most recent failure': '#8b5cf6', 'First in, first out': '#f59e0b', Random: '#cbd5e1' }
 
 export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
   const { view, setView } = useView()
@@ -30,12 +30,12 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
           <div className="h-64 mt-3">
             <ResponsiveContainer>
               <BarChart data={fRows} margin={{ top: 18, right: 8, left: -18, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke="#262c3b" />
+                <CartesianGrid vertical={false} stroke="#e3e8ef" />
                 <XAxis dataKey="n" tick={{ ...axis, fontSize: 10 }} axisLine={false} tickLine={false} interval={0} />
                 <YAxis tick={axis} axisLine={false} tickLine={false} unit="%" />
                 <Tooltip contentStyle={tipStyle} />
                 <Legend wrapperStyle={{ fontSize: 11 }} />
-                <Bar dataKey="p50" name="hit rate of top 50 inspections" radius={[6, 6, 0, 0]}>{fRows.map((r) => <Cell key={r.n} fill={COL[r.n]} />)}<LabelList dataKey="p50" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#e9ecf3', fontSize: 11 }} /></Bar>
+                <Bar dataKey="p50" name="hit rate of top 50 inspections" radius={[6, 6, 0, 0]}>{fRows.map((r) => <Cell key={r.n} fill={COL[r.n]} />)}<LabelList dataKey="p50" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#0f172a', fontSize: 11 }} /></Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -50,7 +50,7 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
           <Card className="p-5 flex flex-col justify-center">
             <div className="font-display font-semibold">Ranked list: buyer and regulator view only</div>
             <p className="text-sm text-muted mt-2">Public pages show what was published about a manufacturer, never a predicted score. A ranked list of named firms by predicted risk is for drug controllers and buyers deciding where to test, and is shown only in the buyer view.</p>
-            <button onClick={() => setView('buyer')} className="text-sm text-amber-200 hover:underline mt-3 self-start">Switch to buyer view →</button>
+            <button onClick={() => setView('buyer')} className="text-sm text-amber-700 hover:underline mt-3 self-start">Switch to buyer view →</button>
           </Card>
         ) : (
         <Card className="p-5">
@@ -74,11 +74,11 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
           <div className="h-56 mt-3">
             <ResponsiveContainer>
               <BarChart data={bRows} margin={{ top: 18, right: 8, left: -18, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke="#262c3b" />
+                <CartesianGrid vertical={false} stroke="#e3e8ef" />
                 <XAxis dataKey="n" tick={axis} axisLine={false} tickLine={false} />
                 <YAxis tick={axis} axisLine={false} tickLine={false} unit="%" />
                 <Tooltip contentStyle={tipStyle} />
-                <Bar dataKey="caught" name="failures caught in first 30% of tests" radius={[6, 6, 0, 0]}>{bRows.map((r) => <Cell key={r.n} fill={COL[r.n]} />)}<LabelList dataKey="caught" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#e9ecf3', fontSize: 11 }} /></Bar>
+                <Bar dataKey="caught" name="failures caught in first 30% of tests" radius={[6, 6, 0, 0]}>{bRows.map((r) => <Cell key={r.n} fill={COL[r.n]} />)}<LabelList dataKey="caught" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#0f172a', fontSize: 11 }} /></Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -95,7 +95,7 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
                 ['Orders placed after the supplier failed at another buyer', 'orders_after_failure_elsewhere'],
               ].map(([l, k]) => {
                 const a = net.isolated[k], z = net.network[k]
-                return <tr key={k} className="border-t border-line/60"><td className="py-2">{l}</td><td className="text-right">{fmtInt(a)}</td><td className="text-right text-ours font-semibold">{fmtInt(z)}</td><td className="text-right text-emerald-300">{(100 * (z / a - 1)).toFixed(0)}%</td></tr>
+                return <tr key={k} className="border-t border-line/60"><td className="py-2">{l}</td><td className="text-right">{fmtInt(a)}</td><td className="text-right text-ours font-semibold">{fmtInt(z)}</td><td className="text-right text-emerald-600">{(100 * (z / a - 1)).toFixed(0)}%</td></tr>
               })}</tbody>
             </table>
           </Card>

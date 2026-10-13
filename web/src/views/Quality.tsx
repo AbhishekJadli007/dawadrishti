@@ -75,13 +75,13 @@ export default function Quality() {
             <div className="h-56 mt-2">
               <ResponsiveContainer>
                 <LineChart data={sweep} margin={{ top: 5, right: 10, left: -18, bottom: 0 }}>
-                  <CartesianGrid vertical={false} stroke="#262c3b" />
+                  <CartesianGrid vertical={false} stroke="#e3e8ef" />
                   <XAxis dataKey="t" tick={axis} axisLine={false} tickLine={false} />
                   <YAxis tick={axis} axisLine={false} tickLine={false} unit="%" domain={[0, 100]} />
                   <Tooltip contentStyle={tipStyle} />
                   <Legend wrapperStyle={{ fontSize: 11 }} />
-                  <ReferenceLine x={92} stroke="#22d3ee" strokeDasharray="3 3" />
-                  <Line dataKey="precision" stroke="#34d399" strokeWidth={2} dot={false} />
+                  <ReferenceLine x={92} stroke="#0d9488" strokeDasharray="3 3" />
+                  <Line dataKey="precision" stroke="#10b981" strokeWidth={2} dot={false} />
                   <Line dataKey="recall" stroke="#f59e0b" strokeWidth={2} dot={false} />
                 </LineChart>
               </ResponsiveContainer>

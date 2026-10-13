@@ -4,7 +4,7 @@ import { api, axis, fmtInt, fmtPct, tipStyle } from '../api'
 import { Badge, Card, SectionTitle, Spinner } from '../components/ui'
 
 const ARCH: Record<string, string> = {
-  'Many failures on record': '#ef4444', 'Mostly critical failures': '#a78bfa', 'A few failures on record': '#f59e0b', 'Mostly injectable failures': '#22d3ee',
+  'Many failures on record': '#ef4444', 'Mostly critical failures': '#8b5cf6', 'A few failures on record': '#f59e0b', 'Mostly injectable failures': '#0d9488',
   'One failure on record': '#64748b',
 }
 
@@ -37,7 +37,7 @@ export default function DataMining({ openMfr }: { openMfr: (id: string) => void 
               <tbody>{r.top.slice(0, 25).map((x: any) => (
                 <tr key={x.manufacturer_id} className="border-t border-line/60">
                   <td className="py-1.5"><button className="text-left hover:underline" onClick={() => openMfr(x.manufacturer_id)}>{x.manufacturer}</button><div className="text-[11px] text-faint">{x.state}</div></td>
-                  <td className="text-right font-semibold">{x.findings}</td><td className="text-right text-red-300">{x.critical}</td>
+                  <td className="text-right font-semibold">{x.findings}</td><td className="text-right text-rose-600">{x.critical}</td>
                   <td className="text-right">{x.products}</td><td className="text-right text-xs text-muted">{x.first} → {x.last}</td>
                 </tr>))}</tbody>
             </table>
@@ -49,7 +49,7 @@ export default function DataMining({ openMfr }: { openMfr: (id: string) => void 
           <div className="h-64">
             <ResponsiveContainer>
               <ScatterChart margin={{ top: 5, right: 8, left: -14, bottom: 5 }}>
-                <CartesianGrid stroke="#262c3b" />
+                <CartesianGrid stroke="#e3e8ef" />
                 <XAxis type="number" dataKey="findings" scale="log" domain={[1, 'auto']} tick={axis} name="failures" />
                 <YAxis type="number" dataKey="critical_share" tick={axis} name="critical share" />
                 <ZAxis range={[18, 18]} />
@@ -92,7 +92,7 @@ export default function DataMining({ openMfr }: { openMfr: (id: string) => void 
           <div className="h-80">
             <ResponsiveContainer>
               <BarChart data={failures} layout="vertical" margin={{ top: 0, right: 20, left: 40, bottom: 0 }}>
-                <CartesianGrid horizontal={false} stroke="#262c3b" />
+                <CartesianGrid horizontal={false} stroke="#e3e8ef" />
                 <XAxis type="number" tick={axis} axisLine={false} />
                 <YAxis type="category" dataKey="k" tick={{ ...axis, fontSize: 11 }} width={150} axisLine={false} tickLine={false} />
                 <Tooltip contentStyle={tipStyle} />

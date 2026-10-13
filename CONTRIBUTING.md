@@ -13,7 +13,7 @@ pytest && python -m dawadrishti build
 - Every model change is compared with its baselines in `docs/EVALUATION.md`.
 
 **Where help is most useful:**
-- Reviewing the 200 entity-resolution labels (`data/er/labelled_pairs.csv`) and the review queue on the Quality page.
+- Reviewing the 200 entity-resolution labels (`data/er/labelled_pairs.csv`) and the review queue under How we know → Data quality.
 - More purchase-to-pay and quality rules for the conformance engine, checked on BPI Challenge 2019 and on real buyer logs.
 - A contribution route for state-lab and buyer test results (the Kaysons gap).
 - Better product and therapeutic-class mapping (WHO ATC, NLEM).

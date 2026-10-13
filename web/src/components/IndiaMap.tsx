@@ -16,9 +16,9 @@ export function IndiaMap({ geo, height = 460, onPick }: { geo: any[]; height?: n
   const rows = geo.filter((g) => C[g.state])
   const max = Math.max(...rows.map((g) => g.findings), 1)
   return (
-    <div style={{ height }} className="relative overflow-hidden rounded-2xl border border-line">
+    <div style={{ height }} className="relative overflow-hidden rounded-[20px] border border-line shadow-sm">
       <MapContainer center={[23, 80.5]} zoom={4.4} zoomSnap={0.2} scrollWheelZoom={false} zoomControl={false} style={{ height: '100%', width: '100%' }}>
-        <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" className="dark-tiles"
+        <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" className="soft-tiles" 
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
         <ZoomControl position="bottomright" />
         {rows.map((g) => {
@@ -26,7 +26,7 @@ export function IndiaMap({ geo, height = 460, onPick }: { geo: any[]; height?: n
           const color = crit > 0.15 ? '#ef4444' : crit > 0.09 ? '#f97316' : '#f59e0b'
           return (
             <CircleMarker key={g.state} center={C[g.state]} radius={5 + 34 * Math.sqrt(g.findings / max)}
-              pathOptions={{ color, fillColor: color, fillOpacity: 0.35, weight: 1.5 }} eventHandlers={{ click: () => onPick?.(g.state) }}>
+              pathOptions={{ color, fillColor: color, fillOpacity: 0.28, weight: 1.5 }} eventHandlers={{ click: () => onPick?.(g.state) }}>
               <Tooltip direction="top" className="bank-tip">
                 <b>{g.state}</b><br />{g.findings.toLocaleString('en-IN')} failed batches · {g.manufacturers} manufacturers<br />
                 {(100 * crit).toFixed(1)}% critical · {(100 * g.share_of_india).toFixed(1)}% of India

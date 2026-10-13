@@ -240,6 +240,8 @@ def lookup(query: str, view: str = "public", state: str | None = None, molecule:
         "alerts": int(len(here)), "alerts_all_units": int(len(f)),
         "first_alert": here.month.min() if len(here) else None, "last_alert": here.month.max() if len(here) else None,
         "by_failure": here.primary_failure.value_counts().to_dict(),
+        "by_year": [{"year": y, "alerts": int(len(g)), "critical": int(g.severity.eq("critical").sum())}
+                    for y, g in here.groupby(here.month.str[:4])],
         "by_severity": here.severity.value_counts().to_dict(),
         "detected_by": here.reporting_source.value_counts().to_dict(),
         "labs": int(here.reporting_lab.nunique()),

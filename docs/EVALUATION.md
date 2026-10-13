@@ -103,7 +103,7 @@ Full write-up: [ENTITY_RESOLUTION.md](ENTITY_RESOLUTION.md).
 
 - **Labels.** 120 development and 80 test pairs, labelled by the AI assistant and awaiting human review.
 - **Why the threshold is high.** It favours precision, because a false merge would put one firm's failures on another firm's record.
-- **The review queue.** 206 pairs; it is on the **Quality** page.
+- **The review queue.** 206 pairs; it is under **How we know → Data quality**.
 
 ## 4. Future regulatory attention: which units will appear in the next 6 months of alerts? (real)
 

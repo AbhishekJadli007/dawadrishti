@@ -72,7 +72,7 @@ export default function ProcessMining() {
             <tbody>{d.benchmark.map((b: any) => (
               <tr key={b.buyer_id} className={clsx('border-t border-line/60', buyer === b.buyer_id && 'bg-ours/[0.06]')}>
                 <td className="py-2">{b.buyer}</td>
-                <td className="text-right font-semibold" style={{ color: b.conformance > 0.8 ? '#34d399' : b.conformance > 0.5 ? '#f59e0b' : '#ef4444' }}>{fmtPct(b.conformance, 1)}</td>
+                <td className="text-right font-semibold" style={{ color: b.conformance > 0.8 ? '#10b981' : b.conformance > 0.5 ? '#f59e0b' : '#ef4444' }}>{fmtPct(b.conformance, 1)}</td>
                 <td className="text-right">{b.median_lab_tat_days}</td><td className="text-right">{b.median_quarantine_days}</td>
               </tr>))}</tbody>
           </table>
@@ -83,13 +83,13 @@ export default function ProcessMining() {
           <div className="h-56">
             <ResponsiveContainer>
               <BarChart data={rc.early_issue_by_lab_tat.map((r: any) => ({ ...r, pct: +(100 * r.rate).toFixed(1) }))} margin={{ top: 18, right: 8, left: -18, bottom: 0 }}>
-                <CartesianGrid vertical={false} stroke="#262c3b" />
-                <XAxis dataKey="band" tick={axis} axisLine={false} tickLine={false} label={{ value: 'lab turnaround (days)', position: 'insideBottom', offset: -2, fill: '#5b6378', fontSize: 10 }} />
+                <CartesianGrid vertical={false} stroke="#e3e8ef" />
+                <XAxis dataKey="band" tick={axis} axisLine={false} tickLine={false} label={{ value: 'lab turnaround (days)', position: 'insideBottom', offset: -2, fill: '#94a3b8', fontSize: 10 }} />
                 <YAxis tick={axis} axisLine={false} tickLine={false} unit="%" />
                 <Tooltip contentStyle={tipStyle} formatter={(v) => `${v}%`} />
                 <Bar dataKey="pct" radius={[6, 6, 0, 0]}>
-                  {rc.early_issue_by_lab_tat.map((r: any, i: number) => <Cell key={i} fill={r.rate > 0.15 ? '#ef4444' : r.rate > 0.08 ? '#f59e0b' : '#22d3ee'} />)}
-                  <LabelList dataKey="pct" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#e9ecf3', fontSize: 11 }} />
+                  {rc.early_issue_by_lab_tat.map((r: any, i: number) => <Cell key={i} fill={r.rate > 0.15 ? '#ef4444' : r.rate > 0.08 ? '#f59e0b' : '#0d9488'} />)}
+                  <LabelList dataKey="pct" position="top" formatter={(v: unknown) => `${v}%`} style={{ fill: '#0f172a', fontSize: 11 }} />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
@@ -128,7 +128,7 @@ function EngineCheck({ x, bpi }: { x: any; bpi: any }) {
         <p className="text-xs text-muted mt-1">The same rules written two ways, as data for the declarative engine and as hand-written checks, run on the same {x ? fmtInt(x.cases) : ''} cases.</p>
         {x && <table className="w-full text-xs num mt-3">
           <thead className="text-faint"><tr><th className="text-left font-normal">Rule</th><th className="text-right font-normal">Hand-written</th><th className="text-right font-normal">Declarative</th></tr></thead>
-          <tbody>{x.rules.map((r: any) => <tr key={r.rule} className="border-t border-line/50"><td className="py-1">{r.rule} {r.name}</td><td className="text-right">{fmtInt(r.hand_written)}</td><td className={`text-right ${r.hand_written === r.declarative ? 'text-emerald-300' : 'text-red-300'}`}>{fmtInt(r.declarative)}</td></tr>)}</tbody>
+          <tbody>{x.rules.map((r: any) => <tr key={r.rule} className="border-t border-line/50"><td className="py-1">{r.rule} {r.name}</td><td className="text-right">{fmtInt(r.hand_written)}</td><td className={`text-right ${r.hand_written === r.declarative ? 'text-emerald-600' : 'text-rose-600'}`}>{fmtInt(r.declarative)}</td></tr>)}</tbody>
         </table>}
       </Card>
       <Card className="p-5">

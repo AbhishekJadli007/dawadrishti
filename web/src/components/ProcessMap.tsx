@@ -29,7 +29,7 @@ export function ProcessMap({ discovery, minShare = 0.004 }: { discovery: any; mi
     <svg viewBox="0 0 980 450" className="w-full h-auto" role="img" aria-label="Discovered process map">
       <defs>
         <marker id="pm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
-          <path d="M0 0L10 5L0 10z" fill="#5b6378" />
+          <path d="M0 0L10 5L0 10z" fill="#94a3b8" />
         </marker>
         <marker id="pm-arrow-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
           <path d="M0 0L10 5L0 10z" fill="#ef4444" />
@@ -50,7 +50,7 @@ export function ProcessMap({ discovery, minShare = 0.004 }: { discovery: any; mi
         const cx = (sx + ex) / 2 - dy * bend, cy = (sy + ey) / 2 + dx * bend
         const w = 1 + 7 * Math.sqrt(e.count / maxC)
         return (
-          <path key={i} d={`M${sx} ${sy} Q${cx} ${cy} ${ex} ${ey}`} fill="none" stroke={bad ? '#ef4444' : '#22d3ee'}
+          <path key={i} d={`M${sx} ${sy} Q${cx} ${cy} ${ex} ${ey}`} fill="none" stroke={bad ? '#ef4444' : '#0d9488'}
             strokeOpacity={bad ? 0.85 : 0.35} strokeWidth={w} markerEnd={`url(#${bad ? 'pm-arrow-bad' : 'pm-arrow'})`}>
             <title>{`${e.source} → ${e.target}: ${e.count.toLocaleString('en-IN')} cases, mean wait ${e.mean_wait_days} days${bad ? ' (breaks a rule)' : ''}`}</title>
           </path>
@@ -61,9 +61,9 @@ export function ProcessMap({ discovery, minShare = 0.004 }: { discovery: any; mi
         const fail = ['Held', 'Supplier notified', 'Supplier debarred', 'Recall started', 'Recall closed'].includes(a)
         return (
           <g key={a}>
-            <rect x={x - W / 2} y={y - H / 2} width={W} height={H} rx={10} fill="#11141b" stroke={fail ? '#f59e0b' : '#3f4659'} strokeWidth={1.2} />
-            <text x={x} y={y - 3} textAnchor="middle" fontSize={11.5} fontWeight={600} fill="#e9ecf3">{a}</text>
-            <text x={x} y={y + 13} textAnchor="middle" fontSize={11} fill="#8a93a8">{n.toLocaleString('en-IN')}</text>
+            <rect x={x - W / 2} y={y - H / 2} width={W} height={H} rx={10} fill="#ffffff" stroke={fail ? '#f59e0b' : '#cbd5e1'} strokeWidth={1.2} />
+            <text x={x} y={y - 3} textAnchor="middle" fontSize={11.5} fontWeight={600} fill="#0f172a">{a}</text>
+            <text x={x} y={y + 13} textAnchor="middle" fontSize={11} fill="#64748b">{n.toLocaleString('en-IN')}</text>
           </g>
         )
       })}

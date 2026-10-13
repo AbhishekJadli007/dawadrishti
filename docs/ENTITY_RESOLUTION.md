@@ -6,7 +6,7 @@
 - With the resolution below, the figure is **64.9%**.
 
 Code: `dawadrishti/etl/clean.py` (`name_key`), `dawadrishti/etl/entities.py` (matching), `dawadrishti/entity_eval.py` (evaluation).
-Labels: `data/er/labelled_pairs.csv`. Output: `artifacts/entity_resolution.json`, shown on the app's **Quality** page.
+Labels: `data/er/labelled_pairs.csv`. Output: `artifacts/entity_resolution.json`, shown in the app under **How we know → Data quality**.
 
 ## The decision: unit, then firm
 
@@ -97,7 +97,7 @@ These become v3 rules only after a fresh labelled set exists. Fixing them on thi
 
 ## Review queue
 
-- **What is in it.** The **Quality** page lists 206 pairs scoring 80 to <100 within a block:
+- **What is in it.** **How we know → Data quality** lists 206 pairs scoring 80 to <100 within a block:
   - 103 that were merged automatically (score 92–99), to be checked;
   - 103 that were not merged (score 80–91), which need a decision.
 - **Order.** The pairs that move the most alerts come first.
@@ -112,7 +112,7 @@ These become v3 rules only after a fresh labelled set exists. Fixing them on thi
 - **Missed merges** split one factory into two. Each part then has fewer earlier failures, which **lowers** the repeat share.
 - **False merges** raise it.
 - **Net effect.** On the test pairs the matcher made no false merges and missed about a third, so the headline 64.9% is, if anything, **conservative**.
-- **Across matching rules.** The study recomputes every number under five matching rules (see the study page). Every rule above exact strings gives 62.8%–67.8%.
+- **Across matching rules.** The study recomputes every number under five matching rules (see **How we know → The study**). Every rule above exact strings gives 62.8%–67.8%.
 
 ## Reviewing the labels
 

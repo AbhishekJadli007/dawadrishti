@@ -62,6 +62,6 @@ export const api = {
 
 export const fmtInt = (x: number) => Math.round(x).toLocaleString('en-IN')
 export const fmtPct = (x: number, d = 0) => `${(100 * x).toFixed(d)}%`
-export const SEV_COLOR: Record<string, string> = { critical: '#ef4444', major: '#f59e0b', minor: '#64748b', unclassified: '#3f4659' }
-export const tipStyle = { background: '#171b24', border: '1px solid #262c3b', borderRadius: 10, fontSize: 12 }
-export const axis = { fill: '#5b6378', fontSize: 10 }
+export const SEV_COLOR: Record<string, string> = { critical: '#e11d48', major: '#f59e0b', minor: '#94a3b8', unclassified: '#cbd5e1' }
+export const tipStyle = { background: '#ffffff', border: '1px solid #e3e8ef', borderRadius: 12, fontSize: 12, boxShadow: '0 12px 30px -12px rgba(15,23,42,0.25)' }
+export const axis = { fill: '#8a96a8', fontSize: 11 }
