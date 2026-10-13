@@ -101,7 +101,11 @@ These become v3 rules only after a fresh labelled set exists. Fixing them on thi
   - 103 that were merged automatically (score 92–99), to be checked;
   - 103 that were not merged (score 80–91), which need a decision.
 - **Order.** The pairs that move the most alerts come first.
-- **Recording decisions.** Reviewers mark each pair "same" or "different". Decisions are kept in the browser and exported as JSON for the next build.
+- **Recording decisions.** Reviewers mark each pair "same" or "different", export the decisions, and save the file as `data/er/decisions.json`.
+- **Applying them.** The next `python -m dawadrishti build` applies them:
+  - "same" joins the two names even below the threshold: as one unit if they are in the same state, as one firm otherwise;
+  - "different" stops that pair from being merged directly.
+  - The queue then shows each decided pair as "reviewer: same" or "reviewer: different".
 
 ## Effect on the headline
 
@@ -110,8 +114,21 @@ These become v3 rules only after a fresh labelled set exists. Fixing them on thi
 - **Net effect.** On the test pairs the matcher made no false merges and missed about a third, so the headline 64.9% is, if anything, **conservative**.
 - **Across matching rules.** The study recomputes every number under five matching rules (see the study page). Every rule above exact strings gives 62.8%–67.8%.
 
+## Reviewing the labels
+
+```bash
+python -m dawadrishti.entity_eval --review        # all 200 pairs; or --review test for the 80 test pairs only
+python -m dawadrishti.entity_eval                 # re-score with your labels
+```
+
+**How the review works:**
+- The tool shows each pair's names, states and addresses, but **not** the assistant's label, and asks "same firm? y/n".
+- Answers are saved to `human_label` in `data/er/labelled_pairs.csv` after each pair, so you can stop at any time and resume.
+
+**How the scores change:** the evaluation uses the person's label wherever there is one, and reports how often the assistant agreed.
+
 ## Next
 
-1. Human review of all 200 labels, and a fresh test set of 100+ pairs labelled by two people, with agreement reported.
+1. Human review of all 200 labels (above), and a fresh test set of 100+ pairs labelled by two people, with agreement reported.
 2. v3 rules for the error types above, evaluated on that fresh set.
 3. Optional adjudication of the 80–92 band by Gemini, scored against the human labels before it is trusted.

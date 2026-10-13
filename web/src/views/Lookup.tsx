@@ -5,19 +5,21 @@ import { api, fmtPct, SEV_COLOR } from '../api'
 import { Badge, Button, Card, ErrorNote, inputCls, SectionTitle, Spinner } from '../components/ui'
 import { useView } from '../mode'
 
-const EXAMPLES = ['Nestor Pharmaceuticals', 'Sresan Pharmaceutical Manufacturer', 'Cipla', 'Maiden Pharmaceuticals', 'Kaysons Pharma']
+const EXAMPLES = ['Nestor Pharmaceuticals', 'Sresan Pharmaceuticals', 'Cipla', 'Maiden Pharmaceuticals', 'Kaysons Pharma']
 const LEVEL_TONE = ['good', 'warn', 'bad', 'bad'] as const
 
 export default function Lookup({ initial }: { initial?: string }) {
   const [q, setQ] = useState(initial ?? '')
   const [query, setQuery] = useState(initial ?? '')
   const [sugg, setSugg] = useState<any[]>([])
+  const [batch, setBatch] = useState('')
+  const [batchQ, setBatchQ] = useState('')
   useEffect(() => {
     if (q.trim().length < 2 || q === query) { setSugg([]); return }
     const t = setTimeout(() => api.search(q).then(setSugg).catch(() => setSugg([])), 200)
     return () => clearTimeout(t)
   }, [q, query])
-  const run = (v: string) => { setQ(v); setQuery(v); setSugg([]) }
+  const run = (v: string) => { setQ(v); setQuery(v); setSugg([]); setBatchQ(batch.trim()) }
 
   return (
     <div className="space-y-6">
@@ -38,6 +40,7 @@ export default function Lookup({ initial }: { initial?: string }) {
                   </button>))}
               </div>)}
           </div>
+          <div className="w-44 shrink-0 hidden sm:block"><input value={batch} onChange={(e) => setBatch(e.target.value)} placeholder="Batch no. (optional)" className={inputCls} /></div>
           <Button type="submit">Look up</Button>
         </form>
         <div className="flex flex-wrap gap-2 mt-3 text-xs">
@@ -45,18 +48,18 @@ export default function Lookup({ initial }: { initial?: string }) {
           {EXAMPLES.map((e) => <button key={e} onClick={() => run(e)} className="text-muted hover:text-ink underline decoration-dotted underline-offset-2">{e}</button>)}
         </div>
       </Card>
-      {query && <LookupResult query={query} onPick={run} />}
+      {query && <LookupResult query={query} onPick={run} batch={batchQ} />}
       <ApiNote />
     </div>
   )
 }
 
-export function LookupResult({ query, onPick }: { query: string; onPick: (q: string) => void }) {
+export function LookupResult({ query, onPick, batch }: { query: string; onPick: (q: string) => void; batch?: string }) {
   const { view } = useView()
   const [molecule, setMolecule] = useState<string>('')
   const [d, setD] = useState<any>(null)
   const [err, setErr] = useState<string | null>(null)
-  useEffect(() => { setD(null); setErr(null); api.lookup(query, view, molecule || undefined).then(setD).catch((e) => setErr(e.message)) }, [query, view, molecule])
+  useEffect(() => { setD(null); setErr(null); api.lookup(query, view, molecule || undefined, batch || undefined).then(setD).catch((e) => setErr(e.message)) }, [query, view, molecule, batch])
   if (err) return <ErrorNote error={err} />
   if (!d) return <Spinner label="Checking the national record…" />
   const r = d.record
@@ -87,6 +90,16 @@ export function LookupResult({ query, onPick }: { query: string; onPick: (q: str
               </button>))}
           </div>)}
       </Card>
+
+      {r && d.batch_check?.checked && (
+        <Card className={clsx('p-4', d.batch_check.this_batch_failed && 'border-red-500/50')}>
+          <div className="text-sm font-medium">Batch {d.batch_check.batch}: {d.batch_check.this_batch_failed
+            ? <span className="text-red-300">this exact batch is on CDSCO's NSQ list</span>
+            : <span className="text-muted">no alert for this batch from this firm</span>}</div>
+          {d.batch_check.alerts_for_this_batch.map((a: any, i: number) => <div key={i} className="text-xs text-muted mt-1">{a.month} · {a.generic_name} · failed on {a.primary_failure} · {a.reporting_lab}</div>)}
+          {d.batch_check.same_number_other_products?.length > 0 && <div className="text-xs text-faint mt-1">The same number appears on another of this firm's products ({d.batch_check.same_number_other_products[0].generic_name}); that is a different batch.</div>}
+          <div className="text-[11px] text-faint mt-1">Alerts carry the manufacturer's batch numbers, so this fires only when you hold that very batch. The record above is the main signal.</div>
+        </Card>)}
 
       {r && view === 'buyer' && d.buyer && <BuyerPanel b={d.buyer} molecule={molecule} setMolecule={setMolecule} />}
 

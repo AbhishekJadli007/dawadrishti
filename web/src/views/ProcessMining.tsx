@@ -21,8 +21,8 @@ export default function ProcessMining() {
   return (
     <div className="space-y-8">
       <SectionTitle eyebrow="Process mining · simulated buyer event log" title="The conformance engine, demonstrated on simulated buyers"
-        sub={`${fmtInt(disc.cases)} procurement cases, ${fmtInt(disc.events)} events from 5 fictional buyers whose rule-breaking was simulated on purpose, so finding it shows the method works, not how real buyers behave. The rules are data in a declarative engine, which gives identical counts to hand-written checks on this log. Its run on the public BPI Challenge 2019 purchase-to-pay log is pending (docs/EVALUATION.md).`}
-        right={<div className="flex gap-1 rounded-xl bg-surface border border-line p-1">{BUYERS.map(([id, l]) => (
+        sub={`${fmtInt(disc.cases)} procurement cases, ${fmtInt(disc.events)} events from 5 fictional buyers whose rule-breaking was simulated on purpose, so finding it shows the method works, not how real buyers behave. The rules are data in a declarative engine, which gives identical counts to hand-written checks on this log. The same engine is validated on the public BPI Challenge 2019 purchase-to-pay log (below).`}
+        right={<div className="flex flex-wrap gap-1 rounded-xl bg-surface border border-line p-1">{BUYERS.map(([id, l]) => (
           <button key={id} onClick={() => setBuyer(id)} className={clsx('px-3 py-1.5 rounded-lg text-xs', buyer === id ? 'bg-surface-3 text-ink' : 'text-muted hover:text-ink')}>{l}</button>))}</div>} />
 
       <Card className="p-4">
@@ -33,6 +33,8 @@ export default function ProcessMining() {
         <ProcessMap discovery={disc} />
         <p className="text-xs text-muted">Hover an arrow for its count and mean waiting time. Red arrows: stock issued or paid before the lab result, or a sample sent without blind coding.</p>
       </Card>
+
+      <EngineCheck x={d.crosscheck} bpi={d.bpi2019} />
 
       <section>
         <SectionTitle title="Conformance: six rules from published quality-clearance processes" sub={<>Each card counts the cases that broke the rule. Click one to see the cases. <Badge tone="warn">simulated</Badge></>} />
@@ -115,5 +117,36 @@ export default function ProcessMining() {
         </Card>
       </section>
     </div>
+  )
+}
+
+function EngineCheck({ x, bpi }: { x: any; bpi: any }) {
+  return (
+    <section className="grid lg:grid-cols-2 gap-5">
+      <Card className="p-5">
+        <div className="font-display font-semibold">Is the engine counting correctly?</div>
+        <p className="text-xs text-muted mt-1">The same rules written two ways, as data for the declarative engine and as hand-written checks, run on the same {x ? fmtInt(x.cases) : ''} cases.</p>
+        {x && <table className="w-full text-xs num mt-3">
+          <thead className="text-faint"><tr><th className="text-left font-normal">Rule</th><th className="text-right font-normal">Hand-written</th><th className="text-right font-normal">Declarative</th></tr></thead>
+          <tbody>{x.rules.map((r: any) => <tr key={r.rule} className="border-t border-line/50"><td className="py-1">{r.rule} {r.name}</td><td className="text-right">{fmtInt(r.hand_written)}</td><td className={`text-right ${r.hand_written === r.declarative ? 'text-emerald-300' : 'text-red-300'}`}>{fmtInt(r.declarative)}</td></tr>)}</tbody>
+        </table>}
+      </Card>
+      <Card className="p-5">
+        <div className="flex items-center gap-2"><div className="font-display font-semibold">On a log we did not write: BPI Challenge 2019</div><Badge tone={bpi ? 'ours' : 'warn'}>{bpi ? 'real SAP log' : 'pending'}</Badge></div>
+        {bpi ? (<>
+          <p className="text-xs text-muted mt-1">{fmtInt(bpi.events)} events, {fmtInt(bpi.cases)} purchase-order items from a multinational's SAP system (public, 4TU.ResearchData). Same engine, purchase-to-pay rules.
+            {bpi.reader_check?.all_match && <> Our reader reproduces the published counts exactly (events, cases, {fmtInt(bpi.purchase_documents)} purchase documents, {bpi.activities} activities).</>}</p>
+          <table className="w-full text-xs num mt-3">
+            <thead className="text-faint"><tr><th className="text-left font-normal">Rule</th><th className="text-right font-normal">Violating</th><th className="text-right font-normal">Share</th></tr></thead>
+            <tbody>{bpi.rules.map((r: any) => <tr key={r.id} className="border-t border-line/50"><td className="py-1">{r.id} {r.name}</td><td className="text-right">{fmtInt(r.violating_cases)}</td><td className="text-right">{(100 * r.share).toFixed(1)}%</td></tr>)}</tbody>
+          </table>
+          {bpi.reading && <p className="text-[11px] text-faint mt-2">{bpi.reading}</p>}
+        </>) : (
+          <p className="text-xs text-muted mt-2">The public purchase-to-pay log (1,595,923 events, 251,734 cases) could not be downloaded from 4TU on the build machine. Download it from data.4tu.nl and run
+            <span className="block font-mono text-ink mt-1">python -m dawadrishti.mining.conformance --bpi BPI_Challenge_2019.xes</span>
+            The results appear here.</p>
+        )}
+      </Card>
+    </section>
   )
 }

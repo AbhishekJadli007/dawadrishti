@@ -97,6 +97,7 @@ def crosscheck() -> dict:
 
 # ------------------------------------------------------------------ 2. BPI Challenge 2019 (public SAP purchase-to-pay log)
 THREE_WAY = ["3-way match, invoice after GR", "3-way match, invoice before GR"]
+TRACE_ATTRS = ["Item Category", "Purchasing Document", "GR-Based Inv. Verif.", "Goods Receipt"]
 BPI_RULES = [
     Rule("P1", "Invoice cleared (paid) before goods receipt, 3-way match", "precedence", "Record Goods Receipt", "Clear Invoice",
          when={"Item Category": THREE_WAY}),
@@ -134,7 +135,7 @@ def load_bpi(path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
                 el.clear()
             elif ev == "end" and tag == "trace":
                 kv = {c.get("key"): c.get("value") for c in el if c.tag.rsplit("}", 1)[-1] != "event"}
-                case, cat = kv.get("concept:name"), kv.get("Item Category")
+                case, cat = kv.get("concept:name"), {k: kv.get(k) for k in TRACE_ATTRS}
                 # events were read before the trace's own attributes closed: fill them in
                 k = len(rows) - 1
                 while k >= 0 and rows[k][0] is None:
@@ -144,22 +145,36 @@ def load_bpi(path: str) -> tuple[pd.DataFrame, pd.DataFrame]:
                 el.clear()
     log = pd.DataFrame(rows, columns=["case_id", "activity", "ts"])
     log["ts"] = pd.to_datetime(log.ts, utc=True, errors="coerce", format="ISO8601")
-    a = pd.Series(attrs, name="Item Category").to_frame()
+    a = pd.DataFrame.from_dict(attrs, orient="index")
     a.index.name = "case_id"
     return log.dropna(subset=["ts"]), a
+
+
+PUBLISHED = {"events": 1595923, "cases": 251734, "purchase_documents": 76349, "activities": 42}   # ICPM 2019 challenge page
 
 
 def run_bpi(path: str) -> dict:
     log, attrs = load_bpi(path)
     viol = check(log, BPI_RULES, attrs)
     cases = log.case_id.nunique()
-    scoped = {r.id: int(attrs["Item Category"].isin(r.when["Item Category"]).sum()) if r.when else cases for r in BPI_RULES}
+    cat = attrs["Item Category"]
+    scoped = {r.id: int(cat.isin(r.when["Item Category"]).sum()) if r.when else cases for r in BPI_RULES}
+    ours = {"events": int(len(log)), "cases": int(cases), "purchase_documents": int(attrs["Purchasing Document"].nunique()),
+            "activities": int(log.activity.nunique())}
+    # where a rule is enforced by the system, there should be no violations; where it is only policy, there are
+    enforced = attrs.groupby("Item Category")["GR-Based Inv. Verif."].apply(lambda s: float((s == "true").mean())).round(3).to_dict()
+    p1 = viol[viol.rule == "P1"].case_id
     from .process import discover
     dfg = discover(log.assign(case_id=log.case_id.astype(str)))
     out = {"source": "BPI Challenge 2019 (4TU.ResearchData, doi:10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1)",
-           "events": int(len(log)), "cases": int(cases), "activities": int(log.activity.nunique()),
-           "item_categories": attrs["Item Category"].value_counts().to_dict(),
+           **ours, "reader_check": {"published": PUBLISHED, "ours": ours, "all_match": ours == PUBLISHED},
+           "item_categories": cat.value_counts().to_dict(),
+           "gr_based_invoice_verification_share": enforced,
+           "p1_by_category": cat.reindex(p1).value_counts().to_dict(),
            "rules": summary(viol, BPI_RULES, cases, scoped), "dawadrishti_analogue": DAWADRISHTI_ANALOGUE,
+           "reading": ("Rules the system enforces show zero violations: every 'invoice after GR' item has goods-receipt-based "
+                       "invoice verification switched on, and no invoice was recorded before its goods receipt. Rules that are "
+                       "only policy show violations: invoices cleared for payment before the goods were received."),
            "top_edges": sorted(dfg["edges"], key=lambda e: -e["count"])[:15]}
     (C.ARTIFACTS / "bpi2019_conformance.json").write_text(json.dumps(out, indent=1, default=str))
     return out
@@ -171,7 +186,9 @@ def main(argv=None):
     a = ap.parse_args(argv)
     if a.bpi:
         out = run_bpi(a.bpi)
-        print(f"BPI 2019: {out['events']} events, {out['cases']} cases")
+        print(f"BPI 2019: {out['events']} events, {out['cases']} cases; matches the published counts: {out['reader_check']['all_match']}")
+        print("  GR-based invoice verification by category:", out["gr_based_invoice_verification_share"])
+        print("  P1 violations by category:", out["p1_by_category"])
         for r in out["rules"]:
             print(f"  {r['id']} {r['name']}: {r['violating_cases']} of {r['cases_in_scope']} ({r['share']:.1%})")
         return

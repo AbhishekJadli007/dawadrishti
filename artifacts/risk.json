@@ -85,6 +85,32 @@
       "model_auc": 0.756,
       "most_recent_failure_auc": 0.763
      }
+    ],
+    "detected_elsewhere": [
+     {
+      "split": "caught by a new lab",
+      "units": 330,
+      "model_auc": 0.765,
+      "most_recent_failure_auc": 0.721
+     },
+     {
+      "split": "caught only by a lab that caught it before",
+      "units": 56,
+      "model_auc": 0.828,
+      "most_recent_failure_auc": 0.821
+     },
+     {
+      "split": "caught by a new state",
+      "units": 226,
+      "model_auc": 0.769,
+      "most_recent_failure_auc": 0.715
+     },
+     {
+      "split": "caught only by a state that caught it before",
+      "units": 67,
+      "model_auc": 0.854,
+      "most_recent_failure_auc": 0.872
+     }
     ]
    }
   },

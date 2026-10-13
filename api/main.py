@@ -5,11 +5,12 @@
 from __future__ import annotations
 
 import json
+import os
 from functools import lru_cache
 
 import duckdb
 import pandas as pd
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -26,6 +27,17 @@ app = FastAPI(title="DawaDrishti API", version="2.0.0",
                           "Public responses show the published record only; predicted scores appear only in the buyer view.")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 WEB = C.ROOT / "web" / "dist"
+# Buyer view (graded response, model scores, ranked lists). With DAWADRISHTI_BUYER_KEY set, it needs that key in the
+# X-Buyer-Key header; without it (the public demo) it is open and every buyer response says so.
+BUYER_KEY = os.environ.get("DAWADRISHTI_BUYER_KEY") or None
+
+
+def buyer_access(key: str | None) -> str:
+    if BUYER_KEY is None:
+        return "open demo: no buyer key is configured on this server"
+    if key != BUYER_KEY:
+        raise HTTPException(403, "The buyer view needs a buyer key (X-Buyer-Key header).")
+    return "buyer key accepted"
 
 
 @lru_cache(maxsize=8)
@@ -50,7 +62,7 @@ def _guard(fn):
 # ------------------------------------------------------------------ analytics
 @app.get("/api/health")
 def health():
-    return {"ok": True, "gemini": bool(C.GEMINI_KEY)}
+    return {"ok": True, "gemini": bool(C.GEMINI_KEY), "buyer_view": "open demo" if BUYER_KEY is None else "key required"}
 
 
 @app.get("/api/overview")
@@ -85,14 +97,16 @@ def data_quality(queue: int = 60):
 
 
 @app.get("/api/v1/lookup")
-def lookup(q: str, view: str = "public", state: str | None = None, molecule: str | None = None):
+def lookup(q: str, view: str = "public", state: str | None = None, molecule: str | None = None, batch: str | None = None,
+           x_buyer_key: str | None = Header(None)):
     """The memory's lookup, for an ERP or a person: a manufacturer name (as written on an invoice) or id.
     view=public returns the published record only; view=buyer adds the graded response, model score and alternatives."""
     if view not in ("public", "buyer"):
         raise HTTPException(400, "view must be public or buyer")
     if len(q.strip()) < 2:
         raise HTTPException(400, "query too short")
-    return M.lookup(q.strip(), view=view, state=state, molecule=molecule)
+    access = buyer_access(x_buyer_key) if view == "buyer" else "public"
+    return {**M.lookup(q.strip(), view=view, state=state, molecule=molecule, batch=batch), "access": access}
 
 
 @app.get("/api/mining")
@@ -108,6 +122,10 @@ def process(buyer: str | None = None):
         if buyer not in pm["discovery_by_buyer"]:
             raise HTTPException(400, "unknown buyer")
         out["discovery"] = pm["discovery_by_buyer"][buyer]
+    bpi = C.ARTIFACTS / "bpi2019_conformance.json"
+    out["bpi2019"] = json.loads(bpi.read_text()) if bpi.exists() else None   # external validation, once it has been run
+    out["crosscheck"] = json.loads((C.ARTIFACTS / "conformance_crosscheck.json").read_text()) \
+        if (C.ARTIFACTS / "conformance_crosscheck.json").exists() else None
     return out
 
 
@@ -122,8 +140,15 @@ def violations(rule: str | None = None, buyer: str | None = None, limit: int = 2
 
 
 @app.get("/api/risk")
-def risk():
-    return artifact("risk")
+def risk(view: str = "public", x_buyer_key: str | None = Header(None)):
+    """Model evaluations. The ranked list of named units ("where to sample next") is returned only in the buyer view."""
+    r = json.loads(json.dumps(artifact("risk")))
+    if view == "buyer":
+        r["access"] = buyer_access(x_buyer_key)
+    else:
+        r["factory"].pop("inspect_next", None)
+        r["access"] = "public: ranked list withheld"
+    return r
 
 
 @app.get("/api/search")
@@ -135,25 +160,6 @@ def search(q: str, limit: int = 12):
                           where canonical_name ilike ? order by national_findings desc limit ?""", [f"%{q.strip()}%", limit]).df()
     con.close()
     return rows.to_dict(orient="records")
-
-
-@app.get("/api/manufacturer/{mid}")
-def manufacturer(mid: str):
-    con = wh()
-    s = con.execute("select * from dim_supplier where supplier_key = ?", [mid]).df()
-    if s.empty:
-        con.close()
-        raise HTTPException(404, "unknown manufacturer")
-    f = con.execute("""select month, generic_name, dosage_form, therapeutic_class, primary_failure, severity, reporting_lab,
-                              reporting_source, batch_no, is_spurious from v_findings where manufacturer_id = ? order by month desc""", [mid]).df()
-    buys = con.execute("""select buyer, count(distinct case_id) orders, min(ts) as first_order, max(ts) as last_order from v_events
-                          where supplier_key = ? and activity = 'PO created' group by 1 order by orders desc""", [mid]).df()
-    con.close()
-    rank = next((r for r in artifact("risk")["factory"]["inspect_next"] if r["manufacturer_id"] == mid), None)
-    return {"profile": s.iloc[0].where(s.iloc[0].notna(), None).to_dict(), "findings": f.to_dict(orient="records"),
-            "by_month": f.groupby("month").size().reset_index(name="n").to_dict(orient="records"),
-            "by_failure": f.primary_failure.value_counts().to_dict(), "buyers": buys.astype(str).to_dict(orient="records"),
-            "risk_rank": rank}
 
 
 # ------------------------------------------------------------------ ERP

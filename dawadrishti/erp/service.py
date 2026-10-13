@@ -2,7 +2,7 @@
 
   national_check  a supplier's record across India: national alerts, critical failures, debarment by any buyer
   create_po       raise a purchase order; warns (with reasons) when the supplier is risky nationally
-  receive         goods receipt: the batch is quarantined and scored for risk
+  receive         goods receipt: the batch is quarantined and scored for risk; a batch already on the national list is held
   record_result   lab result: clear or hold; a failure notifies the supplier, recalls issued stock, flags nationally
   issue           release to a facility: BLOCKED unless the batch is cleared (rule R1 enforced, not just monitored)
 """
@@ -142,6 +142,19 @@ def _batch_risk(supplier_id: str, item_id: str) -> float:
     return round(float(bundle["model"].predict_proba(pd.DataFrame([row])[bundle["columns"]])[0, 1]), 4)
 
 
+def _exact_batch_alert(con, supplier_id: str, batch_no: str, item_id: str) -> list[dict]:
+    """Alerts for this exact batch (same firm, same batch number, same product). Usually empty."""
+    s = con.execute("select manufacturer_id from supplier where supplier_id = ?", (supplier_id,)).fetchone()
+    it = con.execute("select generic_name from item where item_id = ?", (item_id,)).fetchone()
+    if not s or not s["manufacturer_id"] or not batch_no:
+        return []
+    from ..memory import _units, batch_alerts
+    u = _units().set_index("manufacturer_id")
+    if s["manufacturer_id"] not in u.index:
+        return []
+    return batch_alerts(batch_no, u.loc[s["manufacturer_id"], "firm_id"], it["generic_name"] if it else None).get("alerts_for_this_batch", [])
+
+
 def receive(case_id: str, batch_no: str, mfg_date: str, exp_date: str, warehouse: str = "Central warehouse") -> dict:
     with LOCK:
         con = connect()
@@ -150,10 +163,18 @@ def receive(case_id: str, batch_no: str, mfg_date: str, exp_date: str, warehouse
             con.close()
             raise ValueError("Batch not found or already received")
         risk = _batch_risk(b["supplier_id"], b["item_id"])
+        hit = _exact_batch_alert(con, b["supplier_id"], batch_no, b["item_id"])
         con.execute("update batch set batch_no=?, mfg_date=?, exp_date=?, received_at=?, warehouse=?, qc_status='quarantine', risk_score=? where batch_id=?",
                     (batch_no, mfg_date, exp_date, now(), warehouse, risk, case_id))
         _event(con, b["buyer_id"], case_id, "Goods received", "warehouse", b["supplier_id"], b["item_id"])
         _event(con, b["buyer_id"], case_id, "Quarantined", "warehouse", b["supplier_id"], b["item_id"])
+        if hit:   # this exact batch is already on the national NSQ list: hold it without waiting for our own lab
+            con.execute("update batch set qc_status='held' where batch_id=?", (case_id,))
+            _event(con, b["buyer_id"], case_id, "Held", "technical advisor", b["supplier_id"], b["item_id"])
+            _event(con, b["buyer_id"], case_id, "Supplier notified", "vendor cell", b["supplier_id"], b["item_id"])
+            con.commit()
+            con.close()
+            return {"case_id": case_id, "status": "held", "risk_score": risk, "national_alert_on_this_batch": hit}
         _event(con, b["buyer_id"], case_id, "Sample drawn", "QC cell", b["supplier_id"], b["item_id"])
         _event(con, b["buyer_id"], case_id, "Sample coded", "QC cell", b["supplier_id"], b["item_id"])
         _event(con, b["buyer_id"], case_id, "Sent to lab", "NABL lab", b["supplier_id"], b["item_id"])

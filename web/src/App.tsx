@@ -47,7 +47,7 @@ function Shell() {
   return (
     <div className="min-h-full page-glow">
       <header className="sticky top-0 z-[1000] border-b border-line/80 bg-bg/85 backdrop-blur-xl">
-        <div className="mx-auto max-w-[1360px] px-4 sm:px-6 h-16 flex items-center gap-4">
+        <div className="mx-auto max-w-[1360px] px-4 sm:px-6 py-2 md:py-0 md:h-16 flex flex-wrap md:flex-nowrap items-center gap-x-4 gap-y-2">
           <button onClick={() => go('study')} className="flex items-center gap-2.5 shrink-0">
             <Logo />
             <div className="text-left leading-tight">
@@ -55,13 +55,13 @@ function Shell() {
               <div className="text-[10px] text-muted -mt-0.5">दवा दृष्टि · a national memory of medicine quality</div>
             </div>
           </button>
-          <nav className="flex-1 flex justify-center overflow-x-auto">
+          <nav className="order-last w-full md:order-none md:w-auto md:flex-1 flex md:justify-center overflow-x-auto">
             <div className="flex gap-1 rounded-2xl bg-surface/80 border border-line p-1">
               {TABS.map((t) => (
                 <button key={t.id} onClick={() => go(t.id)} className={clsx('relative flex items-center gap-1.5 rounded-xl px-2.5 py-1.5 text-sm font-medium whitespace-nowrap transition-colors', tab === t.id ? 'text-ink' : 'text-muted hover:text-ink')}>
                   {tab === t.id && <motion.div layoutId="tab-pill" className="absolute inset-0 rounded-xl bg-surface-3 border border-line" transition={{ type: 'spring', stiffness: 400, damping: 32 }} />}
                   <t.icon size={15} className="relative" />
-                  <span className="relative hidden xl:inline">{t.label}</span>
+                  <span className="relative md:hidden xl:inline">{t.label}</span>
                 </button>
               ))}
             </div>
@@ -110,9 +110,24 @@ function Shell() {
 }
 
 function ViewSwitch() {
-  const { view, setView } = useView()
+  const { view, setView: set } = useView()
+  const setView = async (v: 'public' | 'buyer') => {
+    if (v === 'buyer') {
+      const h = await api.health().catch(() => null)
+      if (h?.buyer_view === 'key required') {
+        let has = ''
+        try { has = sessionStorage.getItem('dd-buyer-key') || '' } catch { /* storage blocked */ }
+        if (!has) {
+          const k = window.prompt('This server needs a buyer key for the buyer view:')
+          if (!k) return
+          try { sessionStorage.setItem('dd-buyer-key', k) } catch { /* storage blocked */ }
+        }
+      }
+    }
+    set(v)
+  }
   return (
-    <div className="hidden sm:flex rounded-xl border border-line bg-surface-2 p-0.5 text-xs shrink-0" title="Public view shows the published record only. Buyer view adds the graded response, model scores and alternatives.">
+    <div className="ml-auto md:ml-0 flex rounded-xl border border-line bg-surface-2 p-0.5 text-xs shrink-0" title="Public view shows the published record only. Buyer view adds the graded response, model scores and alternatives.">
       {(['public', 'buyer'] as const).map((v) => (
         <button key={v} onClick={() => setView(v)} className={clsx('rounded-lg px-2.5 py-1 capitalize', view === v ? (v === 'buyer' ? 'bg-amber-500/15 text-amber-200' : 'bg-surface-3 text-ink') : 'text-muted')}>{v}</button>
       ))}

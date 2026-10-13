@@ -48,20 +48,27 @@ flowchart TD
    - the future-regulatory-attention score with its held-out AUC;
    - alternatives from the buyer network's supplier masters.
 
+**How an alert links to a buyer's stock: manufacturer first, batch as a bonus**
+- **Why not by batch.** Alerts carry the manufacturer's batch number and no buyer field. A buyer's own record therefore matches an alert by batch only if it bought that very batch, which will be rare.
+- **The working link is the manufacturer (unit and firm).** The graded response and the record are keyed on it.
+- **The exact-batch check is a bonus.** `lookup(..., batch=...)` and goods receipt both run it, and it fires occasionally. When it fires, the batch is held at once, without waiting for the buyer's own lab.
+- **Matching rules for batches.** Batch numbers are matched after removing punctuation, and only within the same firm and the same main active ingredient, because makers reuse batch codes across products and across firms.
+
 **Reference buyer console** (`erp/schema.py`, `erp/service.py`, `erp/simulate.py`)
 - An SQLite OLTP schema, with 20 months of simulated history for 5 fictional buyers.
 - Screen 1, the purchase order:
   - the graded response for each supplier on the rate contract, with level 3 blocking unless an override is recorded;
   - beside it, the supply position: concentration and days of cover.
 - Screen 2, goods receipt:
-  - batches are quarantined and ordered by batch risk;
+  - a batch whose exact number is already on CDSCO's list for that firm is held on receipt;
+  - other batches are quarantined and ordered by batch risk;
   - issue is refused until the lab clears the batch (rule R1, enforced rather than only monitored).
 
 **Conformance and process mining** (`mining/conformance.py`, `mining/process.py`)
 - Implemented from scratch, without pm4py (which is AGPL).
 - Rules are declarative data: precedence, response within N days, and requires.
 - Analyses: directly-follows discovery, variants, performance, buyer benchmark, and a root-cause decision tree.
-- The same engine reads XES and CSV logs, for the BPI Challenge 2019 validation.
+- The same engine reads XES and CSV logs. On BPI Challenge 2019 (1.6M events) it reproduces the published counts; see EVALUATION section 5.
 
 **Patterns and models** (`mining/patterns.py`, `mining/risk.py`)
 - Patterns: FP-Growth association rules, k-means archetypes, spike detection, geography.

@@ -109,6 +109,9 @@ def main():
     df.to_csv(C.STAGING / "nsq_findings.csv", index=False)
     m = df[df.manufacturer_id != "M_UNKNOWN"].groupby(["manufacturer_id", "manufacturer_canonical", "state", "firm_id", "firm_canonical"]).size()
     m.reset_index(name="findings").sort_values("findings", ascending=False).to_csv(C.STAGING / "manufacturers.csv", index=False)
+    must, cannot = entities.load_decisions()
+    if must or cannot:
+        print(f"  reviewer decisions applied: {len(must)} same, {len(cannot)} different (data/er/decisions.json)")
     print(f"staged {len(df)} findings ({df.alert_month.min()} to {df.alert_month.max()}), "
           f"{df.manufacturer_id.nunique()} manufacturing units of {df.firm_id.nunique()} firms, {df.state.nunique()} states/regions")
     print("  sources:", df.source.value_counts().to_dict())

@@ -118,7 +118,8 @@ function ReviewQueue({ rows, total }: { rows: any[]; total: number }) {
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="text-sm font-medium">Review queue</div>
-          <p className="text-xs text-muted">{total} pairs near the threshold, the ones that move the most alerts first. Decisions are kept in this browser; export them to apply in the next build.</p>
+          <p className="text-xs text-muted">{total} pairs near the threshold, the ones that move the most alerts first. Decisions are kept in this browser.
+            To apply them, export, save the file as <span className="font-mono text-ink">data/er/decisions.json</span> and run <span className="font-mono text-ink">python -m dawadrishti build</span>: "same" joins the pair, "different" keeps it apart.</p>
         </div>
         <Button variant="ghost" onClick={exportJson} disabled={!Object.keys(dec).length}><Download size={14} /> Export {Object.keys(dec).length} decisions</Button>
       </div>
@@ -131,7 +132,7 @@ function ReviewQueue({ rows, total }: { rows: any[]; total: number }) {
               <td className="py-2 px-2 num">{r.score}</td>
               <td className="px-2"><div>{r.a.join(' / ')}</div><div className="text-faint">{r.a_alerts} alerts · {r.a_states.join(', ')}</div></td>
               <td className="px-2"><div>{r.b.join(' / ')}</div><div className="text-faint">{r.b_alerts} alerts · {r.b_states.join(', ')}</div></td>
-              <td className="px-2"><Badge tone={r.status.startsWith('merged') ? 'ours' : 'warn'}>{r.status}</Badge></td>
+              <td className="px-2"><Badge tone={r.status.startsWith('reviewer') ? 'good' : r.status.startsWith('merged') ? 'ours' : 'warn'}>{r.status}</Badge></td>
               <td className="px-2 whitespace-nowrap">
                 {(['same', 'different'] as Decision[]).map((v) => (
                   <button key={v} onClick={() => decide(r, v)} className={`mr-1 rounded-md border px-2 py-0.5 ${d === v ? 'border-ours text-ours' : 'border-line text-muted hover:text-ink'}`}>{v}</button>))}

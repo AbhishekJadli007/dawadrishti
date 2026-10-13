@@ -14,7 +14,7 @@ pytest && python -m dawadrishti build
 
 **Where help is most useful:**
 - Reviewing the 200 entity-resolution labels (`data/er/labelled_pairs.csv`) and the review queue on the Quality page.
-- Running the conformance engine on the BPI Challenge 2019 log (`python -m dawadrishti.mining.conformance --bpi ...`).
+- More purchase-to-pay and quality rules for the conformance engine, checked on BPI Challenge 2019 and on real buyer logs.
 - A contribution route for state-lab and buyer test results (the Kaysons gap).
 - Better product and therapeutic-class mapping (WHO ATC, NLEM).
 - A DVDMS / e-Aushadhi connector that calls `/api/v1/lookup` at PO and goods-receipt time.

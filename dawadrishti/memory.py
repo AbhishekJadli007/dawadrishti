@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 from functools import lru_cache
 
 import duckdb
@@ -159,7 +160,55 @@ def _bought_item(mid: str) -> str | None:
     return r[0] if r else None
 
 
-def lookup(query: str, view: str = "public", state: str | None = None, molecule: str | None = None) -> dict:
+SALT_WORDS = re.compile(r"\b(hydrochloride|hcl|sodium|potassium|calcium|sulphate|sulfate|phosphate|maleate|citrate|acetate|"
+                        r"hydrobromide|besylate|tartrate|mesylate|succinate|fumarate|dihydrate|monohydrate|carbonate|gluconate|lactate|and|with|tablets?|"
+                        r"capsules?|syrup|dry|suspension|injection|oral|solution|ip|bp|usp|i\.p\.?|mg|ml|[0-9]+)\b", re.I)
+
+
+def same_product(a: str, b: str) -> bool:
+    """Same main active ingredient (the first word once salts and dosage words are removed). Strict on purpose:
+    "Bupropion Hydrochloride" is not "Metoclopramide Hydrochloride", and "Nitrazepam" is not "Lorazepam"."""
+    def main(x):
+        w = re.sub(r"[^a-z0-9 ]", " ", str(x).lower()).split()
+        lead = ("calcium", "potassium", "sodium", "vitamin", "vit")
+        w = [t for i, t in enumerate(w) if not SALT_WORDS.fullmatch(t) or (i == 0 and t in lead)]
+        if not w:
+            return ""
+        return w[0] + w[1] if w[0] in lead and len(w) > 1 else w[0]   # "sodium valproate" is not "sodium chloride"
+
+    ma, mb = main(a), main(b)
+    if not ma or not mb:
+        return False
+    if ma.startswith(("vitamin", "vit", "calcium", "sodium", "potassium")):
+        return ma == mb                                               # "vitamin d3" vs "vitamin k": one letter, different drug
+    return fuzz.ratio(ma, mb) >= 85
+
+
+def batch_alerts(batch: str, firm_id: str | None, product: str | None = None) -> dict:
+    """The exact-batch check. Alert batch numbers are the manufacturer's, so a buyer's batch matches only if it bought
+    that very batch: rare, but decisive when it fires. Batch numbers repeat across makers, so only the same firm counts."""
+    norm = "".join(ch for ch in str(batch).upper() if ch.isalnum())
+    if len(norm) < 3:
+        return {"batch": batch, "checked": False, "reason": "batch number too short to match"}
+    con = _wh()
+    f = con.execute("""select month, generic_name, dosage_form, primary_failure, severity, reporting_lab, batch_no, firm_id,
+                              manufacturer from v_findings
+                       where regexp_replace(upper(batch_no), '[^A-Z0-9]', '', 'g') = ?""", [norm]).df()
+    con.close()
+    same = f[f.firm_id.eq(firm_id)] if firm_id else f.iloc[0:0]
+    # a firm can reuse a batch code across products: only the same product makes it the same batch
+    mask = pd.Series([product is None or same_product(g, product) for g in same.generic_name], index=same.index, dtype=bool)
+    same = same.assign(same_product=mask)
+    hit = same.loc[mask]
+    return {"batch": batch, "checked": True, "product": product, "this_batch_failed": bool(len(hit)),
+            "alerts_for_this_batch": hit.drop(columns=["firm_id", "same_product"]).to_dict(orient="records"),
+            "same_number_other_products": same.loc[~mask].drop(columns=["firm_id", "same_product"]).to_dict(orient="records"),
+            "same_number_other_makers": int(len(f) - len(same)),
+            "note": "Matched on batch number and product within this firm. The same number on another product or at another maker is a different batch."}
+
+
+def lookup(query: str, view: str = "public", state: str | None = None, molecule: str | None = None,
+           batch: str | None = None) -> dict:
     who = resolve(query, state)
     as_of_data = _data_as_of()
     base = {"query": query, "view": view, "data_as_of": as_of_data, "generated_at": dt.date.today().isoformat(),
@@ -201,6 +250,8 @@ def lookup(query: str, view: str = "public", state: str | None = None, molecule:
     out = {**base, "identity": who, "record": record,
            "statement": (f"{len(here)} published alert{'s' if len(here) != 1 else ''} name this unit "
                          f"({record['first_alert']} to {record['last_alert']}), data as of {as_of_data}.")}
+    if batch:
+        out["batch_check"] = batch_alerts(batch, unit.firm_id, molecule)
     if view == "buyer":
         from .erp.schema import connect
         c = connect()

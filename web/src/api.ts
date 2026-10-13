@@ -27,22 +27,30 @@ export type QueueRow = {
 
 export type View = 'public' | 'buyer'
 
+// When the server sets DAWADRISHTI_BUYER_KEY, the buyer view sends the key the user entered (kept for this tab only).
+function buyerHeaders(view: View): RequestInit | undefined {
+  if (view !== 'buyer') return undefined
+  let key = ''
+  try { key = sessionStorage.getItem('dd-buyer-key') || '' } catch { /* storage blocked */ }
+  return key ? { headers: { 'Content-Type': 'application/json', 'X-Buyer-Key': key } } : undefined
+}
+
 export const api = {
   study: () => req('/api/study'),
   quality: () => req('/api/quality'),
-  lookup: (q: string, view: View, molecule?: string) =>
-    req(`/api/v1/lookup?q=${encodeURIComponent(q)}&view=${view}${molecule ? `&molecule=${encodeURIComponent(molecule)}` : ''}`),
+  lookup: (q: string, view: View, molecule?: string, batch?: string) =>
+    req(`/api/v1/lookup?q=${encodeURIComponent(q)}&view=${view}${molecule ? `&molecule=${encodeURIComponent(molecule)}` : ''}${batch ? `&batch=${encodeURIComponent(batch)}` : ''}`, buyerHeaders(view)),
+  health: () => req<{ ok: boolean; gemini: boolean; buyer_view: string }>('/api/health'),
   overview: () => req('/api/overview'),
   mining: () => req('/api/mining'),
   process: (buyer?: string) => req(`/api/process${buyer ? `?buyer=${buyer}` : ''}`),
   violations: (rule?: string, buyer?: string) => req(`/api/violations?limit=60${rule ? `&rule=${rule}` : ''}${buyer ? `&buyer=${buyer}` : ''}`),
-  risk: () => req('/api/risk'),
+  risk: (view: View = 'public') => req(`/api/risk?view=${view}`, buyerHeaders(view)),
   search: (q: string) => req<any[]>(`/api/search?q=${encodeURIComponent(q)}`),
-  manufacturer: (id: string) => req(`/api/manufacturer/${encodeURIComponent(id)}`),
   masters: () => req('/api/erp/masters'),
   suppliers: (buyer: string, item: string) => req<Check[]>(`/api/erp/suppliers?buyer_id=${buyer}&item_id=${item}`),
   createPO: (b: { buyer_id: string; item_id: string; supplier_id: string; qty: number; override?: boolean }) => post('/api/erp/po', b),
-  receive: (case_id: string) => post('/api/erp/receive', { case_id }),
+  receive: (case_id: string, batch_no?: string) => post('/api/erp/receive', { case_id, ...(batch_no ? { batch_no } : {}) }),
   result: (case_id: string, passed: boolean, failure = '') => post('/api/erp/result', { case_id, passed, failure }),
   issue: (case_id: string) => post('/api/erp/issue', { case_id }),
   contract: (buyer: string, item: string) => req(`/api/erp/contract?buyer_id=${buyer}&item_id=${item}`),

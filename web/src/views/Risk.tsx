@@ -10,7 +10,7 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
   const { view, setView } = useView()
   const [d, setD] = useState<any>(null)
   const [net, setNet] = useState<any>(null)
-  useEffect(() => { api.risk().then(setD); api.overview().then((o) => setNet(o.network)) }, [])
+  useEffect(() => { api.risk(view).then(setD).catch(() => api.risk('public').then(setD)); api.overview().then((o) => setNet(o.network)) }, [view])
   if (!d) return <Spinner label="Loading risk models…" />
   const t = d.factory.test
   const fRows = Object.entries(t.results).map(([n, r]: [string, any]) => ({ n, p50: +(100 * r.top50.precision).toFixed(0), r200: +(100 * r.top200.recall).toFixed(0), auc: r.auc }))
@@ -44,6 +44,7 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
             <tbody>{fRows.map((r) => <tr key={r.n} className="border-t border-line/50"><td className="py-1">{r.n}</td><td className="text-right">{r.auc}</td><td className="text-right">{r.p50}%</td><td className="text-right">{r.r200}%</td></tr>)}</tbody>
           </table>
           <p className="text-[11px] text-faint mt-2">Honest reading: "most recent failure" is as good on the top 50 alone; the model ranks the whole list best (highest AUC and top-200 recall).</p>
+          {t.confound && <Confound c={t.confound} />}
         </Card>
         {view !== 'buyer' ? (
           <Card className="p-5 flex flex-col justify-center">
@@ -100,6 +101,21 @@ export default function Risk({ openMfr }: { openMfr: (id: string) => void }) {
           </Card>
         )}
       </section>
+    </div>
+  )
+}
+
+function Confound({ c }: { c: any }) {
+  const rows = [...c.groups.map((g: any) => ({ k: g.group, n: g.units, m: g.model_auc, r: g.most_recent_failure_auc })),
+    ...(c.detected_elsewhere ?? []).map((g: any) => ({ k: `next alert ${g.split}`, n: g.units, m: g.model_auc, r: g.most_recent_failure_auc }))]
+  return (
+    <div className="mt-4 border-t border-line/60 pt-3">
+      <div className="text-xs font-medium">Is the model only learning where inspectors look?</div>
+      <table className="w-full text-[11px] num mt-1.5">
+        <thead className="text-faint"><tr><th className="text-left font-normal">Units scored</th><th className="text-right font-normal">n</th><th className="text-right font-normal">Model AUC</th><th className="text-right font-normal">Most recent failure</th></tr></thead>
+        <tbody>{rows.map((x) => <tr key={x.k} className="border-t border-line/40"><td className="py-1 pr-2">{x.k}</td><td className="text-right">{x.n}</td><td className="text-right">{x.m}</td><td className="text-right">{x.r}</td></tr>)}</tbody>
+      </table>
+      <p className="text-[11px] text-faint mt-1.5">A model that knows only the unit's state scores {c.state_only_baseline_auc}. The model keeps its ranking when the next failure is caught by a lab or state that had never caught that unit, so it is not just predicting a lab's routine re-test.</p>
     </div>
   )
 }

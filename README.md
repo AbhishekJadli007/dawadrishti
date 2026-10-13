@@ -19,8 +19,8 @@ Open source (MIT) · Python · DuckDB · scikit-learn · FastAPI · React · COM
 ## The problem
 
 - **Scale.** 3,104 drug samples were declared not of standard quality in 2024–25, out of 1.16 lakh tested (Lok Sabha, via [IndiaMedToday](https://indiamedtoday.com/over-3000-drug-samples-declared-not-of-standard-quality-in-2024-25-nadda/)).
-- **Coldrif.** 24 children's deaths had been reported by 15 October 2025 after they took Coldrif cough syrup, which was contaminated with diethylene glycol (ETV Bharat).
-- **One state supplier.** Its samples failed 40 times in Rajasthan's state testing (2021–23). It was banned for a year, then reinstated ([Down To Earth](https://www.downtoearth.org.in/amp/story/health/cough-syrup-deaths-in-rajasthan-families-allege-negligence-while-government-denies-link-to-medicine)).
+- **Coldrif.** 24 children's deaths had been reported by 15 October 2025 after they took Coldrif cough syrup, which was contaminated with diethylene glycol ([ETV Bharat](https://www.etvbharat.com/en/bharat/madhya-pradesh-coldrif-cough-syrup-fatality-count-rises-after-many-children-die-enn25101506375)).
+- **One state supplier.** Its samples failed 40 times in Rajasthan's state testing (2021–23). It was banned for a year, then reinstated ([Down To Earth](https://www.downtoearth.org.in/amp/story/health/cough-syrup-deaths-in-rajasthan-families-allege-negligence-while-government-denies-link-to-medicine)). In the 2025 cough-syrup row, Rajasthan halted distribution of its drugs and suspended the state drug controller ([Deccan Herald](https://www.deccanherald.com/amp/story/india%2Frajasthan%2Fcough-syrup-row-rajasthan-government-suspends-drug-controller-halts-distribution-of-kaysons-pharma-drugs-3752117)).
 - **Where the information sits.** CDSCO publishes every failed batch, and buyers run their own ERPs (DVDMS, e-Aushadhi, state corporations' systems). Nothing connects the two, so a failure found in one state is invisible to a buyer in another.
 
 ## What it is
@@ -32,9 +32,9 @@ Open source (MIT) · Python · DuckDB · scikit-learn · FastAPI · React · COM
 | **Headline study** | Repeat share, lead time, detection elsewhere and concentration, with a cluster-bootstrap CI and robustness across five matching rules | Real |
 | **Extraction + audit** | Portal JSON (2019–26) and PDF alerts (2017–18). The PDF parser is checked against the portal: 96.9% row precision, 96.7–99.8% field agreement | Real |
 | **Entity resolution** | 5,521 name strings become 1,994 units and 1,797 firms. Evaluated on held-out labelled pairs (precision 1.00, recall 0.63), with a human review queue for the 80–92 band | Real |
-| **Lookup API** `GET /api/v1/lookup` | **Public view:** the published record, with an as-of date, what the data does not contain, a correction link and `regulatory_action`. **Buyer view:** adds a graded response (pause / test every batch / prefer alternatives / no record), a future-regulatory-attention score and alternatives | Real record; alternatives use simulated supplier masters |
+| **Lookup API** `GET /api/v1/lookup` | **Public view:** the published record, with an as-of date, what the data does not contain, a correction link and `regulatory_action`. **Buyer view** (key-protected when configured): adds a graded response (pause / test every batch / prefer alternatives / no record), a future-regulatory-attention score and alternatives. An optional exact-batch check | Real record; alternatives use simulated supplier masters |
 | **Reference buyer console** | Two moments inside an ERP. (1) The PO is checked by the graded response, with supplier concentration and days of cover beside it. (2) A received batch cannot be issued until the lab clears it | Simulated buyers |
-| **Conformance engine** | Declarative rules (precedence, response, requires) plus process discovery. Identical counts to hand-written checks; reads XES for BPI 2019 | Simulated log (BPI run pending) |
+| **Conformance engine** | Declarative rules (precedence, response, requires) plus process discovery. Identical counts to hand-written checks. On the public BPI Challenge 2019 SAP log (1.6M events) it reproduces the published counts and finds 655 payments before goods receipt | Simulated log + real BPI 2019 |
 | **Patterns and models** | FP-Growth rules, archetypes, spikes, geography. An attention model (AUC 0.774, with a confound check) and batch risk (simulated) | Real / simulated |
 | **Questions** | Nine reviewed SQL templates with checked parameters. A keyword parser or Gemini picks the template; no model writes SQL or text about a firm | Real |
 
@@ -49,6 +49,7 @@ Open source (MIT) · Python · DuckDB · scikit-learn · FastAPI · React · COM
 | The same share with exact name matching | 4.2%, so entity resolution is the whole game |
 | Coldrif, Maiden, Kaysons | **No** national alert before the incident. The memory must also take state-lab and buyer results |
 | Attention model vs the best simple rule | AUC 0.774 vs 0.745. On the top 50 alone, "most recent failure" wins (84% vs 76%), and we say so |
+| Next failures found by a lab that never caught the unit before | 330 of 386 units; the model still scores AUC 0.765 on them |
 | Simulated shared memory vs isolated ERPs | Orders to debarred suppliers −81%, failed batches received −30% |
 
 Full method and tables: [docs/EVALUATION.md](docs/EVALUATION.md).
@@ -69,15 +70,19 @@ The built warehouse, ERP database, models and study results are committed, so th
 python -m dawadrishti fetch    # re-download CDSCO alerts (portal JSON + PDFs), ~5 min
 python -m dawadrishti build    # stage -> ERP history -> warehouse -> mining -> models -> study -> evaluations (~1.5 min)
 python -m dawadrishti ask "Which antibiotic tablets from Gujarat failed since 2024?"
-python -m dawadrishti.mining.conformance --bpi BPI_Challenge_2019.xes   # external validation, once downloaded from 4TU
-pytest                                               # 16 tests
+python -m dawadrishti.mining.conformance --bpi BPI_Challenge_2019.xes   # external validation (download the 728 MB log from 4TU)
+pytest                                               # 22 tests
 ```
 
 Optional: put `GEMINI_API_KEY=...` in `.env` (free key at aistudio.google.com/apikey) to let Gemini choose question templates. Everything works without it.
 
 ```bash
-curl "http://localhost:8000/api/v1/lookup?q=Nestor%20Pharmaceuticals%20Ltd&view=buyer"
+curl "http://localhost:8000/api/v1/lookup?q=Nestor%20Pharmaceuticals%20Ltd&view=buyer&batch=CITB-02&molecule=Ciprofloxacin"
 ```
+
+- **Buyer key.** With `DAWADRISHTI_BUYER_KEY` set, the buyer view needs the key in an `X-Buyer-Key` header. Without it, the server runs as an open demo and says so in every buyer response.
+- **Linking alerts to stock.** The link is by manufacturer, because alerts carry the manufacturer's batch numbers, not the buyer's. The `batch` check (same firm, same batch number, same main ingredient) is a bonus that fires when a buyer received that very batch, and goods receipt holds such a batch automatically.
+- **Reviewing names.** `python -m dawadrishti.entity_eval --review` lets you relabel the name pairs blind. Review-queue decisions saved as `data/er/decisions.json` are applied by the next build.
 
 ## Data
 
@@ -93,7 +98,6 @@ curl "http://localhost:8000/api/v1/lookup?q=Nestor%20Pharmaceuticals%20Ltd&view=
 - **Alerts list failures, not tests.** A failure rate per manufacturer cannot be computed; we measure recurrence on the record.
 - **Sampling is uneven.** Heavily sampled states appear more often. The attention model predicts regulatory attention, not true quality.
 - **Labels.** The entity-resolution labels are the assistant's until people review them. Recall is 0.63 on hard pairs, so some histories are split. That makes the headline conservative.
-- **BPI Challenge 2019 validation is pending.** 4TU was unreachable from the build machine.
 - **Contribution route.** The memory needs buyers and state labs to send results back; that route is designed but not built. Kaysons' failures never reached the national list.
 
 ## Project layout

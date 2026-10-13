@@ -7,8 +7,8 @@ Every number below is reproduced by `python -m dawadrishti build`, which writes 
 | 1 | **Do failed batches come from units already on the national record?** | real | **64.9%** of failed batches did (95% CI 62.2–67.4%) |
 | 2 | Is the PDF parser reading alerts correctly? | real | 96.9% of parsed rows match the portal; fields agree 96.7–99.8% |
 | 3 | Are names grouped into the right factories? | real, labelled pairs | Precision 1.00, recall 0.63 on held-out hard pairs; 0.98 with human review |
-| 4 | Can the next 6 months of alerts be predicted? | real | AUC 0.774, against 0.745 for the best simple rule; not just state sampling |
-| 5 | Does the conformance engine count correctly? | simulated log | Declarative rules give identical counts to hand-written checks; BPI 2019 run pending |
+| 4 | Can the next 6 months of alerts be predicted? | real | AUC 0.774, against 0.745 for the best simple rule; not just state sampling or a lab's routine re-test |
+| 5 | Does the conformance engine count correctly? | simulated log + BPI 2019 (real) | Identical to hand-written checks; reads the 1.6M-event BPI 2019 log, reproduces its published counts, and finds 655 payments before goods receipt |
 | 6 | Does test-the-riskiest-first help a buyer's lab? | simulated | 69% of failing batches caught in the first 30% of tests, against 28% first-in-first-out |
 | 7 | What would sharing the memory change? | simulated | Orders to debarred suppliers −81%, failed batches received −30% |
 
@@ -123,7 +123,7 @@ Full write-up: [ENTITY_RESOLUTION.md](ENTITY_RESOLUTION.md).
 - On the top 50 alone, "most recent failure" does better (84% against 76%). A drug controller planning only 50 samples should use the simple rule.
 - **The target is regulatory attention, not true quality.** The model predicts that a unit is sampled *and* fails, and sampling depends on where inspectors look. The model is renamed for this reason, and its score is never shown on public pages.
 
-**Confound check: is the model only learning which states are sampled most?**
+**Confound check 1: is the model only learning which states are sampled most?**
 
 | Group | Units | Base rate | Model AUC | "Most recent failure" AUC |
 |---|---|---|---|---|
@@ -134,7 +134,21 @@ Full write-up: [ENTITY_RESOLUTION.md](ENTITY_RESOLUTION.md).
 - **State matters, but it is not what the model learns.** State alone carries some signal (0.601), but the model ranks equally well inside and outside the heavily sampled states.
 - **Outside them, the simple rule wins.** "Most recent failure" is slightly better there, and we report that rather than hide it.
 
-## 5. Conformance engine (simulated log; external validation pending)
+**Confound check 2: is it only predicting that the same lab will re-test a unit it already caught?** Each unit that appeared in Mar–Aug 2026 is placed in one split, and each split is scored against the units that did not appear:
+
+| Next alert caught by… | Units | Model AUC | "Most recent failure" AUC |
+|---|---|---|---|
+| a lab that had never caught the unit | 330 | 0.765 | 0.721 |
+| only labs that had caught it before | 56 | 0.828 | 0.821 |
+| a state that had never caught the unit | 226 | 0.769 | 0.715 |
+| only states that had caught it before | 67 | 0.854 | 0.872 |
+
+- **There is a lab-routine effect.** The model scores higher when the same lab re-tests (0.83).
+- **But it is not the whole signal.** The model keeps an AUC of 0.765 when a lab that never caught the unit before finds the next failure, and beats the simple rule there.
+- **Most next failures are found somewhere new.** 330 of the 386 units that reappeared were caught by a new lab, which is the memory's case in one number.
+
+
+## 5. Conformance engine (simulated log, and BPI Challenge 2019)
 
 `dawadrishti/mining/conformance.py`.
 - **How rules work.** Rules are data: precedence, response within N days, and requires. They can be scoped to a sub-case (`given`) or to case attributes (`when`).
@@ -152,19 +166,48 @@ Full write-up: [ENTITY_RESOLUTION.md](ENTITY_RESOLUTION.md).
 
 R5 (an order placed while another buyer's debarment is in force) needs the debarment register, so it stays hand-written: 818 cases.
 
-**External validation on BPI Challenge 2019** (the public SAP purchase-to-pay log, 4TU.ResearchData): **pending.**
-- **Why.** 4TU could not be reached from the build machine on 13 Oct 2026: DNS resolved, but the connection never completed.
-- **What is ready.** The reader, which handles XES, .xes.gz and the CSV export, and four P2P rules mapped to ours:
-  - P1: invoice cleared before goods receipt, about R4;
-  - P2: invoice recorded before goods receipt where the contract says after;
-  - P3: goods received before the purchase-order item existed;
-  - P4: invoice cleared without an invoice receipt.
-- **Tests.** Both pass on a synthetic XES file (`tests/test_conformance.py`).
-- **To run it:**
+**External validation on BPI Challenge 2019** (the public SAP purchase-to-pay log of a multinational coatings company, 4TU.ResearchData). The same engine reads the XES file, about 34 seconds for 728 MB, and the result is in `artifacts/bpi2019_conformance.json`.
 
-  ```bash
-  python -m dawadrishti.mining.conformance --bpi /path/to/BPI_Challenge_2019.xes   # -> artifacts/bpi2019_conformance.json
-  ```
+**Reader check.** Our counts match the published ones exactly:
+
+| | Published | Ours |
+|---|---|---|
+| Events | 1,595,923 | 1,595,923 |
+| Cases (purchase-order items) | 251,734 | 251,734 |
+| Purchase documents | 76,349 | 76,349 |
+| Activities | 42 | 42 |
+
+**Rules, mapped to ours:**
+
+| Rule | In scope | Violating | Share | DawaDrishti analogue |
+|---|---|---|---|---|
+| P1 Invoice cleared (paid) before goods receipt, 3-way match | 236,192 | 655 | 0.3% | R4: payment before clearance |
+| P2 Invoice recorded before goods receipt where the contract says after | 15,182 | 0 | 0.0% | R1: a rule the system enforces |
+| P3 Goods received before the purchase-order item existed | 251,734 | 0 | 0.0% | Order discipline |
+| P4 Invoice cleared without an invoice receipt | 251,734 | 384 | 0.1% | R4 |
+
+**Reading.**
+- **Enforced rules show zero violations, and the data shows why.** All 15,182 "invoice after GR" items have SAP's goods-receipt-based invoice verification switched on (100%), against 0% in every other category. No invoice was recorded before its goods receipt. P3 is the same: SAP requires a purchase order before a goods receipt.
+- **Rules that are only policy show violations.** 655 invoices were cleared for payment before the goods were received: 654 of them in the "invoice before GR" category, where the switch is off.
+- **This is the design argument for DawaDrishti.** "Issue only after clearance" (R1) is enforced in the buyer console, not merely monitored.
+
+**What this validates.** The reader and the engine work on a real log we did not write. These are compliance checks on a company's purchasing, not quality-control rules. The DawaDrishti rules themselves have only been tested on the simulated log.
+
+**To reproduce:**
+
+```bash
+python -m dawadrishti.mining.conformance --bpi /path/to/BPI_Challenge_2019.xes
+```
+
+## 5b. The lookup's policy, as tests
+
+`tests/test_policy.py` and `tests/test_api.py` check that:
+- the public lookup and `/api/risk` return no predicted score and no ranked list;
+- with `DAWADRISHTI_BUYER_KEY` set, the buyer view returns 403 without the key;
+- an uncertain name returns candidates, not a record;
+- a received batch whose exact number is on CDSCO's list for that firm and product is held on receipt, and cannot be issued; the same number on another product is not;
+- a model reply that is SQL, or that uses a parameter value not in the data, is rejected;
+- reviewer decisions override the matcher.
 
 ## 6. Batch risk: test the riskiest batch first (simulated)
 
@@ -226,7 +269,7 @@ Debarments last 12 months.
 
 ## 10. Not evaluated yet
 
-- **Human agreement on the entity-resolution labels.** All 200 labels are the assistant's.
-- **BPI Challenge 2019.** The run is pending because 4TU was unreachable (section 5).
+- **Human agreement on the entity-resolution labels.** All 200 labels are the assistant's. `python -m dawadrishti.entity_eval --review` lets a person relabel them blind; the evaluation then uses the person's labels and reports agreement.
 - **Real buyers.** No real buyer data is used. The console, network effect and batch-risk results are simulated.
-- **Optional LLM template choice.** Its accuracy is not measured. The keyword parser is the default, and both choose from the same nine checked templates.
+- **Optional LLM template choice.** Its accuracy is not measured; only its safety is tested, with a fake client. The keyword parser is the default, and both choose from the same nine checked templates.
+- **How often the exact-batch check fires.** It needs real buyer batch lists, which we do not have. Alert batch numbers are the manufacturer's, so a buyer's batch matches only if it bought that very batch.

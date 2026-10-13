@@ -31,7 +31,8 @@ HORIZON = 6
 
 def _findings():
     con = duckdb.connect(str(C.WAREHOUSE_DB), read_only=True)
-    df = con.execute("select manufacturer_id, state, month, severity, dosage_form, generic_name from v_findings where manufacturer_id is not null").df()
+    df = con.execute("""select manufacturer_id, state, month, severity, dosage_form, generic_name, reporting_lab, reporting_source
+                        from v_findings where manufacturer_id is not null""").df()
     con.close()
     df["t"] = pd.to_datetime(df.month + "-01")
     return df
@@ -70,6 +71,43 @@ def _at_k(y, score, k):
     return {"precision": round(float(y[order].mean()), 3), "recall": round(float(y[order].sum() / max(y.sum(), 1)), 3)}
 
 
+def detected_elsewhere(df: pd.DataFrame, cutoff: pd.Timestamp, test: pd.DataFrame, p: np.ndarray) -> list[dict]:
+    """Confound check: does the model only predict that the same lab (or state) will re-test a unit it already caught?
+    Split the units that appear in the next 6 months by whether a NEW lab / state caught them, and score each split
+    against the units that did not appear. If the model ranks new-lab detections as well, it is not just a lab's routine."""
+    import re
+    from ..etl import clean
+    central = re.compile(r"\b(cdl|cdtl|rdtl|central|ipc|nibs|cdsco)\b", re.I)
+    d = df.assign(lab=df.reporting_lab.fillna("").str.lower().str.replace(r"[^a-z]", " ", regex=True).str.split().str.join(" "))
+
+    def det_state(r):
+        if r.reporting_source != "State lab" or central.search(str(r.reporting_lab)):
+            return None
+        st = clean.state_of(str(r.reporting_lab))[0]
+        return st if st not in ("Unknown", "Outside India") else None
+    d["det_state"] = d.apply(det_state, axis=1)
+    past = d[d.t < cutoff]
+    fut = d[(d.t >= cutoff) & (d.t < cutoff + pd.DateOffset(months=HORIZON))]
+    seen_lab = past.groupby("manufacturer_id").lab.agg(set)
+    seen_state = past.dropna(subset=["det_state"]).groupby("manufacturer_id").det_state.agg(set)
+    recent = -test.months_since_last.values
+    out = []
+    for label, col, seen in (("lab", "lab", seen_lab), ("state", "det_state", seen_state)):
+        f = fut.dropna(subset=[col])
+        new_units = {m for m, g in f.groupby("manufacturer_id") if set(g[col]) - seen.get(m, set())}
+        old_units = {m for m, g in f.groupby("manufacturer_id") if not (set(g[col]) - seen.get(m, set()))}
+        neg = test.label.eq(0).values
+        for name, pos in ((f"caught by a new {label}", new_units), (f"caught only by a {label} that caught it before", old_units)):
+            m = test.index.isin(list(pos))
+            keep = neg | m
+            if m.sum() < 10:
+                continue
+            y = m[keep].astype(int)
+            out.append({"split": name, "units": int(m.sum()), "model_auc": round(float(roc_auc_score(y, p[keep])), 3),
+                        "most_recent_failure_auc": round(float(roc_auc_score(y, recent[keep])), 3)})
+    return out
+
+
 def factory_risk() -> dict:
     df = _findings()
     train_cut = pd.date_range("2021-01-01", "2025-09-01", freq="MS")
@@ -95,7 +133,8 @@ def factory_risk() -> dict:
     heavy = (test.state_hp + test.state_uk + test.state_gj).astype(bool).values
     state_only = HistGradientBoostingClassifier(max_iter=100, random_state=C.SEED).fit(
         train[["state_hp", "state_uk", "state_gj"]], train.label).predict_proba(test[["state_hp", "state_uk", "state_gj"]])[:, 1]
-    confound = {"state_only_baseline_auc": round(float(roc_auc_score(test.label, state_only)), 3), "groups": []}
+    confound = {"state_only_baseline_auc": round(float(roc_auc_score(test.label, state_only)), 3), "groups": [],
+                "detected_elsewhere": detected_elsewhere(df, test_cut, test, p)}
     for label, m in [("units in HP, Uttarakhand, Gujarat (most sampled)", heavy), ("units in all other states", ~heavy)]:
         y = test.label.values[m]
         confound["groups"].append({"group": label, "units": int(m.sum()), "base_rate": round(float(y.mean()), 3),

@@ -25,7 +25,7 @@ What is built and measured on real data:
 ## 2. The problem
 
 - **Failures are common.** 3,104 drug samples were declared not of standard quality (NSQ) in 2024–25, out of 1.16 lakh tested. CDSCO's labs flagged 211 samples in October 2025 alone.
-- **Failures kill.** 24 children's deaths had been reported by 15 October 2025 after they took Coldrif cough syrup, which was contaminated with diethylene glycol (ETV Bharat). In 2022, syrups from another Indian manufacturer were linked by WHO to child deaths in The Gambia.
+- **Failures kill.** 24 children's deaths had been reported by 15 October 2025 after they took Coldrif cough syrup, which was contaminated with diethylene glycol ([ETV Bharat](https://www.etvbharat.com/en/bharat/madhya-pradesh-coldrif-cough-syrup-fatality-count-rises-after-many-children-die-enn25101506375)). In 2022, syrups from another Indian manufacturer were linked by WHO to child deaths in The Gambia.
 - **Failures recur where buyers cannot see them.** One supplier's samples failed 40 times in Rajasthan's state testing (2021–23). It was banned for a year, then reinstated, and resumed supplying.
 - **The pieces exist but are not connected.**
   - CDSCO publishes every failed batch: monthly PDFs, and a public portal since 2019.
@@ -76,7 +76,7 @@ flowchart LR
 | Warehouse | DuckDB star schema: failures and buyer events share the supplier, product and date dimensions | Rebuilt from source by one command |
 | Headline study | Repeat share, lead time, detection elsewhere, concentration; cluster bootstrap; five matching rules | Confidence interval and the matching-rule sensitivity table |
 | Lookup API | Resolves names; returns the record and, in the buyer view, the graded response | Policy tests (no score in the public view; candidates for uncertain names) |
-| Conformance engine | Declarative rules plus process discovery, written from scratch (pm4py is AGPL) | Identical counts to hand-written checks; BPI 2019 run pending |
+| Conformance engine | Declarative rules plus process discovery, written from scratch (pm4py is AGPL) | Identical counts to hand-written checks; on the real BPI 2019 SAP log (1.6M events) it reproduces the published counts and finds 655 payments before goods receipt |
 | Attention model | Gradient boosting on each unit's alert history, time split | AUC vs three baselines; state confound check |
 | Questions | Nine reviewed SQL templates with bound, checked parameters | Injection test; the model never writes SQL |
 
@@ -88,6 +88,8 @@ flowchart LR
 | 2 | Test every batch | A critical failure 13–36 months ago, or 2+ alerts in 12 months | No skip-lot testing |
 | 1 | Prefer alternatives | Any alert in 36 months | At equal price, choose another supplier |
 | 0 | No recent record | Nothing in 36 months | Absence of a record, not a certificate |
+
+**The link is the manufacturer; the batch is a bonus.** Alerts carry the manufacturer's batch numbers and no buyer, so a buyer's records match an alert by batch only if it bought that very batch. That is rare, but when it happens goods receipt holds the batch at once. Everything else works at manufacturer level.
 
 **The response comes with its cost.** Beside it the console shows the supply position for the item:
 - how concentrated the buyer's supply is (for example, "single source: 91% from one supplier");
@@ -123,8 +125,8 @@ Details: [EVALUATION.md](EVALUATION.md).
 |---|---|---|
 | Do failures come from units already on record? | Real | 64.9% (CI 62.2–67.4%) |
 | Can next-6-month alerts be predicted? | Real | AUC 0.774 vs 0.745 for the best simple rule. On the top 50, "most recent failure" wins (84% vs 76%) |
-| Is that only state sampling? | Real | No: the model scores AUC 0.758 / 0.756 inside and outside the most-sampled states; state alone scores 0.601 |
-| Does the conformance engine count correctly? | Simulated | Identical to hand-written checks on 5 rules over 6,100 cases |
+| Is that only state sampling, or a lab re-testing? | Real | No. The model scores AUC 0.758 / 0.756 inside and outside the most-sampled states (state alone: 0.601), and 0.765 when a lab that never caught the unit finds the next failure (330 of 386 units) |
+| Does the conformance engine count correctly? | Simulated + real | Identical to hand-written checks on 6,100 simulated cases. On the real BPI 2019 SAP log it matches all 4 published counts and finds 655 payments before goods receipt, and none where SAP enforces the rule |
 | Does test-the-riskiest-first help? | Simulated | 69% of failing batches in the first 30% of tests, vs 28% first-in-first-out |
 | What would sharing change? | Simulated | Orders to debarred suppliers −81%; failed batches received −30% |
 
@@ -136,10 +138,11 @@ Details: [EVALUATION.md](EVALUATION.md).
 | 1 | Entity resolution with evaluation and review queue | Done (labels await human review) |
 | 1 | Headline study (cross-state repeat failures) | Done |
 | 1 | Lookup API + manufacturer record (as-of dates, data limits, correction route, alternatives) | Done |
-| 2 | Conformance engine (declarative) | Done; the BPI Challenge 2019 run is pending (4TU unreachable from the build machine) |
+| 2 | Conformance engine (declarative), validated on BPI Challenge 2019 | Done |
 | 2 | Reference buyer console: PO warned, goods receipt blocked until clearance, concentration, days of cover | Done (simulated buyers) |
 | 3 | Future-regulatory-attention model with confound check | Done |
 | 3 | Questions as parameterised templates (model picks, never writes SQL) | Done |
+| — | API-level enforcement of the naming policy (buyer key), exact-batch hold at goods receipt, reviewer decisions applied by the build | Done |
 | Next | Contribution route for state labs and buyers | Designed, not built |
 
 ## 11. Timeline and owner
@@ -153,10 +156,10 @@ A solo project: every task is owned by Abhishek Jadli.
 | 3–5 | Entity resolution: rules, labelled pairs, threshold sweep, review queue | Abhishek | Done |
 | 5–6 | Headline study with bootstrap and matching-rule sensitivity | Abhishek | Done |
 | 6–8 | Lookup API, graded response, naming policy in the UI | Abhishek | Done |
-| 8–9 | Reference buyer console; declarative conformance engine | Abhishek | Done |
+| 8–9 | Reference buyer console; declarative conformance engine, validated on BPI Challenge 2019 | Abhishek | Done |
 | 9–10 | Attention model and confound check; question templates | Abhishek | Done |
 | 10–12 | Documentation, deployment (Hugging Face Space), demo video | Abhishek | In progress |
-| After | Human review of the labels; BPI 2019 run; contribution route; one-state pilot with a DVDMS export | Abhishek, with a state partner | Planned |
+| After | Human review of the labels; contribution route; one-state pilot with a DVDMS export | Abhishek, with a state partner | Planned |
 
 ## 12. Deployment and cost
 
@@ -177,11 +180,12 @@ A solo project: every task is owned by Abhishek Jadli.
 - CDSCO NSQ alerts: [public NSQ portal](https://cdscoonline.gov.in/CDSCO/Drugs) and [monthly alert PDFs](https://cdsco.gov.in/opencms/opencms/en/Notifications/Alerts/)
 - [IndiaMedToday: over 3,000 drug samples declared NSQ in 2024–25](https://indiamedtoday.com/over-3000-drug-samples-declared-not-of-standard-quality-in-2024-25-nadda/)
 - [IANS: 211 samples NSQ in October 2025](https://ianslive.in/cdsco-labs-flag-211-drug-samples-as-not-of-standard-quality-in-october--20251121110525)
-- ETV Bharat, 15 October 2025: Coldrif deaths (24 as of that date)
+- [ETV Bharat, 15 October 2025: Coldrif death toll reaches 24](https://www.etvbharat.com/en/bharat/madhya-pradesh-coldrif-cough-syrup-fatality-count-rises-after-many-children-die-enn25101506375)
+- [Deccan Herald: Rajasthan halts distribution of Kaysons Pharma drugs, suspends the drug controller](https://www.deccanherald.com/amp/story/india%2Frajasthan%2Fcough-syrup-row-rajasthan-government-suspends-drug-controller-halts-distribution-of-kaysons-pharma-drugs-3752117)
 - [Down To Earth: cough syrup deaths in Rajasthan](https://www.downtoearth.org.in/amp/story/health/cough-syrup-deaths-in-rajasthan-families-allege-negligence-while-government-denies-link-to-medicine)
 - [The South First: WHO alert, child deaths in The Gambia](https://thesouthfirst.com/health/who-issues-alert-as-syrups-manufactured-by-indian-firm-are-linked-to-deaths-of-66-children-in-gambia)
 - [DT Next: CDSCO starts risk-based inspection in 6 states](https://www.dtnext.in/amp/story/news/national/cough-syrup-deaths-cdsco-starts-risk-based-inspection-at-manufacturing-units-in-6-states-848582)
 - [MoHFW letter on DVDMS, May 2025](https://qps.nhsrcindia.org/sites/default/files/2025-05/DO-States%20-%20To%20Update%20Nomenclature%20of%20Facilities%20on%20DVDMS%20as%20Per%20IPHS.pdf)
 - [JMHIDPCL: flow chart of quality clearance](https://jmhidpcl.jharkhand.gov.in/uploads/Flow-Chart-QC.pdf); [Deccan Herald: drug quarantine policy](https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fquarantine-likely-for-drugs-until-they-pass-sample-tests-3480932)
-- van Dongen, B.F. (2019), BPI Challenge 2019, 4TU.ResearchData, doi:10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1
+- van Dongen, B.F. (2019), BPI Challenge 2019, 4TU.ResearchData, doi:10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1; [ICPM 2019 challenge page](https://icpmconference.org/2019/?p=302)
 - [pm4py on PyPI (AGPL-3.0)](https://pypi.org/project/pm4py)

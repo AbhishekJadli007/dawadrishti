@@ -108,6 +108,7 @@ def review_queue() -> list[dict]:
     g = d.groupby("key").agg(spellings=("manufacturer_name", lambda s: sorted(s.unique().tolist())[:4]),
                              alerts=("finding_id", "size"), states=("state", lambda s: sorted(set(s))),
                              unit=("manufacturer_id", "first"), firm=("firm_id", "first"))
+    must, cannot = entities.load_decisions()
     keys = g.index.tolist()
     blocks: dict = {}
     for i, k in enumerate(keys):
@@ -121,9 +122,12 @@ def review_queue() -> list[dict]:
                 if s < REVIEW_FLOOR or s >= 100:
                     continue
                 merged = a.firm == b.firm
-                if not merged and s >= entities.FIRM_THRESHOLD:
+                pair = frozenset((a.name, b.name))
+                decided = "same" if pair in must else "different" if pair in cannot else None
+                if not merged and s >= entities.FIRM_THRESHOLD and not decided:
                     continue
-                out.append({"score": round(s, 1), "status": "merged automatically" if merged else "not merged: needs a decision",
+                status = (f"reviewer: {decided}" if decided else "merged automatically" if merged else "not merged: needs a decision")
+                out.append({"score": round(s, 1), "status": status,
                             "a": a.spellings, "b": b.spellings, "a_alerts": int(a.alerts), "b_alerts": int(b.alerts),
                             "a_states": a.states, "b_states": b.states, "a_firm": a.firm, "b_firm": b.firm})
     # the decisions that move the most alerts first
@@ -141,8 +145,54 @@ def population() -> dict:
             "max_spellings_in_one_unit": int(per_unit.max())}
 
 
+LABELS = C.DATA / "er" / "labelled_pairs.csv"
+
+
+def load_labels() -> tuple[pd.DataFrame, dict]:
+    """Labelled pairs, with a person's label (human_label) replacing the assistant's wherever one exists."""
+    pairs = pd.read_csv(LABELS).fillna({"note": ""})
+    if "human_label" not in pairs:
+        pairs["human_label"] = pd.NA
+    h = pairs.human_label.notna()
+    info = {"reviewed_by_a_person": int(h.sum()), "of": int(len(pairs))}
+    if h.any():
+        info["assistant_agreement_with_person"] = round(float((pairs.same_firm[h] == pairs.human_label[h].astype(int)).mean()), 3)
+        pairs.loc[h, "same_firm"] = pairs.human_label[h].astype(int)
+    return pairs, info
+
+
+def review_labels(which: str = "all"):
+    """Terminal tool: label each pair yourself without seeing the assistant's label. Saves after every answer."""
+    pairs = pd.read_csv(LABELS)
+    for c in ("human_label", "reviewer"):
+        if c not in pairs:
+            pairs[c] = pd.NA
+    pairs["human_label"] = pairs.human_label.astype("object")
+    pairs["reviewer"] = pairs.reviewer.astype("object")
+    who = input("Your name (saved with each label): ").strip() or "reviewer"
+    todo = [i for i in pairs.index if pd.isna(pairs.at[i, "human_label"]) and (which == "all" or pairs.at[i, "set"] == which)]
+    print(f"{len(todo)} pairs to review. Answer y (same firm), n (different), s (skip), q (quit). Your answers are saved as you go.")
+    for k, i in enumerate(todo, 1):
+        r = pairs.loc[i]
+        print(f"\n[{k}/{len(todo)}] pair {r.pair_id}")
+        print(f"  A: {r.name_a}  ({r.state_a})\n     {r.addr_a}")
+        print(f"  B: {r.name_b}  ({r.state_b})\n     {r.addr_b}")
+        ans = ""
+        while ans not in ("y", "n", "s", "q"):
+            ans = input("  Same firm? [y/n/s/q] ").strip().lower()[:1]
+        if ans == "q":
+            break
+        if ans == "s":
+            continue
+        pairs.at[i, "human_label"] = 1 if ans == "y" else 0
+        pairs.at[i, "reviewer"] = who
+        pairs.to_csv(LABELS, index=False)
+    done = pairs.human_label.notna().sum()
+    print(f"\n{done} of {len(pairs)} pairs now have a person's label. Run: python -m dawadrishti.entity_eval")
+
+
 def run() -> dict:
-    pairs = pd.read_csv(C.DATA / "er" / "labelled_pairs.csv").fillna({"note": ""})
+    pairs, human = load_labels()
     sets = {"dev": pairs[pairs.set == "dev"], "test": pairs[pairs.set == "test"]}
     sure = pairs[(pairs.set == "test") & (pairs.confidence == "sure")]
     table = []
@@ -162,8 +212,10 @@ def run() -> dict:
     out = {
         "labelled": {"dev": int(len(sets["dev"])), "test": int(len(sets["test"])),
                      "positives": {k: int(v.same_firm.sum()) for k, v in sets.items()},
-                     "unsure": int((pairs.confidence == "unsure").sum()),
-                     "labelled_by": "assistant from names and addresses; every label awaits human review"},
+                     "unsure": int((pairs.confidence == "unsure").sum()), "human_review": human,
+                     "labelled_by": ("assistant from names and addresses; every label awaits human review" if not human["reviewed_by_a_person"]
+                                     else f"assistant, with {human['reviewed_by_a_person']} of {human['of']} labels reviewed by a person "
+                                          f"(agreement {human.get('assistant_agreement_with_person', 0):.0%}); a person's label wins")},
         "population": population(),
         "rules": [{"rule": r, "why": w} for r, w in RULE_NOTES],
         "matchers": table, "sweep": sweep, "chosen": chosen,
@@ -187,7 +239,12 @@ RULE_NOTES = [
 ]
 
 
-def main():
+def main(argv=None):
+    import sys
+    args = sys.argv[1:] if argv is None else argv
+    if args and args[0] == "--review":
+        review_labels(args[1] if len(args) > 1 else "all")
+        return
     out = run()
     print("population:", out["population"])
     for row in out["matchers"]:

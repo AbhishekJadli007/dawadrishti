@@ -11,3 +11,7 @@ data/*.log
 *.duckdb.wal
 .env
 .DS_Store
+
+# external event logs (BPI Challenge 2019 is 728 MB; GitHub rejects files over 100 MB)
+*.xes
+*.xes.gz

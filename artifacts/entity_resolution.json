@@ -7,6 +7,10 @@
    "test": 56
   },
   "unsure": 16,
+  "human_review": {
+   "reviewed_by_a_person": 0,
+   "of": 200
+  },
   "labelled_by": "assistant from names and addresses; every label awaits human review"
  },
  "population": {

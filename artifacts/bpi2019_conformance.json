@@ -1,0 +1,196 @@
+{
+ "source": "BPI Challenge 2019 (4TU.ResearchData, doi:10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1)",
+ "events": 1595923,
+ "cases": 251734,
+ "purchase_documents": 76349,
+ "activities": 42,
+ "reader_check": {
+  "published": {
+   "events": 1595923,
+   "cases": 251734,
+   "purchase_documents": 76349,
+   "activities": 42
+  },
+  "ours": {
+   "events": 1595923,
+   "cases": 251734,
+   "purchase_documents": 76349,
+   "activities": 42
+  },
+  "all_match": true
+ },
+ "item_categories": {
+  "3-way match, invoice before GR": 221010,
+  "3-way match, invoice after GR": 15182,
+  "Consignment": 14498,
+  "2-way match": 1044
+ },
+ "gr_based_invoice_verification_share": {
+  "2-way match": 0.0,
+  "3-way match, invoice after GR": 1.0,
+  "3-way match, invoice before GR": 0.0,
+  "Consignment": 0.0
+ },
+ "p1_by_category": {
+  "3-way match, invoice before GR": 654,
+  "3-way match, invoice after GR": 1
+ },
+ "rules": [
+  {
+   "id": "P1",
+   "name": "Invoice cleared (paid) before goods receipt, 3-way match",
+   "kind": "precedence",
+   "a": "Record Goods Receipt",
+   "b": "Clear Invoice",
+   "days": null,
+   "when": {
+    "Item Category": [
+     "3-way match, invoice after GR",
+     "3-way match, invoice before GR"
+    ]
+   },
+   "violating_cases": 655,
+   "cases_in_scope": 236192,
+   "share": 0.0028
+  },
+  {
+   "id": "P2",
+   "name": "Invoice recorded before goods receipt where the contract says invoice after GR",
+   "kind": "precedence",
+   "a": "Record Goods Receipt",
+   "b": "Record Invoice Receipt",
+   "days": null,
+   "when": {
+    "Item Category": [
+     "3-way match, invoice after GR"
+    ]
+   },
+   "violating_cases": 0,
+   "cases_in_scope": 15182,
+   "share": 0.0
+  },
+  {
+   "id": "P3",
+   "name": "Goods received before the purchase order item existed",
+   "kind": "precedence",
+   "a": "Create Purchase Order Item",
+   "b": "Record Goods Receipt",
+   "days": null,
+   "when": {},
+   "violating_cases": 0,
+   "cases_in_scope": 251734,
+   "share": 0.0
+  },
+  {
+   "id": "P4",
+   "name": "Invoice cleared without an invoice receipt",
+   "kind": "requires",
+   "a": "Record Invoice Receipt",
+   "b": "Clear Invoice",
+   "days": null,
+   "when": {},
+   "violating_cases": 384,
+   "cases_in_scope": 251734,
+   "share": 0.0015
+  }
+ ],
+ "dawadrishti_analogue": {
+  "P1": "R4 payment before clearance",
+  "P2": "R4 payment before clearance (document order)",
+  "P3": "order discipline (no receipt without an order)",
+  "P4": "R4 (payment without its control document)"
+ },
+ "reading": "Rules the system enforces show zero violations: every 'invoice after GR' item has goods-receipt-based invoice verification switched on, and no invoice was recorded before its goods receipt. Rules that are only policy show violations: invoices cleared for payment before the goods were received.",
+ "top_edges": [
+  {
+   "source": "Record Service Entry Sheet",
+   "target": "Record Service Entry Sheet",
+   "count": 139107,
+   "mean_wait_days": 0.0
+  },
+  {
+   "source": "Record Invoice Receipt",
+   "target": "Clear Invoice",
+   "count": 134955,
+   "mean_wait_days": 43.72
+  },
+  {
+   "source": "Record Goods Receipt",
+   "target": "Record Invoice Receipt",
+   "count": 112182,
+   "mean_wait_days": 21.64
+  },
+  {
+   "source": "Vendor creates invoice",
+   "target": "Record Goods Receipt",
+   "count": 110215,
+   "mean_wait_days": 2.46
+  },
+  {
+   "source": "Create Purchase Order Item",
+   "target": "Vendor creates invoice",
+   "count": 103150,
+   "mean_wait_days": 11.95
+  },
+  {
+   "source": "Vendor creates invoice",
+   "target": "Record Invoice Receipt",
+   "count": 95218,
+   "mean_wait_days": 12.56
+  },
+  {
+   "source": "Record Goods Receipt",
+   "target": "Vendor creates invoice",
+   "count": 80616,
+   "mean_wait_days": 3.3
+  },
+  {
+   "source": "Create Purchase Order Item",
+   "target": "Record Goods Receipt",
+   "count": 77206,
+   "mean_wait_days": 15.38
+  },
+  {
+   "source": "Record Goods Receipt",
+   "target": "Record Goods Receipt",
+   "count": 54277,
+   "mean_wait_days": 0.28
+  },
+  {
+   "source": "Remove Payment Block",
+   "target": "Clear Invoice",
+   "count": 49424,
+   "mean_wait_days": 36.33
+  },
+  {
+   "source": "Create Purchase Requisition Item",
+   "target": "Create Purchase Order Item",
+   "count": 46125,
+   "mean_wait_days": 0.94
+  },
+  {
+   "source": "Record Invoice Receipt",
+   "target": "Remove Payment Block",
+   "count": 37621,
+   "mean_wait_days": 21.35
+  },
+  {
+   "source": "Create Purchase Order Item",
+   "target": "Receive Order Confirmation",
+   "count": 30837,
+   "mean_wait_days": 0.66
+  },
+  {
+   "source": "Record Goods Receipt",
+   "target": "Record Service Entry Sheet",
+   "count": 23151,
+   "mean_wait_days": 0.04
+  },
+  {
+   "source": "Receive Order Confirmation",
+   "target": "Record Goods Receipt",
+   "count": 20398,
+   "mean_wait_days": 7.96
+  }
+ ]
+}

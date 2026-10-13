@@ -6,7 +6,9 @@ signal for buyers, not a blacklist.**
 1. **Public pages show the record, never a prediction.**
    - The public lookup and the manufacturer page show only what CDSCO published: alert month, product, failure, lab, batch.
    - Predicted scores and ranked lists of named firms appear only in the buyer view.
-   - In a deployment the buyer view sits behind a buyer or regulator login. In this prototype it is a switch in the header, and it is labelled.
+   - The API enforces this, not just the web page. Public responses from `/api/v1/lookup` and `/api/risk` carry no score and no ranked list.
+   - With `DAWADRISHTI_BUYER_KEY` set on the server, the buyer view needs that key, sent as the `X-Buyer-Key` header.
+   - The public demo runs without a key, and every buyer response then states "open demo".
 2. **Every figure has an as-of date.** Each lookup returns `data_as_of` (the latest alert month loaded) and `generated_at`.
 3. **Every page says what the data does not contain:**
    - passing batches, so there is no failure rate;

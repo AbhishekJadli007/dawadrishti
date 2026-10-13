@@ -53,7 +53,7 @@ export default function ErpDesk({ openMfr }: { openMfr: (id: string) => void }) 
       <SectionTitle eyebrow="Reference buyer console · simulated buyers" title="What the memory changes inside a buyer's ERP"
         sub="Two moments: a purchase order is checked against the national record (graded response, with the supply position beside it), and a received batch cannot be issued until the lab clears it. The buyers, orders and debarments here are simulated; the national record behind each supplier is real."
         right={
-          <div className="flex flex-wrap gap-1 rounded-xl bg-surface border border-line p-1">
+          <div className="flex flex-wrap gap-1 rounded-xl bg-surface border border-line p-1 max-w-full">
             {m.buyers.map((b: any) => (
               <button key={b.buyer_id} onClick={() => setBuyer(b.buyer_id)} className={clsx('px-3 py-1.5 rounded-lg text-xs', buyer === b.buyer_id ? 'bg-surface-3 text-ink' : 'text-muted hover:text-ink')}>{b.name}</button>
             ))}
@@ -62,7 +62,7 @@ export default function ErpDesk({ openMfr }: { openMfr: (id: string) => void }) 
       {err && <ErrorNote error={err} />}
 
       <div className="grid xl:grid-cols-[1fr_1.15fr] gap-5 items-start">
-        <Card className="p-5">
+        <Card className="p-5 min-w-0">
           <div className="flex items-center gap-2 font-display font-semibold"><Truck size={17} className="text-ours" /> New purchase order · {buyerName}</div>
           <div className="grid grid-cols-[1fr_120px] gap-3 mt-4">
             <label className="text-xs text-muted">Item (from the national product master)
@@ -112,7 +112,7 @@ export default function ErpDesk({ openMfr }: { openMfr: (id: string) => void }) 
           </AnimatePresence>
         </Card>
 
-        <Card className="p-5">
+        <Card className="p-5 min-w-0">
           <div className="flex items-center gap-2 font-display font-semibold"><ClipboardCheck size={17} className="text-ours" /> Quality-control queue · test the riskiest first</div>
           <p className="text-xs text-muted mt-1">Open batches for {buyerName}, ordered by the batch-risk score. Issue is refused until a batch is cleared.
             {batchEval && <> On held-out simulated 2026 batches, testing in this order caught {fmtPct(batchEval['DawaDrishti risk order'].caught_in_first_30pct)} of failing batches in the first 30% of tests, against {fmtPct(batchEval['First in, first out'].caught_in_first_30pct)} first-in-first-out.</>}</p>
@@ -130,7 +130,13 @@ export default function ErpDesk({ openMfr }: { openMfr: (id: string) => void }) 
                     <td className="pr-2"><Badge tone={r.qc_status === 'cleared' ? 'good' : r.qc_status === 'held' ? 'bad' : r.qc_status === 'quarantine' ? 'warn' : 'neutral'}>{r.qc_status}</Badge></td>
                     <td className="pr-2 w-24">{r.risk_score != null && <div className="flex items-center gap-1.5"><span className="w-12 h-1.5 rounded bg-surface-3 overflow-hidden"><span className="block h-full bg-blood" style={{ width: `${Math.min(100, 100 * r.risk_score / 0.3)}%` }} /></span><span className="text-[11px] num text-muted">{(100 * r.risk_score).toFixed(0)}%</span></div>}</td>
                     <td className="text-right whitespace-nowrap space-x-1">
-                      {r.qc_status === 'ordered' && <Button variant="ghost" className="!py-1 !px-2 text-xs" onClick={() => act(() => api.receive(r.batch_id), (x) => ({ tone: 'warn', text: `Received and quarantined. Risk score ${(100 * x.risk_score).toFixed(0)}%. Sample coded and sent to the lab.` }))}><PackageCheck size={13} /> Receive</Button>}
+                      {r.qc_status === 'ordered' && <Button variant="ghost" className="!py-1 !px-2 text-xs" onClick={() => {
+                        const bn = window.prompt('Batch number printed on the received goods', `BN${Math.floor(100000 + Math.random() * 900000)}`)
+                        if (bn === null) return
+                        act(() => api.receive(r.batch_id, bn.trim()), (x) => x.status === 'held'
+                          ? { tone: 'bad', text: `Batch ${bn} is already on CDSCO's NSQ list (${x.national_alert_on_this_batch[0].month}, ${x.national_alert_on_this_batch[0].primary_failure}). Held on receipt; supplier notified.` }
+                          : { tone: 'warn', text: `Received and quarantined. No national alert on batch ${bn}. Risk score ${(100 * x.risk_score).toFixed(0)}%. Sample coded and sent to the lab.` })
+                      }}><PackageCheck size={13} /> Receive</Button>}
                       {r.qc_status === 'quarantine' && <>
                         <Button variant="ghost" className="!py-1 !px-2 text-xs" onClick={() => act(() => api.result(r.batch_id, true), (x) => ({ tone: 'good', text: x.actions.join(' ') }))}>Pass</Button>
                         <Button variant="ghost" className="!py-1 !px-2 text-xs" onClick={() => act(() => api.result(r.batch_id, false, 'Assay'), (x) => ({ tone: 'bad', text: x.actions.join(' ') }))}><PackageX size={13} /> Fail</Button>
@@ -157,7 +163,7 @@ function ContractPanel({ c }: { c: any }) {
       <div className="flex h-2 rounded overflow-hidden mt-2 bg-surface-3">
         {c.suppliers.map((s: any, i: number) => <div key={s.supplier_id} title={`${s.name}: ${fmtPct(s.share)}`} style={{ width: `${100 * s.share}%`, background: ['#22d3ee', '#a78bfa', '#f59e0b', '#34d399', '#fb7185'][i % 5] }} />)}
       </div>
-      <div className="grid grid-cols-3 gap-2 mt-2 text-[11px] text-muted num">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-2 mt-2 text-[11px] text-muted num">
         <div>largest supplier <b className="text-ink">{c.top_share != null ? fmtPct(c.top_share) : '–'}</b> of 12-month volume</div>
         <div>days of cover <b className="text-ink">{c.days_of_cover ?? '–'}</b>{c.days_of_cover_with_testing != null && c.days_of_cover_with_testing !== c.days_of_cover && <> ({c.days_of_cover_with_testing} incl. stock in testing)</>}</div>
         <div>daily use <b className="text-ink">{c.daily_use != null ? fmtInt(c.daily_use) : '–'}</b> units</div>

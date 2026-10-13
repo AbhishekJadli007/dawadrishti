@@ -21,7 +21,7 @@ def build():
              ("Warehouse: star schema", warehouse.main), ("Process mining", process.main), ("Conformance engine cross-check", lambda: conformance.main([])), ("Data mining", patterns.main),
              ("Risk models", risk.main), ("Live ERP seed", lambda: print("  seeded", service.seed_live(), "open batches")),
              ("Headline study: repeat failures in the national record", study.main),
-             ("Entity-resolution evaluation", entity_eval.main), ("Extraction audit: PDF vs portal", audit.main)]
+             ("Entity-resolution evaluation", lambda: entity_eval.main([])), ("Extraction audit: PDF vs portal", audit.main)]
     for name, fn in steps:
         t = time.time()
         print(f"== {name}")
