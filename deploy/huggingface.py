@@ -63,6 +63,25 @@ def stage(dst: Path) -> str:
     return sha
 
 
+def ensure_free_hardware(api, repo_id: str):
+    """A Space created on GPU hardware (e.g. ZeroGPU) cannot be moved to free CPU without a PRO plan.
+    If the existing Space is on paid/GPU hardware, offer to delete it so it can be re-created on cpu-basic."""
+    try:
+        rt = api.get_space_runtime(repo_id)
+    except Exception:
+        return                                   # the Space does not exist yet: create_repo makes it on cpu-basic
+    hw = rt.requested_hardware or rt.hardware
+    if hw in (None, "cpu-basic"):
+        return
+    files = [f.rfilename for f in (api.space_info(repo_id).siblings or [])]
+    print(f"\n  {repo_id} is set to '{hw}', which a free account cannot switch to free CPU.")
+    print(f"  It contains {len(files)} file(s): {', '.join(files[:6])}{' ...' if len(files) > 6 else ''}")
+    if input("  Type DELETE to delete it and re-create it on free CPU (anything else stops): ").strip() != "DELETE":
+        sys.exit("Stopped. Nothing was changed.")
+    api.delete_repo(repo_id, repo_type="space")
+    print("  deleted; re-creating on cpu-basic")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--space", default="dawadrishti")
@@ -78,18 +97,23 @@ def main():
     try:
         from huggingface_hub import HfApi
     except ImportError:
-        sys.exit("Install the uploader first:  pip install huggingface_hub")
+        sys.exit("Install the uploader into this Python first:  python -m pip install huggingface_hub")
     token = os.environ.get("HF_TOKEN") or getpass.getpass("Paste your Hugging Face WRITE token (typing is hidden): ").strip()
     api = HfApi(token=token)
     me = api.whoami()["name"]
     repo_id = f"{a.user or me}/{a.space}"
     print(f"logged in as {me}; deploying to {repo_id}")
+    ensure_free_hardware(api, repo_id)
     api.create_repo(repo_id, repo_type="space", space_sdk="gradio", space_hardware="cpu-basic", exist_ok=True)
     api.upload_folder(folder_path=str(dst), repo_id=repo_id, repo_type="space", commit_message=f"Deploy {sha}", delete_patterns=["*"])
     rt = api.get_space_runtime(repo_id)
     if rt.requested_hardware != "cpu-basic":
         print(f"switching hardware {rt.requested_hardware} -> cpu-basic (free)")
-        api.request_space_hardware(repo_id, "cpu-basic")
+        try:
+            api.request_space_hardware(repo_id, "cpu-basic")
+        except Exception as e:  # free accounts cannot downgrade a GPU Space; it must be re-created
+            sys.exit(f"Could not switch to free CPU ({e}).\nDelete the Space at https://huggingface.co/spaces/{repo_id}/settings "
+                     "(bottom of the page) and run this script again; it will be re-created on free CPU.")
     shutil.rmtree(dst, ignore_errors=True)
     sub = repo_id.lower().replace("/", "-").replace("_", "-").replace(".", "-")
     print(f"\nUploaded. Build log: https://huggingface.co/spaces/{repo_id}\nLive app:  https://{sub}.hf.space")
