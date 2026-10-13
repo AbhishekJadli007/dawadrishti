@@ -1,0 +1,12 @@
+# Serving only (the pipeline outputs are committed). Works on Python 3.10 and 3.11.
+numpy==2.2.6
+pandas==2.3.3
+duckdb==1.5.6
+scikit-learn==1.7.2
+rapidfuzz>=3.9
+joblib>=1.4
+requests>=2.31
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.7
+google-genai>=1.0

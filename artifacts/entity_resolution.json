@@ -1,0 +1,5879 @@
+{
+ "labelled": {
+  "dev": 120,
+  "test": 80,
+  "positives": {
+   "dev": 93,
+   "test": 56
+  },
+  "unsure": 16,
+  "labelled_by": "assistant from names and addresses; every label awaits human review"
+ },
+ "population": {
+  "rows": 6557,
+  "distinct_raw_strings": 5521,
+  "distinct_names": 2648,
+  "units": 1994,
+  "firms": 1797,
+  "units_with_several_spellings": 485,
+  "multi_state_firms": 154,
+  "max_spellings_in_one_unit": 14
+ },
+ "rules": [
+  {
+   "rule": "Drop prefixes such as \"Mfg By:\", \"M/s.\"",
+   "why": "42 rows began with \"Mfg By:\", so they never reached the right block"
+  },
+  {
+   "rule": "Drop the legal form: Pvt Ltd, Private Ltd, (P) Ltd, Limited, LLP, Inc",
+   "why": "\"Private Ltd\" and \"Pvt..Ltd\" were left in by v1"
+  },
+  {
+   "rule": "Treat \"(I)\", \"(India)\" and \"India\" as nothing",
+   "why": "\"Salud Care (I)\" and \"Salud Care (India)\""
+  },
+  {
+   "rule": "Map Pharmaceuticals and its misspellings to \"pharma\"",
+   "why": "\"Pharmaceticals\", \"Pharnaceuticals\", \"Pharmaceutica ls\""
+  },
+  {
+   "rule": "Map lab, healthcare, life sciences, bio sciences, biotech, formulation, industries to one form",
+   "why": "\"Life Sciences\" vs \"Lifesciences\", \"Helathcare\""
+  },
+  {
+   "rule": "Drop address residue at the end: \"No\", \"K. No\", \"Unit-II\"",
+   "why": "the name/address split sometimes leaves a plot number word"
+  },
+  {
+   "rule": "Compare with spaces removed",
+   "why": "\"NitinLifesciences\", \"J.M.Laboratories\", \"CyanoPharma\""
+  }
+ ],
+ "matchers": [
+  {
+   "matcher": "Exact name",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.086,
+     "f1": 0.158,
+     "tp": 8,
+     "fp": 0,
+     "fn": 85,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.043,
+     "f1": 0.083,
+     "tp": 3,
+     "fp": 0,
+     "fn": 66,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 56,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 49,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 52,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 46,
+     "n": 71
+    }
+   }
+  },
+  {
+   "matcher": "Normalised name, v1 rules",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.323,
+     "f1": 0.488,
+     "tp": 30,
+     "fp": 0,
+     "fn": 63,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.319,
+     "f1": 0.484,
+     "tp": 22,
+     "fp": 0,
+     "fn": 47,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.125,
+     "f1": 0.222,
+     "tp": 7,
+     "fp": 0,
+     "fn": 49,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.122,
+     "f1": 0.218,
+     "tp": 6,
+     "fp": 0,
+     "fn": 43,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.135,
+     "f1": 0.237,
+     "tp": 7,
+     "fp": 0,
+     "fn": 45,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.13,
+     "f1": 0.231,
+     "tp": 6,
+     "fp": 0,
+     "fn": 40,
+     "n": 71
+    }
+   }
+  },
+  {
+   "matcher": "Fuzzy ≥92, v1 rules (before fixes)",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.696,
+     "f1": 0.821,
+     "tp": 48,
+     "fp": 0,
+     "fn": 21,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.482,
+     "f1": 0.651,
+     "tp": 27,
+     "fp": 0,
+     "fn": 29,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.408,
+     "f1": 0.58,
+     "tp": 20,
+     "fp": 0,
+     "fn": 29,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667,
+     "tp": 26,
+     "fp": 0,
+     "fn": 26,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.435,
+     "f1": 0.606,
+     "tp": 20,
+     "fp": 0,
+     "fn": 26,
+     "n": 71
+    }
+   }
+  },
+  {
+   "matcher": "Normalised name, v2 rules",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.71,
+     "f1": 0.831,
+     "tp": 49,
+     "fp": 0,
+     "fn": 20,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.179,
+     "f1": 0.303,
+     "tp": 10,
+     "fp": 0,
+     "fn": 46,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.184,
+     "f1": 0.31,
+     "tp": 9,
+     "fp": 0,
+     "fn": 40,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.192,
+     "f1": 0.323,
+     "tp": 10,
+     "fp": 0,
+     "fn": 42,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.196,
+     "f1": 0.327,
+     "tp": 9,
+     "fp": 0,
+     "fn": 37,
+     "n": 71
+    }
+   }
+  },
+  {
+   "matcher": "Fuzzy ≥92, v2 rules",
+   "dev": {
+    "firm": {
+     "precision": 0.989,
+     "recall": 0.946,
+     "f1": 0.967,
+     "tp": 88,
+     "fp": 1,
+     "fn": 5,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.928,
+     "f1": 0.962,
+     "tp": 64,
+     "fp": 0,
+     "fn": 5,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.625,
+     "f1": 0.769,
+     "tp": 35,
+     "fp": 0,
+     "fn": 21,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.571,
+     "f1": 0.727,
+     "tp": 28,
+     "fp": 0,
+     "fn": 21,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.615,
+     "f1": 0.762,
+     "tp": 32,
+     "fp": 0,
+     "fn": 20,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.565,
+     "f1": 0.722,
+     "tp": 26,
+     "fp": 0,
+     "fn": 20,
+     "n": 71
+    }
+   }
+  },
+  {
+   "matcher": "Fuzzy ≥92, v2 rules + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.839,
+     "f1": 0.912,
+     "tp": 78,
+     "fp": 0,
+     "fn": 15,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.841,
+     "f1": 0.913,
+     "tp": 58,
+     "fp": 0,
+     "fn": 11,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.482,
+     "f1": 0.651,
+     "tp": 27,
+     "fp": 0,
+     "fn": 29,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.449,
+     "f1": 0.62,
+     "tp": 22,
+     "fp": 0,
+     "fn": 27,
+     "n": 80
+    }
+   },
+   "test_sure_only": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.481,
+     "f1": 0.649,
+     "tp": 25,
+     "fp": 0,
+     "fn": 27,
+     "n": 71
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.435,
+     "f1": 0.606,
+     "tp": 20,
+     "fp": 0,
+     "fn": 26,
+     "n": 71
+    }
+   }
+  }
+ ],
+ "sweep": [
+  {
+   "threshold": 80,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.869,
+     "recall": 1.0,
+     "f1": 0.93,
+     "tp": 93,
+     "fp": 14,
+     "fn": 0,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.958,
+     "recall": 1.0,
+     "f1": 0.979,
+     "tp": 69,
+     "fp": 3,
+     "fn": 0,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.797,
+     "recall": 0.982,
+     "f1": 0.88,
+     "tp": 55,
+     "fp": 14,
+     "fn": 1,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.923,
+     "recall": 0.98,
+     "f1": 0.95,
+     "tp": 48,
+     "fp": 4,
+     "fn": 1,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 80,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 0.932,
+     "recall": 0.882,
+     "f1": 0.906,
+     "tp": 82,
+     "fp": 6,
+     "fn": 11,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.954,
+     "recall": 0.899,
+     "f1": 0.925,
+     "tp": 62,
+     "fp": 3,
+     "fn": 7,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.978,
+     "recall": 0.786,
+     "f1": 0.871,
+     "tp": 44,
+     "fp": 1,
+     "fn": 12,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.975,
+     "recall": 0.796,
+     "f1": 0.876,
+     "tp": 39,
+     "fp": 1,
+     "fn": 10,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 84,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.939,
+     "recall": 0.989,
+     "f1": 0.963,
+     "tp": 92,
+     "fp": 6,
+     "fn": 1,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.986,
+     "recall": 0.986,
+     "f1": 0.986,
+     "tp": 68,
+     "fp": 1,
+     "fn": 1,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.869,
+     "recall": 0.946,
+     "f1": 0.906,
+     "tp": 53,
+     "fp": 8,
+     "fn": 3,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.939,
+     "recall": 0.939,
+     "f1": 0.939,
+     "tp": 46,
+     "fp": 3,
+     "fn": 3,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 84,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 0.964,
+     "recall": 0.86,
+     "f1": 0.909,
+     "tp": 80,
+     "fp": 3,
+     "fn": 13,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.984,
+     "recall": 0.87,
+     "f1": 0.923,
+     "tp": 60,
+     "fp": 1,
+     "fn": 9,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.976,
+     "recall": 0.714,
+     "f1": 0.825,
+     "tp": 40,
+     "fp": 1,
+     "fn": 16,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.972,
+     "recall": 0.714,
+     "f1": 0.824,
+     "tp": 35,
+     "fp": 1,
+     "fn": 14,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 86,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.957,
+     "recall": 0.968,
+     "f1": 0.963,
+     "tp": 90,
+     "fp": 4,
+     "fn": 3,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.985,
+     "recall": 0.957,
+     "f1": 0.971,
+     "tp": 66,
+     "fp": 1,
+     "fn": 3,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.962,
+     "recall": 0.893,
+     "f1": 0.926,
+     "tp": 50,
+     "fp": 2,
+     "fn": 6,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.977,
+     "recall": 0.878,
+     "f1": 0.925,
+     "tp": 43,
+     "fp": 1,
+     "fn": 6,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 86,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 0.976,
+     "recall": 0.86,
+     "f1": 0.914,
+     "tp": 80,
+     "fp": 2,
+     "fn": 13,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.984,
+     "recall": 0.87,
+     "f1": 0.923,
+     "tp": 60,
+     "fp": 1,
+     "fn": 9,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.714,
+     "f1": 0.833,
+     "tp": 40,
+     "fp": 0,
+     "fn": 16,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.714,
+     "f1": 0.833,
+     "tp": 35,
+     "fp": 0,
+     "fn": 14,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 88,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.967,
+     "recall": 0.957,
+     "f1": 0.962,
+     "tp": 89,
+     "fp": 3,
+     "fn": 4,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.985,
+     "recall": 0.942,
+     "f1": 0.963,
+     "tp": 65,
+     "fp": 1,
+     "fn": 4,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.979,
+     "recall": 0.839,
+     "f1": 0.904,
+     "tp": 47,
+     "fp": 1,
+     "fn": 9,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.976,
+     "recall": 0.816,
+     "f1": 0.889,
+     "tp": 40,
+     "fp": 1,
+     "fn": 9,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 88,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 0.975,
+     "recall": 0.849,
+     "f1": 0.908,
+     "tp": 79,
+     "fp": 2,
+     "fn": 14,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.983,
+     "recall": 0.855,
+     "f1": 0.915,
+     "tp": 59,
+     "fp": 1,
+     "fn": 10,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.661,
+     "f1": 0.796,
+     "tp": 37,
+     "fp": 0,
+     "fn": 19,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.653,
+     "f1": 0.79,
+     "tp": 32,
+     "fp": 0,
+     "fn": 17,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 90,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.978,
+     "recall": 0.957,
+     "f1": 0.967,
+     "tp": 89,
+     "fp": 2,
+     "fn": 4,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.985,
+     "recall": 0.942,
+     "f1": 0.963,
+     "tp": 65,
+     "fp": 1,
+     "fn": 4,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.804,
+     "f1": 0.891,
+     "tp": 45,
+     "fp": 0,
+     "fn": 11,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.776,
+     "f1": 0.874,
+     "tp": 38,
+     "fp": 0,
+     "fn": 11,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 90,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 0.988,
+     "recall": 0.849,
+     "f1": 0.913,
+     "tp": 79,
+     "fp": 1,
+     "fn": 14,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.855,
+     "f1": 0.922,
+     "tp": 59,
+     "fp": 0,
+     "fn": 10,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.643,
+     "f1": 0.783,
+     "tp": 36,
+     "fp": 0,
+     "fn": 20,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.633,
+     "f1": 0.775,
+     "tp": 31,
+     "fp": 0,
+     "fn": 18,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 92,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.989,
+     "recall": 0.946,
+     "f1": 0.967,
+     "tp": 88,
+     "fp": 1,
+     "fn": 5,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.928,
+     "f1": 0.962,
+     "tp": 64,
+     "fp": 0,
+     "fn": 5,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.625,
+     "f1": 0.769,
+     "tp": 35,
+     "fp": 0,
+     "fn": 21,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.571,
+     "f1": 0.727,
+     "tp": 28,
+     "fp": 0,
+     "fn": 21,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 92,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.839,
+     "f1": 0.912,
+     "tp": 78,
+     "fp": 0,
+     "fn": 15,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.841,
+     "f1": 0.913,
+     "tp": 58,
+     "fp": 0,
+     "fn": 11,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.482,
+     "f1": 0.651,
+     "tp": 27,
+     "fp": 0,
+     "fn": 29,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.449,
+     "f1": 0.62,
+     "tp": 22,
+     "fp": 0,
+     "fn": 27,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 94,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 0.989,
+     "recall": 0.925,
+     "f1": 0.956,
+     "tp": 86,
+     "fp": 1,
+     "fn": 7,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.913,
+     "f1": 0.955,
+     "tp": 63,
+     "fp": 0,
+     "fn": 6,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.536,
+     "f1": 0.698,
+     "tp": 30,
+     "fp": 0,
+     "fn": 26,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.51,
+     "f1": 0.676,
+     "tp": 25,
+     "fp": 0,
+     "fn": 24,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 94,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.839,
+     "f1": 0.912,
+     "tp": 78,
+     "fp": 0,
+     "fn": 15,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.841,
+     "f1": 0.913,
+     "tp": 58,
+     "fp": 0,
+     "fn": 11,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.393,
+     "f1": 0.564,
+     "tp": 22,
+     "fp": 0,
+     "fn": 34,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.388,
+     "f1": 0.559,
+     "tp": 19,
+     "fp": 0,
+     "fn": 30,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 96,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.849,
+     "f1": 0.919,
+     "tp": 79,
+     "fp": 0,
+     "fn": 14,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.841,
+     "f1": 0.913,
+     "tp": 58,
+     "fp": 0,
+     "fn": 11,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.393,
+     "f1": 0.564,
+     "tp": 22,
+     "fp": 0,
+     "fn": 34,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.388,
+     "f1": 0.559,
+     "tp": 19,
+     "fp": 0,
+     "fn": 30,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 96,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.806,
+     "f1": 0.893,
+     "tp": 75,
+     "fp": 0,
+     "fn": 18,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.797,
+     "f1": 0.887,
+     "tp": 55,
+     "fp": 0,
+     "fn": 14,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.375,
+     "f1": 0.545,
+     "tp": 21,
+     "fp": 0,
+     "fn": 35,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.367,
+     "f1": 0.537,
+     "tp": 18,
+     "fp": 0,
+     "fn": 31,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 98,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.71,
+     "f1": 0.831,
+     "tp": 49,
+     "fp": 0,
+     "fn": 20,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.196,
+     "f1": 0.328,
+     "tp": 11,
+     "fp": 0,
+     "fn": 45,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.204,
+     "f1": 0.339,
+     "tp": 10,
+     "fp": 0,
+     "fn": 39,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 98,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.71,
+     "f1": 0.831,
+     "tp": 49,
+     "fp": 0,
+     "fn": 20,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.196,
+     "f1": 0.328,
+     "tp": 11,
+     "fp": 0,
+     "fn": 45,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.204,
+     "f1": 0.339,
+     "tp": 10,
+     "fp": 0,
+     "fn": 39,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 100,
+   "scorer": "v2",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.71,
+     "f1": 0.831,
+     "tp": 49,
+     "fp": 0,
+     "fn": 20,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.179,
+     "f1": 0.303,
+     "tp": 10,
+     "fp": 0,
+     "fn": 46,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.184,
+     "f1": 0.31,
+     "tp": 9,
+     "fp": 0,
+     "fn": 40,
+     "n": 80
+    }
+   }
+  },
+  {
+   "threshold": 100,
+   "scorer": "v2 + distinctive-word check",
+   "dev": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.699,
+     "f1": 0.823,
+     "tp": 65,
+     "fp": 0,
+     "fn": 28,
+     "n": 120
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.71,
+     "f1": 0.831,
+     "tp": 49,
+     "fp": 0,
+     "fn": 20,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 1.0,
+     "recall": 0.179,
+     "f1": 0.303,
+     "tp": 10,
+     "fp": 0,
+     "fn": 46,
+     "n": 80
+    },
+    "unit": {
+     "precision": 1.0,
+     "recall": 0.184,
+     "f1": 0.31,
+     "tp": 9,
+     "fp": 0,
+     "fn": 40,
+     "n": 80
+    }
+   }
+  }
+ ],
+ "chosen": "Fuzzy ≥92, v2 rules",
+ "with_human_review": {
+  "band": [
+   80,
+   92
+  ],
+  "recall_if_reviewers_confirm": {
+   "dev": {
+    "firm": {
+     "precision": 0.869,
+     "recall": 1.0,
+     "f1": 0.93,
+     "tp": 93,
+     "fp": 14,
+     "fn": 0,
+     "n": 120
+    },
+    "unit": {
+     "precision": 0.958,
+     "recall": 1.0,
+     "f1": 0.979,
+     "tp": 69,
+     "fp": 3,
+     "fn": 0,
+     "n": 120
+    }
+   },
+   "test": {
+    "firm": {
+     "precision": 0.797,
+     "recall": 0.982,
+     "f1": 0.88,
+     "tp": 55,
+     "fp": 14,
+     "fn": 1,
+     "n": 80
+    },
+    "unit": {
+     "precision": 0.923,
+     "recall": 0.98,
+     "f1": 0.95,
+     "tp": 48,
+     "fp": 4,
+     "fn": 1,
+     "n": 80
+    }
+   }
+  }
+ },
+ "test_errors": [
+  {
+   "set": "test",
+   "a": "Om Biomedic Pvt.Ltd",
+   "b": "Om Biometic Pvt.Ltd",
+   "score": 90.9,
+   "label": 1,
+   "error": "missed merge",
+   "note": "Biomedic vs Biometic: most likely a typo"
+  },
+  {
+   "set": "test",
+   "a": "Supermax Drugs & Drugs Pharmaceuticals Pvt. Ltd",
+   "b": "Supermax Drugs & Pharmaceutical Pvt. Ltd",
+   "score": 87.5,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Morepan Laboratories Ltd",
+   "b": "Morepen Laboratories Limited",
+   "score": 90.9,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Navkar Life Sciences",
+   "b": "Navkar Lifescienses",
+   "score": 91.9,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "LEGEND INDUSTRIES, Unit-II, Plot No. C1/200-201/4, Phase-II, Opp. Encore Ltd",
+   "b": "Legend Industries (Unit-II), C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",
+   "score": 88.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Athens Life Sciences Mauza Rampur",
+   "b": "Athens Lifesciences Mauza Rampur Jattan Nahan",
+   "score": 82.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Athens Life Sciences - Mauza-Rampur Jatten Nahan",
+   "b": "Athens Life Sciences Mauza Rampur Jattan",
+   "score": 90.2,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Alkem Health Science - Alkem Laboratories Limited",
+   "b": "Alkem Health Science, - A unit of Alkem Laboratories Limited",
+   "score": 85.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Mayasha Lifesciences",
+   "b": "Mayasha Lifesciences H.B",
+   "score": 90.5,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Alkem Health Science - Alkem Laboratories Limited",
+   "b": "Alkem Health Science, A unit of Alkem Laboratories Ltd",
+   "score": 85.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Konis Pharmaceuticals",
+   "b": "Konis Pharmaceuticals Krishna",
+   "score": 75.0,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Alkem Health Science - Alkem Laboratories Limited",
+   "b": "Alkem Health Sciences A Unit of Alkem Laboratories Ltd",
+   "score": 84.5,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Shervotech Pharmaceuticals",
+   "b": "Shervotee Pharmaceuticals",
+   "score": 90.9,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Reltsen Health Care",
+   "b": "Reltsen Healthcare Spl",
+   "score": 90.0,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Cosmas Pharmaceuticals Ltd",
+   "b": "Cosmas Pharmacls Ltd",
+   "score": 89.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Mayasha Lifesciences",
+   "b": "Mayasha Lifesciences - H.B",
+   "score": 90.5,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Standord Laboratories Pvt. Ltd",
+   "b": "Stanford Laboratories Pvt. Ltd",
+   "score": 91.7,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Legend Industries (Unit-II), C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",
+   "b": "Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd",
+   "score": 86.4,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Marc Lifesciences",
+   "b": "Marc Lifesciences Sikkim",
+   "score": 82.1,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd",
+   "b": "Legend Industries, (Unit-II) C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",
+   "score": 86.4,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  },
+  {
+   "set": "test",
+   "a": "Soft Touch Pharmaceuticals India Lt",
+   "b": "Soft Touch Pharmaceuticals India Ltd",
+   "score": 91.9,
+   "label": 1,
+   "error": "missed merge",
+   "note": ""
+  }
+ ],
+ "review_queue": [
+  {
+   "score": 90.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Orison Pharma International"
+   ],
+   "b": [
+    "Orison Pharma International Khari"
+   ],
+   "a_alerts": 11,
+   "b_alerts": 8,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00094",
+   "b_firm": "F00149"
+  },
+  {
+   "score": 82.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medinok Healthcare Pvt Ltd",
+    "Medinok Healthcare Pvt. Ltd",
+    "Medinok healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Medivision Healthcare",
+    "Medivision healthcare"
+   ],
+   "a_alerts": 8,
+   "b_alerts": 7,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00159",
+   "b_firm": "F00185"
+  },
+  {
+   "score": 97.4,
+   "status": "merged automatically",
+   "a": [
+    "ALKEM HEALTH SCIENCE, A unit of Alkem Laboratories Limited",
+    "Alkem Health Science A Unit of Alkem Laboratories Limited",
+    "Alkem Health Science, - A unit of Alkem Laboratories Limited",
+    "Alkem Health Science, A Unit Of Alkem Laboratories Limited"
+   ],
+   "b": [
+    "ALKEM HEALTH SCIENCE, Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science (Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science, Unit of Alkem Laboratories Ltd"
+   ],
+   "a_alerts": 21,
+   "b_alerts": 6,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00036",
+   "b_firm": "F00036"
+  },
+  {
+   "score": 97.0,
+   "status": "merged automatically",
+   "a": [
+    "Alliaance Biotech"
+   ],
+   "b": [
+    "Alliance Biotech"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 7,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00192",
+   "b_firm": "F00192"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Heal (India) Laboratories Pvt Ltd",
+    "Heal (India) Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Healer's Lab",
+    "Healer?s Lab"
+   ],
+   "a_alerts": 5,
+   "b_alerts": 30,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00265",
+   "b_firm": "F00016"
+  },
+  {
+   "score": 84.2,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Heal (India) Laboratories Pvt Ltd",
+    "Heal (India) Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Healers Lab"
+   ],
+   "a_alerts": 5,
+   "b_alerts": 17,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00265",
+   "b_firm": "F00016"
+  },
+  {
+   "score": 90.2,
+   "status": "merged automatically",
+   "a": [
+    "Athens Life Sciences Mauza Rampur Jattan"
+   ],
+   "b": [
+    "Athens Life Sciences - Mauza-Rampur Jatten Nahan",
+    "Athens Life Sciences Mauza-Rampur Jatten Nahan"
+   ],
+   "a_alerts": 9,
+   "b_alerts": 4,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00329",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 81.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Globela Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Globin Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 4,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00403",
+   "b_firm": "F00407"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Vivek Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Vivek Pharmachem (India) LTD",
+    "Vivek Pharmachem (India) Limited",
+    "Vivek Pharmachem (India) Ltd",
+    "Vivek Pharmachem(India) Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 44,
+   "a_states": [
+    "Jammu & Kashmir"
+   ],
+   "b_states": [
+    "Jammu & Kashmir",
+    "Rajasthan"
+   ],
+   "a_firm": "F00388",
+   "b_firm": "F00014"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Dr. Edwin Lab"
+   ],
+   "b": [
+    "Dr Edwin Medilabs Pvt Ltd",
+    "Dr. Edwin Medilabs Pvt Ltd",
+    "Dr. Edwin Medilabs Pvt. Ltd",
+    "Dr. Edwin Medilabs Pvt.Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 7,
+   "a_states": [
+    "Chandigarh",
+    "Punjab"
+   ],
+   "b_states": [
+    "Punjab",
+    "Unknown"
+   ],
+   "a_firm": "F00955",
+   "b_firm": "F00247"
+  },
+  {
+   "score": 83.3,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Healthwise Pharma"
+   ],
+   "b": [
+    "Healthy Life Pharma Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 12,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh",
+    "Maharashtra"
+   ],
+   "a_firm": "F00479",
+   "b_firm": "F00097"
+  },
+  {
+   "score": 90.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Mayasha Lifesciences"
+   ],
+   "b": [
+    "Mayasha Lifesciences - H.B",
+    "Mayasha Lifesciences H.B"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00415",
+   "b_firm": "F00528"
+  },
+  {
+   "score": 90.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Morepan Laboratories Ltd"
+   ],
+   "b": [
+    "Morepen Laboratories Limited",
+    "Morepen Laboratories Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 10,
+   "a_states": [
+    "Himachal Pradesh",
+    "Unknown"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00872",
+   "b_firm": "F00113"
+  },
+  {
+   "score": 83.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Pharma Cure Laboratories"
+   ],
+   "b": [
+    "Pharma Force Lab"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 4,
+   "a_states": [
+    "Punjab"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00504",
+   "b_firm": "F00351"
+  },
+  {
+   "score": 83.3,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Spas Remedise"
+   ],
+   "b": [
+    "SPAS Remedies",
+    "Spas Remedies"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00406",
+   "b_firm": "F00462"
+  },
+  {
+   "score": 96.0,
+   "status": "merged automatically",
+   "a": [
+    "Standford Laboratories Private Limited"
+   ],
+   "b": [
+    "Stanford Laboratories Private Limited",
+    "Stanford Laboratories Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00488",
+   "b_firm": "F00488"
+  },
+  {
+   "score": 94.1,
+   "status": "merged automatically",
+   "a": [
+    "Super Fomulations Pvt. Ltd"
+   ],
+   "b": [
+    "Super Formulation Pvt Ltd",
+    "Super Formulations Pvt Ltd",
+    "Super Formulations Pvt. Ltd",
+    "Super Formulations Pvt.Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 18,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00046",
+   "b_firm": "F00046"
+  },
+  {
+   "score": 97.3,
+   "status": "merged automatically",
+   "a": [
+    "Unimarck Healthcare Ltd"
+   ],
+   "b": [
+    "Unimark Healthcare Ltd"
+   ],
+   "a_alerts": 13,
+   "b_alerts": 3,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00082",
+   "b_firm": "F00082"
+  },
+  {
+   "score": 98.8,
+   "status": "merged automatically",
+   "a": [
+    "ALKEM HEALTH SCIENCE, A unit of Alkem Laboratories Limited",
+    "Alkem Health Science A Unit of Alkem Laboratories Limited",
+    "Alkem Health Science, - A unit of Alkem Laboratories Limited",
+    "Alkem Health Science, A Unit Of Alkem Laboratories Limited"
+   ],
+   "b": [
+    "Alkem Health Sciences A Unit of Alkem Laboratories Ltd"
+   ],
+   "a_alerts": 21,
+   "b_alerts": 2,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00036",
+   "b_firm": "F00036"
+  },
+  {
+   "score": 96.2,
+   "status": "merged automatically",
+   "a": [
+    "ALKEM HEALTH SCIENCE, Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science (Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science, Unit of Alkem Laboratories Ltd"
+   ],
+   "b": [
+    "Alkem Health Sciences A Unit of Alkem Laboratories Ltd"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 2,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00036",
+   "b_firm": "F00036"
+  },
+  {
+   "score": 97.8,
+   "status": "merged automatically",
+   "a": [
+    "Bengal Chemical & Pharmaceuticals Ltd",
+    "Bengal Chemical and Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Bengal Chemicals & Pharmaceuticals Ltd",
+    "Bengal Chemicals & Pharmaceuticlas Ltd",
+    "Bengal Chemicals And Pharmaceuticals",
+    "Bengal Chemicals and Pharmaceuticals Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 16,
+   "a_states": [
+    "West Bengal"
+   ],
+   "b_states": [
+    "Haryana",
+    "Himachal Pradesh",
+    "Madhya Pradesh",
+    "Outside India",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal"
+   ],
+   "a_firm": "F00176",
+   "b_firm": "F00176"
+  },
+  {
+   "score": 98.0,
+   "status": "merged automatically",
+   "a": [
+    "Bonn Schetering Bio Sciences"
+   ],
+   "b": [
+    "Bonn Schtering Bio Sciences",
+    "Bonn Schtering Biosciences"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 9,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F00132",
+   "b_firm": "F00132"
+  },
+  {
+   "score": 93.9,
+   "status": "merged automatically",
+   "a": [
+    "Bonn Schetering Bio Sciences"
+   ],
+   "b": [
+    "Bonn Stering Bio Science LLP"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F00132",
+   "b_firm": "F00132"
+  },
+  {
+   "score": 95.8,
+   "status": "merged automatically",
+   "a": [
+    "Bonn Schtering Bio Sciences",
+    "Bonn Schtering Biosciences"
+   ],
+   "b": [
+    "Bonn Stering Bio Science LLP"
+   ],
+   "a_alerts": 9,
+   "b_alerts": 2,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F00132",
+   "b_firm": "F00132"
+  },
+  {
+   "score": 83.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Century Drugs Pvt Ltd",
+    "Century Drugs Pvt. Ltd"
+   ],
+   "b": [
+    "Century Nova Drugs Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 2,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00427",
+   "b_firm": "F00774"
+  },
+  {
+   "score": 91.4,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Crest Lifesciences Pvt. Ltd"
+   ],
+   "b": [
+    "Crest Lifescoences Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 2,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00367",
+   "b_firm": "F00933"
+  },
+  {
+   "score": 91.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Deep Pharma"
+   ],
+   "b": [
+    "Deepin Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 15,
+   "b_alerts": 2,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00066",
+   "b_firm": "F00934"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Health Life Pharma, Pvt, Ltd"
+   ],
+   "b": [
+    "Healthwise Pharma"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 3,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00097",
+   "b_firm": "F00479"
+  },
+  {
+   "score": 97.3,
+   "status": "merged automatically",
+   "a": [
+    "Health Life Pharma, Pvt, Ltd"
+   ],
+   "b": [
+    "Healthy Life Pharma Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 12,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Himachal Pradesh",
+    "Maharashtra"
+   ],
+   "a_firm": "F00097",
+   "b_firm": "F00097"
+  },
+  {
+   "score": 86.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Hindustan Laboratories",
+    "Hindustan Laboratories Limited",
+    "Hindustan Laboratories Ltd"
+   ],
+   "b": [
+    "Hindustan Polyfab"
+   ],
+   "a_alerts": 22,
+   "b_alerts": 2,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00032",
+   "b_firm": "F00703"
+  },
+  {
+   "score": 81.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Inducare Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Indus Pharma Pvt. Ltd",
+    "Indus Pharma Pvt.Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 6,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Rajasthan"
+   ],
+   "a_firm": "F00652",
+   "b_firm": "F00208"
+  },
+  {
+   "score": 86.4,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd"
+   ],
+   "b": [
+    "Legend Industries (Unit-II), C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",
+    "Legend Industries, (Unit-II) C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00692",
+   "b_firm": "F00691"
+  },
+  {
+   "score": 81.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Life Line Pharma"
+   ],
+   "b": [
+    "Life Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "West Bengal"
+   ],
+   "a_firm": "F00651",
+   "b_firm": "F00666"
+  },
+  {
+   "score": 88.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Life Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Lifecom Pharmaceuticals (India) Pvt. Ltd",
+    "Lifecom Pharmaceuticals (India) Pvt.Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "West Bengal"
+   ],
+   "b_states": [
+    "Outside India",
+    "Uttarakhand"
+   ],
+   "a_firm": "F00666",
+   "b_firm": "F02022"
+  },
+  {
+   "score": 83.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "MEDICAMEN Biotech Ltd",
+    "Medicamen Biotech Ltd"
+   ],
+   "b": [
+    "Medion Biotech Pvt. Ltd",
+    "Medion Biotech Pvt.Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Rajasthan",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01813",
+   "b_firm": "F00608"
+  },
+  {
+   "score": 91.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medifine Pharma Lab",
+    "Medifine Pharma Lab No"
+   ],
+   "b": [
+    "Medivin (India) Pharma Lab"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Karnataka"
+   ],
+   "b_states": [
+    "Karnataka"
+   ],
+   "a_firm": "F00621",
+   "b_firm": "F00709"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medimark Drugs & Pharmaceuticals"
+   ],
+   "b": [
+    "Medirose Drugs & Pharmaceuticals",
+    "Medirose Drugs And Pharmaceuticals"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 2,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00416",
+   "b_firm": "F00705"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medion Biotech Pvt. Ltd",
+    "Medion Biotech Pvt.Ltd"
+   ],
+   "b": [
+    "Mediwell Biotech"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00608",
+   "b_firm": "F00547"
+  },
+  {
+   "score": 81.2,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medirin Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Medivin (India) Pharma Lab"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 2,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Karnataka"
+   ],
+   "a_firm": "F00615",
+   "b_firm": "F00709"
+  },
+  {
+   "score": 88.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medley Pharmaceutical Ltd",
+    "Medley Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Medline Pharmaceuticals Pvt Ltd",
+    "Medline Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 7,
+   "b_alerts": 2,
+   "a_states": [
+    "Daman, Diu & DNH",
+    "Jammu & Kashmir"
+   ],
+   "b_states": [
+    "Tamil Nadu"
+   ],
+   "a_firm": "F00279",
+   "b_firm": "F00670"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Micro Labs Limited",
+    "Micro labs Limited"
+   ],
+   "b": [
+    "Microwin Labs PVt Ltd",
+    "Microwin Labs Pvt Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 4,
+   "a_states": [
+    "Puducherry",
+    "Sikkim"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F01764",
+   "b_firm": "F00430"
+  },
+  {
+   "score": 94.7,
+   "status": "merged automatically",
+   "a": [
+    "Puniska Injectables Pvt Ltd",
+    "Puniska Injectables Pvt. Ltd"
+   ],
+   "b": [
+    "Puniska lnjectables Pvt.Ltd"
+   ],
+   "a_alerts": 7,
+   "b_alerts": 2,
+   "a_states": [
+    "Goa"
+   ],
+   "b_states": [
+    "Goa"
+   ],
+   "a_firm": "F00182",
+   "b_firm": "F00182"
+  },
+  {
+   "score": 83.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Shiva Biogenetic Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Shiva Biogenetic Pharmaceuticals (P) Ltd",
+    "Shiva biogenetic Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 2,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00236",
+   "b_firm": "F00680"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parentrals"
+   ],
+   "b": [
+    "Swiss Garnier Biotech",
+    "Swiss Garnier Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 4,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00362"
+  },
+  {
+   "score": 93.8,
+   "status": "merged automatically",
+   "a": [
+    "Vision Parental Pvt. Ltd"
+   ],
+   "b": [
+    "Vision Parenteral Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 3,
+   "a_states": [
+    "Uttar Pradesh"
+   ],
+   "b_states": [
+    "Uttar Pradesh"
+   ],
+   "a_firm": "F00594",
+   "b_firm": "F00594"
+  },
+  {
+   "score": 92.3,
+   "status": "merged automatically",
+   "a": [
+    "Aarpic Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Aarpik Pharmaceuticals Pvt. Ltd",
+    "Aarpik Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00823",
+   "b_firm": "F00823"
+  },
+  {
+   "score": 83.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Acme Generics LLP",
+    "Acme Generics Private Limited",
+    "Acme Generics Pvt. Ltd"
+   ],
+   "b": [
+    "Acme Generics ILLP"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00424",
+   "b_firm": "F01610"
+  },
+  {
+   "score": 88.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "ACME Lafetech LLP"
+   ],
+   "b": [
+    "Acme Life Tech-LLP"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01609",
+   "b_firm": "F00818"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Aglomed Ltd"
+   ],
+   "b": [
+    "Aglowmed Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F01643",
+   "b_firm": "F01643"
+  },
+  {
+   "score": 97.3,
+   "status": "merged automatically",
+   "a": [
+    "Akums Druges & Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Akums Drugs & Pharmaceuticals Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 15,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Outside India",
+    "Uttarakhand"
+   ],
+   "a_firm": "F00070",
+   "b_firm": "F00070"
+  },
+  {
+   "score": 92.9,
+   "status": "merged automatically",
+   "a": [
+    "Alapati Pharma"
+   ],
+   "b": [
+    "Alappat Pharma"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Andhra Pradesh"
+   ],
+   "b_states": [
+    "Kerala"
+   ],
+   "a_firm": "F01635",
+   "b_firm": "F01635"
+  },
+  {
+   "score": 96.8,
+   "status": "merged automatically",
+   "a": [
+    "Alencure Biotech Pvt Ltd",
+    "Alencure Biotech Pvt. Ltd",
+    "Alencure Biotech Pvt.Ltd"
+   ],
+   "b": [
+    "Alencure Bitech Pvt.Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00495",
+   "b_firm": "F00495"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Alkem Health Science"
+   ],
+   "b": [
+    "Alkem Health Science - Alkem Laboratories Limited"
+   ],
+   "a_alerts": 7,
+   "b_alerts": 1,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00196",
+   "b_firm": "F01625"
+  },
+  {
+   "score": 97.6,
+   "status": "merged automatically",
+   "a": [
+    "Alkem Health Science"
+   ],
+   "b": [
+    "Alkem Health Sciences"
+   ],
+   "a_alerts": 7,
+   "b_alerts": 1,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00196",
+   "b_firm": "F00196"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "ALKEM HEALTH SCIENCE, A unit of Alkem Laboratories Limited",
+    "Alkem Health Science A Unit of Alkem Laboratories Limited",
+    "Alkem Health Science, - A unit of Alkem Laboratories Limited",
+    "Alkem Health Science, A Unit Of Alkem Laboratories Limited"
+   ],
+   "b": [
+    "Alkem Health Science - Alkem Laboratories Limited"
+   ],
+   "a_alerts": 21,
+   "b_alerts": 1,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00036",
+   "b_firm": "F01625"
+  },
+  {
+   "score": 88.2,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Alkem Health Science - Alkem Laboratories Limited"
+   ],
+   "b": [
+    "ALKEM HEALTH SCIENCE, Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science (Unit of Alkem Laboratories Ltd",
+    "Alkem Health Science, Unit of Alkem Laboratories Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 6,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F01625",
+   "b_firm": "F00036"
+  },
+  {
+   "score": 84.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Alkem Health Science - Alkem Laboratories Limited"
+   ],
+   "b": [
+    "Alkem Health Sciences A Unit of Alkem Laboratories Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F01625",
+   "b_firm": "F00036"
+  },
+  {
+   "score": 97.1,
+   "status": "merged automatically",
+   "a": [
+    "Alop Med-Sciences Pvt Ltd"
+   ],
+   "b": [
+    "Alop Medi-Sciences Pvt Ltd",
+    "Alop Medi-Sciences Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00470",
+   "b_firm": "F00470"
+  },
+  {
+   "score": 97.9,
+   "status": "merged automatically",
+   "a": [
+    "Appasamy Occular Devices (P) Ltd"
+   ],
+   "b": [
+    "Appasamy Ocular Devices Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Rajasthan"
+   ],
+   "a_firm": "F01593",
+   "b_firm": "F01593"
+  },
+  {
+   "score": 84.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Arya Pharmaceuticals"
+   ],
+   "b": [
+    "Aryatech Pharma (P) Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F01646",
+   "b_firm": "F01648"
+  },
+  {
+   "score": 94.1,
+   "status": "merged automatically",
+   "a": [
+    "Aspen Lifescieces Pvt., Ltd"
+   ],
+   "b": [
+    "Aspen Lifesciences"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Punjab"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F01713",
+   "b_firm": "F01713"
+  },
+  {
+   "score": 94.1,
+   "status": "merged automatically",
+   "a": [
+    "Astam Healthcare Pvt. Ltd",
+    "Astam Helathcare Pvt. Ltd"
+   ],
+   "b": [
+    "Astamed Healthcare (I) Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Maharashtra"
+   ],
+   "a_firm": "F00355",
+   "b_firm": "F00355"
+  },
+  {
+   "score": 89.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Athens Life Sciences Mauza Rampur"
+   ],
+   "b": [
+    "Athens Life Sciences Mauza Rampur Jattan"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 9,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01709",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 82.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Athens Life Sciences Mauza Rampur"
+   ],
+   "b": [
+    "Athens Lifesciences Mauza Rampur Jattan Nahan"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Chandigarh"
+   ],
+   "a_firm": "F01709",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 82.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Athens Life Sciences Mauza Rampur"
+   ],
+   "b": [
+    "Athens Life Sciences - Mauza-Rampur Jatten Nahan",
+    "Athens Life Sciences Mauza-Rampur Jatten Nahan"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01709",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 92.7,
+   "status": "merged automatically",
+   "a": [
+    "Athens Life Sciences Mauza Rampur Jattan"
+   ],
+   "b": [
+    "Athens Lifesciences Mauza Rampur Jattan Nahan"
+   ],
+   "a_alerts": 9,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Chandigarh"
+   ],
+   "a_firm": "F00329",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Athens Lifesciences Mauza Rampur Jattan Nahan"
+   ],
+   "b": [
+    "Athens Life Sciences - Mauza-Rampur Jatten Nahan",
+    "Athens Life Sciences Mauza-Rampur Jatten Nahan"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Chandigarh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00329",
+   "b_firm": "F00329"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Bharat Serums and Vaccines Ltd"
+   ],
+   "b": [
+    "Bharat Serums And Vaccins Limited"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Maharashtra"
+   ],
+   "a_firm": "F01668",
+   "b_firm": "F01668"
+  },
+  {
+   "score": 86.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Biocenna Healthcare Pvt Ltd",
+    "Biocenna Healthcare Pvt.Ltd"
+   ],
+   "b": [
+    "Biochem Healthcare Pvt.Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Outside India",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00739",
+   "b_firm": "F01660"
+  },
+  {
+   "score": 88.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Biogenetic Drugs Pvt Ltd",
+    "Biogenetic Drugs Pvt. Ltd"
+   ],
+   "b": [
+    "Biogenetic Drugs Ptv. Ltd"
+   ],
+   "a_alerts": 13,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00075",
+   "b_firm": "F01659"
+  },
+  {
+   "score": 92.3,
+   "status": "merged automatically",
+   "a": [
+    "Captab Biotec"
+   ],
+   "b": [
+    "Captab Biotic"
+   ],
+   "a_alerts": 14,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00069",
+   "b_firm": "F00069"
+  },
+  {
+   "score": 92.9,
+   "status": "merged automatically",
+   "a": [
+    "Centaur Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Century Pharmaceuticals Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Goa",
+    "Haryana"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00772",
+   "b_firm": "F00772"
+  },
+  {
+   "score": 84.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Chem Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Chemetac Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 3,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttar Pradesh"
+   ],
+   "a_firm": "F01423",
+   "b_firm": "F00550"
+  },
+  {
+   "score": 88.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Chem Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Chemino Pharma Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F01423",
+   "b_firm": "F01421"
+  },
+  {
+   "score": 96.0,
+   "status": "merged automatically",
+   "a": [
+    "CIPCO Pharmaceuticals",
+    "Cipco Pharmaceuticals"
+   ],
+   "b": [
+    "Cipcoo Pharmaceuticals"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00345",
+   "b_firm": "F00345"
+  },
+  {
+   "score": 84.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "CMG Biotech Pvt. Ltd",
+    "CMG Biotech Pvt.Ltd",
+    "Cmg Biotech Pvt Ltd",
+    "Cmg Biotech Pvt. Ltd"
+   ],
+   "b": [
+    "Cmg Biotech Pvt. Lts"
+   ],
+   "a_alerts": 17,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00057",
+   "b_firm": "F01455"
+  },
+  {
+   "score": 92.9,
+   "status": "merged automatically",
+   "a": [
+    "Consern Pharma Limited"
+   ],
+   "b": [
+    "Consern Pharna Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Punjab"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F01446",
+   "b_firm": "F01446"
+  },
+  {
+   "score": 89.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Cosmas Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Cosmas Pharmacis Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01443",
+   "b_firm": "F00274"
+  },
+  {
+   "score": 89.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Cosmas Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Cosmas Pharmacls Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 5,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01443",
+   "b_firm": "F00274"
+  },
+  {
+   "score": 93.8,
+   "status": "merged automatically",
+   "a": [
+    "Cosmas Pharmacis Ltd"
+   ],
+   "b": [
+    "Cosmas Pharmacls Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 5,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00274",
+   "b_firm": "F00274"
+  },
+  {
+   "score": 93.8,
+   "status": "merged automatically",
+   "a": [
+    "Crossasia Biotech Pvt. Ltd"
+   ],
+   "b": [
+    "Crossia Biotech Pvt.Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00541",
+   "b_firm": "F00541"
+  },
+  {
+   "score": 94.1,
+   "status": "merged automatically",
+   "a": [
+    "Curetech Skincare"
+   ],
+   "b": [
+    "Curetech Slincare"
+   ],
+   "a_alerts": 5,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00267",
+   "b_firm": "F00267"
+  },
+  {
+   "score": 96.3,
+   "status": "merged automatically",
+   "a": [
+    "Daffohills Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Daffohils Laboratories Pvt Ltd",
+    "Daffohils Laboratories Pvt. Ltd",
+    "Daffohils Laboratories Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 5,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00272",
+   "b_firm": "F00272"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Devbhoomi Pharmaceuticals"
+   ],
+   "b": [
+    "Devbhoomi Pharma Roorkee"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00591",
+   "b_firm": "F01394"
+  },
+  {
+   "score": 86.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Dr. Pal'S Pharmaceuticals",
+    "Dr. Pal's Pharmaceuticals"
+   ],
+   "b": [
+    "Dr.Patel Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00931",
+   "b_firm": "F01398"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "East African (India) Overseas"
+   ],
+   "b": [
+    "East African (India) Oversease"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00896",
+   "b_firm": "F00896"
+  },
+  {
+   "score": 92.9,
+   "status": "merged automatically",
+   "a": [
+    "Emcure Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Emcure Pharmaceutical s Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Jammu & Kashmir"
+   ],
+   "a_firm": "F01518",
+   "b_firm": "F01518"
+  },
+  {
+   "score": 97.1,
+   "status": "merged automatically",
+   "a": [
+    "Empree Medicament India Pvt. Ltd"
+   ],
+   "b": [
+    "Empree medicaments India Private Limited"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Karnataka"
+   ],
+   "b_states": [
+    "Karnataka"
+   ],
+   "a_firm": "F01515",
+   "b_firm": "F01515"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Ethidrugs Research Lab Pvt Ltd"
+   ],
+   "b": [
+    "Ethidrus Research Lab Pvt Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F01533",
+   "b_firm": "F01533"
+  },
+  {
+   "score": 98.0,
+   "status": "merged automatically",
+   "a": [
+    "Excel+ Health care products"
+   ],
+   "b": [
+    "Excell Health Care Products"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Kerala"
+   ],
+   "b_states": [
+    "Unknown"
+   ],
+   "a_firm": "F01542",
+   "b_firm": "F01542"
+  },
+  {
+   "score": 92.3,
+   "status": "merged automatically",
+   "a": [
+    "Exemed Pharmaceuticals"
+   ],
+   "b": [
+    "Exemep Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F01540",
+   "b_firm": "F01540"
+  },
+  {
+   "score": 95.5,
+   "status": "merged automatically",
+   "a": [
+    "Firstmed Therapeuticals pvt ltd"
+   ],
+   "b": [
+    "Firstmed Therapeutics Pvt Ltd",
+    "Firstmed Therapeutics Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 5,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Haryana",
+    "Tamil Nadu"
+   ],
+   "a_firm": "F00322",
+   "b_firm": "F00322"
+  },
+  {
+   "score": 93.8,
+   "status": "merged automatically",
+   "a": [
+    "Glenmark Pharmaceutica ls Ltd",
+    "Glenmark Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Glenmark Pharmaceutical s Ltd"
+   ],
+   "a_alerts": 13,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh",
+    "Sikkim",
+    "Unknown",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00154",
+   "b_firm": "F00154"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Gujarat Ambuja Export Ltd"
+   ],
+   "b": [
+    "Gujarat Ambuja Exports Limited",
+    "Gujarat Ambuja Exports Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 11,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Gujarat",
+    "Karnataka",
+    "Maharashtra"
+   ],
+   "a_firm": "F00195",
+   "b_firm": "F00195"
+  },
+  {
+   "score": 87.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "H. L. Healthcare Pvt. Ltd",
+    "H.L. Healthcare Pvt Ltd",
+    "H.L. Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "H.L.HealthcarePv t.Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00431",
+   "b_firm": "F01984"
+  },
+  {
+   "score": 81.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Harihar Pharmaceuticals Pvt. Ltd",
+    "Harihar Pharmaceuticals Pvt.Ltd"
+   ],
+   "b": [
+    "Hariom Pharmaceuticals"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Odisha"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00904",
+   "b_firm": "F01981"
+  },
+  {
+   "score": 81.2,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Himalaya Medical Pvt. Ltd"
+   ],
+   "b": [
+    "Himalaya Meditek (P) Ltd",
+    "Himalaya Meditek Private Limited",
+    "Himalaya Meditek Private Ltd",
+    "Himalaya Meditek Pvt Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 34,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F02011",
+   "b_firm": "F00013"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Hindustan Antibiotics Ltd"
+   ],
+   "b": [
+    "Hindusthan Antibiotics Ltd"
+   ],
+   "a_alerts": 40,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana",
+    "Himachal Pradesh",
+    "Maharashtra",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Haryana"
+   ],
+   "a_firm": "F00029",
+   "b_firm": "F00029"
+  },
+  {
+   "score": 86.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "IBN Herbals (A Unit of Curetech Formulations (P) Ltd",
+    "IBN Herbals (A unit of Curetech Formulations (P) Ltd",
+    "IBN Herbals (A unit of Curetech Formulations Pvt. Ltd",
+    "IBN Herbals (A unit of curetech formulation (P) Ltd"
+   ],
+   "b": [
+    "IBN Herbals (Curetech Formulations Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00324",
+   "b_firm": "F01996"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Indica Pharmaceuticals (P) Ltd"
+   ],
+   "b": [
+    "Indilina Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F01942",
+   "b_firm": "F01941"
+  },
+  {
+   "score": 92.3,
+   "status": "merged automatically",
+   "a": [
+    "Intas Pharmaceuticals Limited",
+    "Intas Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Intas Pharmaceutical S Ltd"
+   ],
+   "a_alerts": 11,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat",
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F00115",
+   "b_firm": "F00115"
+  },
+  {
+   "score": 84.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Integrated Laboratories Pvt Ltd",
+    "Integrated Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Intermed Laboratories Private Limited"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Tamil Nadu"
+   ],
+   "a_firm": "F00520",
+   "b_firm": "F01930"
+  },
+  {
+   "score": 81.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Jaineka Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Jainsons Healthcare"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F01964",
+   "b_firm": "F00717"
+  },
+  {
+   "score": 97.8,
+   "status": "merged automatically",
+   "a": [
+    "Janveda Healthceutical Pvt. Ltd"
+   ],
+   "b": [
+    "Janveda Healthceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00569",
+   "b_firm": "F00569"
+  },
+  {
+   "score": 94.7,
+   "status": "merged automatically",
+   "a": [
+    "Kaalimga Healthcare"
+   ],
+   "b": [
+    "Kaalinga Health Care",
+    "Kaalinga Healthcare"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00641",
+   "b_firm": "F00641"
+  },
+  {
+   "score": 88.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Kanha Biogenetic"
+   ],
+   "b": [
+    "Kanha Biogenetic Laboratories"
+   ],
+   "a_alerts": 7,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00183",
+   "b_firm": "F02071"
+  },
+  {
+   "score": 88.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Karnal Pharmaceuticals Pvt Ltd"
+   ],
+   "b": [
+    "Karnani Pharmaceutical Pvt. Ltd",
+    "Karnani Pharmaceuticals (P) Ltd",
+    "Karnani Pharmaceuticals Pvt. Ltd",
+    "Karnani Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 9,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Maharashtra",
+    "Uttarakhand"
+   ],
+   "a_firm": "F02067",
+   "b_firm": "F00162"
+  },
+  {
+   "score": 95.0,
+   "status": "merged automatically",
+   "a": [
+    "Kaushik Therapeutics (P) Ltd"
+   ],
+   "b": [
+    "Kausikh Therapeutics (P) Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 6,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Tamil Nadu"
+   ],
+   "a_firm": "F00251",
+   "b_firm": "F00251"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Konis Pharmaceuticals",
+    "Konis Pharmaceuticals Pvt. Ltd",
+    "Konis Pharmaceuticals Pvt.Ltd"
+   ],
+   "b": [
+    "Konis Pharmaceuticals Pv t. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Andhra Pradesh",
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00601",
+   "b_firm": "F02091"
+  },
+  {
+   "score": 87.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Konis Pharmaceuticals Krishna"
+   ],
+   "b": [
+    "Konis Pharmaceuticals Krishna Nagar"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Andhra Pradesh"
+   ],
+   "b_states": [
+    "Andhra Pradesh"
+   ],
+   "a_firm": "F02093",
+   "b_firm": "F02092"
+  },
+  {
+   "score": 97.5,
+   "status": "merged automatically",
+   "a": [
+    "Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd"
+   ],
+   "b": [
+    "LEGEND INDUSTRIES, Unit-II, Plot No. C1/200-201/4, Phase-II, Opp. Encore Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00692",
+   "b_firm": "F00692"
+  },
+  {
+   "score": 88.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Legend Industries (Unit-II), C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",
+    "Legend Industries, (Unit-II) C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd"
+   ],
+   "b": [
+    "LEGEND INDUSTRIES, Unit-II, Plot No. C1/200-201/4, Phase-II, Opp. Encore Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00691",
+   "b_firm": "F00692"
+  },
+  {
+   "score": 82.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Marc Lifesciences"
+   ],
+   "b": [
+    "Marc Lifesciences Sikkim"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 11,
+   "a_states": [
+    "Sikkim"
+   ],
+   "b_states": [
+    "Sikkim"
+   ],
+   "a_firm": "F01798",
+   "b_firm": "F00096"
+  },
+  {
+   "score": 93.0,
+   "status": "merged automatically",
+   "a": [
+    "Mascot Health Series (P) Ltd",
+    "Mascot Health Series Private Limited",
+    "Mascot Health Series Private. Limited",
+    "Mascot Health Series Pvt Ltd"
+   ],
+   "b": [
+    "Mascot Health Series Pvt. Lt"
+   ],
+   "a_alerts": 41,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00007",
+   "b_firm": "F00007"
+  },
+  {
+   "score": 95.2,
+   "status": "merged automatically",
+   "a": [
+    "Mascot Health Series (P) Ltd",
+    "Mascot Health Series Private Limited",
+    "Mascot Health Series Private. Limited",
+    "Mascot Health Series Pvt Ltd"
+   ],
+   "b": [
+    "Mascot Health Services Pvt. Ltd"
+   ],
+   "a_alerts": 41,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00007",
+   "b_firm": "F00007"
+  },
+  {
+   "score": 88.9,
+   "status": "merged automatically",
+   "a": [
+    "Mascot Health Series Pvt. Lt"
+   ],
+   "b": [
+    "Mascot Health Services Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00007",
+   "b_firm": "F00007"
+  },
+  {
+   "score": 83.3,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Maxtra Laboratories"
+   ],
+   "b": [
+    "Maxtra Laboratories TIF"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Telangana"
+   ],
+   "b_states": [
+    "Telangana"
+   ],
+   "a_firm": "F01829",
+   "b_firm": "F01826"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medibest Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Medicef Pharma"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01751",
+   "b_firm": "F00432"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medibest Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Mediosa Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01751",
+   "b_firm": "F01759"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medibest Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Medisky Pharmacetuicals Pvt. Ltd",
+    "Medisky Pharmaceuticals",
+    "Medisky Pharmaceuticals Pvt. Ltd",
+    "Medisky Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 6,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F01751",
+   "b_firm": "F00253"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Medibest Pharma Pvt. Ltd"
+   ],
+   "b": [
+    "Medizest Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Tamil Nadu"
+   ],
+   "b_states": [
+    "Goa"
+   ],
+   "a_firm": "F01751",
+   "b_firm": "F01751"
+  },
+  {
+   "score": 81.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medibios Laboratories Pvt. Ltd",
+    "Medibios Laboratory Pvt. Ltd"
+   ],
+   "b": [
+    "Medico Labs"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00618",
+   "b_firm": "F01810"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medibios Laboratories Pvt. Ltd",
+    "Medibios Laboratory Pvt. Ltd"
+   ],
+   "b": [
+    "Medicross Laboratories Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00618",
+   "b_firm": "F01786"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medicef Pharma"
+   ],
+   "b": [
+    "Medizest Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Goa"
+   ],
+   "a_firm": "F00432",
+   "b_firm": "F01751"
+  },
+  {
+   "score": 87.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medico Labs"
+   ],
+   "b": [
+    "Medicross Laboratories Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01810",
+   "b_firm": "F01786"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medinex Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Medishines Laboratories (P) Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F01760",
+   "b_firm": "F01758"
+  },
+  {
+   "score": 81.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medinok Healthcare Pvt Ltd",
+    "Medinok Healthcare Pvt. Ltd",
+    "Medinok healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Medishri Healthcare Pvt. Ltd"
+   ],
+   "a_alerts": 8,
+   "b_alerts": 1,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00159",
+   "b_firm": "F01757"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Mediosa Pharmaceuticals"
+   ],
+   "b": [
+    "Medipol Pharmaceutical India Pvt. Ltd",
+    "Medipol Pharmaceuticals India Pvt. Limited",
+    "Medipol Pharmaceuticals India Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 19,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01759",
+   "b_firm": "F00043"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Mediosa Pharmaceuticals"
+   ],
+   "b": [
+    "Medisky Pharmacetuicals Pvt. Ltd",
+    "Medisky Pharmaceuticals",
+    "Medisky Pharmaceuticals Pvt. Ltd",
+    "Medisky Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 6,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F01759",
+   "b_firm": "F00253"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Mediosa Pharmaceuticals"
+   ],
+   "b": [
+    "Medizest Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Goa"
+   ],
+   "a_firm": "F01759",
+   "b_firm": "F01751"
+  },
+  {
+   "score": 85.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medishri Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Medivision Healthcare",
+    "Medivision healthcare"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 7,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F01757",
+   "b_firm": "F00185"
+  },
+  {
+   "score": 82.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Medisky Pharmacetuicals Pvt. Ltd",
+    "Medisky Pharmaceuticals",
+    "Medisky Pharmaceuticals Pvt. Ltd",
+    "Medisky Pharmaceuticals Pvt.Ltd"
+   ],
+   "b": [
+    "Medizest Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Goa"
+   ],
+   "a_firm": "F00253",
+   "b_firm": "F01751"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Medreich Limited",
+    "Medreich Ltd"
+   ],
+   "b": [
+    "Medrich Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Karnataka"
+   ],
+   "b_states": [
+    "Karnataka"
+   ],
+   "a_firm": "F00456",
+   "b_firm": "F00456"
+  },
+  {
+   "score": 96.8,
+   "status": "merged automatically",
+   "a": [
+    "Modi Antibiotic"
+   ],
+   "b": [
+    "Modi Antibiotics"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 10,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00125",
+   "b_firm": "F00125"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Monique Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Monique Pharmaceutical S Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Haryana"
+   ],
+   "a_firm": "F01768",
+   "b_firm": "F01768"
+  },
+  {
+   "score": 94.7,
+   "status": "merged automatically",
+   "a": [
+    "Nandani Medical Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Nandini Medical Laboratories Pvt Ltd"
+   ],
+   "a_alerts": 12,
+   "b_alerts": 1,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00090",
+   "b_firm": "F00090"
+  },
+  {
+   "score": 95.7,
+   "status": "merged automatically",
+   "a": [
+    "Natinal Laboratories"
+   ],
+   "b": [
+    "National Laboratories"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01892",
+   "b_firm": "F01892"
+  },
+  {
+   "score": 91.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Navkar Life Sciences",
+    "Navkar Lifesciences"
+   ],
+   "b": [
+    "Navkar Lifescienses"
+   ],
+   "a_alerts": 13,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00079",
+   "b_firm": "F01889"
+  },
+  {
+   "score": 97.1,
+   "status": "merged automatically",
+   "a": [
+    "Neutec Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Neutech Healthcare private ltd"
+   ],
+   "a_alerts": 5,
+   "b_alerts": 1,
+   "a_states": [
+    "Delhi"
+   ],
+   "b_states": [
+    "Delhi"
+   ],
+   "a_firm": "F00273",
+   "b_firm": "F00273"
+  },
+  {
+   "score": 90.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Om Biomedic Pvt. Ltd",
+    "Om Biomedic Pvt.Ltd"
+   ],
+   "b": [
+    "Om Biometic Pvt.Ltd"
+   ],
+   "a_alerts": 10,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00124",
+   "b_firm": "F01851"
+  },
+  {
+   "score": 96.6,
+   "status": "merged automatically",
+   "a": [
+    "Orchid Medilife Pvt. Ltd"
+   ],
+   "b": [
+    "Orchid Medlife Pvt. Ltd",
+    "Orchid Medlife Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00338",
+   "b_firm": "F00338"
+  },
+  {
+   "score": 87.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Orchid Medilife Pvt. Ltd"
+   ],
+   "b": [
+    "Orchid MedlifePvt. ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00338",
+   "b_firm": "F01841"
+  },
+  {
+   "score": 90.3,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Orchid Medlife Pvt. Ltd",
+    "Orchid Medlife Pvt.Ltd"
+   ],
+   "b": [
+    "Orchid MedlifePvt. ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00338",
+   "b_firm": "F01841"
+  },
+  {
+   "score": 85.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Orison International"
+   ],
+   "b": [
+    "Orison Pharma International"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 11,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01838",
+   "b_firm": "F00094"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Penta Pharmaceuticals"
+   ],
+   "b": [
+    "Pentachem Pharmaceutical",
+    "Pentachem Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Daman, Diu & DNH"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01862",
+   "b_firm": "F00816"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Pharm Asia Drug"
+   ],
+   "b": [
+    "Pharm Asia Durg"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00827",
+   "b_firm": "F00827"
+  },
+  {
+   "score": 94.3,
+   "status": "merged automatically",
+   "a": [
+    "Pharma Chemico Laboratories. Deonghat"
+   ],
+   "b": [
+    "Pharma Chemico Laboratories Devghat"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01354",
+   "b_firm": "F01354"
+  },
+  {
+   "score": 97.6,
+   "status": "merged automatically",
+   "a": [
+    "Pinnacle Klife Science Private Limited"
+   ],
+   "b": [
+    "Pinnacle Life Sciences Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01003",
+   "b_firm": "F01003"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Plot No.11"
+   ],
+   "b": [
+    "Plot No. 20"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01049",
+   "b_firm": "F01054"
+  },
+  {
+   "score": 87.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Polestar Power"
+   ],
+   "b": [
+    "Polestar Power Industries"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01009",
+   "b_firm": "F01010"
+  },
+  {
+   "score": 88.3,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Polestar Power Industries (Pharma Division)",
+    "Polestar Power Industries - (PHARMA DIVISION)"
+   ],
+   "b": [
+    "Polestar power industries(Pharma division) Damuwala"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00847",
+   "b_firm": "F01012"
+  },
+  {
+   "score": 98.5,
+   "status": "merged automatically",
+   "a": [
+    "Polestar Power Industries (Pharma Division)",
+    "Polestar Power Industries - (PHARMA DIVISION)"
+   ],
+   "b": [
+    "Polestar Power Industries (Pharma Divison)"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00847",
+   "b_firm": "F00847"
+  },
+  {
+   "score": 86.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Polestar power industries(Pharma division) Damuwala"
+   ],
+   "b": [
+    "Polestar Power Industries (Pharma Divison)"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F01012",
+   "b_firm": "F00847"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Pratima Pharmaceuticals"
+   ],
+   "b": [
+    "Pratima Pharmaceuticals G.No"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Maharashtra"
+   ],
+   "a_firm": "F00745",
+   "b_firm": "F00745"
+  },
+  {
+   "score": 95.0,
+   "status": "merged automatically",
+   "a": [
+    "Pure & Care Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Pure & Cure Healthcare Ltd",
+    "Pure & Cure Healthcare Pvt Ltd",
+    "Pure & Cure Healthcare Pvt. Ltd",
+    "Pure & Cure Healthcare Pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 29,
+   "a_states": [
+    "Unknown"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00020",
+   "b_firm": "F00020"
+  },
+  {
+   "score": 90.0,
+   "status": "merged automatically",
+   "a": [
+    "Pure & Care Healthcare Pvt. Ltd"
+   ],
+   "b": [
+    "Pure & Cure Heatlhcare Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Unknown"
+   ],
+   "b_states": [
+    "Outside India"
+   ],
+   "a_firm": "F00020",
+   "b_firm": "F00020"
+  },
+  {
+   "score": 95.0,
+   "status": "merged automatically",
+   "a": [
+    "Pure & Cure Healthcare Ltd",
+    "Pure & Cure Healthcare Pvt Ltd",
+    "Pure & Cure Healthcare Pvt. Ltd",
+    "Pure & Cure Healthcare Pvt.Ltd"
+   ],
+   "b": [
+    "Pure & Cure Heatlhcare Pvt. Ltd"
+   ],
+   "a_alerts": 29,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Outside India"
+   ],
+   "a_firm": "F00020",
+   "b_firm": "F00020"
+  },
+  {
+   "score": 84.2,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Regain Laboratories"
+   ],
+   "b": [
+    "Regal Laboratories"
+   ],
+   "a_alerts": 5,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F00294",
+   "b_firm": "F00984"
+  },
+  {
+   "score": 96.3,
+   "status": "merged automatically",
+   "a": [
+    "Relief Biotech Pvt. Ltd",
+    "Relief Biotech Pvt.Ltd",
+    "Relief Biotech pvt. Ltd"
+   ],
+   "b": [
+    "Relif Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 11,
+   "b_alerts": 1,
+   "a_states": [
+    "Outside India",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00116",
+   "b_firm": "F00116"
+  },
+  {
+   "score": 90.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Reltsen Health Care",
+    "Reltsen Healthcare"
+   ],
+   "b": [
+    "Reltsen Healthcare Spl"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Puducherry"
+   ],
+   "b_states": [
+    "Puducherry"
+   ],
+   "a_firm": "F00667",
+   "b_firm": "F01056"
+  },
+  {
+   "score": 92.3,
+   "status": "merged automatically",
+   "a": [
+    "Rivpra Formulation Pvt Ltd",
+    "Rivpra Formulation Pvt. Ltd",
+    "Rivpra Formulation Pvt., Ltd",
+    "Rivpra Formulation Pvt.Ltd"
+   ],
+   "b": [
+    "Rivpra FormulationPvt.Ltd"
+   ],
+   "a_alerts": 34,
+   "b_alerts": 1,
+   "a_states": [
+    "Delhi",
+    "Outside India",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F00018",
+   "b_firm": "F00018"
+  },
+  {
+   "score": 96.6,
+   "status": "merged automatically",
+   "a": [
+    "SAI Parenterals Limited",
+    "SAI Parenterals Ltd",
+    "Sai Parenterals Limited",
+    "Sai Parenterals Ltd"
+   ],
+   "b": [
+    "Sai parentrals limited"
+   ],
+   "a_alerts": 26,
+   "b_alerts": 1,
+   "a_states": [
+    "Telangana"
+   ],
+   "b_states": [
+    "Telangana"
+   ],
+   "a_firm": "F00024",
+   "b_firm": "F00024"
+  },
+  {
+   "score": 85.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Salus Pharmaceutical",
+    "Salus Pharmaceuticals"
+   ],
+   "b": [
+    "Salus Pharmaceuticals Als"
+   ],
+   "a_alerts": 17,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh",
+    "Unknown"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00067",
+   "b_firm": "F01281"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Sankhla Mehandi Udhyog"
+   ],
+   "b": [
+    "Sankhla Mehandi Udyog"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Rajasthan"
+   ],
+   "b_states": [
+    "Rajasthan"
+   ],
+   "a_firm": "F01231",
+   "b_firm": "F01231"
+  },
+  {
+   "score": 97.8,
+   "status": "merged automatically",
+   "a": [
+    "Sano-Cito Therapeutics Inc"
+   ],
+   "b": [
+    "Sano-Cito Thereapeutics Inc"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00369",
+   "b_firm": "F00369"
+  },
+  {
+   "score": 93.0,
+   "status": "merged automatically",
+   "a": [
+    "Scott - Edil Pharmacia Ltd",
+    "Scott- Edil Pharmacia Ltd",
+    "Scott-Edil Pharmacia Ltd"
+   ],
+   "b": [
+    "Scott-Edil PharmaciaLtd"
+   ],
+   "a_alerts": 18,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00047",
+   "b_firm": "F00047"
+  },
+  {
+   "score": 95.0,
+   "status": "merged automatically",
+   "a": [
+    "Scott - Edil Pharmacia Ltd",
+    "Scott- Edil Pharmacia Ltd",
+    "Scott-Edil Pharmacia Ltd"
+   ],
+   "b": [
+    "Scott - Edil Pharmecia Ltd"
+   ],
+   "a_alerts": 18,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00047",
+   "b_firm": "F00047"
+  },
+  {
+   "score": 88.4,
+   "status": "merged automatically",
+   "a": [
+    "Scott-Edil PharmaciaLtd"
+   ],
+   "b": [
+    "Scott - Edil Pharmecia Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00047",
+   "b_firm": "F00047"
+  },
+  {
+   "score": 95.8,
+   "status": "merged automatically",
+   "a": [
+    "Shell Eastern Chemicals"
+   ],
+   "b": [
+    "Shell Eastern Chemicals (S)"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Outside India"
+   ],
+   "b_states": [
+    "Outside India"
+   ],
+   "a_firm": "F00531",
+   "b_firm": "F00531"
+  },
+  {
+   "score": 97.0,
+   "status": "merged automatically",
+   "a": [
+    "Shervotec Pharmaceuticals"
+   ],
+   "b": [
+    "Shervotech Pharmaceuticals"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00659",
+   "b_firm": "F00659"
+  },
+  {
+   "score": 93.8,
+   "status": "merged automatically",
+   "a": [
+    "Shervotec Pharmaceuticals"
+   ],
+   "b": [
+    "Shervotee Pharmaceuticals"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00659",
+   "b_firm": "F00659"
+  },
+  {
+   "score": 90.9,
+   "status": "merged automatically",
+   "a": [
+    "Shervotech Pharmaceuticals"
+   ],
+   "b": [
+    "Shervotee Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00659",
+   "b_firm": "F00659"
+  },
+  {
+   "score": 81.8,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Shiva Biogenetic Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Shiva Biogenetics Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00236",
+   "b_firm": "F00680"
+  },
+  {
+   "score": 97.9,
+   "status": "merged automatically",
+   "a": [
+    "Shiva Biogenetic Pharmaceuticals (P) Ltd",
+    "Shiva biogenetic Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Shiva Biogenetics Pharmaceuticals Pvt.Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00680",
+   "b_firm": "F00680"
+  },
+  {
+   "score": 96.8,
+   "status": "merged automatically",
+   "a": [
+    "Shri Ramesh Industry Pvt Ltd"
+   ],
+   "b": [
+    "Shri Ramesth Industries",
+    "Shri Ramesth Industry Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00688",
+   "b_firm": "F00688"
+  },
+  {
+   "score": 82.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Shri Sai Bala Ji Pharmatech Pvt.Ltd"
+   ],
+   "b": [
+    "Shri sai Pharmatech Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00516",
+   "b_firm": "F01341"
+  },
+  {
+   "score": 84.4,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Shri Sai Balaji Pharmatech Pvt Ltd",
+    "Shri Sai Balaji Pharmatech Pvt. Ltd"
+   ],
+   "b": [
+    "Shri sai Pharmatech Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00516",
+   "b_firm": "F01341"
+  },
+  {
+   "score": 95.7,
+   "status": "merged automatically",
+   "a": [
+    "Snehai Pharma & Surgicals Pvt. Ltd"
+   ],
+   "b": [
+    "Snehal Pharma & Surgicals Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 3,
+   "a_states": [
+    "Maharashtra"
+   ],
+   "b_states": [
+    "Maharashtra"
+   ],
+   "a_firm": "F00464",
+   "b_firm": "F00464"
+  },
+  {
+   "score": 91.9,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Soft Touch Pharmaceuticals India Ltd"
+   ],
+   "b": [
+    "Soft Touch Pharmaceuticals India Lt"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00644",
+   "b_firm": "F01361"
+  },
+  {
+   "score": 91.7,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Solac Pharmaceuticals Ltd"
+   ],
+   "b": [
+    "Solar Pharmaceuticals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Punjab"
+   ],
+   "a_firm": "F01359",
+   "b_firm": "F01357"
+  },
+  {
+   "score": 95.7,
+   "status": "merged automatically",
+   "a": [
+    "Stalion Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Stallion Laboratories Pvt. Ltd",
+    "Stallion Laboratories, Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00425",
+   "b_firm": "F00425"
+  },
+  {
+   "score": 96.0,
+   "status": "merged automatically",
+   "a": [
+    "Standford Laboratories Private Limited"
+   ],
+   "b": [
+    "Standord Laboratories Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00488",
+   "b_firm": "F00488"
+  },
+  {
+   "score": 91.7,
+   "status": "merged automatically",
+   "a": [
+    "Standord Laboratories Pvt. Ltd"
+   ],
+   "b": [
+    "Stanford Laboratories Private Limited",
+    "Stanford Laboratories Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 3,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00488",
+   "b_firm": "F00488"
+  },
+  {
+   "score": 97.9,
+   "status": "merged automatically",
+   "a": [
+    "Star Filteration System"
+   ],
+   "b": [
+    "Star Filteration Systems"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00341",
+   "b_firm": "F00341"
+  },
+  {
+   "score": 97.4,
+   "status": "merged automatically",
+   "a": [
+    "Steadfast edishield Pvt. Ltd"
+   ],
+   "b": [
+    "Steadfast Medishield pvt.Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Outside India"
+   ],
+   "b_states": [
+    "Uttarakhand"
+   ],
+   "a_firm": "F01297",
+   "b_firm": "F01297"
+  },
+  {
+   "score": 87.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Super Vaishali"
+   ],
+   "b": [
+    "Super Vaishali Laboratories"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Bihar"
+   ],
+   "b_states": [
+    "Bihar"
+   ],
+   "a_firm": "F01319",
+   "b_firm": "F00883"
+  },
+  {
+   "score": 87.5,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Supermax Drugs & Drugs Pharmaceuticals Pvt. Ltd"
+   ],
+   "b": [
+    "Supermax Drugs & Pharmaceutical Pvt. Ltd",
+    "Supermax Drugs & Pharmaceuticals Pvt. Ltd",
+    "Supermax Drugs & Pharnaceuticals(P) Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Delhi",
+    "Uttarakhand"
+   ],
+   "a_firm": "F01318",
+   "b_firm": "F00501"
+  },
+  {
+   "score": 98.0,
+   "status": "merged automatically",
+   "a": [
+    "Swiss Biotech Parenterals"
+   ],
+   "b": [
+    "Swiss Biotech Parentrals"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Haryana"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00892"
+  },
+  {
+   "score": 82.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parenterals"
+   ],
+   "b": [
+    "Swiss Garnier Biotech",
+    "Swiss Garnier Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 4,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00362"
+  },
+  {
+   "score": 85.1,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parenterals"
+   ],
+   "b": [
+    "Swiss Garniers Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00362"
+  },
+  {
+   "score": 81.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parenterals"
+   ],
+   "b": [
+    "Swiss Parenterals Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00897"
+  },
+  {
+   "score": 82.6,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parentrals"
+   ],
+   "b": [
+    "Swiss Garniers Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00362"
+  },
+  {
+   "score": 80.0,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Swiss Biotech Parentrals"
+   ],
+   "b": [
+    "Swiss Parentrals Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Haryana"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00892",
+   "b_firm": "F00897"
+  },
+  {
+   "score": 97.7,
+   "status": "merged automatically",
+   "a": [
+    "Swiss Garnier Biotech",
+    "Swiss Garnier Biotech Pvt. Ltd"
+   ],
+   "b": [
+    "Swiss Garniers Biotech Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00362",
+   "b_firm": "F00362"
+  },
+  {
+   "score": 97.0,
+   "status": "merged automatically",
+   "a": [
+    "Swiss Parenterals Ltd"
+   ],
+   "b": [
+    "Swiss Parentrals Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Gujarat"
+   ],
+   "b_states": [
+    "Gujarat"
+   ],
+   "a_firm": "F00897",
+   "b_firm": "F00897"
+  },
+  {
+   "score": 96.8,
+   "status": "merged automatically",
+   "a": [
+    "Symbiosis Pharmaceuticals Pvt. Ltd",
+    "Symbiosis Pharmaceuticals Pvt.Ltd",
+    "Symbiosis Pharmaceuticals PvtLtd"
+   ],
+   "b": [
+    "Symbosis Pharmaceuticals Pvt. Ltd"
+   ],
+   "a_alerts": 13,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00076",
+   "b_firm": "F00076"
+  },
+  {
+   "score": 96.3,
+   "status": "merged automatically",
+   "a": [
+    "Titanes Pharm"
+   ],
+   "b": [
+    "Titanes Pharma"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 7,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00186",
+   "b_firm": "F00186"
+  },
+  {
+   "score": 95.8,
+   "status": "merged automatically",
+   "a": [
+    "Ultra Drugs Formulations Pvt Ltd",
+    "Ultra Drugs Formulations Pvt. Ltd"
+   ],
+   "b": [
+    "Ultra Drugs Formultations Pvt Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00400",
+   "b_firm": "F00400"
+  },
+  {
+   "score": 95.7,
+   "status": "merged automatically",
+   "a": [
+    "Ultra Drugs Formulations Pvt Ltd",
+    "Ultra Drugs Formulations Pvt. Ltd"
+   ],
+   "b": [
+    "Ultra Durgs Formulations Pvt. Ltd"
+   ],
+   "a_alerts": 4,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00400",
+   "b_firm": "F00400"
+  },
+  {
+   "score": 91.7,
+   "status": "merged automatically",
+   "a": [
+    "Ultra Drugs Formultations Pvt Ltd"
+   ],
+   "b": [
+    "Ultra Durgs Formulations Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00400",
+   "b_firm": "F00400"
+  },
+  {
+   "score": 93.3,
+   "status": "merged automatically",
+   "a": [
+    "Unicure (India) Ltd",
+    "Unicure India",
+    "Unicure India Limited",
+    "Unicure India Ltd"
+   ],
+   "b": [
+    "Unicures India Ltd"
+   ],
+   "a_alerts": 89,
+   "b_alerts": 1,
+   "a_states": [
+    "Unknown",
+    "Uttar Pradesh",
+    "Uttarakhand"
+   ],
+   "b_states": [
+    "Uttar Pradesh"
+   ],
+   "a_firm": "F00001",
+   "b_firm": "F00001"
+  },
+  {
+   "score": 96.8,
+   "status": "merged automatically",
+   "a": [
+    "Vision Parental Pvt. Ltd"
+   ],
+   "b": [
+    "Vision Parentral Pvt. Ltd"
+   ],
+   "a_alerts": 2,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttar Pradesh"
+   ],
+   "b_states": [
+    "Uttar Pradesh"
+   ],
+   "a_firm": "F00594",
+   "b_firm": "F00594"
+  },
+  {
+   "score": 97.0,
+   "status": "merged automatically",
+   "a": [
+    "Vision Parenteral Pvt. Ltd"
+   ],
+   "b": [
+    "Vision Parentral Pvt. Ltd"
+   ],
+   "a_alerts": 3,
+   "b_alerts": 1,
+   "a_states": [
+    "Uttar Pradesh"
+   ],
+   "b_states": [
+    "Uttar Pradesh"
+   ],
+   "a_firm": "F00594",
+   "b_firm": "F00594"
+  },
+  {
+   "score": 97.0,
+   "status": "merged automatically",
+   "a": [
+    "Warner Hindustan Pvt. Ltd"
+   ],
+   "b": [
+    "Warner Hindusthan Pvt Ltd",
+    "Warner Hindusthan Pvt. Ltd"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 2,
+   "a_states": [
+    "Unknown"
+   ],
+   "b_states": [
+    "Telangana"
+   ],
+   "a_firm": "F00862",
+   "b_firm": "F00862"
+  },
+  {
+   "score": 82.4,
+   "status": "not merged: needs a decision",
+   "a": [
+    "Welcure Remedies"
+   ],
+   "b": [
+    "Welcure Remedies Nahan"
+   ],
+   "a_alerts": 6,
+   "b_alerts": 1,
+   "a_states": [
+    "Himachal Pradesh"
+   ],
+   "b_states": [
+    "Himachal Pradesh"
+   ],
+   "a_firm": "F00258",
+   "b_firm": "F01196"
+  },
+  {
+   "score": 95.7,
+   "status": "merged automatically",
+   "a": [
+    "Zest Pharama"
+   ],
+   "b": [
+    "Zest Pharma"
+   ],
+   "a_alerts": 1,
+   "b_alerts": 7,
+   "a_states": [
+    "Madhya Pradesh"
+   ],
+   "b_states": [
+    "Madhya Pradesh"
+   ],
+   "a_firm": "F00197",
+   "b_firm": "F00197"
+  }
+ ]
+}

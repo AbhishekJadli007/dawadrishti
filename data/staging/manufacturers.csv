@@ -1,0 +1,1995 @@
+manufacturer_id,manufacturer_canonical,state,firm_id,firm_canonical,findings
+M00000,Jackson Laboratories Pvt. Ltd,Punjab,F00000,Jackson Laboratories Pvt. Ltd,88
+M00001,Unicure India Ltd,Uttar Pradesh,F00001,Unicure India Ltd,68
+M00002,Zee Laboratories Ltd,Himachal Pradesh,F00002,Zee Laboratories Ltd,65
+M00003,Martin & Brown Bio-Sciences Pvt. Ltd,Himachal Pradesh,F00003,Martin & Brown Bio-Sciences Pvt. Ltd,54
+M00004,Karnataka Antibiotics & Pharmaceuticals Limited,Karnataka,F00004,Karnataka Antibiotics & Pharmaceuticals Limited,51
+M00005,Apple Formulations Pvt. Ltd,Uttarakhand,F00005,Apple Formulations Pvt. Ltd,48
+M00016,Healer's Lab,Himachal Pradesh,F00016,Healer's Lab,47
+M00007,Mascot Health Series Pvt. Ltd,Uttarakhand,F00007,Mascot Health Series Pvt. Ltd,44
+M00006,Gidsha Pharmaceuticals,Gujarat,F00006,Gidsha Pharmaceuticals,42
+M00008,Nestor Pharmaceuticals Limited,Haryana,F00008,Nestor Pharmaceuticals Limited,38
+M00009,Ridley Life Science Pvt. Ltd,Delhi,F00009,Ridley Life Science Pvt. Ltd,36
+M00013,Himalaya Meditek Pvt. Ltd,Uttarakhand,F00013,Himalaya Meditek Pvt. Ltd,34
+M00014,Vivek Pharmachem (India) Ltd,Rajasthan,F00014,Vivek Pharmachem (India) Ltd,34
+M00010,Life Max Cancer Laboratories,Uttarakhand,F00010,Life Max Cancer Laboratories,34
+M00012,ANG Lifesciences India Ltd,Himachal Pradesh,F00012,ANG Lifesciences India Ltd,34
+M00011,Skymap Pharmaceuticals Pvt. Ltd,Uttarakhand,F00011,Skymap Pharmaceuticals Pvt. Ltd,34
+M00015,Digital Vision,Himachal Pradesh,F00015,Digital Vision,32
+M00018,Rivpra Formulation Pvt. Ltd,Uttarakhand,F00018,Rivpra Formulation Pvt. Ltd,30
+M00021,Laborate Pharmaceuticals India Ltd,Himachal Pradesh,F00021,Laborate Pharmaceuticals India Ltd,29
+M00036,"Alkem Health Science, A Unit of Alkem Laboratories Limited",Sikkim,F00036,"Alkem Health Science, A Unit of Alkem Laboratories Limited",29
+M00020,Pure & Cure Healthcare Pvt. Ltd,Uttarakhand,F00020,Pure & Cure Healthcare Pvt. Ltd,29
+M00017,Modern Laboratories,Madhya Pradesh,F00017,Modern Laboratories,29
+M00019,Danish Health Care (P) Ltd,Madhya Pradesh,F00019,Danish Health Care (P) Ltd,29
+M00022,Revat Laboratories Pvt. Ltd,Andhra Pradesh,F00022,Revat Laboratories Pvt. Ltd,28
+M00024,SAI Parenterals Limited,Telangana,F00024,SAI Parenterals Limited,27
+M00026,Wings Biotech LLP,Himachal Pradesh,F00026,Wings Biotech LLP,27
+M00023,"Paschim Banga Pharmaceuticals, (A Unit of Farista Vanijya Pvt. Ltd",West Bengal,F00023,"Paschim Banga Pharmaceuticals, (A Unit of Farista Vanijya Pvt. Ltd",26
+M00025,Theon Pharmaceuticals Ltd,Himachal Pradesh,F00025,Theon Pharmaceuticals Ltd,26
+M00027,Swaroop Pharmaceuticals Pvt. Ltd,Uttar Pradesh,F00027,Swaroop Pharmaceuticals Pvt. Ltd,25
+M00028,Affy Parenterals,Himachal Pradesh,F00028,Affy Parenterals,24
+M00029,Hindustan Antibiotics Ltd,Maharashtra,F00029,Hindustan Antibiotics Ltd,24
+M00030,Agron Remedies Pvt. Ltd,Uttarakhand,F00030,Agron Remedies Pvt. Ltd,23
+M00031,Mancare Laboratories Pvt. Ltd,Uttarakhand,F00031,Mancare Laboratories Pvt. Ltd,22
+M00032,Hindustan Laboratories Limited,Maharashtra,F00032,Hindustan Laboratories Limited,22
+M00033,Samkem,Madhya Pradesh,F00033,Samkem,22
+M00034,Athens Life Sciences,Himachal Pradesh,F00034,Athens Life Sciences,22
+M00038,Argon Remedies Pvt. Ltd,Uttarakhand,F00038,Argon Remedies Pvt. Ltd,21
+M00046,Super Formulations Pvt. Ltd,Madhya Pradesh,F00046,Super Formulations Pvt. Ltd,21
+M00037,Swiss Garnier Life Sciences,Himachal Pradesh,F00037,Swiss Garnier Life Sciences,21
+M00035,Unicure India Ltd,Uttarakhand,F00001,Unicure India Ltd,21
+M00047,Scott-Edil Pharmacia Ltd,Himachal Pradesh,F00047,Scott-Edil Pharmacia Ltd,20
+M00041,Nixi Laboratories Pvt. Ltd,Himachal Pradesh,F00041,Nixi Laboratories Pvt. Ltd,20
+M00039,SVP Life Sciences,Uttarakhand,F00039,SVP Life Sciences,20
+M00040,Kerala State Drugs and Pharmaceuticals Ltd,Kerala,F00040,Kerala State Drugs and Pharmaceuticals Ltd,20
+M00042,Jpee Drugs,Uttarakhand,F00042,Jpee Drugs,19
+M00044,Zenith Drugs Ltd,Madhya Pradesh,F00044,Zenith Drugs Ltd,19
+M00045,Yacca Lifesciences Pvt. Ltd,Uttarakhand,F00045,Yacca Lifesciences Pvt. Ltd,19
+M00043,Medipol Pharmaceutical India Pvt. Ltd,Himachal Pradesh,F00043,Medipol Pharmaceutical India Pvt. Ltd,19
+M00050,Ornate Labs Pvt. Ltd,Bihar,F00050,Ornate Labs Pvt. Ltd,18
+M00051,J.M. Laboratories,Himachal Pradesh,F00051,J.M. Laboratories,18
+M00049,Health Biotech Ltd,Himachal Pradesh,F00049,Health Biotech Ltd,18
+M00048,Quest Laboratories Pvt. Ltd,Madhya Pradesh,F00048,Quest Laboratories Pvt. Ltd,18
+M00062,Pharmaroots Healthcare,Himachal Pradesh,F00062,Pharmaroots Healthcare,18
+M00053,Ives Drugs (India) Pvt. Ltd,Madhya Pradesh,F00053,Ives Drugs (India) Pvt. Ltd,17
+M00054,Martin & Brown Bio- Sciences Pvt. Ltd,Himachal Pradesh,F00054,Martin & Brown Bio- Sciences Pvt. Ltd,17
+M00055,Cotec Healthcare Pvt. Ltd,Uttarakhand,F00055,Cotec Healthcare Pvt. Ltd,17
+M00056,Bharat Parenterals Ltd,Gujarat,F00056,Bharat Parenterals Ltd,17
+M00057,CMG Biotech Pvt. Ltd,Himachal Pradesh,F00057,CMG Biotech Pvt. Ltd,17
+M00061,Omega Pharma,Uttarakhand,F00061,Omega Pharma,16
+M00064,Zim Laboratories Limited,Maharashtra,F00064,Zim Laboratories Limited,16
+M00063,Ultra Drugs Pvt. Ltd,Himachal Pradesh,F00063,Ultra Drugs Pvt. Ltd,16
+M00060,Oscar Remedies Pvt. Ltd,Haryana,F00060,Oscar Remedies Pvt. Ltd,16
+M00059,Helax Health Care Pvt. Ltd,Uttarakhand,F00059,Helax Health Care Pvt. Ltd,16
+M00082,Unimarck Healthcare Ltd,Uttarakhand,F00082,Unimarck Healthcare Ltd,16
+M00058,Synokem Pharmaceuticals Ltd,Uttarakhand,F00058,Synokem Pharmaceuticals Ltd,16
+M00065,Saintlife Pharmaceuticals Ltd,Uttarakhand,F00065,Saintlife Pharmaceuticals Ltd,15
+M00067,Salus Pharmaceuticals,Himachal Pradesh,F00067,Salus Pharmaceuticals,15
+M00068,VADSP Pharmaceuticals,Himachal Pradesh,F00068,VADSP Pharmaceuticals,15
+M00069,Captab Biotec,Himachal Pradesh,F00069,Captab Biotec,15
+M00070,Akums Drugs & Pharmaceuticals Ltd,Uttarakhand,F00070,Akums Drugs & Pharmaceuticals Ltd,15
+M00066,Deep Pharma,Gujarat,F00066,Deep Pharma,15
+M00076,Symbiosis Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00076,Symbiosis Pharmaceuticals Pvt. Ltd,14
+M00081,Hindustan Antibiotics Ltd,Haryana,F00029,Hindustan Antibiotics Ltd,14
+M00109,Innova Captab Ltd,Himachal Pradesh,F00109,Innova Captab Ltd,14
+M00079,Navkar Lifesciences,Himachal Pradesh,F00079,Navkar Lifesciences,14
+M00074,Gurumangalam International,Gujarat,F00074,Gurumangalam International,14
+M00073,Spen Formulations Pvt. Ltd,Himachal Pradesh,F00073,Spen Formulations Pvt. Ltd,14
+M00071,Alves Healthcare Private Limited,Himachal Pradesh,F00071,Alves Healthcare Private Limited,14
+M00072,Cureza Healthcare Pvt. Ltd,Madhya Pradesh,F00072,Cureza Healthcare Pvt. Ltd,14
+M00138,Lifevision Healthcare,Himachal Pradesh,F00138,Lifevision Healthcare,13
+M00132,Bonn Schtering Bio Sciences,Puducherry,F00132,Bonn Schtering Bio Sciences,13
+M00090,Nandani Medical Laboratories Pvt. Ltd,Madhya Pradesh,F00090,Nandani Medical Laboratories Pvt. Ltd,13
+M00097,Healthy Life Pharma Pvt. Ltd,Maharashtra,F00097,Healthy Life Pharma Pvt. Ltd,13
+M00077,Kwality Pharmaceuticals Ltd,Punjab,F00077,Kwality Pharmaceuticals Ltd,13
+M00080,Gnosis Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00080,Gnosis Pharmaceuticals Pvt. Ltd,13
+M00075,Biogenetic Drugs Pvt. Ltd,Himachal Pradesh,F00075,Biogenetic Drugs Pvt. Ltd,13
+M00078,Bennet Pharmaceuticals Ltd,Himachal Pradesh,F00078,Bennet Pharmaceuticals Ltd,13
+M00192,Alliance Biotech,Himachal Pradesh,F00192,Alliance Biotech,13
+M00089,Ortin Laboratories Ltd,Telangana,F00089,Ortin Laboratories Ltd,12
+M00088,Cadila Pharmaceuticals Limited,Jammu & Kashmir,F00088,Cadila Pharmaceuticals Limited,12
+M00086,Affy Parenterals (WHO- cGMP/ISO 9001:2015 Certified Co,Himachal Pradesh,F00086,Affy Parenterals (WHO- cGMP/ISO 9001:2015 Certified Co,12
+M00083,Rednex Pharmaceuticals Pvt. Ltd,Gujarat,F00083,Rednex Pharmaceuticals Pvt. Ltd,12
+M00085,Centurion Remedies Pvt. Ltd,Gujarat,F00085,Centurion Remedies Pvt. Ltd,12
+M00087,Cyper Pharma,Himachal Pradesh,F00087,Cyper Pharma,12
+M00084,Bochem Healthcare Pvt. Ltd,Madhya Pradesh,F00084,Bochem Healthcare Pvt. Ltd,12
+M00091,Pushkar Pharma,Himachal Pradesh,F00091,Pushkar Pharma,12
+M00096,Marc Lifesciences Sikkim,Sikkim,F00096,Marc Lifesciences Sikkim,11
+M00106,Mercury Laboratories Ltd,Gujarat,F00106,Mercury Laboratories Ltd,11
+M00092,Vivek Pharmachem (India) Ltd,Jammu & Kashmir,F00014,Vivek Pharmachem (India) Ltd,11
+M00094,Orison Pharma International,Himachal Pradesh,F00094,Orison Pharma International,11
+M00125,Modi Antibiotics,Gujarat,F00125,Modi Antibiotics,11
+M00120,Sun Pharma Laboratories Ltd,Sikkim,F00120,Sun Pharma Laboratories Ltd,11
+M00115,Intas Pharmaceuticals Ltd,Sikkim,F00115,Intas Pharmaceuticals Ltd,11
+M00095,Leeford Healthcare Ltd,Himachal Pradesh,F00095,Leeford Healthcare Ltd,11
+M00108,Manali Petrochemicals Limited,Tamil Nadu,F00108,Manali Petrochemicals Limited,11
+M00116,Relief Biotech Pvt. Ltd,Uttarakhand,F00116,Relief Biotech Pvt. Ltd,11
+M00093,Eurokem Laboratories Pvt ltd,Tamil Nadu,F00093,Eurokem Laboratories Pvt ltd,11
+M00102,Not Mentioned,Unknown,F00102,Not Mentioned,11
+M00104,Aan Life science Private Limited,Gujarat,F00104,Aan Life science Private Limited,11
+M00098,Concept Pharmaceuticals Ltd,Maharashtra,F00098,Concept Pharmaceuticals Ltd,11
+M00099,Systole Remedies Pvt. Ltd,Himachal Pradesh,F00099,Systole Remedies Pvt. Ltd,11
+M00100,Sresan Pharmaceutical Manufacturer,Tamil Nadu,F00100,Sresan Pharmaceutical Manufacturer,11
+M00101,Omega Biotech Ltd,Uttarakhand,F00101,Omega Biotech Ltd,11
+M00103,Maan Pharmaceuticals Ltd,Gujarat,F00103,Maan Pharmaceuticals Ltd,11
+M00105,Terrace Pharmaceuticals (P) Ltd,Himachal Pradesh,F00105,Terrace Pharmaceuticals (P) Ltd,11
+M00124,Om Biomedic Pvt. Ltd,Uttarakhand,F00124,Om Biomedic Pvt. Ltd,10
+M00123,Nest Healthcare Private Limited,Gujarat,F00123,Nest Healthcare Private Limited,10
+M00121,Macleods Pharmaceuticals Ltd,Sikkim,F00121,Macleods Pharmaceuticals Ltd,10
+M00107,Park Pharmaceuticals,Himachal Pradesh,F00107,Park Pharmaceuticals,10
+M00119,DM Pharma Private Limited,Himachal Pradesh,F00119,DM Pharma Private Limited,10
+M00112,Protech Telelinks,Himachal Pradesh,F00112,Protech Telelinks,10
+M00110,Trugen Pharmaceuticals Pvt. Ltd,Uttarakhand,F00110,Trugen Pharmaceuticals Pvt. Ltd,10
+M00111,Galpha Laboratories Limited,Himachal Pradesh,F00111,Galpha Laboratories Limited,10
+M00118,Micron Pharmaceuticals,Gujarat,F00118,Micron Pharmaceuticals,10
+M00122,Tanpal Pharmaceuticals,Punjab,F00122,Tanpal Pharmaceuticals,10
+M00113,Morepen Laboratories Ltd,Himachal Pradesh,F00113,Morepen Laboratories Ltd,10
+M00114,Sunvet Healthcare,Himachal Pradesh,F00114,Sunvet Healthcare,10
+M00117,Aagya Biotech Pvt. Ltd,Uttarakhand,F00117,Aagya Biotech Pvt. Ltd,10
+M00182,Puniska Injectables Pvt. Ltd,Goa,F00182,Puniska Injectables Pvt. Ltd,9
+M00160,Paschim Banga Pharmaceutical,West Bengal,F00160,Paschim Banga Pharmaceutical,9
+M00154,Glenmark Pharmaceuticals Ltd,Sikkim,F00154,Glenmark Pharmaceuticals Ltd,9
+M00142,Haustus Biotech Pvt. Ltd,Himachal Pradesh,F00142,Haustus Biotech Pvt. Ltd,9
+M00137,Maxtar Bio-Genics,Himachal Pradesh,F00137,Maxtar Bio-Genics,9
+M00140,Ravian Life Science Pvt. Ltd,Uttarakhand,F00140,Ravian Life Science Pvt. Ltd,9
+M00139,YL Pharma,Himachal Pradesh,F00139,YL Pharma,9
+M00176,Bengal Chemicals & Pharmaceuticals Ltd,West Bengal,F00176,Bengal Chemicals & Pharmaceuticals Ltd,9
+M00141,Progressive Lifesciences Pvt. Ltd,Uttarakhand,F00141,Progressive Lifesciences Pvt. Ltd,9
+M00136,Athens Life Sciences Mauza Rampur Jattan,Himachal Pradesh,F00329,Athens Life Sciences Mauza Rampur Jattan,9
+M00134,Biodeal Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00134,Biodeal Pharmaceuticals Pvt. Ltd,9
+M00133,Shine Pharmaceuticals Limited,Gujarat,F00133,Shine Pharmaceuticals Limited,9
+M00131,Aristo Pharmaceuticals Pvt. Ltd,Sikkim,F00131,Aristo Pharmaceuticals Pvt. Ltd,9
+M00129,Astonea Labs Pvt. Ltd,Haryana,F00129,Astonea Labs Pvt. Ltd,9
+M00135,Windlas Biotech Limited,Uttarakhand,F00135,Windlas Biotech Limited,9
+M00126,Not applicable,Unknown,F00126,Not applicable,9
+M00127,Psychotropics India Ltd,Uttarakhand,F00127,Psychotropics India Ltd,9
+M00128,Syndicate Pharma,Madhya Pradesh,F00128,Syndicate Pharma,9
+M00130,Vimac,Tamil Nadu,F00130,Vimac,9
+M00170,Vzoic Healthcare Pvt. Ltd,Punjab,F00170,Vzoic Healthcare Pvt. Ltd,8
+M00166,Amkon Pharmaceuticals,Punjab,F00166,Amkon Pharmaceuticals,8
+M00167,Amster Labs,Himachal Pradesh,F00167,Amster Labs,8
+M00168,Sunlife Sciences,Uttarakhand,F00168,Sunlife Sciences,8
+M00169,Smayan Healthcare Pvt. Ltd,Himachal Pradesh,F00169,Smayan Healthcare Pvt. Ltd,8
+M00173,Plena Remedies,Himachal Pradesh,F00173,Plena Remedies,8
+M00171,Pharma Impex Laboratories Pvt. Ltd,West Bengal,F00171,Pharma Impex Laboratories Pvt. Ltd,8
+M00172,La-Chemico Pvt. Ltd,West Bengal,F00172,La-Chemico Pvt. Ltd,8
+M00163,CIPCO Limited,Madhya Pradesh,F00163,CIPCO Limited,8
+M00174,Sigma Softgel & Formulation,Himachal Pradesh,F00174,Sigma Softgel & Formulation,8
+M00186,Titanes Pharma,Himachal Pradesh,F00186,Titanes Pharma,8
+M00197,Zest Pharma,Madhya Pradesh,F00197,Zest Pharma,8
+M00196,Alkem Health Science,Sikkim,F00196,Alkem Health Science,8
+M00164,Stadmed Private Limited,West Bengal,F00164,Stadmed Private Limited,8
+M00165,Overseas Health Care Pvt. Ltd,Punjab,F00165,Overseas Health Care Pvt. Ltd,8
+M00162,Karnani Pharmaceuticals Pvt. Ltd,Uttarakhand,F00162,Karnani Pharmaceuticals Pvt. Ltd,8
+M00150,Aban Pharmaceuticals,Gujarat,F00150,Aban Pharmaceuticals,8
+M00143,Aristo Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00131,Aristo Pharmaceuticals Pvt. Ltd,8
+M00145,Hab Pharmaceuticals & Research Limited,Uttarakhand,F00145,Hab Pharmaceuticals & Research Limited,8
+M00146,Daxin Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00146,Daxin Pharmaceuticals Pvt. Ltd,8
+M00161,Cian Healthcare Ltd,Uttarakhand,F00161,Cian Healthcare Ltd,8
+M00147,Vivimed Labs Limited,Telangana,F00147,Vivimed Labs Limited,8
+M00148,Biomax Biotechnics (P) Ltd,Haryana,F00148,Biomax Biotechnics (P) Ltd,8
+M00149,Orison Pharma International Khari,Himachal Pradesh,F00149,Orison Pharma International Khari,8
+M00144,Zoic Biotech Pvt. Ltd,Punjab,F00144,Zoic Biotech Pvt. Ltd,8
+M00151,Primus Pharmaceuticals,Himachal Pradesh,F00151,Primus Pharmaceuticals,8
+M00158,Bajaj Healthcare Ltd,Gujarat,F00158,Bajaj Healthcare Ltd,8
+M00153,Adwin Pharma,Himachal Pradesh,F00153,Adwin Pharma,8
+M00155,Adroit Pharmaceuticals Pvt. Ltd,Maharashtra,F00155,Adroit Pharmaceuticals Pvt. Ltd,8
+M00156,Prochem Pharmaceuticals Pvt. Ltd,Uttarakhand,F00156,Prochem Pharmaceuticals Pvt. Ltd,8
+M00159,Medinok Healthcare Pvt. Ltd,Puducherry,F00159,Medinok Healthcare Pvt. Ltd,8
+M00157,M Sea Pharmaceuticals (P) Ltd,Himachal Pradesh,F00157,M Sea Pharmaceuticals (P) Ltd,8
+M00152,T & G Medicare,Himachal Pradesh,F00152,T & G Medicare,8
+M00194,Radiant Parenterals Ltd,Gujarat,F00194,Radiant Parenterals Ltd,7
+M00193,Spectrum Formulation Pvt. Ltd,Uttarakhand,F00193,Spectrum Formulation Pvt. Ltd,7
+M00198,Hanuchem Laboratories,Himachal Pradesh,F00198,Hanuchem Laboratories,7
+M00199,Neon Laboratories Ltd,Maharashtra,F00199,Neon Laboratories Ltd,7
+M00202,Malik Lifesciences Pvt. Ltd,Uttarakhand,F00202,Malik Lifesciences Pvt. Ltd,7
+M00200,Regent Ajanta Biotech,Uttarakhand,F00200,Regent Ajanta Biotech,7
+M00201,Saitech Medicare Pvt. Ltd,Himachal Pradesh,F00201,Saitech Medicare Pvt. Ltd,7
+M00203,Mercury Pharmaceuticals,Himachal Pradesh,F00203,Mercury Pharmaceuticals,7
+M00204,HLL Lifecare Limited,Madhya Pradesh,F00204,HLL Lifecare Limited,7
+M00205,L.V. Life Sciences,Himachal Pradesh,F00205,L.V. Life Sciences,7
+M00488,Stanford Laboratories Private Limited,Himachal Pradesh,F00488,Stanford Laboratories Private Limited,7
+M00251,Kausikh Therapeutics (P) Ltd,Tamil Nadu,F00251,Kausikh Therapeutics (P) Ltd,7
+M00195,Gujarat Ambuja Exports Ltd,Gujarat,F00195,Gujarat Ambuja Exports Ltd,7
+M00191,Rachil Pharma,Himachal Pradesh,F00191,Rachil Pharma,7
+M00183,Kanha Biogenetic,Himachal Pradesh,F00183,Kanha Biogenetic,7
+M00178,Lark Laboratories (India) Ltd,Rajasthan,F00178,Lark Laboratories (India) Ltd,7
+M00175,Seejar Pharmaceuticals,Gujarat,F00175,Seejar Pharmaceuticals,7
+M00179,Oaksun Lifesciences,Telangana,F00179,Oaksun Lifesciences,7
+M00180,Med Manor Organics Pvt. Ltd,Uttarakhand,F00180,Med Manor Organics Pvt. Ltd,7
+M00181,Ciron Drugs & Pharmaceuticals Pvt. Ltd,Maharashtra,F00181,Ciron Drugs & Pharmaceuticals Pvt. Ltd,7
+M00177,Bajaj Formulations,Outside India,F00177,Bajaj Formulations,7
+M00184,Vilin Bio Med Ltd,Uttarakhand,F00184,Vilin Bio Med Ltd,7
+M00187,Candour Pharmaceuticals,Himachal Pradesh,F00187,Candour Pharmaceuticals,7
+M00188,Ethicare Laboratories,Jammu & Kashmir,F00188,Ethicare Laboratories,7
+M00189,Iosis Remedies Pvt. Ltd,Himachal Pradesh,F00189,Iosis Remedies Pvt. Ltd,7
+M00190,Maxheal Pharmaceuticals (India) Ltd,Maharashtra,F00190,Maxheal Pharmaceuticals (India) Ltd,7
+M00185,Medivision Healthcare,Gujarat,F00185,Medivision Healthcare,7
+M00249,Saar Biotech Pvt. Ltd,Himachal Pradesh,F00249,Saar Biotech Pvt. Ltd,6
+M00255,R.P. Biotech Pvt. Ltd,Punjab,F00255,R.P. Biotech Pvt. Ltd,6
+M00254,E.G. Pharmaceuticals,Himachal Pradesh,F00254,E.G. Pharmaceuticals,6
+M00253,Medisky Pharmaceuticals,Gujarat,F00253,Medisky Pharmaceuticals,6
+M00252,Maxmed Lifesciences Pvt. Ltd,Uttarakhand,F00252,Maxmed Lifesciences Pvt. Ltd,6
+M00250,Wilcure Remedies Pvt. Ltd,Madhya Pradesh,F00250,Wilcure Remedies Pvt. Ltd,6
+M00246,ZRS Pharmaceuticals India Pvt. Ltd,Himachal Pradesh,F00246,ZRS Pharmaceuticals India Pvt. Ltd,6
+M00248,DUTCH Formulations,Himachal Pradesh,F00248,DUTCH Formulations,6
+M00245,Tidal Laboratories Pvt. Ltd,Himachal Pradesh,F00245,Tidal Laboratories Pvt. Ltd,6
+M00244,United Bioceuticals Pvt. Ltd,Uttarakhand,F00244,United Bioceuticals Pvt. Ltd,6
+M00257,Torque Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00257,Torque Pharmaceuticals Pvt. Ltd,6
+M00243,Pulse Pharmaceuticals Pvt. Ltd,Uttarakhand,F00243,Pulse Pharmaceuticals Pvt. Ltd,6
+M00242,ION Healthcare Pvt. Ltd,Himachal Pradesh,F00242,ION Healthcare Pvt. Ltd,6
+M00256,Renowed Life Sciences,Uttarakhand,F00256,Renowed Life Sciences,6
+M00365,Maxrelief Healthcare,Himachal Pradesh,F00365,Maxrelief Healthcare,6
+M00258,Welcure Remedies,Himachal Pradesh,F00258,Welcure Remedies,6
+M00259,Dr. Miltons Laboratories Private Limited,Puducherry,F00259,Dr. Miltons Laboratories Private Limited,6
+M00260,Syncom Healthcare Ltd,Uttarakhand,F00260,Syncom Healthcare Ltd,6
+M00261,Maiden Pharmaceuticals,Himachal Pradesh,F00261,Maiden Pharmaceuticals,6
+M00400,Ultra Drugs Formulations Pvt Ltd,Himachal Pradesh,F00400,Ultra Drugs Formulations Pvt Ltd,6
+M00240,Taksa Lifescience,Punjab,F00240,Taksa Lifescience,6
+M00267,Curetech Skincare,Himachal Pradesh,F00267,Curetech Skincare,6
+M00271,Cyano Pharma (P) Ltd,Madhya Pradesh,F00271,Cyano Pharma (P) Ltd,6
+M00272,Daffohils Laboratories Pvt. Ltd,Uttarakhand,F00272,Daffohils Laboratories Pvt. Ltd,6
+M00273,Neutec Healthcare Pvt. Ltd,Delhi,F00273,Neutec Healthcare Pvt. Ltd,6
+M00274,Cosmas Pharmacls Ltd,Himachal Pradesh,F00274,Cosmas Pharmacls Ltd,6
+M00594,Vision Parenteral Pvt. Ltd,Uttar Pradesh,F00594,Vision Parenteral Pvt. Ltd,6
+M00281,Geenac Pharma,Uttarakhand,F00281,Geenac Pharma,6
+M00302,Orchid Bio-Tech Limited,Uttarakhand,F00302,Orchid Bio-Tech Limited,6
+M00241,Marc Laboratories Ltd,Himachal Pradesh,F00241,Marc Laboratories Ltd,6
+M00247,Dr. Edwin Medilabs Pvt.Ltd,Punjab,F00247,Dr. Edwin Medilabs Pvt.Ltd,6
+M00239,Talent Healthcare,Uttarakhand,F00239,Talent Healthcare,6
+M00224,Alexa Pharmaceuticals,Himachal Pradesh,F00224,Alexa Pharmaceuticals,6
+M00208,Indus Pharma Pvt. Ltd,Rajasthan,F00208,Indus Pharma Pvt. Ltd,6
+M00211,Celebrity Biopharma Ltd,Himachal Pradesh,F00211,Celebrity Biopharma Ltd,6
+M00212,Askon Health Care,Madhya Pradesh,F00212,Askon Health Care,6
+M00213,Park Pharmaceuticals,Haryana,F00107,Park Pharmaceuticals,6
+M00215,Paksons Pharmaceuticals Private Limited,Haryana,F00215,Paksons Pharmaceuticals Private Limited,6
+M00238,Preet Remedies Ltd,Himachal Pradesh,F00238,Preet Remedies Ltd,6
+M00216,Hetero Healthcare Ltd,Assam,F00216,Hetero Healthcare Ltd,6
+M00207,Bajaj Formulations,Uttarakhand,F00177,Bajaj Formulations,6
+M00217,C.B. Healthcare,Himachal Pradesh,F00217,C.B. Healthcare,6
+M00218,Supercure Biotech Pvt. Ltd,Haryana,F00218,Supercure Biotech Pvt. Ltd,6
+M00220,High Tech Pharma,Madhya Pradesh,F00220,High Tech Pharma,6
+M00221,Jineka Healthcare Pvt. Ltd,Uttarakhand,F00221,Jineka Healthcare Pvt. Ltd,6
+M00209,Rhydburg Pharmaceuticals Ltd,Uttarakhand,F00209,Rhydburg Pharmaceuticals Ltd,6
+M00223,Algen Healthcare Ltd,Himachal Pradesh,F00223,Algen Healthcare Ltd,6
+M00222,Spurious,Unknown,F00222,Spurious,6
+M00225,Sri Ram Healthcare Pvt. Ltd,Himachal Pradesh,F00225,Sri Ram Healthcare Pvt. Ltd,6
+M00226,IBN Herbals,Himachal Pradesh,F00226,IBN Herbals,6
+M00237,Ipca Laboratories Ltd,Sikkim,F00237,Ipca Laboratories Ltd,6
+M00236,Shiva Biogenetic Laboratories Pvt. Ltd,Himachal Pradesh,F00236,Shiva Biogenetic Laboratories Pvt. Ltd,6
+M00235,Jackson Laboratories Pvt. Ltd,Himachal Pradesh,F00000,Jackson Laboratories Pvt. Ltd,6
+M00234,Haseeb Pharmaceuticals Pvt. Ltd,Maharashtra,F00234,Haseeb Pharmaceuticals Pvt. Ltd,6
+M00206,Mayoford Pharma,Himachal Pradesh,F00206,Mayoford Pharma,6
+M00233,Neptune Life Sciences Pvt. Ltd,Himachal Pradesh,F00233,Neptune Life Sciences Pvt. Ltd,6
+M00232,Phaex Polymers Private Limited,Maharashtra,F00232,Phaex Polymers Private Limited,6
+M00231,Avalon Medicines Pvt. Ltd,Haryana,F00231,Avalon Medicines Pvt. Ltd,6
+M00230,Bactolac Formulations Pvt. Ltd,Telangana,F00230,Bactolac Formulations Pvt. Ltd,6
+M00229,Jind Surgicals,Haryana,F00229,Jind Surgicals,6
+M00228,Alventa Pharma Ltd,Himachal Pradesh,F00228,Alventa Pharma Ltd,6
+M00227,Sarv Pharmaceuticals,Uttarakhand,F00227,Sarv Pharmaceuticals,6
+M00210,Bal Pharma Limited,Uttarakhand,F00210,Bal Pharma Limited,6
+M00310,Apple Formulations Pvt. Ltd,Outside India,F00005,Apple Formulations Pvt. Ltd,5
+M00309,Alpa Laboratories Ltd,Madhya Pradesh,F00309,Alpa Laboratories Ltd,5
+M00311,Vrindavan Global,Himachal Pradesh,F00311,Vrindavan Global,5
+M00312,Apex Formulations Pvt. Ltd,Gujarat,F00312,Apex Formulations Pvt. Ltd,5
+M00303,Venus Biosciences Pvt. Ltd,Himachal Pradesh,F00303,Venus Biosciences Pvt. Ltd,5
+M00308,Aurio Pharma Laboratories Pvt. Ltd,West Bengal,F00308,Aurio Pharma Laboratories Pvt. Ltd,5
+M00307,Legen Healthcare,Himachal Pradesh,F00307,Legen Healthcare,5
+M00306,Yeluri Formulations Pvt Ltd,Telangana,F00306,Yeluri Formulations Pvt Ltd,5
+M00305,Aishwarya Healthcare,Himachal Pradesh,F00305,Aishwarya Healthcare,5
+M00304,Verax Life Sciences Pvt. Ltd,Himachal Pradesh,F00304,Verax Life Sciences Pvt. Ltd,5
+M00314,Anrose Pharma,Himachal Pradesh,F00314,Anrose Pharma,5
+M00313,Anglo-French Drugs & Industries Ltd,Karnataka,F00313,Anglo-French Drugs & Industries Ltd,5
+M00341,Star Filteration Systems,Himachal Pradesh,F00341,Star Filteration Systems,5
+M00315,Vapi Care Pharma Pvt. Ltd,Gujarat,F00315,Vapi Care Pharma Pvt. Ltd,5
+M00316,Vertex Pharma Chemicals,Puducherry,F00316,Vertex Pharma Chemicals,5
+M00317,KNM Pharma Pvt. Ltd,Gujarat,F00317,KNM Pharma Pvt. Ltd,5
+M00318,AASSK Pharmaceuticals Pvt. Ltd,Tamil Nadu,F00318,AASSK Pharmaceuticals Pvt. Ltd,5
+M00322,Firstmed Therapeutics Pvt Ltd,Tamil Nadu,F00322,Firstmed Therapeutics Pvt Ltd,5
+M00338,Orchid Medlife Pvt. Ltd,Himachal Pradesh,F00338,Orchid Medlife Pvt. Ltd,5
+M00345,Cipco Pharmaceuticals,Madhya Pradesh,F00345,Cipco Pharmaceuticals,5
+M00425,Stallion Laboratories Pvt. Ltd,Gujarat,F00425,Stallion Laboratories Pvt. Ltd,5
+M00362,Swiss Garnier Biotech Pvt. Ltd,Himachal Pradesh,F00362,Swiss Garnier Biotech Pvt. Ltd,5
+M00369,Sano-Cito Therapeutics Inc,Himachal Pradesh,F00369,Sano-Cito Therapeutics Inc,5
+M00381,Curehealth Pharmaceticals Pvt Ltd,Himachal Pradesh,F00381,Curehealth Pharmaceticals Pvt Ltd,5
+M00300,Pondchy Pharmaceuticals,Puducherry,F00300,Pondchy Pharmaceuticals,5
+M00301,Velnex Medicare India Pvt. Ltd,Haryana,F00301,Velnex Medicare India Pvt. Ltd,5
+M00293,Roma Pharma Pvt. Ltd,Himachal Pradesh,F00293,Roma Pharma Pvt. Ltd,5
+M00299,Zazen Pharma Pvt. Ltd,Maharashtra,F00299,Zazen Pharma Pvt. Ltd,5
+M00282,Nanoceut Therapeutics Pvt. Ltd,Puducherry,F00282,Nanoceut Therapeutics Pvt. Ltd,5
+M00262,Ravenbhel Healthcare Pvt. Ltd,Jammu & Kashmir,F00262,Ravenbhel Healthcare Pvt. Ltd,5
+M00263,Smilax Healthcare Drug Co,Himachal Pradesh,F00263,Smilax Healthcare Drug Co,5
+M00264,Micro Formulations,Himachal Pradesh,F00264,Micro Formulations,5
+M00265,Heal (India) Laboratories Pvt. Ltd,Tamil Nadu,F00265,Heal (India) Laboratories Pvt. Ltd,5
+M00266,Nuclotec Remedies Pvt. Ltd,Uttarakhand,F00266,Nuclotec Remedies Pvt. Ltd,5
+M00268,Hindustan Medicines Pvt. Ltd,Bihar,F00268,Hindustan Medicines Pvt. Ltd,5
+M00298,Vee Laboratories,Himachal Pradesh,F00298,Vee Laboratories,5
+M00270,Thaiger Pharma,Unknown,F00270,Thaiger Pharma,5
+M00275,Divine Laboratories Pvt. Ltd,Gujarat,F00275,Divine Laboratories Pvt. Ltd,5
+M00276,Reyoung Pharmaceutical Co,Outside India,F00276,Reyoung Pharmaceutical Co,5
+M00277,Sharun Pharmaceuticals Pvt.Ltd,Puducherry,F00277,Sharun Pharmaceuticals Pvt.Ltd,5
+M00278,Tirupati Medicare Limited,Himachal Pradesh,F00278,Tirupati Medicare Limited,5
+M00279,Medley Pharmaceuticals Ltd,Jammu & Kashmir,F00279,Medley Pharmaceuticals Ltd,5
+M00280,Elfin Drugs Pvt. Ltd,Himachal Pradesh,F00280,Elfin Drugs Pvt. Ltd,5
+M00269,Elegant Cosmed Pvt. Ltd,Gujarat,F00269,Elegant Cosmed Pvt. Ltd,5
+M00283,Celon Laboratories Pvt. Ltd,Telangana,F00283,Celon Laboratories Pvt. Ltd,5
+M00297,Vats Biotech Pvt. Ltd,Himachal Pradesh,F00297,Vats Biotech Pvt. Ltd,5
+M00289,HSN International,Uttarakhand,F00289,HSN International,5
+M00291,Bonsai Pharma,Himachal Pradesh,F00291,Bonsai Pharma,5
+M00288,Cadila Pharmaceuticals Limited,Gujarat,F00088,Cadila Pharmaceuticals Limited,5
+M00295,Accura Care Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00295,Accura Care Pharmaceuticals Pvt. Ltd,5
+M00296,Pragati Udyog,Jharkhand,F00296,Pragati Udyog,5
+M00290,Kalpraj Techno Fab Pvt. Ltd,Madhya Pradesh,F00290,Kalpraj Techno Fab Pvt. Ltd,5
+M00294,Regain Laboratories,Haryana,F00294,Regain Laboratories,5
+M00287,Sunvij Drugs Private Limited,Gujarat,F00287,Sunvij Drugs Private Limited,5
+M00286,Capsoft Healthcare Pvt. Ltd,Himachal Pradesh,F00286,Capsoft Healthcare Pvt. Ltd,5
+M00285,Carewin Pharmaceuticals (Guj) Pvt. Ltd,Gujarat,F00285,Carewin Pharmaceuticals (Guj) Pvt. Ltd,5
+M00284,Ethicare Pharmaceuticals (P) Ltd,Gujarat,F00284,Ethicare Pharmaceuticals (P) Ltd,5
+M00292,Biocore Pharmaceuticals,Himachal Pradesh,F00292,Biocore Pharmaceuticals,5
+M00418,Abaris Healthcare Pvt. Ltd,Gujarat,F00418,Abaris Healthcare Pvt. Ltd,4
+M00417,Mayer Lab,Himachal Pradesh,F00417,Mayer Lab,4
+M00392,Arion Healthcare,Himachal Pradesh,F00392,Arion Healthcare,4
+M00416,Medimark Drugs & Pharmaceuticals,Uttarakhand,F00416,Medimark Drugs & Pharmaceuticals,4
+M00415,Mayasha Lifesciences,Himachal Pradesh,F00415,Mayasha Lifesciences,4
+M00414,Brilliant Lifesciences Pvt Ltd,Gujarat,F00414,Brilliant Lifesciences Pvt Ltd,4
+M00413,SBS Biotech,Himachal Pradesh,F00413,SBS Biotech,4
+M00419,McW Healthcare (P) Ltd,Madhya Pradesh,F00419,McW Healthcare (P) Ltd,4
+M00412,Grampus Laboratories,Himachal Pradesh,F00412,Grampus Laboratories,4
+M00411,Karlin Pharmaceuticals & Exports Private Limited,Tamil Nadu,F00411,Karlin Pharmaceuticals & Exports Private Limited,4
+M00408,Sridhara Lifesciences Pvt. Ltd,Uttarakhand,F00408,Sridhara Lifesciences Pvt. Ltd,4
+M00410,Accuwell Medics Pvt Ltd,Gujarat,F00410,Accuwell Medics Pvt Ltd,4
+M00409,Caplet India Pvt. Ltd,West Bengal,F00409,Caplet India Pvt. Ltd,4
+M00421,SNG Pharmaceuticals (p) Ltd,Gujarat,F00421,SNG Pharmaceuticals (p) Ltd,4
+M00407,Globin Pharmaceuticals Pvt. Ltd,Uttarakhand,F00407,Globin Pharmaceuticals Pvt. Ltd,4
+M00406,Spas Remedise,Himachal Pradesh,F00406,Spas Remedise,4
+M00405,"Bestcare Formulation Pvt, Ltd",Puducherry,F00405,"Bestcare Formulation Pvt, Ltd",4
+M00404,SMBJ Pharmaceuticals Pvt. Ltd,Haryana,F00404,SMBJ Pharmaceuticals Pvt. Ltd,4
+M00403,Globela Pharma Pvt. Ltd,Gujarat,F00403,Globela Pharma Pvt. Ltd,4
+M00402,Gufic Biosciences Limited,Gujarat,F00402,Gufic Biosciences Limited,4
+M00401,SJD Surgicot Pvt. Ltd,Haryana,F00401,SJD Surgicot Pvt. Ltd,4
+M00399,Omish Laboratories Pvt. Ltd,Gujarat,F00399,Omish Laboratories Pvt. Ltd,4
+M00398,Mahys Pharmaceuticals,Andhra Pradesh,F00398,Mahys Pharmaceuticals,4
+M00397,Bionexy Pharma,Himachal Pradesh,F00397,Bionexy Pharma,4
+M00396,Caremax Formulations,Himachal Pradesh,F00396,Caremax Formulations,4
+M00394,SGS Formulation Pvt Ltd,Tamil Nadu,F00394,SGS Formulation Pvt Ltd,4
+M00420,Mediguard Remedies,Tamil Nadu,F00420,Mediguard Remedies,4
+M00426,Savya Pharmaceuticals,Outside India,F00426,Savya Pharmaceuticals,4
+M00422,Hetero Labs Limited,Himachal Pradesh,F00422,Hetero Labs Limited,4
+M00423,Access Life Sciences,Himachal Pradesh,F00423,Access Life Sciences,4
+M00729,Bhaskaravilasam Vaidyasala,Kerala,F00729,Bhaskaravilasam Vaidyasala,4
+M00659,Shervotec Pharmaceuticals,Himachal Pradesh,F00659,Shervotec Pharmaceuticals,4
+M00649,Indo Rama Health Care Pvt.Ltd,Haryana,F00649,Indo Rama Health Care Pvt.Ltd,4
+M00600,Lifecare Neuro Products Limited,Himachal Pradesh,F00600,Lifecare Neuro Products Limited,4
+M00569,Janveda Healthceutical Pvt. Ltd,Gujarat,F00569,Janveda Healthceutical Pvt. Ltd,4
+M00541,Crossasia Biotech Pvt. Ltd,Madhya Pradesh,F00541,Crossasia Biotech Pvt. Ltd,4
+M00534,KamlaAmrut Pharmaceutical LLP,Gujarat,F00534,KamlaAmrut Pharmaceutical LLP,4
+M00531,Shell Eastern Chemicals,Outside India,F00531,Shell Eastern Chemicals,4
+M00522,Medistark Biotech Pvt. Ltd,Tamil Nadu,F00522,Medistark Biotech Pvt. Ltd,4
+M00516,Shri Sai Balaji Pharmatech Pvt. Ltd,Himachal Pradesh,F00516,Shri Sai Balaji Pharmatech Pvt. Ltd,4
+M00497,Maneesh Pharmaceuticals Ltd,Himachal Pradesh,F00497,Maneesh Pharmaceuticals Ltd,4
+M00495,Alencure Biotech Pvt Ltd,Himachal Pradesh,F00495,Alencure Biotech Pvt Ltd,4
+M00492,Rathi Laboratories (Hindustan) Pvt. Ltd,Bihar,F00492,Rathi Laboratories (Hindustan) Pvt. Ltd,4
+M00470,Alop Medi-Sciences Pvt. Ltd,Himachal Pradesh,F00470,Alop Medi-Sciences Pvt. Ltd,4
+M00464,Snehal Pharma & Surgicals Pvt. Ltd,Maharashtra,F00464,Snehal Pharma & Surgicals Pvt. Ltd,4
+M00456,Medreich Ltd,Karnataka,F00456,Medreich Ltd,4
+M00438,Unital Formulations,Himachal Pradesh,F00438,Unital Formulations,4
+M00437,Catasta Pharmaceuticals,Himachal Pradesh,F00437,Catasta Pharmaceuticals,4
+M00436,Caspian Pharmaceuticals,Himachal Pradesh,F00436,Caspian Pharmaceuticals,4
+M00435,Nutra Life Healthcare Pvt. Ltd,Uttarakhand,F00435,Nutra Life Healthcare Pvt. Ltd,4
+M00434,JMM Formulation Pvt. Ltd,Himachal Pradesh,F00434,JMM Formulation Pvt. Ltd,4
+M00433,GlaxoSmithKline Pharmaceuticals Limited,Maharashtra,F00433,GlaxoSmithKline Pharmaceuticals Limited,4
+M00432,Medicef Pharma,Himachal Pradesh,F00432,Medicef Pharma,4
+M00431,H.L. Healthcare Pvt. Ltd,Himachal Pradesh,F00431,H.L. Healthcare Pvt. Ltd,4
+M00430,Microwin Labs PVt Ltd,Punjab,F00430,Microwin Labs PVt Ltd,4
+M00429,JMS Co,Outside India,F00429,JMS Co,4
+M00428,Mankind Pharma Ltd,Sikkim,F00428,Mankind Pharma Ltd,4
+M00427,Century Drugs Pvt. Ltd,Madhya Pradesh,F00427,Century Drugs Pvt. Ltd,4
+M00424,Acme Generics Pvt. Ltd,Himachal Pradesh,F00424,Acme Generics Pvt. Ltd,4
+M00393,Daffodills Pharmaceuticals Ltd,Uttar Pradesh,F00393,Daffodills Pharmaceuticals Ltd,4
+M00395,Vidhyasha Pharmaceuticals,Himachal Pradesh,F00395,Vidhyasha Pharmaceuticals,4
+M00391,M.R. Healthcare Pvt. Ltd,Uttarakhand,F00391,M.R. Healthcare Pvt. Ltd,4
+M00335,Asterisk Healthcare,Himachal Pradesh,F00335,Asterisk Healthcare,4
+M00352,Paradox Pharmaceuticals,Himachal Pradesh,F00352,Paradox Pharmaceuticals,4
+M00351,Pharma Force Lab,Himachal Pradesh,F00351,Pharma Force Lab,4
+M00350,Cipla Ltd,Sikkim,F00346,Cipla Ltd,4
+M00349,Nikvin Healthcare (I) Pvt. Ltd,Himachal Pradesh,F00349,Nikvin Healthcare (I) Pvt. Ltd,4
+M00348,Signoret Pharmaceuticals Pvt.Ltd,Chandigarh,F00348,Signoret Pharmaceuticals Pvt.Ltd,4
+M00347,Cipla Ltd,Himachal Pradesh,F00346,Cipla Ltd,4
+M00346,Cipla Ltd,Goa,F00346,Cipla Ltd,4
+M00344,Saphnix Life Sciences,Himachal Pradesh,F00344,Saphnix Life Sciences,4
+M00343,Rivpra Formulation Pvt. Ltd,Outside India,F00018,Rivpra Formulation Pvt. Ltd,4
+M00342,Synmedic Laboratories,Rajasthan,F00342,Synmedic Laboratories,4
+M00340,Marvellon Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00340,Marvellon Pharmaceuticals Pvt. Ltd,4
+M00339,Stride Organics Private Limited,Telangana,F00339,Stride Organics Private Limited,4
+M00337,Forgo Pharmaceuticals,Himachal Pradesh,F00337,Forgo Pharmaceuticals,4
+M00336,Maskon Life Sciences Pvt. Ltd,Uttarakhand,F00336,Maskon Life Sciences Pvt. Ltd,4
+M00334,Alifecare Formulation,Himachal Pradesh,F00334,Alifecare Formulation,4
+M00354,Signature Phytochemical Industries,Uttarakhand,F00354,Signature Phytochemical Industries,4
+M00333,Cosmas Research Lab Ltd,Punjab,F00333,Cosmas Research Lab Ltd,4
+M00332,Leostar Healthcare Pvt. Ltd,Telangana,F00332,Leostar Healthcare Pvt. Ltd,4
+M00331,Sunfine Healthcare,Himachal Pradesh,F00331,Sunfine Healthcare,4
+M00330,Corona Remedies Pvt. Ltd,Himachal Pradesh,F00330,Corona Remedies Pvt. Ltd,4
+M00329,Athens Life Sciences - Mauza-Rampur Jatten Nahan,Himachal Pradesh,F00329,Athens Life Sciences Mauza Rampur Jattan,4
+M00328,Hygeia Pharmaceuticals MFG. (P) Ltd,West Bengal,F00328,Hygeia Pharmaceuticals MFG. (P) Ltd,4
+M00327,Cooper Pharma Ltd,Uttarakhand,F00327,Cooper Pharma Ltd,4
+M00326,Olcare Laboratories,Gujarat,F00326,Olcare Laboratories,4
+M00390,Swift Life Sciences Pvt. Ltd,Outside India,F00390,Swift Life Sciences Pvt. Ltd,4
+M00324,IBN Herbals (A unit of Curetech Formulations Pvt. Ltd,Himachal Pradesh,F00324,IBN Herbals (A unit of Curetech Formulations Pvt. Ltd,4
+M00323,Azot Life Sciences,Himachal Pradesh,F00323,Azot Life Sciences,4
+M00321,Jakson Laboratories Pvt. Ltd,Punjab,F00321,Jakson Laboratories Pvt. Ltd,4
+M00320,Vinayak Manutrade (P) Ltd,Rajasthan,F00320,Vinayak Manutrade (P) Ltd,4
+M00319,Sarthak Biotech Pvt. Ltd,Haryana,F00319,Sarthak Biotech Pvt. Ltd,4
+M00353,Civron Pharmaceuticals,Himachal Pradesh,F00353,Civron Pharmaceuticals,4
+M00325,Ikon Pharmachem Pvt. Ltd,Uttarakhand,F00325,Ikon Pharmachem Pvt. Ltd,4
+M00355,Astam Healthcare Pvt. Ltd,Himachal Pradesh,F00355,Astam Healthcare Pvt. Ltd,4
+M00373,Logos Pharma,Himachal Pradesh,F00373,Logos Pharma,4
+M00370,Mednext Biotech Limited,Rajasthan,F00370,Mednext Biotech Limited,4
+M00387,Elikem Pharmaceuticals Pvt. Ltd,Gujarat,F00387,Elikem Pharmaceuticals Pvt. Ltd,4
+M00356,Salud Care (I) Pvt. Ltd,Uttarakhand,F00356,Salud Care (I) Pvt. Ltd,4
+M00386,Inducare Pharmaceutical and Research Foundatiion,Maharashtra,F00386,Inducare Pharmaceutical and Research Foundatiion,4
+M00371,Systochem Laboratories Ltd,Uttar Pradesh,F00371,Systochem Laboratories Ltd,4
+M00385,SVR Healthcare,Himachal Pradesh,F00385,SVR Healthcare,4
+M00372,Klokter Lifesciences Pvt.Ltd,Haryana,F00372,Klokter Lifesciences Pvt.Ltd,4
+M00374,Ronak Life Care Pvt. Ltd,Gujarat,F00374,Ronak Life Care Pvt. Ltd,4
+M00389,Swefn Pharmaceuticals Pvt. Ltd,Gujarat,F00389,Swefn Pharmaceuticals Pvt. Ltd,4
+M00375,Arco Lifesciences (I) Pvt. Ltd,Maharashtra,F00375,Arco Lifesciences (I) Pvt. Ltd,4
+M00376,Edkem Pharmaceuticals Ltd,Gujarat,F00376,Edkem Pharmaceuticals Ltd,4
+M00384,HBC Healthcare Pvt. Ltd,Gujarat,F00384,HBC Healthcare Pvt. Ltd,4
+M00377,Lifecare Formulations Pvt. Ltd,Puducherry,F00377,Lifecare Formulations Pvt. Ltd,4
+M00379,Suprex Laboratories,Madhya Pradesh,F00379,Suprex Laboratories,4
+M00383,Ashish Lifesciences Pvt. Ltd,Maharashtra,F00383,Ashish Lifesciences Pvt. Ltd,4
+M00380,Suraksha Pharma Pvt. Ltd,Uttarakhand,F00380,Suraksha Pharma Pvt. Ltd,4
+M00388,Vivek Pharmaceuticals Pvt. Ltd,Jammu & Kashmir,F00388,Vivek Pharmaceuticals Pvt. Ltd,4
+M00382,Curetech Formulation (P) Ltd,Himachal Pradesh,F00382,Curetech Formulation (P) Ltd,4
+M00364,East West Pharma (India) Pvt. Ltd,Uttarakhand,F00364,East West Pharma (India) Pvt. Ltd,4
+M00367,Crest Lifesciences Pvt. Ltd,Himachal Pradesh,F00367,Crest Lifesciences Pvt. Ltd,4
+M00357,Aspo Pharmaceuticals Llp,Himachal Pradesh,F00357,Aspo Pharmaceuticals Llp,4
+M00368,Upkar Pharmaceuticals,Himachal Pradesh,F00368,Upkar Pharmaceuticals,4
+M00363,Maxwell Lifescience Pvt Ltd,Maharashtra,F00363,Maxwell Lifescience Pvt Ltd,4
+M00358,Ambrosia Pharma,Unknown,F00358,Ambrosia Pharma,4
+M00361,Ozone Pharmaceuticals Ltd,Himachal Pradesh,F00361,Ozone Pharmaceuticals Ltd,4
+M00366,Taj Pharma India Ltd,Gujarat,F00366,Taj Pharma India Ltd,4
+M00360,NDB Healthcare,Himachal Pradesh,F00360,NDB Healthcare,4
+M00359,Tanmed Pharma (I) Pvt Ltd,Tamil Nadu,F00359,Tanmed Pharma (I) Pvt Ltd,4
+M00735,Bio Medica Laboratories Pvt. Ltd,Madhya Pradesh,F00735,Bio Medica Laboratories Pvt. Ltd,3
+M00561,Samanyu Skin Care,Himachal Pradesh,F00561,Samanyu Skin Care,3
+M00558,Leben Laboratories Pvt. Ltd,Maharashtra,F00558,Leben Laboratories Pvt. Ltd,3
+M00559,Cartel Laboratories,Telangana,F00559,Cartel Laboratories,3
+M00560,Ciphem Pharma,Gujarat,F00560,Ciphem Pharma,3
+M00564,Janya Biocare Pvt. Ltd,Uttarakhand,F00564,Janya Biocare Pvt. Ltd,3
+M00562,Tuttsan Pharma Pvt. Ltd,Gujarat,F00562,Tuttsan Pharma Pvt. Ltd,3
+M00563,Torrent Pharmaceuticals Ltd,Sikkim,F00563,Torrent Pharmaceuticals Ltd,3
+M00556,Samay Pharma India Pvt. Ltd,Himachal Pradesh,F00556,Samay Pharma India Pvt. Ltd,3
+M00566,Clevus Lifesciences,Himachal Pradesh,F00566,Clevus Lifesciences,3
+M00567,Banson Pharmaceutical Pvt. Ltd,Punjab,F00567,Banson Pharmaceutical Pvt. Ltd,3
+M00568,Coastal Medicare Pvt. Ltd,Andhra Pradesh,F00568,Coastal Medicare Pvt. Ltd,3
+M00570,Asoj Soft Caps Pvt Ltd,Gujarat,F00570,Asoj Soft Caps Pvt Ltd,3
+M00557,Tulbros Formulations,Uttarakhand,F00557,Tulbros Formulations,3
+M00553,Chiros Pharma,Himachal Pradesh,F00553,Chiros Pharma,3
+M00555,Samarth Life Sciences,Himachal Pradesh,F00555,Samarth Life Sciences,3
+M00554,Cent Cure Pvt. Ltd,Himachal Pradesh,F00554,Cent Cure Pvt. Ltd,3
+M00537,Bakul Aromatics and Chemicals Pvt. Ltd,Maharashtra,F00537,Bakul Aromatics and Chemicals Pvt. Ltd,3
+M00538,Shell Eastern Chemicals (S) Seraya Manufacturing Site,Outside India,F00538,Shell Eastern Chemicals (S) Seraya Manufacturing Site,3
+M00539,Kshipra Drugs Pvt. Ltd,Madhya Pradesh,F00539,Kshipra Drugs Pvt. Ltd,3
+M00540,Bengene Life Sciences Pvt. Ltd,Himachal Pradesh,F00540,Bengene Life Sciences Pvt. Ltd,3
+M00542,Themis Medicare Limited,Uttarakhand,F00542,Themis Medicare Limited,3
+M00543,Orissa Drugs and Chemicals Ltd,Odisha,F00543,Orissa Drugs and Chemicals Ltd,3
+M00544,Beta Drugs Ltd,Himachal Pradesh,F00544,Beta Drugs Ltd,3
+M00545,Concord Drugs Ltd,Telangana,F00545,Concord Drugs Ltd,3
+M00546,Torino Laboratories Pvt. Ltd,Madhya Pradesh,F00546,Torino Laboratories Pvt. Ltd,3
+M00547,Mediwell Biotech,Himachal Pradesh,F00547,Mediwell Biotech,3
+M00548,Baseman Healthcare Inc,Tamil Nadu,F00548,Baseman Healthcare Inc,3
+M00549,Troikaa Pharmaceuticals Ltd,Gujarat,F00549,Troikaa Pharmaceuticals Ltd,3
+M00550,Chemetac Pharmaceuticals,Uttar Pradesh,F00550,Chemetac Pharmaceuticals,3
+M00551,SGS Pharmaceutical Pvt. Ltd,Uttar Pradesh,F00551,SGS Pharmaceutical Pvt. Ltd,3
+M00552,Chimak Health Care,Himachal Pradesh,F00552,Chimak Health Care,3
+M00571,JMM Laboratories,Himachal Pradesh,F00571,JMM Laboratories,3
+M00573,Nuvista Pharmaceuticals Pvt. Ltd,Telangana,F00573,Nuvista Pharmaceuticals Pvt. Ltd,3
+M00572,Applied Communication & Controls,Uttarakhand,F00572,Applied Communication & Controls,3
+M00707,I.G. Pharma Ltd,Outside India,F00707,I.G. Pharma Ltd,3
+M00596,Apple Biotech Healthcare Pvt. Ltd,Punjab,F00596,Apple Biotech Healthcare Pvt. Ltd,3
+M00597,Asian Pharma,Himachal Pradesh,F00597,Asian Pharma,3
+M00892,Swiss Biotech Parentrals,Haryana,F00892,Swiss Biotech Parentrals,3
+M00598,Sapna Bunkar Hath Kargha Sahkari Samiti Ltd,Rajasthan,F00598,Sapna Bunkar Hath Kargha Sahkari Samiti Ltd,3
+M00599,Unispeed Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00599,Unispeed Pharmaceuticals Pvt. Ltd,3
+M00896,East African (India) Overseas,Uttarakhand,F00896,East African (India) Overseas,3
+M00692,"Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd",Gujarat,F00692,"Legend Industries at unit-II Plot no C1/200-201/4 Phase-II, opp. Encore Ltd",3
+M00897,Swiss Parenterals Ltd,Gujarat,F00897,Swiss Parenterals Ltd,3
+M00776,True Life Pharma PVt. Ltd,Gujarat,F00776,True Life Pharma PVt. Ltd,3
+M00688,Shri Ramesth Industry Pvt. Ltd,Himachal Pradesh,F00688,Shri Ramesth Industry Pvt. Ltd,3
+M00954,Nitin Lifesciences Ltd,Himachal Pradesh,F00954,Nitin Lifesciences Ltd,3
+M00823,Aarpik Pharmaceuticals Pvt.Ltd,Gujarat,F00823,Aarpik Pharmaceuticals Pvt.Ltd,3
+M00827,Pharm Asia Drug,Madhya Pradesh,F00827,Pharm Asia Drug,3
+M00641,Kaalinga Health Care,Himachal Pradesh,F00641,Kaalinga Health Care,3
+M00680,Shiva Biogenetic Pharmaceuticals (P) Ltd,Himachal Pradesh,F00680,Shiva Biogenetic Pharmaceuticals (P) Ltd,3
+M00653,Maxchem Pharmaceuticals (P) Ltd,Uttarakhand,F00653,Maxchem Pharmaceuticals (P) Ltd,3
+M00847,Polestar Power Industries (Pharma Division),Himachal Pradesh,F00847,Polestar Power Industries (Pharma Division),3
+M00595,Rhombus Pharma Pvt. Ltd,Gujarat,F00595,Rhombus Pharma Pvt. Ltd,3
+M00593,Anuh Pharma Ltd,Maharashtra,F00593,Anuh Pharma Ltd,3
+M00745,Pratima Pharmaceuticals,Maharashtra,F00745,Pratima Pharmaceuticals,3
+M00592,Voda Chemicals Pvt. Ltd,Delhi,F00592,Voda Chemicals Pvt. Ltd,3
+M00574,Revantis Healthcare,Himachal Pradesh,F00574,Revantis Healthcare,3
+M00575,Dabur India Ltd,Himachal Pradesh,F00575,Dabur India Ltd,3
+M00576,Apple Biotech,Punjab,F00576,Apple Biotech,3
+M00577,Biological E Ltd,Telangana,F00577,Biological E Ltd,3
+M00578,Boffin Biotech Pvt. Ltd,Himachal Pradesh,F00578,Boffin Biotech Pvt. Ltd,3
+M00579,Ipca Laboratories Ltd,Madhya Pradesh,F00237,Ipca Laboratories Ltd,3
+M00580,Aristo Pharmaceuticals Pvt. Ltd,Madhya Pradesh,F00131,Aristo Pharmaceuticals Pvt. Ltd,3
+M00581,Diamond Drugs Pvt. Ltd,West Bengal,F00581,Diamond Drugs Pvt. Ltd,3
+M00536,Ultra Laboratories Pvt. Ltd,Karnataka,F00536,Ultra Laboratories Pvt. Ltd,3
+M00584,Pushp Henna Pvt. Ltd,Rajasthan,F00584,Pushp Henna Pvt. Ltd,3
+M00585,Technica Labs & Pharma Pvt. Ltd,Uttarakhand,F00585,Technica Labs & Pharma Pvt. Ltd,3
+M00586,KRAS Pharmaceuticals Pvt. Ltd,Bihar,F00586,KRAS Pharmaceuticals Pvt. Ltd,3
+M00587,Sanctus Global Formulations Limited,Himachal Pradesh,F00587,Sanctus Global Formulations Limited,3
+M00588,Vital Healthcare Pvt. Ltd,Maharashtra,F00588,Vital Healthcare Pvt. Ltd,3
+M00589,Sakthi Ayurveda Pharmaceuticals,Kerala,F00589,Sakthi Ayurveda Pharmaceuticals,3
+M00590,Bioaltus Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00590,Bioaltus Pharmaceuticals Pvt. Ltd,3
+M00591,Devbhoomi Pharmaceuticals,Uttarakhand,F00591,Devbhoomi Pharmaceuticals,3
+M00582,Ipca Laboratories Ltd,Uttarakhand,F00237,Ipca Laboratories Ltd,3
+M00565,Vidit Healthcare,Himachal Pradesh,F00565,Vidit Healthcare,3
+M00535,Samson Laboratories Pvt. Ltd,Himachal Pradesh,F00535,Samson Laboratories Pvt. Ltd,3
+M00473,Fourrts (India) Laboratories Pvt. Ltd,Tamil Nadu,F00473,Fourrts (India) Laboratories Pvt. Ltd,3
+M00463,Swisskem Healthcare,Himachal Pradesh,F00463,Swisskem Healthcare,3
+M00465,Elder Labs Limited,Himachal Pradesh,F00465,Elder Labs Limited,3
+M00448,Alpha Pharmaceuticals,Haryana,F00448,Alpha Pharmaceuticals,3
+M00467,Sai Mirra Innopharm Pvt. Ltd,Tamil Nadu,F00467,Sai Mirra Innopharm Pvt. Ltd,3
+M00468,Gentech Healthcare Pvt Ltd,Haryana,F00468,Gentech Healthcare Pvt Ltd,3
+M00469,Pentagon Labs Ltd,Madhya Pradesh,F00469,Pentagon Labs Ltd,3
+M00471,Mahendra Labs Pvt. Ltd,Karnataka,F00471,Mahendra Labs Pvt. Ltd,3
+M00472,Aarti Drugs Limited,Maharashtra,F00472,Aarti Drugs Limited,3
+M00474,Ronam Healthcare Pvt. Ltd,Himachal Pradesh,F00474,Ronam Healthcare Pvt. Ltd,3
+M00484,Albert David Ltd,Uttar Pradesh,F00484,Albert David Ltd,3
+M00475,Alchemist Remedies Pvt. Ltd,Madhya Pradesh,F00475,Alchemist Remedies Pvt. Ltd,3
+M00476,Stadmed Private Limited,Uttar Pradesh,F00164,Stadmed Private Limited,3
+M00477,Adsila Organics Pvt. Ltd,Haryana,F00477,Adsila Organics Pvt. Ltd,3
+M00478,Glenmark Pharmaceuticals Ltd,Himachal Pradesh,F00154,Glenmark Pharmaceuticals Ltd,3
+M00479,Healthwise Pharma,Himachal Pradesh,F00479,Healthwise Pharma,3
+M00480,Ramson Remedies,Maharashtra,F00480,Ramson Remedies,3
+M00481,Advanced Pakiza Unani LLP,Maharashtra,F00481,Advanced Pakiza Unani LLP,3
+M00482,Ramson Remedies,Punjab,F00480,Ramson Remedies,3
+M00462,SPAS Remedies,Himachal Pradesh,F00462,SPAS Remedies,3
+M00461,Zydus Healthcare Ltd,Sikkim,F00461,Zydus Healthcare Ltd,3
+M00440,Pace Biotech,Himachal Pradesh,F00440,Pace Biotech,3
+M00441,Wamika Pharmaceuticals Private Limited,Haryana,F00441,Wamika Pharmaceuticals Private Limited,3
+M00449,Spoorthi Herbals,Karnataka,F00449,Spoorthi Herbals,3
+M00450,Micropure Parenteral Private Limited,Maharashtra,F00450,Micropure Parenteral Private Limited,3
+M00447,Ritual Drugs Pvt. Ltd,Haryana,F00447,Ritual Drugs Pvt. Ltd,3
+M00451,Gujarat Ambuja Exports Ltd,Karnataka,F00195,Gujarat Ambuja Exports Ltd,3
+M00446,SPM Drugs (P) Ltd,Tamil Nadu,F00446,SPM Drugs (P) Ltd,3
+M00452,Elegant Drugs Pvt. Ltd,Karnataka,F00452,Elegant Drugs Pvt. Ltd,3
+M00453,Accent Pharmaceuticals & Diagnostics,Himachal Pradesh,F00453,Accent Pharmaceuticals & Diagnostics,3
+M00445,Sai Sarvaa Biotech Pvt. Ltd,Puducherry,F00445,Sai Sarvaa Biotech Pvt. Ltd,3
+M00454,Naprod Life Science Pvt. Ltd,Maharashtra,F00454,Naprod Life Science Pvt. Ltd,3
+M00455,Sotac Pharmaceuticals Ltd,Gujarat,F00455,Sotac Pharmaceuticals Ltd,3
+M00457,Safe Parenterals Pvt. Ltd,Andhra Pradesh,F00457,Safe Parenterals Pvt. Ltd,3
+M00533,BRP Industry Pvt. Ltd,Tamil Nadu,F00533,BRP Industry Pvt. Ltd,3
+M00458,Oxalis Labs,Himachal Pradesh,F00458,Oxalis Labs,3
+M00444,Spinka Pharma,Telangana,F00444,Spinka Pharma,3
+M00443,Gopal Lifesciences,Himachal Pradesh,F00443,Gopal Lifesciences,3
+M00459,Safecon Lifesciences Pvt. Ltd,Uttar Pradesh,F00459,Safecon Lifesciences Pvt. Ltd,3
+M00442,Zeta Formulation Private Limited,Tamil Nadu,F00442,Zeta Formulation Private Limited,3
+M00483,Alembic Pharmaceuticals Ltd,Sikkim,F00483,Alembic Pharmaceuticals Ltd,3
+M00466,Aan Pharma Private Limited,Gujarat,F00466,Aan Pharma Private Limited,3
+M00485,Aeron Lifescience Pvt. Ltd,Gujarat,F00485,Aeron Lifescience Pvt. Ltd,3
+M00532,Cotec Healthcare Pvt. Ltd,Outside India,F00055,Cotec Healthcare Pvt. Ltd,3
+M00529,Bymaa Laboratories Private Limited,Puducherry,F00529,Bymaa Laboratories Private Limited,3
+M00511,Actinova Pvt. Ltd,Himachal Pradesh,F00511,Actinova Pvt. Ltd,3
+M00512,Sunrise International Labs Ltd,Telangana,F00512,Sunrise International Labs Ltd,3
+M00513,GNB Medica Labs,Himachal Pradesh,F00513,GNB Medica Labs,3
+M00514,Mitra Industries (P) Ltd,Haryana,F00514,Mitra Industries (P) Ltd,3
+M00515,Higgs Healthcare,Himachal Pradesh,F00515,Higgs Healthcare,3
+M00517,Aculife Healthcare Pvt. Ltd,Gujarat,F00517,Aculife Healthcare Pvt. Ltd,3
+M00518,Morisus Healthcare,Uttarakhand,F00518,Morisus Healthcare,3
+M00486,MMG Healthcare,Himachal Pradesh,F00486,MMG Healthcare,3
+M00519,Reliance Formulation Pvt. Ltd,Gujarat,F00519,Reliance Formulation Pvt. Ltd,3
+M00520,Integrated Laboratories Pvt. Ltd,Himachal Pradesh,F00520,Integrated Laboratories Pvt. Ltd,3
+M00527,Vimson Derma,Gujarat,F00527,Vimson Derma,3
+M00526,Poddar Pharmaceuticals Pvt Ltd,Uttarakhand,F00526,Poddar Pharmaceuticals Pvt Ltd,3
+M00521,Dhwanilife Care Pvt Ltd,Gujarat,F00521,Dhwanilife Care Pvt Ltd,3
+M00523,Vee Excel Drugs & Pharmaceuticals (P) Ltd,Uttar Pradesh,F00523,Vee Excel Drugs & Pharmaceuticals (P) Ltd,3
+M00524,Priya Pharmaceuticals,Uttar Pradesh,F00524,Priya Pharmaceuticals,3
+M00525,Nexkem Biotech Pvt. Ltd,Himachal Pradesh,F00525,Nexkem Biotech Pvt. Ltd,3
+M00530,Pragti Remedies,Assam,F00530,Pragti Remedies,3
+M00528,Mayasha Lifesciences H.B,Himachal Pradesh,F00528,Mayasha Lifesciences H.B,3
+M00510,Pansun Pharmaceuticals,Uttarakhand,F00510,Pansun Pharmaceuticals,3
+M00439,Emmchak Formulations Pvt. Ltd,Tamil Nadu,F00439,Emmchak Formulations Pvt. Ltd,3
+M00487,Yutika Natural Pvt. Ltd,Rajasthan,F00487,Yutika Natural Pvt. Ltd,3
+M00489,Merril Pharma Pvt. Ltd,Gujarat,F00489,Merril Pharma Pvt. Ltd,3
+M00490,Affine Formulations Ltd,Himachal Pradesh,F00490,Affine Formulations Ltd,3
+M00491,Zaneka Healthcare Ltd,Uttarakhand,F00491,Zaneka Healthcare Ltd,3
+M00494,Addii Biotech Pvt. Ltd,Himachal Pradesh,F00494,Addii Biotech Pvt. Ltd,3
+M00496,Eris Lifesciences Limited,Assam,F00496,Eris Lifesciences Limited,3
+M00498,Goodman Pharmaceuticals,Puducherry,F00498,Goodman Pharmaceuticals,3
+M00499,Wings Novitas Healthcare LLP,Himachal Pradesh,F00499,Wings Novitas Healthcare LLP,3
+M00509,Finecure Pharmaceuticals Ltd,Gujarat,F00509,Finecure Pharmaceuticals Ltd,3
+M00501,Supermax Drugs & Pharmaceuticals Pvt. Ltd,Uttarakhand,F00501,Supermax Drugs & Pharmaceuticals Pvt. Ltd,3
+M00500,Supermax Laboratories,Uttarakhand,F00500,Supermax Laboratories,3
+M00502,Macleods Pharmaceuticals Ltd,"Daman, Diu & DNH",F00121,Macleods Pharmaceuticals Ltd,3
+M00503,Matins Healthcare Pvt. Ltd,Uttarakhand,F00503,Matins Healthcare Pvt. Ltd,3
+M00504,Pharma Cure Laboratories,Punjab,F00504,Pharma Cure Laboratories,3
+M00505,Hi Tech International,Haryana,F00505,Hi Tech International,3
+M00508,Sunvet Pharma Pvt. Ltd,Himachal Pradesh,F00508,Sunvet Pharma Pvt. Ltd,3
+M00506,Events Corporation,Himachal Pradesh,F00506,Events Corporation,3
+M00854,Apex Healthcare,Rajasthan,F00854,Apex Healthcare,2
+M00858,Osper Formulations Pvt. Ltd,Himachal Pradesh,F00858,Osper Formulations Pvt. Ltd,2
+M00861,Otsuka Pharmaceutical India Private Limited,Gujarat,F00861,Otsuka Pharmaceutical India Private Limited,2
+M00850,Aqua Vitoe Laboratories,Himachal Pradesh,F00850,Aqua Vitoe Laboratories,2
+M00860,VVPB Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00860,VVPB Pharmaceuticals Pvt. Ltd,2
+M00859,Anon Pharmaceutical,Rajasthan,F00859,Anon Pharmaceutical,2
+M00862,Warner Hindusthan Pvt. Ltd,Telangana,F00862,Warner Hindusthan Pvt. Ltd,2
+M00851,Ortin Laboratories Ltd,Andhra Pradesh,F00089,Ortin Laboratories Ltd,2
+M00853,Vowcare Products,Jammu & Kashmir,F00853,Vowcare Products,2
+M00852,Voizmed Pharma Pvt. Ltd,Himachal Pradesh,F00852,Voizmed Pharma Pvt. Ltd,2
+M00857,Piramal Enterprises Ltd,Maharashtra,F00857,Piramal Enterprises Ltd,2
+M00856,Oscar Remedies Pvt. Ltd,Himachal Pradesh,F00060,Oscar Remedies Pvt. Ltd,2
+M00855,Apex Formulations Pvt. Ltd,Himachal Pradesh,F00312,Apex Formulations Pvt. Ltd,2
+M00798,PAR Pharmaceuticals Pvt. Ltd,Uttar Pradesh,F00798,PAR Pharmaceuticals Pvt. Ltd,2
+M00873,Foregen Healthcare Ltd,Himachal Pradesh,F00873,Foregen Healthcare Ltd,2
+M00863,Anamika Udyog,Uttar Pradesh,F00863,Anamika Udyog,2
+M00864,Oxford Pharma,Uttarakhand,F00864,Oxford Pharma,2
+M00882,Fabian Life Sciences,Gujarat,F00882,Fabian Life Sciences,2
+M00881,Sun Pharmaceuticals Ind. Ltd,Uttarakhand,F00874,Sun Pharmaceuticals Ind. Ltd,2
+M00880,Morrisons Lifecare Pvt. Ltd,Tamil Nadu,F00880,Morrisons Lifecare Pvt. Ltd,2
+M00879,Farbe firma Pvt Ltd,Gujarat,F00879,Farbe firma Pvt Ltd,2
+M00878,FDC Limited,Goa,F00878,FDC Limited,2
+M00877,Fine Drugs & Skin Care,Himachal Pradesh,F00877,Fine Drugs & Skin Care,2
+M00876,Finemax Formulation Pvt. Ltd,Tamil Nadu,F00876,Finemax Formulation Pvt. Ltd,2
+M00875,Sun Pharmaceuticals Ind. Ltd,Madhya Pradesh,F00874,Sun Pharmaceuticals Ind. Ltd,2
+M00874,Sun Pharmaceuticals Ind. Ltd,Himachal Pradesh,F00874,Sun Pharmaceuticals Ind. Ltd,2
+M00872,Morepan Laboratories Ltd,Himachal Pradesh,F00872,Morepan Laboratories Ltd,2
+M00871,Moon Marks Pharmaceuticals,Himachal Pradesh,F00871,Moon Marks Pharmaceuticals,2
+M00870,G.M. Pharmaceuticals,West Bengal,F00870,G.M. Pharmaceuticals,2
+M00869,Sterisafe Health Solutions,Rajasthan,F00869,Sterisafe Health Solutions,2
+M00868,Dr. Reddy's Laboratories Ltd,Himachal Pradesh,F00868,Dr. Reddy's Laboratories Ltd,2
+M00867,Sunny Industries Private Limited,West Bengal,F00867,Sunny Industries Private Limited,2
+M00866,Brussels Laboratories Pvt. Ltd,Gujarat,F00866,Brussels Laboratories Pvt. Ltd,2
+M00865,Trio Lifescience Private Ltd,Gujarat,F00865,Trio Lifescience Private Ltd,2
+M00849,Arcon Labs,Himachal Pradesh,F00849,Arcon Labs,2
+M00817,Acro Lifesciences (India) Pvt. Ltd,Maharashtra,F00817,Acro Lifesciences (India) Pvt. Ltd,2
+M00848,M/S Argion Cosmed India Pvt Ltd,Tamil Nadu,F00848,M/S Argion Cosmed India Pvt Ltd,2
+M00821,ABOD Pharmaceuticals,Uttarakhand,F00821,ABOD Pharmaceuticals,2
+M00819,Acme Formulation Pvt. Ltd,Himachal Pradesh,F00819,Acme Formulation Pvt. Ltd,2
+M00818,Acme Life Tech-LLP,Himachal Pradesh,F00818,Acme Life Tech-LLP,2
+M00816,Pentachem Pharmaceutical,Himachal Pradesh,F00816,Pentachem Pharmaceutical,2
+M00815,Acumen Pharmaceuticals Pvt. Ltd,Puducherry,F00815,Acumen Pharmaceuticals Pvt. Ltd,2
+M00814,Zenith Healthcare Ltd,Gujarat,F00814,Zenith Healthcare Ltd,2
+M00813,Pearsons Healthcare Products,Uttar Pradesh,F00813,Pearsons Healthcare Products,2
+M00812,Alpc,Gujarat,F00812,Alpc,2
+M00811,Allianz Biosciences Pvt. Ltd,Puducherry,F00811,Allianz Biosciences Pvt. Ltd,2
+M00810,Phoenix Laboratories,Assam,F00810,Phoenix Laboratories,2
+M00809,Alkem Laboratories Ltd,Himachal Pradesh,F00809,Alkem Laboratories Ltd,2
+M00807,Par Drugs & Chemicals Limited,Gujarat,F00807,Par Drugs & Chemicals Limited,2
+M00806,P.K. Cosmetics,Delhi,F00806,P.K. Cosmetics,2
+M00805,Yash Pharma Labs Pvt. Ltd,Uttarakhand,F00805,Yash Pharma Labs Pvt. Ltd,2
+M00804,Alco Formulation (India),Haryana,F00804,Alco Formulation (India),2
+M00803,AK Krishna Pharma Pvt.Ltd,Uttarakhand,F00803,AK Krishna Pharma Pvt.Ltd,2
+M00802,Parth Formulation Pvt. Ltd,Rajasthan,F00802,Parth Formulation Pvt. Ltd,2
+M00801,Parth Orgichem Pvt. Ltd,Uttar Pradesh,F00801,Parth Orgichem Pvt. Ltd,2
+M00800,Pharmacare,Karnataka,F00800,Pharmacare,2
+M00884,Nabros Pharma Pvt. Ltd,Gujarat,F00884,Nabros Pharma Pvt. Ltd,2
+M00820,Accretion Pharmaceuticals,Gujarat,F00820,Accretion Pharmaceuticals,2
+M00822,Abicee Pharmaceuticals Pvt. Ltd,Odisha,F00822,Abicee Pharmaceuticals Pvt. Ltd,2
+M00846,Vikram Laboratories (P) Ltd,Uttar Pradesh,F00846,Vikram Laboratories (P) Ltd,2
+M00824,Zuventus Healthcare Ltd,Maharashtra,F00824,Zuventus Healthcare Ltd,2
+M00845,B.M. Pharmaceuticals,Chandigarh,F00845,B.M. Pharmaceuticals,2
+M00844,Azine Healthcare Pvt. Ltd,Gujarat,F00844,Azine Healthcare Pvt. Ltd,2
+M00843,Vindas Chemical Industries (P) Ltd,Madhya Pradesh,F00843,Vindas Chemical Industries (P) Ltd,2
+M00842,Astrica Healthcare Pvt. Ltd,Punjab,F00840,Astrica Healthcare Pvt. Ltd,2
+M00841,Amba research Laboratories,Bihar,F00841,Amba research Laboratories,2
+M00840,Astrica Healthcare Pvt. Ltd,Himachal Pradesh,F00840,Astrica Healthcare Pvt. Ltd,2
+M00839,Vintochem Pharmaceuticals,Madhya Pradesh,F00839,Vintochem Pharmaceuticals,2
+M00837,Vital Formulations Limited,Gujarat,F00837,Vital Formulations Limited,2
+M00836,Vital Therapeutics & Formulations Pvt.Ltd,Telangana,F00836,Vital Therapeutics & Formulations Pvt.Ltd,2
+M00835,Aru Healthcare Pvt. Ltd,Uttar Pradesh,F00835,Aru Healthcare Pvt. Ltd,2
+M00834,Arius Formulation Private Limited,Tamil Nadu,F00834,Arius Formulation Private Limited,2
+M00833,Aster Medicines Pvt. Ltd,Bihar,F00833,Aster Medicines Pvt. Ltd,2
+M00832,Verve Human Care Laboratories,Uttarakhand,F00832,Verve Human Care Laboratories,2
+M00831,Altus Surgical Pvt. Ltd,Gujarat,F00831,Altus Surgical Pvt. Ltd,2
+M00830,Alteus Remedies Pvt. Ltd,Jammu & Kashmir,F00830,Alteus Remedies Pvt. Ltd,2
+M00829,A.N.D. Healthcare Ltd,Punjab,F00829,A.N.D. Healthcare Ltd,2
+M00828,A.S. Lifesciences,Haryana,F00828,A.S. Lifesciences,2
+M00826,Zydus Healthcare Ltd,Gujarat,F00461,Zydus Healthcare Ltd,2
+M00825,Aarmed Formulation Pvt. Ltd,Gujarat,F00825,Aarmed Formulation Pvt. Ltd,2
+M00883,Super Vaishali Laboratories,Bihar,F00883,Super Vaishali Laboratories,2
+M01252,Sanjivani Paranteral Ltd,Maharashtra,F01252,Sanjivani Paranteral Ltd,2
+M00885,Enicar Pharmaceuticals Pvt. Ltd,Maharashtra,F00885,Enicar Pharmaceuticals Pvt. Ltd,2
+M00933,Crest Lifescoences Pvt. Ltd,Himachal Pradesh,F00933,Crest Lifescoences Pvt. Ltd,2
+M00953,Tridus Remedies,Bihar,F00953,Tridus Remedies,2
+M00952,Dentiglow,Gujarat,F00952,Dentiglow,2
+M00951,Talwar Pharma,Uttarakhand,F00951,Talwar Pharma,2
+M00950,Coax Bioremedies Pvt. Ltd,Haryana,F00950,Coax Bioremedies Pvt. Ltd,2
+M00949,Pulse Pharma MFG. Co,Gujarat,F00949,Pulse Pharma MFG. Co,2
+M00948,CU-V-Kar Genetic Medicines Pvt Ltd,Uttarakhand,F00948,CU-V-Kar Genetic Medicines Pvt Ltd,2
+M00947,D.J.Laboratories Pvt. Ltd,Madhya Pradesh,F00947,D.J.Laboratories Pvt. Ltd,2
+M00946,D.R. Johns Lab Pvt. Ltd,Uttarakhand,F00946,D.R. Johns Lab Pvt. Ltd,2
+M00945,Coral Laboratories Ltd,Uttarakhand,F00945,Coral Laboratories Ltd,2
+M00944,New Lab Industry,Bihar,F00944,New Lab Industry,2
+M00943,Concept Pharmaceuticals Ltd,Uttarakhand,F00098,Concept Pharmaceuticals Ltd,2
+M00942,CSD Lifesciences,Himachal Pradesh,F00942,CSD Lifesciences,2
+M00941,Cortex Medical Inc,Himachal Pradesh,F00941,Cortex Medical Inc,2
+M00940,Ticoma Pharmacia,Punjab,F00940,Ticoma Pharmacia,2
+M00939,Themis Medicare Limited,Maharashtra,F00542,Themis Medicare Limited,2
+M00938,Nexkem Pharmaceuticals Pvt. Ltd,Uttarakhand,F00938,Nexkem Pharmaceuticals Pvt. Ltd,2
+M00937,Tas Med (India) Pvt.ltd,Himachal Pradesh,F00937,Tas Med (India) Pvt.ltd,2
+M00936,Three B Healthcare Ltd,Himachal Pradesh,F00936,Three B Healthcare Ltd,2
+M00935,Navketan Pharma Pvt. Ltd,Maharashtra,F00935,Navketan Pharma Pvt. Ltd,2
+M00955,Dr. Edwin Lab,Chandigarh,F00955,Dr. Edwin Lab,2
+M00956,Navkar Lifesciences WHO-GMP Certified Company,Himachal Pradesh,F00956,Navkar Lifesciences WHO-GMP Certified Company,2
+M00957,Prosafe Biologicals LLP,Telangana,F00957,Prosafe Biologicals LLP,2
+M01354,Pharma Chemico Laboratories Devghat,Himachal Pradesh,F01354,Pharma Chemico Laboratories Devghat,2
+M01540,Exemed Pharmaceuticals,Gujarat,F01540,Exemed Pharmaceuticals,2
+M01533,Ethidrus Research Lab Pvt Ltd,Puducherry,F01533,Ethidrus Research Lab Pvt Ltd,2
+M01515,Empree medicaments India Private Limited,Karnataka,F01515,Empree medicaments India Private Limited,2
+M01446,Consern Pharna Ltd,Punjab,F01446,Consern Pharna Ltd,2
+M01655,Biomed Healthcare Products Pvt. Ltd,Uttarakhand,F01655,Biomed Healthcare Products Pvt. Ltd,2
+M01668,Bharat Serums and Vaccines Ltd,Maharashtra,F01668,Bharat Serums and Vaccines Ltd,2
+M01713,"Aspen Lifescieces Pvt., Ltd",Punjab,F01713,"Aspen Lifescieces Pvt., Ltd",2
+M01370,DD Pharmaceuticals Pvt Ltd,Rajasthan,F01370,DD Pharmaceuticals Pvt Ltd,2
+M01768,Monique Pharmaceutical S Pvt. Ltd,Haryana,F01768,Monique Pharmaceutical S Pvt. Ltd,2
+M00958,Dexter Formulation Pvt. Ltd,Tamil Nadu,F00958,Dexter Formulation Pvt. Ltd,2
+M01231,Sankhla Mehandi Udyog,Rajasthan,F01231,Sankhla Mehandi Udyog,2
+M01892,Natinal Laboratories,Himachal Pradesh,F01892,Natinal Laboratories,2
+M01132,ThorabPharma and Research Laboratory,Puducherry,F01132,ThorabPharma and Research Laboratory,2
+M01105,Tamman Titoe Pharma Pvt. Ltd,Tamil Nadu,F01105,Tamman Titoe Pharma Pvt. Ltd,2
+M01003,Pinnacle Life Sciences Pvt. Ltd,Himachal Pradesh,F01003,Pinnacle Life Sciences Pvt. Ltd,2
+M00961,Tablets (India) Ltd,Tamil Nadu,F00961,Tablets (India) Ltd,2
+M00960,T Walkers Pharmaceuticals Pvt Ltd,Maharashtra,F00960,T Walkers Pharmaceuticals Pvt Ltd,2
+M00959,The Ramaraju Surgical Cotton Mills Ltd,Tamil Nadu,F00959,The Ramaraju Surgical Cotton Mills Ltd,2
+M00934,Deepin Pharmaceuticals Pvt. Ltd,Madhya Pradesh,F00934,Deepin Pharmaceuticals Pvt. Ltd,2
+M00932,Cris Pharma (India) Ltd,Uttarakhand,F00932,Cris Pharma (India) Ltd,2
+M00886,Surge Pharmaceuticals Pvt. Ltd,Maharashtra,F00886,Surge Pharmaceuticals Pvt. Ltd,2
+M00931,Dr. Pal'S Pharmaceuticals,Uttarakhand,F00931,Dr. Pal'S Pharmaceuticals,2
+M00908,Sotac Healthcare Private Limited,Gujarat,F00908,Sotac Healthcare Private Limited,2
+M00907,Gujarat Chempac Pvt. Ltd,Gujarat,F00907,Gujarat Chempac Pvt. Ltd,2
+M00906,Habitare Pharma Pvt Ltd,Haryana,F00906,Habitare Pharma Pvt Ltd,2
+M00905,Halewood Laboratories Pvt. Ltd,Gujarat,F00905,Halewood Laboratories Pvt. Ltd,2
+M00904,Harihar Pharmaceuticals Pvt. Ltd,Odisha,F00904,Harihar Pharmaceuticals Pvt. Ltd,2
+M00903,Redner Formulations,Puducherry,F00903,Redner Formulations,2
+M00902,Harsh Healthcare,Madhya Pradesh,F00902,Harsh Healthcare,2
+M00901,Golecha Herbal Unlimited,Delhi,F00901,Golecha Herbal Unlimited,2
+M00900,Stedman Pharmaceuticals Pvt Ltd,Tamil Nadu,F00900,Stedman Pharmaceuticals Pvt Ltd,2
+M00899,Mohini Health & Hygiene Ltd,Madhya Pradesh,F00899,Mohini Health & Hygiene Ltd,2
+M00898,Gag Pharmaceuticals,Punjab,F00898,Gag Pharmaceuticals,2
+M00895,Swiss Garnier Genexiaa Sciences Pvt. Ltd,Sikkim,F00895,Swiss Garnier Genexiaa Sciences Pvt. Ltd,2
+M00894,Eastern Healthcare,Uttarakhand,F00894,Eastern Healthcare,2
+M00893,Eden Drugs Pvt. Ltd,Punjab,F00893,Eden Drugs Pvt. Ltd,2
+M00891,Nanz med Science Pharma Pvt Ltd,Himachal Pradesh,F00891,Nanz med Science Pharma Pvt Ltd,2
+M00890,Elixia pharmaceuticals,"Daman, Diu & DNH",F00890,Elixia pharmaceuticals,2
+M00889,Elvia Care Pvt. Ltd,Himachal Pradesh,F00889,Elvia Care Pvt. Ltd,2
+M00888,Suzikem Drugs Pvt. Ltd,Telangana,F00888,Suzikem Drugs Pvt. Ltd,2
+M00887,R. R. Medicare Products,Jammu & Kashmir,F00887,R. R. Medicare Products,2
+M00909,South East pharmaceuticals,Tamil Nadu,F00909,South East pharmaceuticals,2
+M00910,Spanker Biotech Ltd,Himachal Pradesh,F00910,Spanker Biotech Ltd,2
+M00911,Guangdong Rongsheng Bio- Technlogy Co Ltd,Outside India,F00911,Guangdong Rongsheng Bio- Technlogy Co Ltd,2
+M00922,Ratnatris Pharmaceuticals Pvt. Ltd,Gujarat,F00922,Ratnatris Pharmaceuticals Pvt. Ltd,2
+M00930,Dual Healthcare,Himachal Pradesh,F00930,Dual Healthcare,2
+M00929,Modern Healthcare,Tamil Nadu,F00929,Modern Healthcare,2
+M00928,Genip Formulations Pvt. Ltd,Himachal Pradesh,F00928,Genip Formulations Pvt. Ltd,2
+M00927,Geson Pharma Pvt. Ltd,Uttar Pradesh,F00927,Geson Pharma Pvt. Ltd,2
+M00926,Glacier Pharmaceutical Pvt Ltd,Maharashtra,F00926,Glacier Pharmaceutical Pvt Ltd,2
+M00925,Gladios Products Pvt. Ltd,Gujarat,F00925,Gladios Products Pvt. Ltd,2
+M00924,MMC Healthcare Ltd,Tamil Nadu,F00924,MMC Healthcare Ltd,2
+M00923,GlaxoSmithKline Pharmaceuticals Limited,Goa,F00433,GlaxoSmithKline Pharmaceuticals Limited,2
+M00921,Global Formulations,Telangana,F00921,Global Formulations,2
+M00912,Spansules formulation India Pvt Ltd,Telangana,F00912,Spansules formulation India Pvt Ltd,2
+M00920,Rebase Lifescience Pvt. Ltd,Gujarat,F00920,Rebase Lifescience Pvt. Ltd,2
+M00919,Mittal Chemical Industries,Unknown,F00919,Mittal Chemical Industries,2
+M00918,Sri Vishnuram Company,Tamil Nadu,F00918,Sri Vishnuram Company,2
+M00917,Go-Ish Remedies Ltd,Himachal Pradesh,F00917,Go-Ish Remedies Ltd,2
+M00916,GBN Pharmaceuticals,Rajasthan,F00916,GBN Pharmaceuticals,2
+M00915,Goa Antibiotics & Pharmaceuticals Ltd,Himachal Pradesh,F00915,Goa Antibiotics & Pharmaceuticals Ltd,2
+M00914,Minil Laboratories Pvt. Ltd,Jammu & Kashmir,F00914,Minil Laboratories Pvt. Ltd,2
+M00913,Gracure Pharmaceuticals Ltd,Himachal Pradesh,F00913,Gracure Pharmaceuticals Ltd,2
+M00799,Admed Pharma Pvt Ltd,Himachal Pradesh,F00799,Admed Pharma Pvt Ltd,2
+M00749,Bengal Chemicals & Pharmaceuticals Ltd,Madhya Pradesh,F00176,Bengal Chemicals & Pharmaceuticals Ltd,2
+M00797,Trimedix Pharma (P) Ltd,Punjab,F00797,Trimedix Pharma (P) Ltd,2
+M00646,SMB Healthcare,Gujarat,F00646,SMB Healthcare,2
+M00671,Lividus Pharmaceuticals pvt.Ltd,Tamil Nadu,F00671,Lividus Pharmaceuticals pvt.Ltd,2
+M00670,Medline Pharmaceuticals Pvt. Ltd,Tamil Nadu,F00670,Medline Pharmaceuticals Pvt. Ltd,2
+M00669,Rikenbik Pharma,Tamil Nadu,F00669,Rikenbik Pharma,2
+M00668,Seven Seas Beauty Products,Delhi,F00668,Seven Seas Beauty Products,2
+M00667,Reltsen Health Care,Puducherry,F00667,Reltsen Health Care,2
+M00666,Life Pharmaceuticals Pvt. Ltd,West Bengal,F00666,Life Pharmaceuticals Pvt. Ltd,2
+M00665,Shri Hari Pharmaceuticals,Gujarat,F00665,Shri Hari Pharmaceuticals,2
+M00664,Macleods Pharmaceuticals Ltd,Gujarat,F00121,Macleods Pharmaceuticals Ltd,2
+M00662,Maa Pharma Tech,Gujarat,F00662,Maa Pharma Tech,2
+M00660,J.P. Industries,Himachal Pradesh,F00660,J.P. Industries,2
+M00658,J.B. Chemicals & Pharmaceuticals Ltd,Gujarat,F00658,J.B. Chemicals & Pharmaceuticals Ltd,2
+M00657,Indoco Remedies Ltd,Maharashtra,F00657,Indoco Remedies Ltd,2
+M00656,Shreya Life Sciences Pvt. Ltd,Uttarakhand,F00655,Shreya Life Sciences Pvt. Ltd,2
+M00655,Shreya Life Sciences Pvt. Ltd,Maharashtra,F00655,Shreya Life Sciences Pvt. Ltd,2
+M00654,Life Gem Medi Healthcare (India) I.P,Uttarakhand,F00654,Life Gem Medi Healthcare (India) I.P,2
+M00652,Inducare Pharma Pvt. Ltd,Maharashtra,F00652,Inducare Pharma Pvt. Ltd,2
+M00651,Life Line Pharma,Puducherry,F00651,Life Line Pharma,2
+M00650,Life Max Cancer Laboratories,Outside India,F00010,Life Max Cancer Laboratories,2
+M00648,Sentiss Pharma Pvt. Ltd,Himachal Pradesh,F00648,Sentiss Pharma Pvt. Ltd,2
+M00672,Live Well Healthcare,Himachal Pradesh,F00672,Live Well Healthcare,2
+M00673,Rippon Laboratories,Puducherry,F00673,Rippon Laboratories,2
+M00674,Shivam Enterprises (Pharma Division),Himachal Pradesh,F00674,Shivam Enterprises (Pharma Division),2
+M00686,Indo Gulf Pharmaceuticals,Uttar Pradesh,F00686,Indo Gulf Pharmaceuticals,2
+M00696,Hippo Labs Pvt. Ltd,Telangana,F00696,Hippo Labs Pvt. Ltd,2
+M00695,Jersy Pharma,Tamil Nadu,F00695,Jersy Pharma,2
+M00694,Livin Formulations,Telangana,F00694,Livin Formulations,2
+M00693,HSN Biotech,Uttarakhand,F00693,HSN Biotech,2
+M00691,"Legend Industries, (Unit-II) C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",Gujarat,F00691,"Legend Industries, (Unit-II) C1/200, 201/4, Phase-II, GIDC, Opp. Encore Ltd",2
+M00690,Mepro Pharmaceuticals Pvt. Ltd,Gujarat,F00690,Mepro Pharmaceuticals Pvt. Ltd,2
+M00689,Signova Healthcare Pvt. Ltd,Assam,F00689,Signova Healthcare Pvt. Ltd,2
+M00687,Macmillon Pharmaceuticals Pvt Ltd,Punjab,F00687,Macmillon Pharmaceuticals Pvt Ltd,2
+M00685,Infallible Pharma Pvt. Ltd,Maharashtra,F00685,Infallible Pharma Pvt. Ltd,2
+M00675,Saibliss Drugs & Pharmaceuticals,Himachal Pradesh,F00675,Saibliss Drugs & Pharmaceuticals,2
+M00684,Infiniheal Pharmaceuticals,Gujarat,F00684,Infiniheal Pharmaceuticals,2
+M00683,Infinitive Pharmaceutical Industries,Gujarat,F00683,Infinitive Pharmaceutical Industries,2
+M00682,Shree KrishnaKeshav Laboratories Ltd,Gujarat,F00682,Shree KrishnaKeshav Laboratories Ltd,2
+M00681,Inmac Laboratories,Punjab,F00681,Inmac Laboratories,2
+M00679,Saint Michael Biotech,Uttarakhand,F00679,Saint Michael Biotech,2
+M00678,Medley Pharmaceuticals Ltd,"Daman, Diu & DNH",F00279,Medley Pharmaceuticals Ltd,2
+M00677,Inventia Healthcare Ltd,Maharashtra,F00677,Inventia Healthcare Ltd,2
+M00676,Lupin Ltd,Maharashtra,F00676,Lupin Ltd,2
+M00647,Shivalik Remedies Pvt. Ltd,Uttarakhand,F00647,Shivalik Remedies Pvt. Ltd,2
+M00645,Labinduss Ltd,Kerala,F00645,Labinduss Ltd,2
+M00698,J.R.S. Oryx Pharmaceuticals (P) Ltd,Haryana,F00698,J.R.S. Oryx Pharmaceuticals (P) Ltd,2
+M00644,Soft Touch Pharmaceuticals India Ltd,Himachal Pradesh,F00644,Soft Touch Pharmaceuticals India Ltd,2
+M00619,K.S. Surgical Pvt. Ltd,Uttar Pradesh,F00619,K.S. Surgical Pvt. Ltd,2
+M00612,Hindustan Antibiotics Ltd,Himachal Pradesh,F00029,Hindustan Antibiotics Ltd,2
+M00601,Konis Pharmaceuticals,Himachal Pradesh,F00601,Konis Pharmaceuticals,2
+M00602,Hind Pharma,Madhya Pradesh,F00602,Hind Pharma,2
+M00613,Johnlee Pharmaceuticals Pvt Ltd,Uttarakhand,F00613,Johnlee Pharmaceuticals Pvt Ltd,2
+M00603,Hema Laboratories Pvt. Ltd,Uttarakhand,F00603,Hema Laboratories Pvt. Ltd,2
+M00618,Medibios Laboratories Pvt. Ltd,Maharashtra,F00618,Medibios Laboratories Pvt. Ltd,2
+M00617,Merril Pharma Pvt. Ltd,Outside India,F00489,Merril Pharma Pvt. Ltd,2
+M00611,Kniss Laboratories Pvt. Ltd,Tamil Nadu,F00611,Kniss Laboratories Pvt. Ltd,2
+M00614,Regent Ajanta Biotech,Outside India,F00200,Regent Ajanta Biotech,2
+M00796,Babu Ram Om Prakash (BROP),Himachal Pradesh,F00796,Babu Ram Om Prakash (BROP),2
+M00610,Samarth Pharmaceuticals Office No,Gujarat,F00610,Samarth Pharmaceuticals Office No,2
+M00604,Khandelwal Laboratories Pvt. Ltd,Uttarakhand,F00604,Khandelwal Laboratories Pvt. Ltd,2
+M00606,Konis Pharmaceuticals,Andhra Pradesh,F00601,Konis Pharmaceuticals,2
+M00609,Senate Laboratories,Uttarakhand,F00609,Senate Laboratories,2
+M00607,Revive Formulation India Pvt. Ltd,Tamil Nadu,F00607,Revive Formulation India Pvt. Ltd,2
+M00608,Medion Biotech Pvt. Ltd,Himachal Pradesh,F00608,Medion Biotech Pvt. Ltd,2
+M00615,Medirin Pharmaceuticals Pvt. Ltd,Haryana,F00615,Medirin Pharmaceuticals Pvt. Ltd,2
+M00616,Romsons Group Pvt. Ltd,Uttar Pradesh,F00616,Romsons Group Pvt. Ltd,2
+M00620,RPL (India) Pharmaceuticals Pvt. Ltd,Delhi,F00620,RPL (India) Pharmaceuticals Pvt. Ltd,2
+M00621,Medifine Pharma Lab No,Karnataka,F00621,Medifine Pharma Lab No,2
+M00622,Manja Pharmaceuticals Pvt. Ltd,Maharashtra,F00622,Manja Pharmaceuticals Pvt. Ltd,2
+M00634,Laborate Pharmaceuticals India Ltd,Haryana,F00021,Laborate Pharmaceuticals India Ltd,2
+M00643,Rhydburg Pharmaceuticals Ltd,Outside India,F00209,Rhydburg Pharmaceuticals Ltd,2
+M00642,Roseate Medicare,Himachal Pradesh,F00642,Roseate Medicare,2
+M00640,Mft. by Not Mentioned Mkd. By M/s Safe Care Life Sciences,Delhi,F00640,Mft. by Not Mentioned Mkd. By M/s Safe Care Life Sciences,2
+M00639,Laboratories Filorga,Outside India,F00639,Laboratories Filorga,2
+M00638,Scout Lifescience Pvt. Ltd,Haryana,F00638,Scout Lifescience Pvt. Ltd,2
+M00637,Manfriday Lifesciences Khewat no,Haryana,F00637,Manfriday Lifesciences Khewat no,2
+M00636,Hetero Labs Limited,Telangana,F00422,Hetero Labs Limited,2
+M00635,MBC Industries,Himachal Pradesh,F00635,MBC Industries,2
+M00633,Kamal Home products,Maharashtra,F00633,Kamal Home products,2
+M00623,Herb Edge Healthcare Pvt. Ltd,Madhya Pradesh,F00623,Herb Edge Healthcare Pvt. Ltd,2
+M00632,Rockbrook Overseas Pvt Ltd,Jammu & Kashmir,F00632,Rockbrook Overseas Pvt Ltd,2
+M00630,Smith & Kenner Pharmaceuticals Pvt.Ltd,Telangana,F00630,Smith & Kenner Pharmaceuticals Pvt.Ltd,2
+M00629,SB Lifesciences,Uttarakhand,F00628,SB Lifesciences,2
+M00628,SB Lifesciences,Himachal Pradesh,F00628,SB Lifesciences,2
+M00627,Krebz Healthcare Pvt. Ltd,Tamil Nadu,F00627,Krebz Healthcare Pvt. Ltd,2
+M00626,Sanctus Drugs & Pharmaceutical Pvt. Ltd,Madhya Pradesh,F00626,Sanctus Drugs & Pharmaceutical Pvt. Ltd,2
+M00625,Rica Enterprises,Himachal Pradesh,F00625,Rica Enterprises,2
+M00624,Karnataka Antibiotics & Pharmaceuticals Limited,Maharashtra,F00004,Karnataka Antibiotics & Pharmaceuticals Limited,2
+M00697,Magnatek Enterprises,Himachal Pradesh,F00697,Magnatek Enterprises,2
+M00631,Restech Formulation Pvt. Ltd,Puducherry,F00631,Restech Formulation Pvt. Ltd,2
+M00699,Magnus Biotech Pvt. Ltd,Haryana,F00699,Magnus Biotech Pvt. Ltd,2
+M00762,Bajaj Formulations,Unknown,F00177,Bajaj Formulations,2
+M00770,Pro-pharma Care Pvt. Ltd,Uttarakhand,F00770,Pro-pharma Care Pvt. Ltd,2
+M00769,Pro Laboratories Pvt. Ltd,Uttarakhand,F00769,Pro Laboratories Pvt. Ltd,2
+M00768,Casid Pharmaceuticals Pvt.Ltd,Tamil Nadu,F00768,Casid Pharmaceuticals Pvt.Ltd,2
+M00767,Casca Remedies Pvt. Ltd,Haryana,F00767,Casca Remedies Pvt. Ltd,2
+M00766,Twins Pharma,Telangana,F00766,Twins Pharma,2
+M00765,Canixa Life Sciences Pvt. Ltd,Uttarakhand,F00765,Canixa Life Sciences Pvt. Ltd,2
+M00764,Candimed Life Sciences,Uttarakhand,F00764,Candimed Life Sciences,2
+M00763,Norris Medicines Limited,Gujarat,F00763,Norris Medicines Limited,2
+M00761,OCT Therapies and Research Pvt. Ltd,Maharashtra,F00761,OCT Therapies and Research Pvt. Ltd,2
+M00772,Centaur Pharmaceuticals Pvt. Ltd,Goa,F00772,Centaur Pharmaceuticals Pvt. Ltd,2
+M00759,Poly Medicure Ltd,Haryana,F00759,Poly Medicure Ltd,2
+M00758,Baroque Pharmaceuticals Pvt. Ltd,Gujarat,F00758,Baroque Pharmaceuticals Pvt. Ltd,2
+M00757,Baxil Pharma Pvt. Ltd,Uttarakhand,F00757,Baxil Pharma Pvt. Ltd,2
+M00756,Bayberry Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00756,Bayberry Pharmaceuticals Pvt. Ltd,2
+M00755,Poonia Brothers Pvt Ltd,Unknown,F00755,Poonia Brothers Pvt Ltd,2
+M00754,BDH Industrial Ltd,Maharashtra,F00754,BDH Industrial Ltd,2
+M00753,VcarePharcos,Puducherry,F00753,VcarePharcos,2
+M00752,Onus Life Sciences,Andhra Pradesh,F00752,Onus Life Sciences,2
+M00771,Nuvo Medsurg Pvt. Ltd,Haryana,F00771,Nuvo Medsurg Pvt. Ltd,2
+M00773,Centurion Laboratories,Gujarat,F00773,Centurion Laboratories,2
+M00748,Bengal Chemicals & Pharmaceuticals Ltd,Uttar Pradesh,F00176,Bengal Chemicals & Pharmaceuticals Ltd,2
+M00793,Biva Healthcare,Gujarat,F00793,Biva Healthcare,2
+M00781,Bueno Salud Care India Pvt. Ltd,Gujarat,F00781,Bueno Salud Care India Pvt. Ltd,2
+M00787,Uni Medicolabs,Uttarakhand,F00787,Uni Medicolabs,2
+M00700,Hindustan Syringes & Medical Devices Ltd,Haryana,F00700,Hindustan Syringes & Medical Devices Ltd,2
+M00791,Bless Pharma India Private Limited,Telangana,F00791,Bless Pharma India Private Limited,2
+M00786,Brahmanand Ayurveda (OPC) Pvt. Ltd,Punjab,F00786,Brahmanand Ayurveda (OPC) Pvt. Ltd,2
+M00780,C.I. Laboratories,West Bengal,F00780,C.I. Laboratories,2
+M00779,Cachet Pharmaceuticals Private Limited,Himachal Pradesh,F00779,Cachet Pharmaceuticals Private Limited,2
+M00792,Unigrow Pharmaceuticals,Himachal Pradesh,F00792,Unigrow Pharmaceuticals,2
+M00782,Healcure Lifesciences,Himachal Pradesh,F00782,Healcure Lifesciences,2
+M00774,Century Nova Drugs Pvt. Ltd,Madhya Pradesh,F00774,Century Nova Drugs Pvt. Ltd,2
+M00783,Broad Injectables,Himachal Pradesh,F00783,Broad Injectables,2
+M00794,Unique Biotech Ltd,Telangana,F00794,Unique Biotech Ltd,2
+M00785,Ultratech Pharmaceuticals,Himachal Pradesh,F00785,Ultratech Pharmaceuticals,2
+M00778,Ultra-Chiron Pharmaceuticals Pvt. Ltd,Punjab,F00778,Ultra-Chiron Pharmaceuticals Pvt. Ltd,2
+M00777,Trizal Formulation,Himachal Pradesh,F00777,Trizal Formulation,2
+M00775,Prochem Pharmaceuticals Pvt. Ltd,Outside India,F00156,Prochem Pharmaceuticals Pvt. Ltd,2
+M00784,Brij Healthcare Pvt. Ltd,Gujarat,F00784,Brij Healthcare Pvt. Ltd,2
+M00795,Balaji Amines Limited,Maharashtra,F00795,Balaji Amines Limited,2
+M00750,Bengal Chemicals & Pharmaceuticals Ltd,Haryana,F00176,Bengal Chemicals & Pharmaceuticals Ltd,2
+M00760,Biologics Inc,Himachal Pradesh,F00760,Biologics Inc,2
+M00747,Vance & Health Pharmaceuticals Pvt. Ltd,Uttarakhand,F00747,Vance & Health Pharmaceuticals Pvt. Ltd,2
+M00712,Salus Pharmaceuticals,Unknown,F00067,Salus Pharmaceuticals,2
+M00721,Mefro Organic Ltd,Himachal Pradesh,F00721,Mefro Organic Ltd,2
+M00720,Meena Chemical Products,Jharkhand,F00720,Meena Chemical Products,2
+M00719,Shashi Pharma,Gujarat,F00719,Shashi Pharma,2
+M00718,Mason Pharma,Himachal Pradesh,F00718,Mason Pharma,2
+M00717,Jainsons Healthcare,Uttarakhand,F00717,Jainsons Healthcare,2
+M00716,Matins Healthcare Pvt. Ltd,Outside India,F00503,Matins Healthcare Pvt. Ltd,2
+M00715,Indiana Ophthalmics LLP,Gujarat,F00715,Indiana Ophthalmics LLP,2
+M00714,Rumy Pharmaceuticals,Himachal Pradesh,F00714,Rumy Pharmaceuticals,2
+M00713,Sheen Pharmaceuticals Wariana,Punjab,F00713,Sheen Pharmaceuticals Wariana,2
+M00711,Levotic Pharma,Himachal Pradesh,F00711,Levotic Pharma,2
+M00723,Siddhi Vinayak Industries,Himachal Pradesh,F00723,Siddhi Vinayak Industries,2
+M00710,Lexine Technochem Pvt. Ltd,Gujarat,F00710,Lexine Technochem Pvt. Ltd,2
+M00709,Medivin (India) Pharma Lab,Karnataka,F00709,Medivin (India) Pharma Lab,2
+M00708,Lenus Lifecare Pvt. Ltd,Himachal Pradesh,F00708,Lenus Lifecare Pvt. Ltd,2
+M00706,Sharika Biotech Jagat Khana,Himachal Pradesh,F00706,Sharika Biotech Jagat Khana,2
+M00705,Medirose Drugs & Pharmaceuticals,Himachal Pradesh,F00705,Medirose Drugs & Pharmaceuticals,2
+M00704,Lars Medicare Private Limited,Haryana,F00704,Lars Medicare Private Limited,2
+M00703,Hindustan Polyfab,Himachal Pradesh,F00703,Hindustan Polyfab,2
+M00702,Reon Pharma,Gujarat,F00702,Reon Pharma,2
+M00701,Singh Mehandi Industries Pvt Ltd,Unknown,F00701,Singh Mehandi Industries Pvt Ltd,2
+M00722,Sia Pharma Pvt Ltd,Haryana,F00722,Sia Pharma Pvt Ltd,2
+M00790,Blitz Pharmaceuticals Pvt. Ltd,Haryana,F00790,Blitz Pharmaceuticals Pvt. Ltd,2
+M00724,Meha Pharma Private Limited,Goa,F00724,Meha Pharma Private Limited,2
+M00744,Bhagwati Medicare devices,Gujarat,F00744,Bhagwati Medicare devices,2
+M00737,Om Sai Pharma Pack,Uttarakhand,F00737,Om Sai Pharma Pack,2
+M00740,Universal Twin Labs,Himachal Pradesh,F00740,Universal Twin Labs,2
+M00725,Sanofi India Ltd,Goa,F00725,Sanofi India Ltd,2
+M00736,Bionial Healthcare Pvt.Ltd,Punjab,F00736,Bionial Healthcare Pvt.Ltd,2
+M00734,Bio med,Uttar Pradesh,F00734,Bio med,2
+M00741,Bioconic Remedies,Himachal Pradesh,F00741,Bioconic Remedies,2
+M00733,Bidhan Pharmaceuticals,West Bengal,F00733,Bidhan Pharmaceuticals,2
+M00742,Biological E Ltd,Uttarakhand,F00577,Biological E Ltd,2
+M00739,Biocenna Healthcare Pvt.Ltd,Uttarakhand,F00739,Biocenna Healthcare Pvt.Ltd,2
+M00743,VADSP Pharmaceuticals,Rajasthan,F00068,VADSP Pharmaceuticals,2
+M00732,USV Private Limited,Himachal Pradesh,F00731,USV Private Limited,2
+M00731,USV Private Limited,Karnataka,F00731,USV Private Limited,2
+M00728,OM Surgical Industries,Haryana,F00728,OM Surgical Industries,2
+M00727,Healkraft Pharma (India) Pvt. Ltd,Himachal Pradesh,F00727,Healkraft Pharma (India) Pvt. Ltd,2
+M00746,Vaidyasala Veetil Oushadhasala,Kerala,F00746,Vaidyasala Veetil Oushadhasala,2
+M00726,Marine Medicare Pvt. Ltd,Himachal Pradesh,F00726,Marine Medicare Pvt. Ltd,2
+M00738,Bioaltus Pharmaceuticals Pvt. Ltd,Sikkim,F00590,Bioaltus Pharmaceuticals Pvt. Ltd,2
+M01730,BCL Pharama,Himachal Pradesh,F01730,BCL Pharama,1
+M01729,BDC Pharmaceuticals,Himachal Pradesh,F01729,BDC Pharmaceuticals,1
+M01728,BDR Pharmaceuticals International Pvt. Ltd,"Daman, Diu & DNH",F01728,BDR Pharmaceuticals International Pvt. Ltd,1
+M01731,Bangalore Antibiotics and Biologicals Pvt Ltd,Tamil Nadu,F01731,Bangalore Antibiotics and Biologicals Pvt Ltd,1
+M01732,Balu Surgicals,Tamil Nadu,F01732,Balu Surgicals,1
+M01727,BDR Pharmaceuticals Intl Pvt. Ltd,Gujarat,F01727,BDR Pharmaceuticals Intl Pvt. Ltd,1
+M01733,Baldev Industries,Delhi,F01733,Baldev Industries,1
+M01734,Balaji Enterprises,Himachal Pradesh,F01734,Balaji Enterprises,1
+M01737,Bajaj Nutraceuticals,Uttarakhand,F01737,Bajaj Nutraceuticals,1
+M01735,Bala Herbals,Unknown,F01735,Bala Herbals,1
+M01726,Beaubelle?Z Health & Beauty Care,Gujarat,F01726,Beaubelle?Z Health & Beauty Care,1
+M01736,Bal Pharma Limited,Karnataka,F00210,Bal Pharma Limited,1
+M01748,Meg Lifesciences,Himachal Pradesh,F01748,Meg Lifesciences,1
+M01738,Goya Agro Industries Limited,Haryana,F01462,Goya Agro Industries Limited,1
+M01739,GP Glister Pharmaceutical,Madhya Pradesh,F01739,GP Glister Pharmaceutical,1
+M01740,Phaarmasia Ltd,Telangana,F01740,Phaarmasia Ltd,1
+M01741,Medox Lifesciences,Himachal Pradesh,F01741,Medox Lifesciences,1
+M01742,Mestra Pharma Pvt. Ltd,Uttarakhand,F01742,Mestra Pharma Pvt. Ltd,1
+M01743,Mestra Pharma Pvt. Ltd,Outside India,F01742,Mestra Pharma Pvt. Ltd,1
+M01744,Merril Pharma Pvt. Ltd,Uttarakhand,F00489,Merril Pharma Pvt. Ltd,1
+M01749,MedworPharma,Himachal Pradesh,F01749,MedworPharma,1
+M01746,Menrik Biomerge Pvt. Ltd,Delhi,F01746,Menrik Biomerge Pvt. Ltd,1
+M01747,Megasys Biotek Pvt. Ltd,Kerala,F01747,Megasys Biotek Pvt. Ltd,1
+M01745,Merion Care Pvt.Ltd,Himachal Pradesh,F01745,Merion Care Pvt.Ltd,1
+M01697,"B. No.: RID-1803, Mfg dt: 08/2018, Exp dt: 07/2021, Mfd by: M/s. Ridley Life Science Pvt. Ltd",Delhi,F01697,"B. No.: RID-1803, Mfg dt: 08/2018, Exp dt: 07/2021, Mfd by: M/s. Ridley Life Science Pvt. Ltd",1
+M01725,Beauty Birds Cosmetics Bhatti Compound,Gujarat,F01725,Beauty Birds Cosmetics Bhatti Compound,1
+M01724,Bengal Chemicals & Pharmaceuticals Ltd,Himachal Pradesh,F00176,Bengal Chemicals & Pharmaceuticals Ltd,1
+M01695,B.Sharda Lifescience,Gujarat,F01695,B.Sharda Lifescience,1
+M01696,"B. No.: RT-180380, Mfg dt: 03/2018, Exp dt: 02/2020, Mfd by: M/s. Relief Biotech Pvt. Ltd",Uttarakhand,F01696,"B. No.: RT-180380, Mfg dt: 03/2018, Exp dt: 02/2020, Mfd by: M/s. Relief Biotech Pvt. Ltd",1
+M01752,Morvin India Health Care Pvt. Ltd,Gujarat,F01752,Morvin India Health Care Pvt. Ltd,1
+M01698,"B. No.: PT-180905, Mfg dt: 09/2018, Exp dt: 08/2019, Mfd by: M/s. Panther Health Care Pvt. Ltd",Uttarakhand,F01698,"B. No.: PT-180905, Mfg dt: 09/2018, Exp dt: 08/2019, Mfd by: M/s. Panther Health Care Pvt. Ltd",1
+M01699,"B. No.: LTPNB2810, Mfg dt: 07/2018, Exp dt: 06/2020, Mfd by: M/s. Samarth Life Sciences Pvt.Ltd",Himachal Pradesh,F01699,"B. No.: LTPNB2810, Mfg dt: 07/2018, Exp dt: 06/2020, Mfd by: M/s. Samarth Life Sciences Pvt.Ltd",1
+M01700,"B. No.: HC-834, Mfg dt: 05/2018, Exp dt: 04/2020, Mfd by: M/s. VIP PHARMACEUTICALS PVT. LTD",Himachal Pradesh,F01700,"B. No.: HC-834, Mfg dt: 05/2018, Exp dt: 04/2020, Mfd by: M/s. VIP PHARMACEUTICALS PVT. LTD",1
+M01701,"B. No.: AHT-1239, Mfg dt: 08/2018, , Exp dt: 07/2020 , Mfd by: M/s. Aru Health Care Pvt. Ltd",Uttar Pradesh,F01701,"B. No.: AHT-1239, Mfg dt: 08/2018, , Exp dt: 07/2020 , Mfd by: M/s. Aru Health Care Pvt. Ltd",1
+M01702,"B. No.: 8S17004, Mfg dt: 05/2018, Exp dt: 04/2020, Mfd by: M/s. Albert David Ltd",West Bengal,F01702,"B. No.: 8S17004, Mfg dt: 05/2018, Exp dt: 04/2020, Mfd by: M/s. Albert David Ltd",1
+M01703,Axelus Pharma Private Limited,Gujarat,F01703,Axelus Pharma Private Limited,1
+M01704,AVN Foot steps,Himachal Pradesh,F01704,AVN Foot steps,1
+M01705,Austin Pharmaceuticals Ltd,Punjab,F01705,Austin Pharmaceuticals Ltd,1
+M01706,Aurobindo Pharma Limited,Telangana,F01706,Aurobindo Pharma Limited,1
+M01707,Aucklane Life Sciences Pvt. Ltd,Puducherry,F01707,Aucklane Life Sciences Pvt. Ltd,1
+M01708,Athens Lifesciences Mauza Rampur Jattan Nahan,Chandigarh,F00329,Athens Life Sciences Mauza Rampur Jattan,1
+M01709,Athens Life Sciences Mauza Rampur,Himachal Pradesh,F01709,Athens Life Sciences Mauza Rampur,1
+M01710,Astamed Healthcare (I) Pvt. Ltd,Maharashtra,F00355,Astam Healthcare Pvt. Ltd,1
+M01711,Associated Biotech,Himachal Pradesh,F01711,Associated Biotech,1
+M01712,Associated Biopharma Pvt. Ltd,Jammu & Kashmir,F01712,Associated Biopharma Pvt. Ltd,1
+M01715,B.R.S. Chemical Works,West Bengal,F01715,B.R.S. Chemical Works,1
+M01716,Badrivas Biotech Pvt. Ltd,Uttarakhand,F01716,Badrivas Biotech Pvt. Ltd,1
+M01717,Bewell Labs Pvt. Ltd,West Bengal,F01717,Bewell Labs Pvt. Ltd,1
+M01718,Bajaj Healthcare Ltd,Unknown,F00158,Bajaj Healthcare Ltd,1
+M01719,Bethel Medipharma Private Limited,West Bengal,F01719,Bethel Medipharma Private Limited,1
+M01720,Betamax Remedies Pvt. Ltd,Himachal Pradesh,F01720,Betamax Remedies Pvt. Ltd,1
+M01721,Bengene Life Sciences Pvt. Ltd,Tamil Nadu,F00540,Bengene Life Sciences Pvt. Ltd,1
+M01722,Bengal Chemicals & Pharmaceuticals Ltd,Uttarakhand,F00176,Bengal Chemicals & Pharmaceuticals Ltd,1
+M01723,Bengal Chemicals & Pharmaceuticals Ltd,Outside India,F00176,Bengal Chemicals & Pharmaceuticals Ltd,1
+M01751,Medizest Pharmaceuticals Pvt. Ltd,Goa,F01751,Medizest Pharmaceuticals Pvt. Ltd,1
+M01794,MARS Medisoap,Gujarat,F01794,MARS Medisoap,1
+M01753,Mediwish,Karnataka,F01753,Mediwish,1
+M01754,Medivs Biosciences Pvt. Ltd,Uttar Pradesh,F01754,Medivs Biosciences Pvt. Ltd,1
+M01795,Mariya Healthcare Pvt. Ltd,Kerala,F01795,Mariya Healthcare Pvt. Ltd,1
+M01796,3F Industries Ltd,Andhra Pradesh,F01796,3F Industries Ltd,1
+M01797,Marigold Remedies,Gujarat,F01797,Marigold Remedies,1
+M01798,Marc Lifesciences,Sikkim,F01798,Marc Lifesciences,1
+M01799,Mapro Pharmaceuticals Pvt. Ltd,Gujarat,F01799,Mapro Pharmaceuticals Pvt. Ltd,1
+M01800,Manish Pharma Lab,Gujarat,F01800,Manish Pharma Lab,1
+M01802,Manali Petrochemicals Limited,Unknown,F00108,Manali Petrochemicals Limited,1
+M01804,Mamta Pharmaceuticals,Gujarat,F01804,Mamta Pharmaceuticals,1
+M01805,"Maha Avtar, Health Care Pvt. Ltd",Uttar Pradesh,F01805,"Maha Avtar, Health Care Pvt. Ltd",1
+M01806,Maha Avtar,Uttar Pradesh,F01806,Maha Avtar,1
+M01807,Magma Industries Limited,Uttar Pradesh,F01807,Magma Industries Limited,1
+M01808,Maskon Life Sciences Pvt. Ltd,Outside India,F00336,Maskon Life Sciences Pvt. Ltd,1
+M01810,Medico Labs,Gujarat,F01810,Medico Labs,1
+M01811,Maxcel Life Care,Maharashtra,F01811,Maxcel Life Care,1
+M01812,Medicamen Organics Limited,Uttarakhand,F01812,Medicamen Organics Limited,1
+M01813,Medicamen Biotech Ltd,Uttarakhand,F01813,Medicamen Biotech Ltd,1
+M01814,Medicamen Biotech Ltd,Rajasthan,F01813,Medicamen Biotech Ltd,1
+M01815,Medibest Pharma Pvt. Ltd,Tamil Nadu,F01751,Medizest Pharmaceuticals Pvt. Ltd,1
+M01816,Medi smith Pharma Lab,Karnataka,F01816,Medi smith Pharma Lab,1
+M01817,Medglobe Therapeutics Ltd,Outside India,F01817,Medglobe Therapeutics Ltd,1
+M01818,Medgel Pvt. Ltd,Madhya Pradesh,F01818,Medgel Pvt. Ltd,1
+M01819,MDC Pharmaceuticals Ltd,Himachal Pradesh,F01819,MDC Pharmaceuticals Ltd,1
+M01820,Mayford Pharma,Himachal Pradesh,F01820,Mayford Pharma,1
+M01821,Mayer Lab Chambaghat,Himachal Pradesh,F01821,Mayer Lab Chambaghat,1
+M01822,Mayer Lab chambagat Adjesent to Railway crossing,Himachal Pradesh,F01822,Mayer Lab chambagat Adjesent to Railway crossing,1
+M01823,Maya Biotech Pvt. Ltd,Himachal Pradesh,F01823,Maya Biotech Pvt. Ltd,1
+M01824,Maxwell pharma,Himachal Pradesh,F01824,Maxwell pharma,1
+M01693,Bharat Biotech,Telangana,F01693,Bharat Biotech,1
+M01825,Maxtra Laboratoriestifindustrialpark,Telangana,F01825,Maxtra Laboratoriestifindustrialpark,1
+M01793,Mars Therapeutics & Chemicals Ltd,Telangana,F01793,Mars Therapeutics & Chemicals Ltd,1
+M01792,Mas Kashmik Formulation Pvt. Ltd,Gujarat,F01792,Mas Kashmik Formulation Pvt. Ltd,1
+M01788,Maven iLab Pvt.Ltd,Karnataka,F01788,Maven iLab Pvt.Ltd,1
+M01771,Mohsin Idustries,Unknown,F01771,Mohsin Idustries,1
+M01755,"Medistream Bioscience , At Sunviji Drugs Pvt. Ltd",Gujarat,F01755,"Medistream Bioscience , At Sunviji Drugs Pvt. Ltd",1
+M01757,Medishri Healthcare Pvt. Ltd,Uttarakhand,F01757,Medishri Healthcare Pvt. Ltd,1
+M01758,Medishines Laboratories (P) Ltd,Puducherry,F01758,Medishines Laboratories (P) Ltd,1
+M01759,Mediosa Pharmaceuticals,Himachal Pradesh,F01759,Mediosa Pharmaceuticals,1
+M01760,Medinex Laboratories Pvt. Ltd,Gujarat,F01760,Medinex Laboratories Pvt. Ltd,1
+M01761,Medilife Health Sciences Pvt. Ltd,Himachal Pradesh,F01761,Medilife Health Sciences Pvt. Ltd,1
+M01762,MG - Biotech Pvt. Ltd,Himachal Pradesh,F01762,MG - Biotech Pvt. Ltd,1
+M01763,Micro Formulations,Telangana,F00264,Micro Formulations,1
+M01764,Micro Labs Limited,Puducherry,F01764,Micro Labs Limited,1
+M01765,Micro Labs Limited,Sikkim,F01764,Micro Labs Limited,1
+M01766,Morepan Laboratories Ltd,Unknown,F00872,Morepan Laboratories Ltd,1
+M01767,Montek Biopharma,Himachal Pradesh,F01767,Montek Biopharma,1
+M01770,Monatt Biotech,Punjab,F01770,Monatt Biotech,1
+M01772,Mohan Pharma,Telangana,F01772,Mohan Pharma,1
+M01787,Medico Remedies Ltd,Maharashtra,F01787,Medico Remedies Ltd,1
+M01774,MNG Healthcare Trilokpur,Himachal Pradesh,F01774,MNG Healthcare Trilokpur,1
+M01775,MMC Cosmetics Pvt Ltd,Unknown,F01775,MMC Cosmetics Pvt Ltd,1
+M01776,Mls.Swefn Pharmaceuticals Pvt.Ltd,Gujarat,F01776,Mls.Swefn Pharmaceuticals Pvt.Ltd,1
+M01777,Mls.Aban Pharmaceuticals,Gujarat,F01777,Mls.Aban Pharmaceuticals,1
+M01778,MLARRX Pharmaceuticals No,Tamil Nadu,F01778,MLARRX Pharmaceuticals No,1
+M01779,MKA Remedies Pvt. Ltd,Uttar Pradesh,F01779,MKA Remedies Pvt. Ltd,1
+M01780,MK Healthcare,Himachal Pradesh,F01780,MK Healthcare,1
+M01781,Mirambika Pigment,Gujarat,F01781,Mirambika Pigment,1
+M01782,Mihika Pharmaceuticals,Maharashtra,F01782,Mihika Pharmaceuticals,1
+M01783,"Middle Mist Pharmaceuticals Pvt., Ltd",Tamil Nadu,F01783,"Middle Mist Pharmaceuticals Pvt., Ltd",1
+M01784,Micro Organics Pharmaceuticals (India)Pvt Ltd,Himachal Pradesh,F01784,Micro Organics Pharmaceuticals (India)Pvt Ltd,1
+M01785,Medicure Enterprises,Andhra Pradesh,F01785,Medicure Enterprises,1
+M01786,Medicross Laboratories Pvt. Ltd,Himachal Pradesh,F01786,Medicross Laboratories Pvt. Ltd,1
+M01694,"As per the label claim, M/s Azot Life Sciences Private Limited",Himachal Pradesh,F01694,"As per the label claim, M/s Azot Life Sciences Private Limited",1
+M01605,Adani Wilmar,Gujarat,F01605,Adani Wilmar,1
+M01691,Biva Biotech,Gujarat,F01691,Biva Biotech,1
+M01586,Arco Pharma Pvt Ltd,Maharashtra,F01586,Arco Pharma Pvt Ltd,1
+M01588,Aquinnova Pharmaceuticals,Himachal Pradesh,F01588,Aquinnova Pharmaceuticals,1
+M01589,APY Pharma,Assam,F01589,APY Pharma,1
+M01590,APT Formulations Pvt Ltd,Andhra Pradesh,F01590,APT Formulations Pvt Ltd,1
+M01591,Apshsri Pharmaceuticals,Tamil Nadu,F01591,Apshsri Pharmaceuticals,1
+M01592,Aprazer Healthcare Pvt. Ltd,Himachal Pradesh,F01592,Aprazer Healthcare Pvt. Ltd,1
+M01593,Appasamy Ocular Devices Pvt. Ltd,Rajasthan,F01593,Appasamy Occular Devices (P) Ltd,1
+M01594,Appasamy Occular Devices (P) Ltd,Himachal Pradesh,F01593,Appasamy Occular Devices (P) Ltd,1
+M01595,Apex Medical Devices,Gujarat,F01595,Apex Medical Devices,1
+M01596,Apex Laboratories private ltd,Tamil Nadu,F01596,Apex Laboratories private ltd,1
+M01597,Apco Pharma Ltd,Uttarakhand,F01597,Apco Pharma Ltd,1
+M01598,Antila Lifesciences Pvt Ltd,Gujarat,F01598,Antila Lifesciences Pvt Ltd,1
+M01599,Anrose Pharma,Unknown,F00314,Anrose Pharma,1
+M01600,Allegedly manufactured by: M/s. Sun pharma laboratories ltd,Sikkim,F01600,Allegedly manufactured by: M/s. Sun pharma laboratories ltd,1
+M01601,Alkem Laboratories Ltd,Jammu & Kashmir,F00809,Alkem Laboratories Ltd,1
+M01603,Adison Pharmaceuticals,Punjab,F01603,Adison Pharmaceuticals,1
+M01604,Addii Biotech Pvt. Ltd,Unknown,F00494,Addii Biotech Pvt. Ltd,1
+M01827,Maxtra laboratories Rangarangaiahnag ar,Unknown,F01827,Maxtra laboratories Rangarangaiahnag ar,1
+M01606,Adani Wilmar,Delhi,F01605,Adani Wilmar,1
+M01607,Acron Pharmaceuticals,Gujarat,F01607,Acron Pharmaceuticals,1
+M01608,Acmey Inc,Tamil Nadu,F01608,Acmey Inc,1
+M01609,ACME Lafetech LLP,Himachal Pradesh,F01609,ACME Lafetech LLP,1
+M01610,Acme Generics ILLP,Himachal Pradesh,F01610,Acme Generics ILLP,1
+M01611,Acies Pharmaceutical Pvt. Ltd,Uttarakhand,F01611,Acies Pharmaceutical Pvt. Ltd,1
+M01612,Achemic Pharmaceuticals (INDIA) Pvt. Ltd,Telangana,F01612,Achemic Pharmaceuticals (INDIA) Pvt. Ltd,1
+M01613,Acculife Healthcare Pvt. Ltd,Gujarat,F01613,Acculife Healthcare Pvt. Ltd,1
+M01614,Abil Healthcare,Madhya Pradesh,F01614,Abil Healthcare,1
+M01615,Abbott India Limited,Goa,F01615,Abbott India Limited,1
+M01616,Abaris Healthcare Pvt. Ltd,Unknown,F00418,Abaris Healthcare Pvt. Ltd,1
+M01618,Aarohee healthcare Private Ltd,Telangana,F01618,Aarohee healthcare Private Ltd,1
+M01587,Arbro Pharmaceuticals Pvt. Ltd,Delhi,F01587,Arbro Pharmaceuticals Pvt. Ltd,1
+M01585,Aries Drugs Pvt. Ltd,Uttarakhand,F01585,Aries Drugs Pvt. Ltd,1
+M01690,Blazed Pharmaceuticals Pvt. Ltd,Karnataka,F01690,Blazed Pharmaceuticals Pvt. Ltd,1
+M01584,Aristo Pharmaceuticals Pvt. Ltd,"Daman, Diu & DNH",F00131,Aristo Pharmaceuticals Pvt. Ltd,1
+M01553,Cardiomac India (P.) Ltd,Rajasthan,F01553,Cardiomac India (P.) Ltd,1
+M01555,Candor Biotech Ltd,Punjab,F01555,Candor Biotech Ltd,1
+M01556,Ambrosia Pharma,Jammu & Kashmir,F00358,Ambrosia Pharma,1
+M01557,Anchor Pharma Pvt. Ltd,"Daman, Diu & DNH",F01557,Anchor Pharma Pvt. Ltd,1
+M01558,Ananya Herbal Pvt. Ltd,Haryana,F01558,Ananya Herbal Pvt. Ltd,1
+M01559,Anant Pharmaceuticals G.T,Haryana,F01559,Anant Pharmaceuticals G.T,1
+M01560,Anand Product,Tamil Nadu,F01560,Anand Product,1
+M01561,AnA Pharmaceuticals,Uttarakhand,F01561,AnA Pharmaceuticals,1
+M01562,Amkay Products Ltd,Maharashtra,F01562,Amkay Products Ltd,1
+M01563,Amkay Laboratories Pvt. Ltd,Uttar Pradesh,F01563,Amkay Laboratories Pvt. Ltd,1
+M01564,American Pharma and Sciences,Tamil Nadu,F01564,American Pharma and Sciences,1
+M01565,Amentis Biotech Pvt. Ltd,Unknown,F01565,Amentis Biotech Pvt. Ltd,1
+M01566,Ambrosia Herbals,Delhi,F01566,Ambrosia Herbals,1
+M01567,Camper Healthcare,Gujarat,F01567,Camper Healthcare,1
+M01568,Alzey Pharmaceuticals Pvt. Ltd,Haryana,F01568,Alzey Pharmaceuticals Pvt. Ltd,1
+M01569,"Alzan Pharmaceuticals Pvt, Ltd",Punjab,F01569,"Alzan Pharmaceuticals Pvt, Ltd",1
+M01570,AlventaPharmaLimi ted,Himachal Pradesh,F01570,AlventaPharmaLimi ted,1
+M01571,Althea Pharma Pvt. Ltd,"Daman, Diu & DNH",F01571,Althea Pharma Pvt. Ltd,1
+M01572,Alps Communication Pvt. Ltd,Himachal Pradesh,F01572,Alps Communication Pvt. Ltd,1
+M01573,Alpha Laboratories Ltd,Madhya Pradesh,F01573,Alpha Laboratories Ltd,1
+M01574,Alpex Pharma Pvt. Ltd,Himachal Pradesh,F01574,Alpex Pharma Pvt. Ltd,1
+M01576,Allegedly Mfd by: M/s. Abbott India Limited,Goa,F01576,Allegedly Mfd by: M/s. Abbott India Limited,1
+M01577,Andisons Pharmix,Bihar,F01577,Andisons Pharmix,1
+M01578,Anecxa Pharma,Uttarakhand,F01578,Anecxa Pharma,1
+M01579,Animus,Gujarat,F01579,Animus,1
+M01580,Anra Pharamaceuticals Pvt Ltd,Tamil Nadu,F01580,Anra Pharamaceuticals Pvt Ltd,1
+M01581,Arunachala Enterprises,Andhra Pradesh,F01581,Arunachala Enterprises,1
+M01582,Arrow Pharma,Madhya Pradesh,F01582,Arrow Pharma,1
+M01583,Arnav Research Laboratories,Gujarat,F01583,Arnav Research Laboratories,1
+M01619,Aarge Healthcraft,Himachal Pradesh,F01619,Aarge Healthcraft,1
+M01620,Aanand Products,Tamil Nadu,F01620,Aanand Products,1
+M01621,Aagya Biotech Pvt. Ltd,Outside India,F00117,Aagya Biotech Pvt. Ltd,1
+M01622,A to Z Laboratories,Haryana,F01622,A to Z Laboratories,1
+M01659,Biogenetic Drugs Ptv. Ltd,Himachal Pradesh,F01659,Biogenetic Drugs Ptv. Ltd,1
+M01660,Biochem Healthcare Pvt.Ltd,Madhya Pradesh,F01660,Biochem Healthcare Pvt.Ltd,1
+M01661,Biocenna Healthcare Pvt.Ltd,Outside India,F00739,Biocenna Healthcare Pvt.Ltd,1
+M01662,Bio Neutraceuticals,Unknown,F01662,Bio Neutraceuticals,1
+M01663,Bio Neutraceuticals,Telangana,F01662,Bio Neutraceuticals,1
+M01665,Bindlysh Biotec Ltd,Delhi,F01665,Bindlysh Biotec Ltd,1
+M01666,Bhgwati Medicare Devices,Gujarat,F01666,Bhgwati Medicare Devices,1
+M01667,Bhavani Pharmaceuticals (P) Ltd,Uttar Pradesh,F01667,Bhavani Pharmaceuticals (P) Ltd,1
+M01669,Bio Tech Formulation,Andhra Pradesh,F01669,Bio Tech Formulation,1
+M01670,Bitech Laboratory,Madhya Pradesh,F01670,Bitech Laboratory,1
+M01671,Bharat Biotech International Limited,Telangana,F01671,Bharat Biotech International Limited,1
+M01672,Bittu Pharmaceuticals (II),Maharashtra,F01672,Bittu Pharmaceuticals (II),1
+M01673,Calrax Healthcare Pvt.Ltd,Himachal Pradesh,F01673,Calrax Healthcare Pvt.Ltd,1
+M01674,Cadila Pharmaceuticals Limited,Rajasthan,F00088,Cadila Pharmaceuticals Limited,1
+M01675,By: Syndicate Pharma,Madhya Pradesh,F01675,By: Syndicate Pharma,1
+M01676,BVK's Bioscience Pvt. Ltd,Gujarat,F01676,BVK's Bioscience Pvt. Ltd,1
+M01677,Brooks Laboratories Ltd,Himachal Pradesh,F01677,Brooks Laboratories Ltd,1
+M01678,Brit Life science Sainwala,Himachal Pradesh,F01678,Brit Life science Sainwala,1
+M01679,BRIT Lifescience a GMP Certified Company) Sainwala kaula Wata,Himachal Pradesh,F01679,BRIT Lifescience a GMP Certified Company) Sainwala kaula Wata,1
+M01680,Brit Lifescience,Himachal Pradesh,F01680,Brit Lifescience,1
+M01681,BRD Medilabs,Himachal Pradesh,F01681,BRD Medilabs,1
+M01682,Bovine Health care D.No,Telangana,F01682,Bovine Health care D.No,1
+M01683,BON-HEUR Pharmaceuticals,Uttarakhand,F01683,BON-HEUR Pharmaceuticals,1
+M01684,Boehringer Ingelheim India Private Limited,Maharashtra,F01684,Boehringer Ingelheim India Private Limited,1
+M01685,Bo International,Delhi,F01685,Bo International,1
+M01686,Blue Heaven Cosmetics (P) Ltd,Haryana,F01686,Blue Heaven Cosmetics (P) Ltd,1
+M01687,Bliss Chemicals Pvt. Ltd,Maharashtra,F01687,Bliss Chemicals Pvt. Ltd,1
+M01688,BLBK Pharmaceutical Pvt. Ltd,Outside India,F01688,BLBK Pharmaceutical Pvt. Ltd,1
+M01689,Blazon India,Bihar,F01689,Blazon India,1
+M01658,Biograde Organics Pvt. Ltd,Punjab,F01658,Biograde Organics Pvt. Ltd,1
+M01657,Bioiv Labs Pvt.Ltd,Himachal Pradesh,F01657,Bioiv Labs Pvt.Ltd,1
+M01656,Bioland Pharma,Haryana,F01656,Bioland Pharma,1
+M01637,Akums Drugs & Pharmaceuticals Ltd,Outside India,F00070,Akums Drugs & Pharmaceuticals Ltd,1
+M01623,Addll Biotech Pvt. Ltd,Himachal Pradesh,F01623,Addll Biotech Pvt. Ltd,1
+M01624,Adnova Healthcare Pvt. Ltd,Gujarat,F01624,Adnova Healthcare Pvt. Ltd,1
+M01625,Alkem Health Science - Alkem Laboratories Limited,Sikkim,F01625,Alkem Health Science - Alkem Laboratories Limited,1
+M01626,Advanced Pakiza Unani LLP,Unknown,F00481,Advanced Pakiza Unani LLP,1
+M01627,Alifecare Pharmacy Pvt Ltd,Himachal Pradesh,F01627,Alifecare Pharmacy Pvt Ltd,1
+M01628,Alicon Pharmaceutical Pvt Ltd,Unknown,F01628,Alicon Pharmaceutical Pvt Ltd,1
+M01629,Alice Healthcare,Himachal Pradesh,F01629,Alice Healthcare,1
+M01630,Alfansa Bio Pvt.Ltd,Telangana,F01630,Alfansa Bio Pvt.Ltd,1
+M01631,Alexin Biosciences Barotiwala,Himachal Pradesh,F01631,Alexin Biosciences Barotiwala,1
+M01632,Alexin Biosciences,Himachal Pradesh,F01632,Alexin Biosciences,1
+M01634,Albro Pharmaceuticals Pvt. Ltd,Punjab,F01634,Albro Pharmaceuticals Pvt. Ltd,1
+M01635,Alappat Pharma,Kerala,F01635,Alappat Pharma,1
+M01636,Alapati Pharma,Andhra Pradesh,F01635,Alappat Pharma,1
+M01639,Akme Biotec,Uttarakhand,F01639,Akme Biotec,1
+M01653,Bion Therapeutics India Pvt.Ltd,Uttarakhand,F01653,Bion Therapeutics India Pvt.Ltd,1
+M01640,Ajanta Pharma Limited,Maharashtra,F01640,Ajanta Pharma Limited,1
+M01641,Aishwarya Lifesciences,Himachal Pradesh,F01641,Aishwarya Lifesciences,1
+M01642,Aishwarya Healthcare,Sikkim,F00305,Aishwarya Healthcare,1
+M01643,Aglowmed Ltd,Uttarakhand,F01643,Aglomed Ltd,1
+M01644,Aglomed Ltd,Maharashtra,F01643,Aglomed Ltd,1
+M01645,Afflatus Pharmaceuticals Pvt. Ltd,Haryana,F01645,Afflatus Pharmaceuticals Pvt. Ltd,1
+M01646,Arya Pharmaceuticals,Madhya Pradesh,F01646,Arya Pharmaceuticals,1
+M01647,Aryan Biotech P Ltd,Uttarakhand,F01647,Aryan Biotech P Ltd,1
+M01648,Aryatech Pharma (P) Ltd,Uttarakhand,F01648,Aryatech Pharma (P) Ltd,1
+M01649,Biozenta Lifesciences Pvt. Ltd,Himachal Pradesh,F01649,Biozenta Lifesciences Pvt. Ltd,1
+M01650,Biosearch Organics D.I.C. Indl. Estate,Jammu & Kashmir,F01650,Biosearch Organics D.I.C. Indl. Estate,1
+M01651,Biosearch Organics(An ISO 9001;2015 Certified Co,Jammu & Kashmir,F01651,Biosearch Organics(An ISO 9001;2015 Certified Co,1
+M01652,Biosearch Organics,Jammu & Kashmir,F01652,Biosearch Organics,1
+M01826,Maxtra Laboratories TIF,Telangana,F01826,Maxtra Laboratories TIF,1
+M01916,Nitin Lifesciences Ltd,Haryana,F00954,Nitin Lifesciences Ltd,1
+M01828,MAXTRA LABORATORIES MAXTRA Laboratories,Telangana,F01828,MAXTRA LABORATORIES MAXTRA Laboratories,1
+M02007,Hindustan Nutraceuticals INC,Telangana,F02007,Hindustan Nutraceuticals INC,1
+M02009,Hindustan Antibiotics Ltd,Uttarakhand,F00029,Hindustan Antibiotics Ltd,1
+M02010,Himalaya Wellness Company,Himachal Pradesh,F02010,Himalaya Wellness Company,1
+M02011,Himalaya Medical Pvt. Ltd,Uttarakhand,F02011,Himalaya Medical Pvt. Ltd,1
+M02012,Hilton Pharma (Pvt.) Ltd,Unknown,F02012,Hilton Pharma (Pvt.) Ltd,1
+M02013,Hidustan Antibitics Ltd,Himachal Pradesh,F02013,Hidustan Antibitics Ltd,1
+M02014,Hi Fi India,Rajasthan,F02014,Hi Fi India,1
+M02015,Hetero Labs Limited,Puducherry,F00422,Hetero Labs Limited,1
+M02016,Herbs India,Delhi,F02016,Herbs India,1
+M02017,Jips Pharmaceuticals Pvt. Ltd,Punjab,F02017,Jips Pharmaceuticals Pvt. Ltd,1
+M02018,Jips Pharmaceuticals Pvt. Ltd,Unknown,F02017,Jips Pharmaceuticals Pvt. Ltd,1
+M02020,Linto Pharmaceuticals,Puducherry,F02020,Linto Pharmaceuticals,1
+M02021,Lifevision Healthcare (a WHO-GMP Certified Company),Himachal Pradesh,F02021,Lifevision Healthcare (a WHO-GMP Certified Company),1
+M02022,Lifecom Pharmaceuticals (India) Pvt.Ltd,Uttarakhand,F02022,Lifecom Pharmaceuticals (India) Pvt.Ltd,1
+M02023,Lifecom Pharmaceuticals (India) Pvt.Ltd,Outside India,F02022,Lifecom Pharmaceuticals (India) Pvt.Ltd,1
+M02024,Lifecare Surgicals,Andhra Pradesh,F02024,Lifecare Surgicals,1
+M02026,Lexus India Limited,Outside India,F02026,Lexus India Limited,1
+M02027,Lexene Pharma Pvt Ltd,Gujarat,F02027,Lexene Pharma Pvt Ltd,1
+M02028,Lesanto Laboratories,Maharashtra,F02028,Lesanto Laboratories,1
+M02030,Leeford Healthcare Ltd,Unknown,F00095,Leeford Healthcare Ltd,1
+M02031,Lavista Ideal Pharmacy Pvt. Ltd,Himachal Pradesh,F02031,Lavista Ideal Pharmacy Pvt. Ltd,1
+M02032,Lapan Healthcare Pvt. Ltd,Haryana,F02032,Lapan Healthcare Pvt. Ltd,1
+M02033,Lannett Pharmaceuticals Hydrochloride Pvt.Ltd,Outside India,F02033,Lannett Pharmaceuticals Hydrochloride Pvt.Ltd,1
+M02034,Lannett Pharmaceuticals Pvt. Ltd,Outside India,F02034,Lannett Pharmaceuticals Pvt. Ltd,1
+M02035,Laboratories Griffon Pvt. Ltd,Tamil Nadu,F02035,Laboratories Griffon Pvt. Ltd,1
+M02036,L.V Life Sciences VPO Gurumajra Baddi Distt. Sirmour,Himachal Pradesh,F02036,L.V Life Sciences VPO Gurumajra Baddi Distt. Sirmour,1
+M02037,Kwality Pharmaceuticals Ltd,Himachal Pradesh,F00077,Kwality Pharmaceuticals Ltd,1
+M02038,Kunal Remedies Pvt. Ltd,Uttar Pradesh,F02038,Kunal Remedies Pvt. Ltd,1
+M02039,Krypton Pharmaceuticals,Himachal Pradesh,F02039,Krypton Pharmaceuticals,1
+M02040,Lilium Cosmetics Pvt Ltd,Uttar Pradesh,F02040,Lilium Cosmetics Pvt Ltd,1
+M02008,Hindustan Laboatories,Maharashtra,F02008,Hindustan Laboatories,1
+M02006,Hindustan Surgical Appliances,West Bengal,F02006,Hindustan Surgical Appliances,1
+M01972,IG Pharma Ltd,Uttarakhand,F00707,I.G. Pharma Ltd,1
+M02005,Hindustan Ultra Care Limited,Rajasthan,F02005,Hindustan Ultra Care Limited,1
+M01975,Hebei Shengxue Dacheng Pharmaceuticals Co,Outside India,F01975,Hebei Shengxue Dacheng Pharmaceuticals Co,1
+M01976,Hebei Jainmin Starch Glucose Co,Outside India,F01976,Hebei Jainmin Starch Glucose Co,1
+M01977,Healthy Life Pharma Pvt. Ltd,Himachal Pradesh,F00097,Healthy Life Pharma Pvt. Ltd,1
+M01978,Healtech Biosciences,Himachal Pradesh,F01978,Healtech Biosciences,1
+M01979,Healing Pharma India Pvt. Ltd,Gujarat,F01979,Healing Pharma India Pvt. Ltd,1
+M01980,Havik Pharma,Himachal Pradesh,F01980,Havik Pharma,1
+M01981,Hariom Pharmaceuticals,Himachal Pradesh,F01981,Hariom Pharmaceuticals,1
+M01982,Hamax Pharmaceuticals,Gujarat,F01982,Hamax Pharmaceuticals,1
+M01983,Hab Pharmaceuticals & Research Limited,Unknown,F00145,Hab Pharmaceuticals & Research Limited,1
+M01984,H.L.HealthcarePv t.Ltd,Himachal Pradesh,F01984,H.L.HealthcarePv t.Ltd,1
+M01985,Gujarat Pharmalab Pvt. Ltd,Gujarat,F01985,Gujarat Pharmalab Pvt. Ltd,1
+M01986,Gujarat Ambuja Exports Ltd,Maharashtra,F00195,Gujarat Ambuja Exports Ltd,1
+M01987,Gujarat Ambuja Export Ltd,Uttarakhand,F00195,Gujarat Ambuja Exports Ltd,1
+M01988,Gufic Biosciences Limited,Karnataka,F00402,Gufic Biosciences Limited,1
+M01989,Guangzhou Aocai Bio- Technology Co,Outside India,F01989,Guangzhou Aocai Bio- Technology Co,1
+M01990,Grownbury Pharmaceuticals Pvt. Ltd,Uttarakhand,F01990,Grownbury Pharmaceuticals Pvt. Ltd,1
+M01991,Growmed Life Pharma,Gujarat,F01991,Growmed Life Pharma,1
+M01992,Greycross Healthcare,Punjab,F01992,Greycross Healthcare,1
+M01993,Greenco Biologicals Pvt. Ltd,West Bengal,F01993,Greenco Biologicals Pvt. Ltd,1
+M01994,Helax Health Care Pvt. Ltd,Outside India,F00059,Helax Health Care Pvt. Ltd,1
+M01995,Helpzyn Pharmaceuticals,Himachal Pradesh,F01995,Helpzyn Pharmaceuticals,1
+M01996,IBN Herbals (Curetech Formulations Pvt. Ltd,Himachal Pradesh,F01996,IBN Herbals (Curetech Formulations Pvt. Ltd,1
+M01997,Hema Pharmaceuticals,Himachal Pradesh,F01997,Hema Pharmaceuticals,1
+M01998,HYT Formulations,Telangana,F01998,HYT Formulations,1
+M01999,Hygieia Home And Personal Care Solution,Himachal Pradesh,F01999,Hygieia Home And Personal Care Solution,1
+M02000,Humankind Pharmaceuticals Lunia Mohalla,Uttarakhand,F02000,Humankind Pharmaceuticals Lunia Mohalla,1
+M02001,"Human Biological Institute, (A division of Indian Immunologicals Limited",Telangana,F02001,"Human Biological Institute, (A division of Indian Immunologicals Limited",1
+M02002,Household Remedies Pvt. Ltd,Maharashtra,F02002,Household Remedies Pvt. Ltd,1
+M02003,Horizon Bioceuticals Pvt. Ltd,Himachal Pradesh,F02003,Horizon Bioceuticals Pvt. Ltd,1
+M02041,Linux Life Sciences Pvt Ltd,Puducherry,F02041,Linux Life Sciences Pvt Ltd,1
+M02042,Krishna Pharma,Telangana,F02042,Krishna Pharma,1
+M02043,Linux Life Sciences Pvt Ltd,Punjab,F02041,Linux Life Sciences Pvt Ltd,1
+M02044,Macleods Pharmaceuticals Ltd,Maharashtra,F00121,Macleods Pharmaceuticals Ltd,1
+M02080,K. Ramakrishnan & Sons,Tamil Nadu,F02080,K. Ramakrishnan & Sons,1
+M02081,K.C. Laboratories,Gujarat,F02081,K.C. Laboratories,1
+M02082,Juggat Pharma,Karnataka,F02082,Juggat Pharma,1
+M02083,JR & Co,Delhi,F02083,JR & Co,1
+M02084,Johnson & Smith Co,Karnataka,F02084,Johnson & Smith Co,1
+M02085,Joe's Traders,Tamil Nadu,F02085,Joe's Traders,1
+M02086,Karnani Pharmaceuticals Pvt. Ltd,Maharashtra,F00162,Karnani Pharmaceuticals Pvt. Ltd,1
+M02087,Karuppharma Pvt.Ltd,Telangana,F02087,Karuppharma Pvt.Ltd,1
+M02088,Kota Saree Avam Hath kargha Vastra Utpadak Kray-Vikray Sahakari Samiti Ltd,Rajasthan,F02088,Kota Saree Avam Hath kargha Vastra Utpadak Kray-Vikray Sahakari Samiti Ltd,1
+M02089,Kashmik Formuation Pvt Ltd,Gujarat,F02089,Kashmik Formuation Pvt Ltd,1
+M02090,Kosmol Global,Unknown,F02090,Kosmol Global,1
+M02091,Konis Pharmaceuticals Pv t. Ltd,Himachal Pradesh,F02091,Konis Pharmaceuticals Pv t. Ltd,1
+M02092,Konis Pharmaceuticals Krishna Nagar,Andhra Pradesh,F02092,Konis Pharmaceuticals Krishna Nagar,1
+M02093,Konis Pharmaceuticals Krishna,Andhra Pradesh,F02093,Konis Pharmaceuticals Krishna,1
+M02094,Knox Life Sciences,Himachal Pradesh,F02094,Knox Life Sciences,1
+M02095,KLM Laboratories Pvt. Ltd,Gujarat,F02095,KLM Laboratories Pvt. Ltd,1
+M02096,Kivi Labs Ltd,Gujarat,F02096,Kivi Labs Ltd,1
+M02097,Kite Formulation,Tamil Nadu,F02097,Kite Formulation,1
+M02098,Kiss Love Cosmetics Delhi,Delhi,F02098,Kiss Love Cosmetics Delhi,1
+M02099,Kinesis Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F02099,Kinesis Pharmaceuticals Pvt. Ltd,1
+M02100,Kinesis Laboratories Pvt.Ltd,Himachal Pradesh,F02100,Kinesis Laboratories Pvt.Ltd,1
+M02101,Kilitch Drugs India Ltd,Maharashtra,F02101,Kilitch Drugs India Ltd,1
+M02102,Khushboo Beauty Care,"Daman, Diu & DNH",F02102,Khushboo Beauty Care,1
+M02103,Khasra No. 58-60,Uttarakhand,F02103,Khasra No. 58-60,1
+M02104,Keylink Global Exim Pvt. Ltd,Himachal Pradesh,F02104,Keylink Global Exim Pvt. Ltd,1
+M02105,Keron Lifesciences Pvt. Ltd,Uttarakhand,F02105,Keron Lifesciences Pvt. Ltd,1
+M02106,KDM Goldstar Co,Delhi,F02106,KDM Goldstar Co,1
+M02107,Kazima Cosmetics,Delhi,F02107,Kazima Cosmetics,1
+M01550,Euphoria India Pharmaceuticals,Himachal Pradesh,F01550,Euphoria India Pharmaceuticals,1
+M02078,Kaalinga Healthcare (GMP & GLP Certified Company),Himachal Pradesh,F02078,Kaalinga Healthcare (GMP & GLP Certified Company),1
+M02077,Kaizen Pharmaceuticals,Himachal Pradesh,F02077,Kaizen Pharmaceuticals,1
+M02076,Kaizen Research Labs India Pvt. Ltd,Tamil Nadu,F02076,Kaizen Research Labs India Pvt. Ltd,1
+M02059,Lucrose Pharma Pvt. Ltd,Uttar Pradesh,F02059,Lucrose Pharma Pvt. Ltd,1
+M02045,Macleods Pharmaceuticals Ltd,Himachal Pradesh,F00121,Macleods Pharmaceuticals Ltd,1
+M02046,Macin Remedies India Ltd,Punjab,F02046,Macin Remedies India Ltd,1
+M02047,Mac Royal Biotech Baddi,Himachal Pradesh,F02047,Mac Royal Biotech Baddi,1
+M02048,M.V. Vaze Consumer Products,Maharashtra,F02048,M.V. Vaze Consumer Products,1
+M02049,M/.s Ronak Life care Pvt Ltd,Gujarat,F02049,M/.s Ronak Life care Pvt Ltd,1
+M02050,M/.s Health Biotech Ltd,Himachal Pradesh,F02050,M/.s Health Biotech Ltd,1
+M02051,M/.s Digital Vision,Himachal Pradesh,F02051,M/.s Digital Vision,1
+M02052,Lyka Labs Ltd,Gujarat,F02052,Lyka Labs Ltd,1
+M02053,LV life Sciences VPO Gurumajra,Himachal Pradesh,F02053,LV life Sciences VPO Gurumajra,1
+M02055,Luxica Pharma Inc,Gujarat,F02055,Luxica Pharma Inc,1
+M02056,Lupin Ltd,Sikkim,F00676,Lupin Ltd,1
+M02057,Lupin Ltd,Jammu & Kashmir,F00676,Lupin Ltd,1
+M02058,Lupin Ltd,Gujarat,F00676,Lupin Ltd,1
+M02060,Lucent Biotech Limited,Uttarakhand,F02060,Lucent Biotech Limited,1
+M02075,Kalaci Pharma (India),Haryana,F02075,Kalaci Pharma (India),1
+M02061,Lotus Surgicals Pvt. Ltd,Uttarakhand,F02061,Lotus Surgicals Pvt. Ltd,1
+M02062,Linux Life Sciences Pvt Ltd,Telangana,F02041,Linux Life Sciences Pvt Ltd,1
+M02063,Krux Pharma Pvt. Ltd,Gujarat,F02063,Krux Pharma Pvt. Ltd,1
+M02064,Krebs Biochemicals & Industries Limited,Andhra Pradesh,F02064,Krebs Biochemicals & Industries Limited,1
+M02065,JMH Pharma,Uttarakhand,F02065,JMH Pharma,1
+M02066,Karunamoorthy Surigcals Ayyanapuram,Tamil Nadu,F02066,Karunamoorthy Surigcals Ayyanapuram,1
+M02067,Karnal Pharmaceuticals Pvt Ltd,Uttarakhand,F02067,Karnal Pharmaceuticals Pvt Ltd,1
+M02068,Karas Healthcare Private Ltd,Kerala,F02068,Karas Healthcare Private Ltd,1
+M02069,Kaptab Pharmaceuticals,Gujarat,F02069,Kaptab Pharmaceuticals,1
+M02070,Kantil Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F02070,Kantil Pharmaceuticals Pvt. Ltd,1
+M02071,Kanha Biogenetic Laboratories,Himachal Pradesh,F02071,Kanha Biogenetic Laboratories,1
+M02072,Kanero Cosmetics,Delhi,F02072,Kanero Cosmetics,1
+M02074,Kalpa Industries,Telangana,F02074,Kalpa Industries,1
+M01974,Helios Pharmaceuticals (Div. of P.K.T.P. Pvt Ltd,Himachal Pradesh,F01974,Helios Pharmaceuticals (Div. of P.K.T.P. Pvt Ltd,1
+M01971,IHL Lifesciences Pvt. Ltd,Madhya Pradesh,F01971,IHL Lifesciences Pvt. Ltd,1
+M01829,Maxtra Laboratories,Telangana,F01829,Maxtra Laboratories,1
+M01864,"Park Pharmaceuticals 272 Ind. Area Phase II ,Panchkula-134 113(An ISO GMP Certified Co",Haryana,F01864,"Park Pharmaceuticals 272 Ind. Area Phase II ,Panchkula-134 113(An ISO GMP Certified Co",1
+M01866,Panacea Laboratories,West Bengal,F01866,Panacea Laboratories,1
+M01867,Palam Pharma Pvt. Ltd,Gujarat,F01867,Palam Pharma Pvt. Ltd,1
+M01868,Paksons Pharmaceuticals Private Limitated,Haryana,F01868,Paksons Pharmaceuticals Private Limitated,1
+M01869,Packsules,Madhya Pradesh,F01869,Packsules,1
+M01870,Pacific India,Himachal Pradesh,F01870,Pacific India,1
+M01871,P.C. Cosmetics,Unknown,F01871,P.C. Cosmetics,1
+M01872,P & B Pharmaceuticals Pvt. Ltd,Gujarat,F01872,P & B Pharmaceuticals Pvt. Ltd,1
+M01873,Oyster Labs Limited,Haryana,F01873,Oyster Labs Limited,1
+M01874,Overseas Chemicals,West Bengal,F01874,Overseas Chemicals,1
+M01875,"Oushadhi, The Pharmaceutical corporation",Kerala,F01875,"Oushadhi, The Pharmaceutical corporation",1
+M01876,Ossiske Life Science Pvt Ltd,Unknown,F01876,Ossiske Life Science Pvt Ltd,1
+M01877,Oshin Laboratories Pvt. Ltd,Unknown,F01858,Oshin Laboratories Pvt. Ltd,1
+M01878,Ocean Organics Pvt Ltd,Punjab,F01878,Ocean Organics Pvt Ltd,1
+M01879,Nutra Life Healthcare Pvt. Ltd,Outside India,F00435,Nutra Life Healthcare Pvt. Ltd,1
+M01880,NuGen Healthcare,Chandigarh,F01880,NuGen Healthcare,1
+M01881,"Neutral, Marketed by: Astrica Healthcare Pvt. Ltd",Unknown,F01881,"Neutral, Marketed by: Astrica Healthcare Pvt. Ltd",1
+M01882,Neucleus Scientific,Assam,F01882,Neucleus Scientific,1
+M01883,Neubin Life Sciences Pvt. Ltd,Uttarakhand,F01883,Neubin Life Sciences Pvt. Ltd,1
+M01884,Neelam Chemical Works,West Bengal,F01884,Neelam Chemical Works,1
+M01885,Nector Lifesciences Limited,Himachal Pradesh,F01885,Nector Lifesciences Limited,1
+M01886,Near Railway Crossing,Himachal Pradesh,F01886,Near Railway Crossing,1
+M01887,Naxpar Pharma Pvt. Ltd,Himachal Pradesh,F01887,Naxpar Pharma Pvt. Ltd,1
+M01889,Navkar Lifescienses,Himachal Pradesh,F01889,Navkar Lifescienses,1
+M01890,Nature?s Boon Ayurvedic Pharmacy,Punjab,F01890,Nature?s Boon Ayurvedic Pharmacy,1
+M01891,National Pharmacetutical,Maharashtra,F01891,National Pharmacetutical,1
+M01894,Nathan Pharma Pvt. Ltd,Himachal Pradesh,F01894,Nathan Pharma Pvt. Ltd,1
+M01895,Naptune Life Sciences Pvt. Ltd,Himachal Pradesh,F01895,Naptune Life Sciences Pvt. Ltd,1
+M01896,Nanz med Science Pharma Pvt Ltd,Outside India,F00891,Nanz med Science Pharma Pvt Ltd,1
+M01898,Nagris Herbs,Telangana,F01898,Nagris Herbs,1
+M01865,Pansun Pharmaceuticals,Sikkim,F00510,Pansun Pharmaceuticals,1
+M01862,Penta Pharmaceuticals,"Daman, Diu & DNH",F01862,Penta Pharmaceuticals,1
+M01970,J.B. Chemicals & Pharmaceuticals Ltd,Uttarakhand,F00658,J.B. Chemicals & Pharmaceuticals Ltd,1
+M01861,Perennial Medicare,Himachal Pradesh,F01861,Perennial Medicare,1
+M01830,Maxilla Medisciences Pvt. Ltd,Gujarat,F01830,Maxilla Medisciences Pvt. Ltd,1
+M01831,Morisons Lifecare Pvt. Ltd,Tamil Nadu,F01831,Morisons Lifecare Pvt. Ltd,1
+M01832,Mothers Care Pharma Labs Pvt.Ltd,Odisha,F01832,Mothers Care Pharma Labs Pvt.Ltd,1
+M01833,Green Enviro Co,Himachal Pradesh,F01833,Green Enviro Co,1
+M01834,Orbit Lifescience Pvt. Ltd,Gujarat,F01834,Orbit Lifescience Pvt. Ltd,1
+M01835,Orley Laboratories Pvt. Ltd,Gujarat,F01835,Orley Laboratories Pvt. Ltd,1
+M01836,Orison Pharma International ( A WHO: GMP Certified Company),Himachal Pradesh,F01836,Orison Pharma International ( A WHO: GMP Certified Company),1
+M01837,Orison Pharmaceuticals,Haryana,F01837,Orison Pharmaceuticals,1
+M01838,Orison International,Himachal Pradesh,F01838,Orison International,1
+M01839,Orgello Herbal Care,Himachal Pradesh,F01839,Orgello Herbal Care,1
+M01840,Organo Chem (India),Uttar Pradesh,F01840,Organo Chem (India),1
+M01841,Orchid MedlifePvt. ltd,Himachal Pradesh,F01841,Orchid MedlifePvt. ltd,1
+M01844,Onxy Biotec Ltd,Himachal Pradesh,F01844,Onxy Biotec Ltd,1
+M01845,MSN Laboratories Private Limited,Telangana,F01845,MSN Laboratories Private Limited,1
+M01846,Onex Pharmaceuticals,Rajasthan,F01846,Onex Pharmaceuticals,1
+M01847,Onex Life Science Pvt Ltd,Tamil Nadu,F01847,Onex Life Science Pvt Ltd,1
+M01848,Omnison Pharma Pvt. Ltd,Uttar Pradesh,F01848,Omnison Pharma Pvt. Ltd,1
+M01849,Omex Medical Technology,Gujarat,F01849,Omex Medical Technology,1
+M01850,Omega Biotech Ltd,Outside India,F00101,Omega Biotech Ltd,1
+M01851,Om Biometic Pvt.Ltd,Uttarakhand,F01851,Om Biometic Pvt.Ltd,1
+M01852,Olive Healthcare,"Daman, Diu & DNH",F01852,Olive Healthcare,1
+M01853,Olicare Cosmoceuticals,Delhi,F01853,Olicare Cosmoceuticals,1
+M01854,Okvik Pharma Pvt. Ltd,Haryana,F01854,Okvik Pharma Pvt. Ltd,1
+M01855,Ornate Pharma Pvt. Ltd,Gujarat,F01855,Ornate Pharma Pvt. Ltd,1
+M01856,Oro Pharmaceuticals Pvt Ltd,Odisha,F01856,Oro Pharmaceuticals Pvt Ltd,1
+M01857,Oscar,Haryana,F01857,Oscar,1
+M01858,Oshin Laboratories Pvt. Ltd,Haryana,F01858,Oshin Laboratories Pvt. Ltd,1
+M01859,Pfizer Limited,Telangana,F01859,Pfizer Limited,1
+M01860,Perk Pharmaceuticals Ltd,Uttar Pradesh,F01860,Perk Pharmaceuticals Ltd,1
+M01899,N. Rangarao & Sons Pvt.Ltd,Karnataka,F01899,N. Rangarao & Sons Pvt.Ltd,1
+M01900,Multicure Pharma Private Limited,Telangana,F01900,Multicure Pharma Private Limited,1
+M01902,New Gayzel Pharmaceuticals,Haryana,F01902,New Gayzel Pharmaceuticals,1
+M01903,Nubeno Healthcare Private Limited,Maharashtra,F01903,Nubeno Healthcare Private Limited,1
+M01940,INDKUS Biotech India,Himachal Pradesh,F01940,INDKUS Biotech India,1
+M01941,Indilina Pharmaceuticals,Punjab,F01941,Indilina Pharmaceuticals,1
+M01942,Indica Pharmaceuticals (P) Ltd,Gujarat,F01942,Indica Pharmaceuticals (P) Ltd,1
+M01943,Indian Remedies,Bihar,F01943,Indian Remedies,1
+M01944,Indian Genomix Pvt. Ltd,Telangana,F01944,Indian Genomix Pvt. Ltd,1
+M01945,Indian Drug Vision,Uttarakhand,F01945,Indian Drug Vision,1
+M01946,Ind-Swift Ltd,Himachal Pradesh,F01946,Ind-Swift Ltd,1
+M01947,Impulse Pharma Pvt. Ltd,Maharashtra,F01947,Impulse Pharma Pvt. Ltd,1
+M01948,Ipca Laboratories Ltd,Unknown,F00237,Ipca Laboratories Ltd,1
+M01949,Ipzah Pharmaceuticals Pvt. Ltd,Punjab,F01949,Ipzah Pharmaceuticals Pvt. Ltd,1
+M01950,Iscon Surgicals Ltd,Rajasthan,F01950,Iscon Surgicals Ltd,1
+M01951,Ishaanav Nutraceuticals Pvt. Ltd,Uttarakhand,F01951,Ishaanav Nutraceuticals Pvt. Ltd,1
+M01952,Jineka Healthcare Pvt. Ltd,Outside India,F00221,Jineka Healthcare Pvt. Ltd,1
+M01953,Jindal Medicot Ltd,Himachal Pradesh,F01953,Jindal Medicot Ltd,1
+M01954,Jesday Pharmaceuticals,Telangana,F01954,Jesday Pharmaceuticals,1
+M01955,Jeneka Healthcaere Pvt Ltd,Uttarakhand,F01955,Jeneka Healthcaere Pvt Ltd,1
+M01956,Jeevanam Healthcare,Kerala,F01956,Jeevanam Healthcare,1
+M01957,JBJM Parenterals Pvt. Ltd,Uttar Pradesh,F01957,JBJM Parenterals Pvt. Ltd,1
+M01959,Jakson Laboratories Pvt. Ltd,Himachal Pradesh,F00321,Jakson Laboratories Pvt. Ltd,1
+M01960,Jajoo Surgicals Pvt. Ltd,Madhya Pradesh,F01960,Jajoo Surgicals Pvt. Ltd,1
+M01961,Jaiwik Biotech (P) Ltd,Rajasthan,F01961,Jaiwik Biotech (P) Ltd,1
+M01962,Jaisanshu Medicare Pvt. Ltd,Uttarakhand,F01962,Jaisanshu Medicare Pvt. Ltd,1
+M01963,Jainsons Healthcare (GMP Certified Company),Uttarakhand,F01963,Jainsons Healthcare (GMP Certified Company),1
+M01964,Jaineka Healthcare Pvt. Ltd,Uttarakhand,F01964,Jaineka Healthcare Pvt. Ltd,1
+M01965,Jain Soap,Gujarat,F01965,Jain Soap,1
+M01966,Jackson Laboratories Pvt. Ltd,Maharashtra,F00000,Jackson Laboratories Pvt. Ltd,1
+M01967,J.P. Industries Bhud,Himachal Pradesh,F01967,J.P. Industries Bhud,1
+M01968,J. Duncan Health Care Pvt.Ltd,Maharashtra,F01968,J. Duncan Health Care Pvt.Ltd,1
+M01969,J.B. Remedies Pvt. Ltd,Uttarakhand,F01969,J.B. Remedies Pvt. Ltd,1
+M01939,Indo-Gulf Pharmaceuticals (unit of I.G. Pharma Ltd,Uttarakhand,F01939,Indo-Gulf Pharmaceuticals (unit of I.G. Pharma Ltd,1
+M01938,MacsolLifescience,Gujarat,F01938,MacsolLifescience,1
+M01937,Indovet Life Sciences Pvt. Ltd,Telangana,F01937,Indovet Life Sciences Pvt. Ltd,1
+M01919,Nil,Unknown,F01919,Nil,1
+M01904,New Lab Industry Ram Nagar Rd,Bihar,F01904,New Lab Industry Ram Nagar Rd,1
+M01905,Ntk Pharmaa,Tamil Nadu,F01905,Ntk Pharmaa,1
+M01906,Novo Nordisk A/S Novo Alle,Outside India,F01906,Novo Nordisk A/S Novo Alle,1
+M01907,Novector Labs,Unknown,F01907,Novector Labs,1
+M01908,Novazing Pharma Pvt. Ltd,Madhya Pradesh,F01908,Novazing Pharma Pvt. Ltd,1
+M01909,Not printed; Life Plus Healthcare Pvt. Ltd,West Bengal,F01909,Not printed; Life Plus Healthcare Pvt. Ltd,1
+M01910,Northern India Chemical Works Pvt.Ltd,Uttar Pradesh,F01910,Northern India Chemical Works Pvt.Ltd,1
+M01911,Nootan Pharmaceuticals,Himachal Pradesh,F01911,Nootan Pharmaceuticals,1
+M01912,Nootan Pharamaceuticals Tipra,Himachal Pradesh,F01912,Nootan Pharamaceuticals Tipra,1
+M01913,Noel Pharma (India) Pvt. Ltd,Himachal Pradesh,F01913,Noel Pharma (India) Pvt. Ltd,1
+M01914,Noble Pharmacare Ltd,Odisha,F01914,Noble Pharmacare Ltd,1
+M01917,Ningxia Taiyicin Biotech Co,Outside India,F01917,Ningxia Taiyicin Biotech Co,1
+M01918,Ningbo Hi-Tech Biochemicals Co,Outside India,F01918,Ningbo Hi-Tech Biochemicals Co,1
+M01920,Nihal Healthcare,Himachal Pradesh,F01920,Nihal Healthcare,1
+M01936,Infinity Laboratories Pvt. Ltd,Punjab,F01936,Infinity Laboratories Pvt. Ltd,1
+M01921,Nichepharm Lifesciences Private Limited,Uttarakhand,F01921,Nichepharm Lifesciences Private Limited,1
+M01922,NH Healthcare,Telangana,F01922,NH Healthcare,1
+M01923,Nexkem Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00938,Nexkem Pharmaceuticals Pvt. Ltd,1
+M01924,Magma Allianz Laboratories Ltd,Himachal Pradesh,F01924,Magma Allianz Laboratories Ltd,1
+M01925,Magic of Herbs Magic of Herbs,Haryana,F01925,Magic of Herbs Magic of Herbs,1
+M01926,Magbro Healthcare Pvt. Ltd,Himachal Pradesh,F01926,Magbro Healthcare Pvt. Ltd,1
+M01927,INDU Drugs Pvt Ltd,Telangana,F01927,INDU Drugs Pvt Ltd,1
+M01928,Iosis Remedies Pvt. Ltd,Unknown,F00189,Iosis Remedies Pvt. Ltd,1
+M01929,Inven Pharmaceuticals Pvt. Ltd,Madhya Pradesh,F01929,Inven Pharmaceuticals Pvt. Ltd,1
+M01930,Intermed Laboratories Private Limited,Tamil Nadu,F01930,Intermed Laboratories Private Limited,1
+M01932,Intas Pharmaceuticals Ltd,Gujarat,F00115,Intas Pharmaceuticals Ltd,1
+M01933,Instant Remedies Pvt. Ltd,Punjab,F01933,Instant Remedies Pvt. Ltd,1
+M01934,Insat Pharma Pvt. Ltd,Gujarat,F01934,Insat Pharma Pvt. Ltd,1
+M01551,Ethix Health Care,Himachal Pradesh,F01551,Ethix Health Care,1
+M01021,Rextuse Pharmaceuticals,Uttarakhand,F01021,Rextuse Pharmaceuticals,1
+M01549,"Eurokem Labortories Pvt., Ltd",Tamil Nadu,F01549,"Eurokem Labortories Pvt., Ltd",1
+M01178,Vinsmile,Tamil Nadu,F01178,Vinsmile,1
+M01146,Xenone Healthcare Pvt. Ltd,Himachal Pradesh,F01146,Xenone Healthcare Pvt. Ltd,1
+M01147,Wockhardt Limited,Himachal Pradesh,F01147,Wockhardt Limited,1
+M01148,Vaishnav Remedies,Uttarakhand,F01148,Vaishnav Remedies,1
+M01150,Win Trust Pharmaceuticals Ltd,Punjab,F01150,Win Trust Pharmaceuticals Ltd,1
+M01151,Win Cure Pharma,Himachal Pradesh,F01151,Win Cure Pharma,1
+M01152,Wilcure Remedies Pvt. Ltd,Punjab,F00250,Wilcure Remedies Pvt. Ltd,1
+M01153,Whiz Laboratories (India) Pvt.Ltd,Punjab,F01153,Whiz Laboratories (India) Pvt.Ltd,1
+M01154,White Engle Laboratories,Unknown,F01154,White Engle Laboratories,1
+M01155,Westerlin Drugs Pvt. Ltd,Bihar,F01155,Westerlin Drugs Pvt. Ltd,1
+M01156,Yaxon Biocare Pvt.Ltd,Haryana,F01156,Yaxon Biocare Pvt.Ltd,1
+M01157,Yiwn Baolina Cosmetics Co Ltd,Outside India,F01157,Yiwn Baolina Cosmetics Co Ltd,1
+M01158,YL Pharma Baddi,Himachal Pradesh,F01158,YL Pharma Baddi,1
+M01159,Yoluri Formulation Pvt. Ltd,Telangana,F01159,Yoluri Formulation Pvt. Ltd,1
+M01160,Zydus Healthcare Ltd,Himachal Pradesh,F00461,Zydus Healthcare Ltd,1
+M01161,"Zydus Animal Health, A Division of Cadila Healthcare Ltd",Gujarat,F01161,"Zydus Animal Health, A Division of Cadila Healthcare Ltd",1
+M01162,Zurich Health Care,Madhya Pradesh,F01162,Zurich Health Care,1
+M01163,ZRS Pharmaceuticals India Pvt. Ltd,Unknown,F00246,ZRS Pharmaceuticals India Pvt. Ltd,1
+M01164,Zhejiang Medicines & Health Products Import & Export Co,Outside India,F01164,Zhejiang Medicines & Health Products Import & Export Co,1
+M01166,Zenon Lifesciences Pvt. Ltd,Gujarat,F01166,Zenon Lifesciences Pvt. Ltd,1
+M01167,Zenomed Health Care Pvt.Ltd,Unknown,F01167,Zenomed Health Care Pvt.Ltd,1
+M01168,Zenex Animal Health India Pvt.Ltd,Gujarat,F01168,Zenex Animal Health India Pvt.Ltd,1
+M01169,Zee Laboratories Ltd,Punjab,F00002,Zee Laboratories Ltd,1
+M01170,Zantic Pharmaceuticals Pvt. Ltd,Uttarakhand,F01170,Zantic Pharmaceuticals Pvt. Ltd,1
+M01171,Yuvnam Pvt. Ltd,Jharkhand,F01171,Yuvnam Pvt. Ltd,1
+M01172,Yuventis Life Sciences,Himachal Pradesh,F01172,Yuventis Life Sciences,1
+M01173,Yug Enteprises Pvt. Ltd,Outside India,F01173,Yug Enteprises Pvt. Ltd,1
+M01174,York's Pharma,Punjab,F01174,York's Pharma,1
+M01175,West Coast Pharmaceuticals Works Limited,Gujarat,F01175,West Coast Pharmaceuticals Works Limited,1
+M01176,Wellmed Pharma,Himachal Pradesh,F01176,Wellmed Pharma,1
+M01145,Xperia Creation,Gujarat,F01145,Xperia Creation,1
+M01144,Yacca Lifesciences Pvt. Ltd,Outside India,F00045,Yacca Lifesciences Pvt. Ltd,1
+M01143,Yacca Pharmaceutical Pvt. Ltd,Uttarakhand,F01143,Yacca Pharmaceutical Pvt. Ltd,1
+M01124,Torque Pharmaceuticals Pvt. Ltd,Unknown,F00257,Torque Pharmaceuticals Pvt. Ltd,1
+M01109,Tosc International Private Limited,Uttarakhand,F01109,Tosc International Private Limited,1
+M01110,Synokem Lifesciences Pvt. Ltd,Uttarakhand,F01110,Synokem Lifesciences Pvt. Ltd,1
+M01111,Synokem Healthcare Ltd,Uttarakhand,F01111,Synokem Healthcare Ltd,1
+M01112,Synergene Active Ingredients Pvt. Ltd,Andhra Pradesh,F01112,Synergene Active Ingredients Pvt. Ltd,1
+M01113,Syncom Formulations (India) Ltd,Madhya Pradesh,F01113,Syncom Formulations (India) Ltd,1
+M01116,Swiss India Laboratories,Himachal Pradesh,F01116,Swiss India Laboratories,1
+M01117,Teedeecol (India),Odisha,F01117,Teedeecol (India),1
+M01118,Teena Labs Ltd,Telangana,F01118,Teena Labs Ltd,1
+M01119,Texas Lifesciences Pvt. Ltd,Gujarat,F01119,Texas Lifesciences Pvt. Ltd,1
+M01120,The Swastik Pharmaceuticals,Andhra Pradesh,F01120,The Swastik Pharmaceuticals,1
+M01121,Tosc International Private Limited,Delhi,F01109,Tosc International Private Limited,1
+M01122,Torrent Pharmaceuticals Ltd,Madhya Pradesh,F00563,Torrent Pharmaceuticals Ltd,1
+M01123,Torrent Pharmaceuticals Ltd,"Daman, Diu & DNH",F00563,Torrent Pharmaceuticals Ltd,1
+M01125,Torque Phamrmaceuticals Pvt. Ltd,Himachal Pradesh,F01125,Torque Phamrmaceuticals Pvt. Ltd,1
+M01142,Yadav?s Health & Beauty Herbal Products,Himachal Pradesh,F01142,Yadav?s Health & Beauty Herbal Products,1
+M01126,Torino Laboratories Pvt. Ltd,Maharashtra,F00546,Torino Laboratories Pvt. Ltd,1
+M01128,Tiruvision Medcare,Himachal Pradesh,F01128,Tiruvision Medcare,1
+M01129,Ticomapharmaciae,Punjab,F01129,Ticomapharmaciae,1
+M01130,Ticoma Pharmacia,Unknown,F00940,Ticoma Pharmacia,1
+M01131,Tiba Pharmaceuticals Pvt.Ltd,Gujarat,F01131,Tiba Pharmaceuticals Pvt.Ltd,1
+M01134,Thermo Fisher scientific India Pvt. Ltd,Gujarat,F01134,Thermo Fisher scientific India Pvt. Ltd,1
+M01135,Theramax Laboratories,Haryana,F01135,Theramax Laboratories,1
+M01136,Uttaranchal Pharmaceuticals Pvt Ltd,Uttarakhand,F01136,Uttaranchal Pharmaceuticals Pvt Ltd,1
+M01137,"VA Life sciences, LLP",Himachal Pradesh,F01137,"VA Life sciences, LLP",1
+M01138,Vaidban Ayurved Bhawan,Haryana,F01138,Vaidban Ayurved Bhawan,1
+M01139,Xcell Labs,Himachal Pradesh,F01139,Xcell Labs,1
+M01140,Yashwin Healthcare,Haryana,F01140,Yashwin Healthcare,1
+M01141,"Yancheng Youhua Pharmaceutical & Chemical Technology, Co",Outside India,F01141,"Yancheng Youhua Pharmaceutical & Chemical Technology, Co",1
+M01177,Weldow Remedies,Haryana,F01177,Weldow Remedies,1
+M01179,Vill-Dhana(Bagh Bania),Himachal Pradesh,F01179,Vill-Dhana(Bagh Bania),1
+M01107,Talwar Pharma Jhabrera,Uttarakhand,F01107,Talwar Pharma Jhabrera,1
+M01180,Vikas Pharmaceutical Laboratoires,Maharashtra,F01180,Vikas Pharmaceutical Laboratoires,1
+M01219,Scott-Edil Advance Research Laboratories & Education Ltd,Himachal Pradesh,F01219,Scott-Edil Advance Research Laboratories & Education Ltd,1
+M01220,SB Lifesciences (An ISO 9001:2015 Certified Co,Uttarakhand,F01220,SB Lifesciences (An ISO 9001:2015 Certified Co,1
+M01221,Sayora Pharma Private Ltd,Haryana,F01221,Sayora Pharma Private Ltd,1
+M01222,Saudi Basic Industries Corporation,Unknown,F01222,Saudi Basic Industries Corporation,1
+M01223,Sarwal Laboratory,Himachal Pradesh,F01223,Sarwal Laboratory,1
+M01224,Saphnix Life Sciences (A WHO- GMP Certified Company),Himachal Pradesh,F01224,Saphnix Life Sciences (A WHO- GMP Certified Company),1
+M01225,Shijiazhuang Dingmin Pharmaceuticals Sciences Co,Outside India,F01225,Shijiazhuang Dingmin Pharmaceuticals Sciences Co,1
+M01226,Saphnix Life Sciences (A WHO-GMP,Himachal Pradesh,F01226,Saphnix Life Sciences (A WHO-GMP,1
+M01227,Santus Global Formulations Limited,Himachal Pradesh,F01227,Santus Global Formulations Limited,1
+M01228,Sanofi India Ltd,Maharashtra,F00725,Sanofi India Ltd,1
+M01229,Sanofi India Ltd,Gujarat,F00725,Sanofi India Ltd,1
+M01233,Seagull Laboratories India Pvt. Ltd,Himachal Pradesh,F01233,Seagull Laboratories India Pvt. Ltd,1
+M01234,Seamac Formulations Pvt. Ltd,Himachal Pradesh,F01234,Seamac Formulations Pvt. Ltd,1
+M01235,Seeko biotics,Andhra Pradesh,F01235,Seeko biotics,1
+M01236,Seldom Pharma Pvt.Ltd,Puducherry,F01236,Seldom Pharma Pvt.Ltd,1
+M01239,Shayamg Qinjiang Chemical,Outside India,F01239,Shayamg Qinjiang Chemical,1
+M01240,Sharing formulations Pvt Ltd,Gujarat,F01240,Sharing formulations Pvt Ltd,1
+M01241,Shape Pharma Pvt. Ltd,Gujarat,F01241,Shape Pharma Pvt. Ltd,1
+M01242,Shanti Surgicals Pvt. Ltd,Uttar Pradesh,F01242,Shanti Surgicals Pvt. Ltd,1
+M01243,Shangrila Industries (P) Ltd,Sikkim,F01243,Shangrila Industries (P) Ltd,1
+M01244,Shandong New Time Pharmaceuticals Co,Outside India,F01244,Shandong New Time Pharmaceuticals Co,1
+M01245,Shamshree Lifesciences Limited,Himachal Pradesh,F01245,Shamshree Lifesciences Limited,1
+M01246,SGS Pharmaceutical Pvt. Ltd,Uttarakhand,F00551,SGS Pharmaceutical Pvt. Ltd,1
+M01247,Sevlok Pharmaceutical Co,Gujarat,F01247,Sevlok Pharmaceutical Co,1
+M01248,Senses Pharmaceuticals Ltd,Karnataka,F01248,Senses Pharmaceuticals Ltd,1
+M01249,Selvok Pharmaceutical Co,Gujarat,F01249,Selvok Pharmaceutical Co,1
+M01250,Selemp Pharma Enterprises,Andhra Pradesh,F01250,Selemp Pharma Enterprises,1
+M01251,Seldom Pharma Pvt.Ltd,Unknown,F01236,Seldom Pharma Pvt.Ltd,1
+M01254,Sanghai Jinhe Bio- Pharmaceutical Co,Outside India,F01254,Sanghai Jinhe Bio- Pharmaceutical Co,1
+M01216,Sara Exports Ltd,Uttar Pradesh,F01216,Sara Exports Ltd,1
+M01214,Swiss-de-cheme,West Bengal,F01214,Swiss-de-cheme,1
+M01211,Vive Cosmetics,Punjab,F01211,Vive Cosmetics,1
+M01194,VINI Cosmetics Pvt. Ltd,Gujarat,F01194,VINI Cosmetics Pvt. Ltd,1
+M01181,vials Received Without Label,Unknown,F01181,vials Received Without Label,1
+M01182,Vetsun Pharmaceuticals,Uttarakhand,F01182,Vetsun Pharmaceuticals,1
+M01183,Vet-needa Labs,Karnataka,F01183,Vet-needa Labs,1
+M01184,Venkateshwara Hatcheries Pvt. Ltd,Maharashtra,F01184,Venkateshwara Hatcheries Pvt. Ltd,1
+M01185,Velvette life style Pvt Ltd,Maharashtra,F01185,Velvette life style Pvt Ltd,1
+M01186,Velnik India Limited,Rajasthan,F01186,Velnik India Limited,1
+M01187,Vellinton Healthcare,Himachal Pradesh,F01187,Vellinton Healthcare,1
+M01188,Vega Biotec Pvt. Ltd,Gujarat,F01188,Vega Biotec Pvt. Ltd,1
+M01189,Ved Lifesavers (P) Ltd,Uttarakhand,F01189,Ved Lifesavers (P) Ltd,1
+M01190,Varsha Labs LLP,Karnataka,F01190,Varsha Labs LLP,1
+M01191,Vardhman Exports,Maharashtra,F01191,Vardhman Exports,1
+M01192,Varav Biogenesis Pvt.Ltd,Himachal Pradesh,F01192,Varav Biogenesis Pvt.Ltd,1
+M01193,Vandana Surgi Pharma (P) Ltd,Rajasthan,F01193,Vandana Surgi Pharma (P) Ltd,1
+M01195,VIP Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F01195,VIP Pharmaceuticals Pvt. Ltd,1
+M01209,Vivimed Labs Limited,Uttarakhand,F00147,Vivimed Labs Limited,1
+M01196,Welcure Remedies Nahan,Himachal Pradesh,F01196,Welcure Remedies Nahan,1
+M01197,Visa Drugs & Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F01197,Visa Drugs & Pharmaceuticals Pvt. Ltd,1
+M01198,Weismanna Health Care Pvt. Ltd,Andhra Pradesh,F01198,Weismanna Health Care Pvt. Ltd,1
+M01199,Warner Hindustan Pvt. Ltd,Unknown,F00862,Warner Hindusthan Pvt. Ltd,1
+M01200,Walllis Pharmaceuticals,Madhya Pradesh,F01200,Walllis Pharmaceuticals,1
+M01201,VTV Formulations India Pvt Ltd,Uttarakhand,F01201,VTV Formulations India Pvt Ltd,1
+M01202,VTV Formulations India Pvt Ltd,Himachal Pradesh,F01201,VTV Formulations India Pvt Ltd,1
+M01203,VS Healthcare,Delhi,F01203,VS Healthcare,1
+M01204,Vrindha Biotech Pvt. Ltd,Uttarakhand,F01204,Vrindha Biotech Pvt. Ltd,1
+M01205,Vrihaan Pharmaceuticals LLP,Gujarat,F01205,Vrihaan Pharmaceuticals LLP,1
+M01206,VRD Pharmaceuticals & Surgicals Pvt Ltd,Himachal Pradesh,F01206,VRD Pharmaceuticals & Surgicals Pvt Ltd,1
+M01207,VPAM Healthcare Pvt. Ltd,Himachal Pradesh,F01207,VPAM Healthcare Pvt. Ltd,1
+M01208,Vobb Healthcare,Himachal Pradesh,F01208,Vobb Healthcare,1
+M01108,Synokem Pharmaceuticals Ltd,Outside India,F00058,Synokem Pharmaceuticals Ltd,1
+M01104,Tanishka Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F01104,Tanishka Pharmaceuticals Pvt. Ltd,1
+M01256,S.M.G. PHARMACEUTICALS (Pvt) Ltd,Gujarat,F01256,S.M.G. PHARMACEUTICALS (Pvt) Ltd,1
+M01034,Punjab Chemical & Crop Protection Ltd,Punjab,F01034,Punjab Chemical & Crop Protection Ltd,1
+M00998,Prispag Pharma,Uttar Pradesh,F00998,Prispag Pharma,1
+M00999,Pulse Pharmaceuticals Pvt. Ltd,Unknown,F00243,Pulse Pharmaceuticals Pvt. Ltd,1
+M01000,Pharmafabrikon,Tamil Nadu,F01000,Pharmafabrikon,1
+M01001,Regency Healthcare,Uttarakhand,F01001,Regency Healthcare,1
+M01002,Regenix Drugs Ltd,Tamil Nadu,F01002,Regenix Drugs Ltd,1
+M01006,Pure & Cure Heatlhcare Pvt. Ltd,Outside India,F00020,Pure & Cure Healthcare Pvt. Ltd,1
+M01007,Premier Enterprises,Tamil Nadu,F01007,Premier Enterprises,1
+M01008,Rainbow Life Sciences Pvt. Ltd,Maharashtra,F01008,Rainbow Life Sciences Pvt. Ltd,1
+M01009,Polestar Power,Himachal Pradesh,F01009,Polestar Power,1
+M01010,Polestar Power Industries,Himachal Pradesh,F01010,Polestar Power Industries,1
+M01011,Progression Industries Pvt. Ltd,Himachal Pradesh,F01011,Progression Industries Pvt. Ltd,1
+M01012,Polestar power industries(Pharma division) Damuwala,Himachal Pradesh,F01012,Polestar power industries(Pharma division) Damuwala,1
+M01013,Rainbow Laboratories,Madhya Pradesh,F01013,Rainbow Laboratories,1
+M01014,Radico Remedies,Himachal Pradesh,F01014,Radico Remedies,1
+M01015,Relieve Pharmaceuticals,Himachal Pradesh,F01015,Relieve Pharmaceuticals,1
+M01017,Radicals Pharmapvt. Ltd,Haryana,F01017,Radicals Pharmapvt. Ltd,1
+M01018,Prem Laboratories D.No,Telangana,F01018,Prem Laboratories D.No,1
+M01019,Resa Life Science,Delhi,F01019,Resa Life Science,1
+M01020,Prem Green Pvt. Ltd,Rajasthan,F01020,Prem Green Pvt. Ltd,1
+M01022,RGG Cosmetics Pvt. Ltd,Unknown,F01022,RGG Cosmetics Pvt. Ltd,1
+M01023,Precept Pharma Ltd,Himachal Pradesh,F01023,Precept Pharma Ltd,1
+M01024,"Pranshav Health Care, Plot No. 824/16, Near Saint Gobin Glass India Ltd",Gujarat,F01024,"Pranshav Health Care, Plot No. 824/16, Near Saint Gobin Glass India Ltd",1
+M01025,Ribbel International Ltd,Haryana,F01025,Ribbel International Ltd,1
+M01026,Quixotic Healthcare,Himachal Pradesh,F01026,Quixotic Healthcare,1
+M01027,QP Pharmachem Ltd,Punjab,F01027,QP Pharmachem Ltd,1
+M01029,QUBIT Pharmaceuticals Pvt. Ltd,Punjab,F01029,QUBIT Pharmaceuticals Pvt. Ltd,1
+M01030,Quasar Labs Pvt.Ltd,Uttarakhand,F01030,Quasar Labs Pvt.Ltd,1
+M01031,Ridley Life,Unknown,F01031,Ridley Life,1
+M01032,Pure & Care Healthcare Pvt. Ltd,Unknown,F00020,Pure & Cure Healthcare Pvt. Ltd,1
+M00997,Recipharm Pharmaservices Pvt. Ltd,Karnataka,F00997,Recipharm Pharmaservices Pvt. Ltd,1
+M00996,PRS Pharmaceuticals Pvt Ltd,Tamil Nadu,F00996,PRS Pharmaceuticals Pvt Ltd,1
+M00995,Pharma Synth Formulations Ltd,Outside India,F00995,Pharma Synth Formulations Ltd,1
+M00976,Pristine Life Sciences,Sikkim,F00976,Pristine Life Sciences,1
+M00963,Rivon Pharmaceuticals LLP,Gujarat,F00963,Rivon Pharmaceuticals LLP,1
+M00964,Pharmssan,Unknown,F00964,Pharmssan,1
+M00965,Rivpra Formulation Pvt. Ltd,Delhi,F00018,Rivpra Formulation Pvt. Ltd,1
+M00966,Picasso Remedies,"Daman, Diu & DNH",F00966,Picasso Remedies,1
+M00967,Pharmedic Laboratories (Pvt.) Ltd,Unknown,F00967,Pharmedic Laboratories (Pvt.) Ltd,1
+M00968,Remax Pharmaceuticals,Unknown,F00968,Remax Pharmaceuticals,1
+M00969,Priya Life Science,Gujarat,F00969,Priya Life Science,1
+M00970,Res Sancta,Himachal Pradesh,F00970,Res Sancta,1
+M00971,Rathod Pharmachem Private Limited,Gujarat,F00971,Rathod Pharmachem Private Limited,1
+M00972,Pilco Healthcare Pvt. Ltd,Uttarakhand,F00972,Pilco Healthcare Pvt. Ltd,1
+M00973,PIL Pharmaceuticals Limited,Uttarakhand,F00973,PIL Pharmaceuticals Limited,1
+M00974,Ritual Drugs Pvt. Ltd,Unknown,F00447,Ritual Drugs Pvt. Ltd,1
+M00975,Phytochem Healthcare,Himachal Pradesh,F00975,Phytochem Healthcare,1
+M00977,Ravian Life Science Pvt. Ltd,Outside India,F00140,Ravian Life Science Pvt. Ltd,1
+M00993,Redic Labs,Outside India,F00993,Redic Labs,1
+M00978,Repacked by- Medi Smith Pharma Lab,Karnataka,F00978,Repacked by- Medi Smith Pharma Lab,1
+M00980,RMIS Pharmaceuticals,Chhattisgarh,F00980,RMIS Pharmaceuticals,1
+M00981,Promea Therapeutics Private Limited,Telangana,F00981,Promea Therapeutics Private Limited,1
+M00982,Redinex Life Sciences Pvt Ltd,Punjab,F00982,Redinex Life Sciences Pvt Ltd,1
+M00983,? Prosilio Pharmaceuticals Pvt. Ltd,Puducherry,F00983,? Prosilio Pharmaceuticals Pvt. Ltd,1
+M00984,Regal Laboratories,Punjab,F00984,Regal Laboratories,1
+M00985,Proceed Formulations,Punjab,F00985,Proceed Formulations,1
+M00986,Renown Pharmaceuticals Pvt. Ltd,Gujarat,F00986,Renown Pharmaceuticals Pvt. Ltd,1
+M00987,Prosperity Drugs Pvt. Ltd,Himachal Pradesh,F00987,Prosperity Drugs Pvt. Ltd,1
+M00988,Protech Telelinks Mauza Ogli,Himachal Pradesh,F00988,Protech Telelinks Mauza Ogli,1
+M00990,Repacked by :- Kerala State Drugs & Pharmaceuticals Ltd,Kerala,F00990,Repacked by :- Kerala State Drugs & Pharmaceuticals Ltd,1
+M00991,Redico Remedies,Himachal Pradesh,F00991,Redico Remedies,1
+M00992,Priya Life Science,Unknown,F00969,Priya Life Science,1
+M01033,Relief Biotech Pvt. Ltd,Outside India,F00116,Relief Biotech Pvt. Ltd,1
+M01036,Pioneer Agro Industries Sanvin Laboratories Pvt Ltd,Maharashtra,F01036,Pioneer Agro Industries Sanvin Laboratories Pvt Ltd,1
+M01103,Tara Biosciences Pvt. Ltd,Rajasthan,F01103,Tara Biosciences Pvt. Ltd,1
+M01037,"Raptakos, Brett & Co",Maharashtra,F01037,"Raptakos, Brett & Co",1
+M01072,Truelixir Life Sciences Private. Limited,Maharashtra,F01072,Truelixir Life Sciences Private. Limited,1
+M01074,Troikaa Pharmaceuticals Ltd,Uttarakhand,F00549,Troikaa Pharmaceuticals Ltd,1
+M01075,Troikaa Pharmaceuticals Ltd,"Daman, Diu & DNH",F00549,Troikaa Pharmaceuticals Ltd,1
+M01076,Triveni Formulations Limited,Andhra Pradesh,F01076,Triveni Formulations Limited,1
+M01077,Transflexjawaharnagar,Chhattisgarh,F01077,Transflexjawaharnagar,1
+M01078,Ultramed Life Sciences,Uttarakhand,F01078,Ultramed Life Sciences,1
+M01079,Unibiotech Formulations Delta Division,Himachal Pradesh,F01079,Unibiotech Formulations Delta Division,1
+M01080,Unicure India Ltd,Unknown,F00001,Unicure India Ltd,1
+M01082,USV Private Limited,Gujarat,F00731,USV Private Limited,1
+M01083,Us Pharma (I) Pvt.Ltd,Maharashtra,F01083,Us Pharma (I) Pvt.Ltd,1
+M01084,Uptas Lifescience,Gujarat,F01084,Uptas Lifescience,1
+M01085,Upico Medicare Pvt. Ltd,Gujarat,F01085,Upico Medicare Pvt. Ltd,1
+M01086,Universal Cosmetics Industries,Maharashtra,F01086,Universal Cosmetics Industries,1
+M01087,Universal Chemicals & Pharmaceutical Industries,Odisha,F01087,Universal Chemicals & Pharmaceutical Industries,1
+M01088,United Cotton,Rajasthan,F01088,United Cotton,1
+M01089,United Biotech (P) Limited,Himachal Pradesh,F01089,United Biotech (P) Limited,1
+M01090,Unital Formulations (A GMP Certified Company),Himachal Pradesh,F01090,Unital Formulations (A GMP Certified Company),1
+M01091,Unisharp Organics Pvt. Ltd,Punjab,F01091,Unisharp Organics Pvt. Ltd,1
+M01092,Unisafe Bioscience Pvt. Ltd,Gujarat,F01092,Unisafe Bioscience Pvt. Ltd,1
+M01093,Unique Pharmaceutical Labs. (A Division of J. B. Chemicals & Pharmaceuticals Ltd,Gujarat,F01093,Unique Pharmaceutical Labs. (A Division of J. B. Chemicals & Pharmaceuticals Ltd,1
+M01094,Unique Biotech Ltd,Unknown,F00794,Unique Biotech Ltd,1
+M01095,Uniplus Biotech (P) Ltd,Uttar Pradesh,F01095,Uniplus Biotech (P) Ltd,1
+M01096,Unimax Chemicals Pvt. Ltd,Maharashtra,F01096,Unimax Chemicals Pvt. Ltd,1
+M01097,Transflex,Chhattisgarh,F01097,Transflex,1
+M01098,Towa Pharma Private Limited,Gujarat,F01098,Towa Pharma Private Limited,1
+M01099,Roquette Freres,Outside India,F01099,Roquette Freres,1
+M01100,Systochem Laboratories Ltd,Himachal Pradesh,F00371,Systochem Laboratories Ltd,1
+M01101,Taurus Life Sciences Ltd,Gujarat,F01101,Taurus Life Sciences Ltd,1
+M01102,Tas Med (Indi) Pvt. Ltd,Himachal Pradesh,F01102,Tas Med (Indi) Pvt. Ltd,1
+M01071,Trugen Pharmaceuticals Pvt. Ltd,Outside India,F00110,Trugen Pharmaceuticals Pvt. Ltd,1
+M01070,TPD Associates At: No,Karnataka,F01070,TPD Associates At: No,1
+M01069,Tulbros Formulations,Unknown,F00557,Tulbros Formulations,1
+M01051,Raja Surgicals,Tamil Nadu,F01051,Raja Surgicals,1
+M01038,Ripcord Pharmaceuticals Pvt. Ltd,Maharashtra,F01038,Ripcord Pharmaceuticals Pvt. Ltd,1
+M01039,Rescures LIfe Sciences Ltd,Himachal Pradesh,F01039,Rescures LIfe Sciences Ltd,1
+M01040,Quality Pharma Production Pvt. Ltd,Assam,F01040,Quality Pharma Production Pvt. Ltd,1
+M01041,Rikon Pharmaceuticals Pvt. Ltd,Bihar,F01041,Rikon Pharmaceuticals Pvt. Ltd,1
+M01042,Rikencare Life sciences villmessaTibba,Himachal Pradesh,F01042,Rikencare Life sciences villmessaTibba,1
+M01043,Ramom Healthcare Pvt.Ltd,Himachal Pradesh,F01043,Ramom Healthcare Pvt.Ltd,1
+M01044,Plena Remedies,Unknown,F00173,Plena Remedies,1
+M01045,Rajdip Pharmaceuticals,Gujarat,F01045,Rajdip Pharmaceuticals,1
+M01046,Rajasthan Antibiotics Limited,Rajasthan,F01046,Rajasthan Antibiotics Limited,1
+M01047,Resonant Pharmaceuticals Pvt. Ltd,Gujarat,F01047,Resonant Pharmaceuticals Pvt. Ltd,1
+M01048,Plica Vaccines Pvt. Ltd,Uttar Pradesh,F01048,Plica Vaccines Pvt. Ltd,1
+M01049,Plot No.11,Uttarakhand,F01049,Plot No.11,1
+M01050,Rajalakshmi Medical Device,Tamil Nadu,F01050,Rajalakshmi Medical Device,1
+M01052,Primesurge International,Gujarat,F01052,Primesurge International,1
+M01068,Tychos Therapeutics Pvt. Ltd,Tamil Nadu,F01068,Tychos Therapeutics Pvt. Ltd,1
+M01053,Relax Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F01053,Relax Pharmaceuticals Pvt. Ltd,1
+M01054,Plot No. 20,Himachal Pradesh,F01054,Plot No. 20,1
+M01055,Presun Biotech,Himachal Pradesh,F01055,Presun Biotech,1
+M01056,Reltsen Healthcare Spl,Puducherry,F01056,Reltsen Healthcare Spl,1
+M01057,Plus Formulations,Uttarakhand,F01057,Plus Formulations,1
+M01058,Repacked by Ganesh Eucalyptus Oil Disitillery,Tamil Nadu,F01058,Repacked by Ganesh Eucalyptus Oil Disitillery,1
+M01059,Sprivil Healthcare Pvt. Ltd,Maharashtra,F01059,Sprivil Healthcare Pvt. Ltd,1
+M01060,Ronald Pharmaceuticals (P) Ltd,Gujarat,F01060,Ronald Pharmaceuticals (P) Ltd,1
+M01061,Tulip Formulations Pvt. Ltd,Himachal Pradesh,F01061,Tulip Formulations Pvt. Ltd,1
+M01062,Ultramark Healthcare Pvt. Ltd,Punjab,F01062,Ultramark Healthcare Pvt. Ltd,1
+M01065,Ultra Drugs Pvt. Ltd,Unknown,F00063,Ultra Drugs Pvt. Ltd,1
+M01066,Ultatech Pharmaceuticaqls,Himachal Pradesh,F01066,Ultatech Pharmaceuticaqls,1
+M01067,U/s. Regain Laboratories,Haryana,F01067,U/s. Regain Laboratories,1
+M01255,S.M. Herbal Solutions,Delhi,F01255,S.M. Herbal Solutions,1
+M01257,S.K. Picglobal Co,Outside India,F01257,S.K. Picglobal Co,1
+M01548,Eurolife Healthcare Pvt. Ltd,Uttarakhand,F01548,Eurolife Healthcare Pvt. Ltd,1
+M01476,Frontline Pharmaceuticals Pvt. Ltd,Maharashtra,F01476,Frontline Pharmaceuticals Pvt. Ltd,1
+M01443,Cosmas Pharmaceuticals Ltd,Himachal Pradesh,F01443,Cosmas Pharmaceuticals Ltd,1
+M01444,Copmed Pharmaceuticals Pvt.Ltd,Himachal Pradesh,F01444,Copmed Pharmaceuticals Pvt.Ltd,1
+M01445,Contacare Ophthalmics and Diagnostics,Gujarat,F01445,Contacare Ophthalmics and Diagnostics,1
+M01448,Conscaff India,Himachal Pradesh,F01448,Conscaff India,1
+M01449,Condour Pharmaceuticals,Himachal Pradesh,F01449,Condour Pharmaceuticals,1
+M01450,Comex Pharma,Haryana,F01450,Comex Pharma,1
+M01451,Comed Chemicals Limited,Gujarat,F01451,Comed Chemicals Limited,1
+M01452,Combitic Global Caplet Pvt. Ltd,Haryana,F01452,Combitic Global Caplet Pvt. Ltd,1
+M01453,Colgate-Palmolive (India) Ltd,Unknown,F01453,Colgate-Palmolive (India) Ltd,1
+M01454,Code No,Unknown,F01454,Code No,1
+M01455,Cmg Biotech Pvt. Lts,Himachal Pradesh,F01455,Cmg Biotech Pvt. Lts,1
+M01456,Clever Formulations,Gujarat,F01456,Clever Formulations,1
+M01457,Clariant IGL Specialty Chemicals Pvt. Ltd,Uttarakhand,F01457,Clariant IGL Specialty Chemicals Pvt. Ltd,1
+M01458,Cis Life Care Pvt.Ltd,Himachal Pradesh,F01458,Cis Life Care Pvt.Ltd,1
+M01459,Cipla Ltd,Puducherry,F00346,Cipla Ltd,1
+M01460,Durga Surgical Corporation,Delhi,F01460,Durga Surgical Corporation,1
+M01461,DWD Pharmaceuticals Ltd,Gujarat,F01461,DWD Pharmaceuticals Ltd,1
+M01462,Goya Agro Industries Limited,Unknown,F01462,Goya Agro Industries Limited,1
+M01463,Gag Pharmaceuticals VPO Mubarkpur Shaikhan Jalandhar,Punjab,F01463,Gag Pharmaceuticals VPO Mubarkpur Shaikhan Jalandhar,1
+M01464,Geno Pharmaceuticals Pvt. Ltd,Goa,F01464,Geno Pharmaceuticals Pvt. Ltd,1
+M01465,GEFEX PHARMA Pvt. Ltd,Jammu & Kashmir,F01465,GEFEX PHARMA Pvt. Ltd,1
+M01467,GCOS Products,Gujarat,F01467,GCOS Products,1
+M01468,GC Healthcare,Himachal Pradesh,F01468,GC Healthcare,1
+M01469,Gats Biotech Pvt. Ltd,Rajasthan,F01469,Gats Biotech Pvt. Ltd,1
+M01470,Gary Pharmaceuticals P Limited,Punjab,F01470,Gary Pharmaceuticals P Limited,1
+M01471,Galpha Laboratories Limited,Maharashtra,F00111,Galpha Laboratories Limited,1
+M01472,Galcare Pharmaceuticals Pvt. Ltd,Rajasthan,F01472,Galcare Pharmaceuticals Pvt. Ltd,1
+M01473,Gabt Co Ltd,Outside India,F01473,Gabt Co Ltd,1
+M01474,DYCOTT Healthcare,Himachal Pradesh,F01474,DYCOTT Healthcare,1
+M01441,Costal medicare Pvt.Ltd,Andhra Pradesh,F01441,Costal medicare Pvt.Ltd,1
+M01440,Cipla Ltd,Maharashtra,F00346,Cipla Ltd,1
+M01439,Cosway Pharmaceuticals,Himachal Pradesh,F01416,Cosway Pharmaceuticals,1
+M01423,Chem Pharmaceuticals Pvt. Ltd,Uttarakhand,F01423,Chem Pharmaceuticals Pvt. Ltd,1
+M01409,Dial Pharmaceuticals,Gujarat,F01409,Dial Pharmaceuticals,1
+M01410,Dhawanilife care Pvt. Ltd,Unknown,F01410,Dhawanilife care Pvt. Ltd,1
+M01411,Dexibo Pharma Pvt. Ltd,Uttarakhand,F01411,Dexibo Pharma Pvt. Ltd,1
+M01412,Dexibo Pharma Pvt. Ltd,Outside India,F01411,Dexibo Pharma Pvt. Ltd,1
+M01413,Devout Nord (I) Ltd,Uttarakhand,F01413,Devout Nord (I) Ltd,1
+M01414,Crescent labs Pvt Ltd,Gujarat,F01414,Crescent labs Pvt Ltd,1
+M01415,Covalent Laboratories Pvt Ltd,Telangana,F01415,Covalent Laboratories Pvt Ltd,1
+M01416,Cosway Pharmaceuticals,Unknown,F01416,Cosway Pharmaceuticals,1
+M01418,Chennai Oscar Bio Pharmaceuticals Pvt. Ltd,Tamil Nadu,F01418,Chennai Oscar Bio Pharmaceuticals Pvt. Ltd,1
+M01419,Chemtex Speciality Ltd,West Bengal,F01419,Chemtex Speciality Ltd,1
+M01420,Chemstellar Chemicals Pvt Ltd,Maharashtra,F01420,Chemstellar Chemicals Pvt Ltd,1
+M01421,Chemino Pharma Ltd,Gujarat,F01421,Chemino Pharma Ltd,1
+M01422,Chemex Oil Pvt Ltd,Himachal Pradesh,F01422,Chemex Oil Pvt Ltd,1
+M01424,Changzhou New District Garson Medical Stent Apparatus Co,Outside India,F01424,Changzhou New District Garson Medical Stent Apparatus Co,1
+M01438,Cipla Ltd,Madhya Pradesh,F00346,Cipla Ltd,1
+M01425,Changethu Herbs & Drugs,Unknown,F01425,Changethu Herbs & Drugs,1
+M01426,Chalice Vitalchem Pvt. Ltd,Himachal Pradesh,F01426,Chalice Vitalchem Pvt. Ltd,1
+M01427,Ceza Formulation Pvt Ltd,Madhya Pradesh,F01427,Ceza Formulation Pvt Ltd,1
+M01428,Century Pharmaceuticals Ltd,Gujarat,F00772,Centaur Pharmaceuticals Pvt. Ltd,1
+M01429,Centaur Pharmaceuticals Pvt. Ltd,Haryana,F00772,Centaur Pharmaceuticals Pvt. Ltd,1
+M01430,Cent Cure Pvt. Ltd,Unknown,F00554,Cent Cure Pvt. Ltd,1
+M01431,Ceego Labs Pvt. Ltd,Tamil Nadu,F01431,Ceego Labs Pvt. Ltd,1
+M01432,CCIGMAA LIFESTYLE Pvt LTD,Maharashtra,F01432,CCIGMAA LIFESTYLE Pvt LTD,1
+M01433,Cavendish Bio Pharma Pvt. Ltd,Chhattisgarh,F01433,Cavendish Bio Pharma Pvt. Ltd,1
+M01434,Catrax Healthcare Pvt. Ltd,Himachal Pradesh,F01434,Catrax Healthcare Pvt. Ltd,1
+M01435,Carewell Steuart Pharma Pvt.Ltd,Tamil Nadu,F01435,Carewell Steuart Pharma Pvt.Ltd,1
+M01436,Care Pharmaceuticals,Telangana,F01436,Care Pharmaceuticals,1
+M01437,CIEL Pharma Pvt. Ltd,Himachal Pradesh,F01437,CIEL Pharma Pvt. Ltd,1
+M01475,G Nine Bioceuticals Pvt. Ltd,Haryana,F01475,G Nine Bioceuticals Pvt. Ltd,1
+M01477,Fresenius Kabi Oncology Ltd,Himachal Pradesh,F01477,Fresenius Kabi Oncology Ltd,1
+M01407,Disinfecto Chemical Industrial Pvt. Ltd,Uttar Pradesh,F01407,Disinfecto Chemical Industrial Pvt. Ltd,1
+M01478,Fredun Pharmaceuticals Ltd,Maharashtra,F01478,Fredun Pharmaceuticals Ltd,1
+M01512,Eskag Pharma Pvt. Ltd,Uttarakhand,F01512,Eskag Pharma Pvt. Ltd,1
+M01513,Escape Lifesciences Pvt. Ltd,Outside India,F01513,Escape Lifesciences Pvt. Ltd,1
+M01514,Enrico Pharmaceuticals,Himachal Pradesh,F01514,Enrico Pharmaceuticals,1
+M01517,Eminent Remedies,Telangana,F01517,Eminent Remedies,1
+M01518,Emcure Pharmaceutical s Ltd,Jammu & Kashmir,F01518,Emcure Pharmaceutical s Ltd,1
+M01519,Emcure Pharmaceuticals Ltd,Maharashtra,F01518,Emcure Pharmaceutical s Ltd,1
+M01520,"Emc, Esdab Medicare Pvt. Ltd",Tamil Nadu,F01520,"Emc, Esdab Medicare Pvt. Ltd",1
+M01521,Elite Pharma Pvt. Ltd,Gujarat,F01521,Elite Pharma Pvt. Ltd,1
+M01522,Elikem Healthcare Private Limited,Gujarat,F01522,Elikem Healthcare Private Limited,1
+M01523,Elfos Laboratories,Rajasthan,F01523,Elfos Laboratories,1
+M01524,Elfin Drugs Pvt. Ltd,Unknown,F00280,Elfin Drugs Pvt. Ltd,1
+M01525,Edwin Biotech,Punjab,F01525,Edwin Biotech,1
+M01526,Eastern Healthcare,Outside India,F00894,Eastern Healthcare,1
+M01527,Eastern Chemical Industrial Pvt. Ltd,Odisha,F01527,Eastern Chemical Industrial Pvt. Ltd,1
+M01529,Dynamism Lab,Gujarat,F01529,Dynamism Lab,1
+M01530,Espee Formulaion Pvt. Ltd,Gujarat,F01530,Espee Formulaion Pvt. Ltd,1
+M01531,Estra Pharmaceutica Ls,Punjab,F01531,Estra Pharmaceutica Ls,1
+M01534,Farma Hub Overseas Pvt. Ltd,Uttarakhand,F01534,Farma Hub Overseas Pvt. Ltd,1
+M01535,Fantasy Drugs Private Limited,Bihar,F01535,Fantasy Drugs Private Limited,1
+M01536,Fanal Pharmaceuticals LLP,Gujarat,F01536,Fanal Pharmaceuticals LLP,1
+M01537,Exotic Pharma,Gujarat,F01537,Exotic Pharma,1
+M01538,Exotic Healthcare,Punjab,F01538,Exotic Healthcare,1
+M01539,Exodrugs,Himachal Pradesh,F01539,Exodrugs,1
+M01542,Excell Health Care Products,Unknown,F01542,Excel+ Health care products,1
+M01543,Excel+ Health care products,Kerala,F01542,Excel+ Health care products,1
+M01544,Evolet Pharmaceutical Pvt. Ltd,Unknown,F01544,Evolet Pharmaceutical Pvt. Ltd,1
+M01545,Evertouch Bio Remedies,Uttar Pradesh,F01545,Evertouch Bio Remedies,1
+M01546,Everest Pharmaceuticals Ltd,Outside India,F01546,Everest Pharmaceuticals Ltd,1
+M01547,Events Cotporation,Himachal Pradesh,F01547,Events Cotporation,1
+M01511,Esme Consumer Pvt Ltd,Uttarakhand,F01511,Esme Consumer Pvt Ltd,1
+M01510,Esquire Drug,Gujarat,F01510,Esquire Drug,1
+M01509,Firstmed Therapeutics Pvt Ltd,Haryana,F00322,Firstmed Therapeutics Pvt Ltd,1
+M01492,Goodbuy Beauty Prohtets Door no,Tamil Nadu,F01492,Goodbuy Beauty Prohtets Door no,1
+M01479,Franklin Laboratories (India) Pvt. Ltd,Uttarakhand,F01479,Franklin Laboratories (India) Pvt. Ltd,1
+M01480,Franco-Indian Pharmaceuticals Pvt Ltd,Maharashtra,F01480,Franco-Indian Pharmaceuticals Pvt Ltd,1
+M01481,Francis Remdies (India) Pvt.Ltd,Uttarakhand,F01481,Francis Remdies (India) Pvt.Ltd,1
+M01482,Forgo Pharmaceuticals,Haryana,F00337,Forgo Pharmaceuticals,1
+M01483,Forever LifeScience Pvt.Ltd,Gujarat,F01483,Forever LifeScience Pvt.Ltd,1
+M01484,Geno Pharmaceuticals Pvt. Ltd,Maharashtra,F01464,Geno Pharmaceuticals Pvt. Ltd,1
+M01485,GKM New Pharma,Puducherry,F01485,GKM New Pharma,1
+M01486,GKM New Pharma Spl. Type,Puducherry,F01486,GKM New Pharma Spl. Type,1
+M01487,Glatrix biotech Pvt.Ltd,Telangana,F01487,Glatrix biotech Pvt.Ltd,1
+M01488,Gothic pharmaceuticals pvt. Ltd,Telangana,F01488,Gothic pharmaceuticals pvt. Ltd,1
+M01489,Goree Cosmetics (pvt)Ltd,Unknown,F01489,Goree Cosmetics (pvt)Ltd,1
+M01490,Gopal Krishna And Company,Rajasthan,F01490,Gopal Krishna And Company,1
+M01491,Goodwill Lifesciences,Gujarat,F01491,Goodwill Lifesciences,1
+M01493,Godrej Industries Ltd,Gujarat,F01493,Godrej Industries Ltd,1
+M01508,Flourish Pharm,"Daman, Diu & DNH",F01508,Flourish Pharm,1
+M01494,Goa Antibiotics & Pharmaceuticals Ltd,Goa,F00915,Goa Antibiotics & Pharmaceuticals Ltd,1
+M01495,GMH Laboratories,Himachal Pradesh,F01495,GMH Laboratories,1
+M01496,Gluconate Health Ltd,West Bengal,F01496,Gluconate Health Ltd,1
+M01497,GLS Pharma Limited,Telangana,F01497,GLS Pharma Limited,1
+M01498,Glorius Pharmaceuticals,Bihar,F01498,Glorius Pharmaceuticals,1
+M01499,Global Formulations,Unknown,F00921,Global Formulations,1
+M01500,Glivert healthcare llp,Uttar Pradesh,F01500,Glivert healthcare llp,1
+M01501,GlenSmith Labs Private Limited,Uttarakhand,F01501,GlenSmith Labs Private Limited,1
+M01503,Glenmark Pharmaceuticals Ltd,Uttarakhand,F00154,Glenmark Pharmaceuticals Ltd,1
+M01504,Glenmark Pharmaceuticals Ltd,Unknown,F00154,Glenmark Pharmaceuticals Ltd,1
+M01505,Glenmark Lifesciences Ltd,Gujarat,F01505,Glenmark Lifesciences Ltd,1
+M01506,Glauben Pharma,Himachal Pradesh,F01506,Glauben Pharma,1
+M01507,For Maxford Healthcare by Stafford Laboratories Pvt. Ltd,Outside India,F01507,For Maxford Healthcare by Stafford Laboratories Pvt. Ltd,1
+M01408,Disha Surgicals Pvt. Ltd,Uttar Pradesh,F01408,Disha Surgicals Pvt. Ltd,1
+M01406,Divine Medicare,Himachal Pradesh,F01406,Divine Medicare,1
+M01258,S.DHOLE & Co,Odisha,F01258,S.DHOLE & Co,1
+M01328,Subham Remedies,Uttarakhand,F01328,Subham Remedies,1
+M01293,Stanmax Laboratories Pvt. Ltd,Telangana,F01293,Stanmax Laboratories Pvt. Ltd,1
+M01294,Sterlife Pharma Pvt Ltd,Gujarat,F01294,Sterlife Pharma Pvt Ltd,1
+M01295,Sterlife Biotech Pvt.Ltd,Gujarat,F01295,Sterlife Biotech Pvt.Ltd,1
+M01296,Steril-Gene Life Sciences (P) Ltd,Puducherry,F01296,Steril-Gene Life Sciences (P) Ltd,1
+M01297,Steadfast Medishield pvt.Ltd,Uttarakhand,F01297,Steadfast edishield Pvt. Ltd,1
+M01298,Steadfast edishield Pvt. Ltd,Outside India,F01297,Steadfast edishield Pvt. Ltd,1
+M01299,Statmed Private Limited,West Bengal,F01299,Statmed Private Limited,1
+M01303,Standard Pharmaceuticals Ltd,West Bengal,F01303,Standard Pharmaceuticals Ltd,1
+M01305,Stafford Laboratories Pvt. Ltd,Uttarakhand,F01305,Stafford Laboratories Pvt. Ltd,1
+M01306,SSM Formulations Private Limited,Maharashtra,F01306,SSM Formulations Private Limited,1
+M01307,SS Enterprises,Uttar Pradesh,F01307,SS Enterprises,1
+M01308,SRS Meditech Ltd,Uttar Pradesh,F01308,SRS Meditech Ltd,1
+M01309,Sritech Pharma,Uttar Pradesh,F01309,Sritech Pharma,1
+M01310,Sterlife Pharma Pvt Ltd,Unknown,F01294,Sterlife Pharma Pvt Ltd,1
+M01311,Strassenburg Pharmaceuticals Ltd,West Bengal,F01311,Strassenburg Pharmaceuticals Ltd,1
+M01312,Strausswell Organics,Himachal Pradesh,F01312,Strausswell Organics,1
+M01313,Styrun Healthcare,Gujarat,F01313,Styrun Healthcare,1
+M01314,Suyassh Pharmaceuticals,Gujarat,F01314,Suyassh Pharmaceuticals,1
+M01315,Surfactants and Allied Chemicals (P) Ltd,Tamil Nadu,F01315,Surfactants and Allied Chemicals (P) Ltd,1
+M01316,Supreme Chemicals,Punjab,F01316,Supreme Chemicals,1
+M01317,Supermax Drugs & Pharmaceuticals Pvt. Ltd,Delhi,F00501,Supermax Drugs & Pharmaceuticals Pvt. Ltd,1
+M01318,Supermax Drugs & Drugs Pharmaceuticals Pvt. Ltd,Uttarakhand,F01318,Supermax Drugs & Drugs Pharmaceuticals Pvt. Ltd,1
+M01319,Super Vaishali,Bihar,F01319,Super Vaishali,1
+M01320,Super Pharma Products,Madhya Pradesh,F01320,Super Pharma Products,1
+M01322,Sun Pharma Laboratories Ltd,Assam,F00120,Sun Pharma Laboratories Ltd,1
+M01323,Sun Pharmaceuticals Ind. Ltd,Telangana,F00874,Sun Pharmaceuticals Ind. Ltd,1
+M01324,Sun Pharmaceuticals Ind. Ltd,Maharashtra,F00874,Sun Pharmaceuticals Ind. Ltd,1
+M01325,Sumar Biotech LLP,Gujarat,F01325,Sumar Biotech LLP,1
+M01326,Sugii Surgical India Pvt. Ltd,Karnataka,F01326,Sugii Surgical India Pvt. Ltd,1
+M01292,SVR HEALTHCARE (A GMP Certified Company),Unknown,F01292,SVR HEALTHCARE (A GMP Certified Company),1
+M01291,ShinestarPharma,Tamil Nadu,F01291,ShinestarPharma,1
+M01289,Sahika Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F01289,Sahika Pharmaceuticals Pvt. Ltd,1
+M01272,Sabi Pharmaceuticals Pvt. Ltd,Assam,F01272,Sabi Pharmaceuticals Pvt. Ltd,1
+M01259,Ryzer Pharmaceutical Pvt. Ltd,Gujarat,F01259,Ryzer Pharmaceutical Pvt. Ltd,1
+M01260,Ruzette Organics,Punjab,F01260,Ruzette Organics,1
+M01261,Rusan Pharma Ltd,Uttarakhand,F01261,Rusan Pharma Ltd,1
+M01262,Rudraksha Bioceuticals,Gujarat,F01262,Rudraksha Bioceuticals,1
+M01263,Ruby Organics Pvt. Ltd,Maharashtra,F01263,Ruby Organics Pvt. Ltd,1
+M01264,RTN Pharma,Tamil Nadu,F01264,RTN Pharma,1
+M01265,Rsons Medikits India,Telangana,F01265,Rsons Medikits India,1
+M01266,RSK Pharmacy,Haryana,F01266,RSK Pharmacy,1
+M01267,RSH Global Pvt. Ltd,Himachal Pradesh,F01267,RSH Global Pvt. Ltd,1
+M01268,Rpg Life Sciences Limited,Gujarat,F01268,Rpg Life Sciences Limited,1
+M01269,Ross Robinz Biotech,Himachal Pradesh,F01269,Ross Robinz Biotech,1
+M01270,M/s Rosefinch Pharmaceutique Pvt Ltd,Gujarat,F01270,M/s Rosefinch Pharmaceutique Pvt Ltd,1
+M01271,S.M.G. PHARMACEUTICALS (Pvt) Ltd,Rajasthan,F01256,S.M.G. PHARMACEUTICALS (Pvt) Ltd,1
+M01273,Sangeeta Pharma,Maharashtra,F01273,Sangeeta Pharma,1
+M01287,Sai Sarvaa Biotech Pvt. Ltd,Tamil Nadu,F00445,Sai Sarvaa Biotech Pvt. Ltd,1
+M01274,Sabui Medical Stores(MFG.),West Bengal,F01274,Sabui Medical Stores(MFG.),1
+M01275,Sanctus Global Formulations Limited,Unknown,F00587,Sanctus Global Formulations Limited,1
+M01276,Sanasan Formulation,Unknown,F01276,Sanasan Formulation,1
+M01277,San-cito Therapeutics Inc,Himachal Pradesh,F01277,San-cito Therapeutics Inc,1
+M01278,Samyan Health Care Pvt. Ltd,Himachal Pradesh,F01278,Samyan Health Care Pvt. Ltd,1
+M01279,Samrvir Biotech Pvt. Ltd,Himachal Pradesh,F01279,Samrvir Biotech Pvt. Ltd,1
+M01280,Samrudh Pharmaceuticals Pvt. Ltd,Maharashtra,F01280,Samrudh Pharmaceuticals Pvt. Ltd,1
+M01281,Salus Pharmaceuticals Als,Himachal Pradesh,F01281,Salus Pharmaceuticals Als,1
+M01282,Salix Pharmachem VPO Nasrala,Punjab,F01282,Salix Pharmachem VPO Nasrala,1
+M01283,Saiyam Healthcare,Punjab,F01283,Saiyam Healthcare,1
+M01284,Sain Medicaments Pvt. Ltd,Telangana,F01284,Sain Medicaments Pvt. Ltd,1
+M01285,"SaiMirraInnopharmPv t,Ltd",Tamil Nadu,F01285,"SaiMirraInnopharmPv t,Ltd",1
+M01286,Sai Tech Pharmaceuticals Pvt. Ltd,Maharashtra,F01286,Sai Tech Pharmaceuticals Pvt. Ltd,1
+M01327,Sucantis Bio Tech Pvt. Ltd,Uttarakhand,F01327,Sucantis Bio Tech Pvt. Ltd,1
+M01329,Srinija Parenterals,Andhra Pradesh,F01329,Srinija Parenterals,1
+M01405,Divtatv Wellness Pvt.Ltd,Uttar Pradesh,F01405,Divtatv Wellness Pvt.Ltd,1
+M01330,Srikem Laboratories Pvt. Ltd,Maharashtra,F01330,Srikem Laboratories Pvt. Ltd,1
+M01368,2M0/s1 0B0io9 med,Uttar Pradesh,F01368,2M0/s1 0B0io9 med,1
+M01372,Daundi Biological Pvt. Ltd,Uttarakhand,F01372,Daundi Biological Pvt. Ltd,1
+M01373,Datt Mediproducts Pvt. Ltd,Haryana,F01373,Datt Mediproducts Pvt. Ltd,1
+M01374,DANO Vaccines & Biologicals Pvt Ltd,Telangana,F01374,DANO Vaccines & Biologicals Pvt Ltd,1
+M01375,Dallas Drugs Pvt. Ltd,Himachal Pradesh,F01375,Dallas Drugs Pvt. Ltd,1
+M01376,Daffohils Laboratoies Pvt. Ltd,Uttarakhand,F01376,Daffohils Laboratoies Pvt. Ltd,1
+M01378,Daeiou Pharmaceutical (P) Ltd,Puducherry,F01378,Daeiou Pharmaceutical (P) Ltd,1
+M01379,D R Skincare,Punjab,F01379,D R Skincare,1
+M01380,Cymer Pharma,Madhya Pradesh,F01380,Cymer Pharma,1
+M01381,Durgaji Healthcare Pvt.Ltd,Uttarakhand,F01381,Durgaji Healthcare Pvt.Ltd,1
+M01382,CycusPharma,Himachal Pradesh,F01382,CycusPharma,1
+M01384,Curis Lifesciences Pvt. Ltd,Gujarat,F01384,Curis Lifesciences Pvt. Ltd,1
+M01386,Cure Quick Pharmaceuticals,Haryana,F01386,Cure Quick Pharmaceuticals,1
+M01388,Crystal Pharmaceuticals,Haryana,F01388,Crystal Pharmaceuticals,1
+M01390,Crescent Therapeutics Limited,Himachal Pradesh,F01390,Crescent Therapeutics Limited,1
+M01391,Deepak Fertilizers & Petro Chemicals,Maharashtra,F01391,Deepak Fertilizers & Petro Chemicals,1
+M01392,Demexico Pharmaceuticals Pvt. Ltd,Outside India,F01392,Demexico Pharmaceuticals Pvt. Ltd,1
+M01393,Denis Chem Lab Limited,Gujarat,F01393,Denis Chem Lab Limited,1
+M01394,Devbhoomi Pharma Roorkee,Uttarakhand,F01394,Devbhoomi Pharma Roorkee,1
+M01395,Drakt International,West Bengal,F01395,Drakt International,1
+M01396,Dr. Reddys Laboratories,Andhra Pradesh,F00868,Dr. Reddy's Laboratories Ltd,1
+M01397,Dr. Puri Proprietory Product,Maharashtra,F01397,Dr. Puri Proprietory Product,1
+M01398,Dr.Patel Pharmaceuticals Pvt. Ltd,Gujarat,F01398,Dr.Patel Pharmaceuticals Pvt. Ltd,1
+M01399,Dr. Jee Pharma Pvt Ltd,Uttarakhand,F01399,Dr. Jee Pharma Pvt Ltd,1
+M01400,Dr. Edwin Medilabs Pvt.Ltd,Unknown,F00247,Dr. Edwin Medilabs Pvt.Ltd,1
+M01401,Dr. Edwin Lab,Punjab,F00955,Dr. Edwin Lab,1
+M01402,Dr. ARS (India) Labs Pvt Ltd,Tamil Nadu,F01402,Dr. ARS (India) Labs Pvt Ltd,1
+M01403,Doctor Surgical Works,Haryana,F01403,Doctor Surgical Works,1
+M01404,Doctor's Vet-Pharma Pvt.Ltd,Andhra Pradesh,F01404,Doctor's Vet-Pharma Pvt.Ltd,1
+M01366,Skohind Labs,Himachal Pradesh,F01366,Skohind Labs,1
+M01365,Skylink Pharma,Gujarat,F01365,Skylink Pharma,1
+M01364,Skymap Pharmaceuticals Pvt. Ltd,Himachal Pradesh,F00011,Skymap Pharmaceuticals Pvt. Ltd,1
+M01346,Shivani Pharmaceuticals,Himachal Pradesh,F01346,Shivani Pharmaceuticals,1
+M01331,Sri Sanjeevi Natchiyar Surgicals,Tamil Nadu,F01331,Sri Sanjeevi Natchiyar Surgicals,1
+M01332,Sirmour Remedies (P) Ltd,Himachal Pradesh,F01332,Sirmour Remedies (P) Ltd,1
+M01333,Signoret Pharmaceuticals Pvt.Ltd,Punjab,F00348,Signoret Pharmaceuticals Pvt.Ltd,1
+M01334,Siflon Drugs & Pharmaceuticals Pvt.Ltd,Telangana,F01334,Siflon Drugs & Pharmaceuticals Pvt.Ltd,1
+M01335,Sidmak Laboratories (India) Pvt. Ltd,Uttarakhand,F01335,Sidmak Laboratories (India) Pvt. Ltd,1
+M01336,Sidhi Vinayak Co,Delhi,F01336,Sidhi Vinayak Co,1
+M01337,Sidhdeep Biotech (P) Ltd,Uttar Pradesh,F01337,Sidhdeep Biotech (P) Ltd,1
+M01338,Sickcure Pharmaceuticals,Himachal Pradesh,F01338,Sickcure Pharmaceuticals,1
+M01339,Shubham Enterprises,Unknown,F01339,Shubham Enterprises,1
+M01340,Shubh Laxmi Traders (imported by),Unknown,F01340,Shubh Laxmi Traders (imported by),1
+M01341,Shri sai Pharmatech Pvt. Ltd,Himachal Pradesh,F01341,Shri sai Pharmatech Pvt. Ltd,1
+M01344,Shree Enterprises,Jharkhand,F01344,Shree Enterprises,1
+M01345,Shivani Pharmaceuticals (GMP and an ISo 9001: 2015 Certified Co,Himachal Pradesh,F01345,Shivani Pharmaceuticals (GMP and an ISo 9001: 2015 Certified Co,1
+M01347,Shivam Enterprises,Himachal Pradesh,F01347,Shivam Enterprises,1
+M01362,Soft Medicaps Ltd,Madhya Pradesh,F01362,Soft Medicaps Ltd,1
+M01348,Sikkim,Sikkim,F01348,Sikkim,1
+M01349,Siva Sivani Surgical Cottons(P) Ltd,Andhra Pradesh,F01349,Siva Sivani Surgical Cottons(P) Ltd,1
+M01350,Sree Saie Pharma,Tamil Nadu,F01350,Sree Saie Pharma,1
+M01351,Sivanta Pharmaceuticals,Gujarat,F01351,Sivanta Pharmaceuticals,1
+M01352,Square Pharmaceuticals,West Bengal,F01352,Square Pharmaceuticals,1
+M01353,Spycaa Life care Sciences Private Limited,Tamil Nadu,F01353,Spycaa Life care Sciences Private Limited,1
+M01355,Son Research Cosmetic,Delhi,F01355,Son Research Cosmetic,1
+M01356,Solitaire Pharmacia Pvt. Ltd,Himachal Pradesh,F01356,Solitaire Pharmacia Pvt. Ltd,1
+M01357,Solar Pharmaceuticals,Punjab,F01357,Solar Pharmaceuticals,1
+M01358,Solace Biotech Limited,Uttarakhand,F01358,Solace Biotech Limited,1
+M01359,Solac Pharmaceuticals Ltd,Gujarat,F01359,Solac Pharmaceuticals Ltd,1
+M01360,Soham Healhcare INC,Gujarat,F01360,Soham Healhcare INC,1
+M01361,Soft Touch Pharmaceuticals India Lt,Himachal Pradesh,F01361,Soft Touch Pharmaceuticals India Lt,1
+M02109,Zydus Life Sciences Limited,Gujarat,F02109,Zydus Life Sciences Limited,1

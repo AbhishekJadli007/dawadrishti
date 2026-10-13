@@ -1,0 +1,6472 @@
+{
+ "as_of": "2026-08",
+ "since": "2017-07",
+ "findings": 6659,
+ "repeat": {
+  "manufacturers": 1994,
+  "repeat_manufacturers": 847,
+  "repeat_share_of_findings": 0.7973,
+  "recurrence_12m": 0.5188,
+  "median_months_between_failures": 3.9,
+  "top": [
+   {
+    "manufacturer_id": "M00000",
+    "manufacturer": "Jackson Laboratories Pvt. Ltd",
+    "state": "Punjab",
+    "findings": 88,
+    "first": "2019-01",
+    "last": "2026-08",
+    "products": 67,
+    "critical": 14,
+    "months_with_alerts": 49
+   },
+   {
+    "manufacturer_id": "M00001",
+    "manufacturer": "Unicure India Ltd",
+    "state": "Uttar Pradesh",
+    "findings": 68,
+    "first": "2019-04",
+    "last": "2026-08",
+    "products": 38,
+    "critical": 2,
+    "months_with_alerts": 41
+   },
+   {
+    "manufacturer_id": "M00002",
+    "manufacturer": "Zee Laboratories Ltd",
+    "state": "Himachal Pradesh",
+    "findings": 65,
+    "first": "2019-04",
+    "last": "2026-06",
+    "products": 52,
+    "critical": 8,
+    "months_with_alerts": 41
+   },
+   {
+    "manufacturer_id": "M00003",
+    "manufacturer": "Martin & Brown Bio-Sciences Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "findings": 54,
+    "first": "2020-07",
+    "last": "2026-08",
+    "products": 18,
+    "critical": 2,
+    "months_with_alerts": 25
+   },
+   {
+    "manufacturer_id": "M00004",
+    "manufacturer": "Karnataka Antibiotics & Pharmaceuticals Limited",
+    "state": "Karnataka",
+    "findings": 51,
+    "first": "2019-07",
+    "last": "2026-01",
+    "products": 22,
+    "critical": 0,
+    "months_with_alerts": 38
+   },
+   {
+    "manufacturer_id": "M00005",
+    "manufacturer": "Apple Formulations Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 48,
+    "first": "2020-04",
+    "last": "2026-07",
+    "products": 23,
+    "critical": 1,
+    "months_with_alerts": 25
+   },
+   {
+    "manufacturer_id": "M00016",
+    "manufacturer": "Healer's Lab",
+    "state": "Himachal Pradesh",
+    "findings": 47,
+    "first": "2022-06",
+    "last": "2026-08",
+    "products": 18,
+    "critical": 1,
+    "months_with_alerts": 23
+   },
+   {
+    "manufacturer_id": "M00007",
+    "manufacturer": "Mascot Health Series Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 44,
+    "first": "2019-12",
+    "last": "2026-06",
+    "products": 37,
+    "critical": 0,
+    "months_with_alerts": 35
+   },
+   {
+    "manufacturer_id": "M00006",
+    "manufacturer": "Gidsha Pharmaceuticals",
+    "state": "Gujarat",
+    "findings": 42,
+    "first": "2025-03",
+    "last": "2026-04",
+    "products": 8,
+    "critical": 0,
+    "months_with_alerts": 8
+   },
+   {
+    "manufacturer_id": "M00008",
+    "manufacturer": "Nestor Pharmaceuticals Limited",
+    "state": "Haryana",
+    "findings": 38,
+    "first": "2019-01",
+    "last": "2026-08",
+    "products": 24,
+    "critical": 3,
+    "months_with_alerts": 30
+   },
+   {
+    "manufacturer_id": "M00009",
+    "manufacturer": "Ridley Life Science Pvt. Ltd",
+    "state": "Delhi",
+    "findings": 36,
+    "first": "2019-03",
+    "last": "2025-12",
+    "products": 27,
+    "critical": 2,
+    "months_with_alerts": 24
+   },
+   {
+    "manufacturer_id": "M00011",
+    "manufacturer": "Skymap Pharmaceuticals Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 34,
+    "first": "2020-01",
+    "last": "2026-07",
+    "products": 25,
+    "critical": 4,
+    "months_with_alerts": 25
+   },
+   {
+    "manufacturer_id": "M00010",
+    "manufacturer": "Life Max Cancer Laboratories",
+    "state": "Uttarakhand",
+    "findings": 34,
+    "first": "2019-11",
+    "last": "2025-10",
+    "products": 14,
+    "critical": 1,
+    "months_with_alerts": 16
+   },
+   {
+    "manufacturer_id": "M00012",
+    "manufacturer": "ANG Lifesciences India Ltd",
+    "state": "Himachal Pradesh",
+    "findings": 34,
+    "first": "2019-01",
+    "last": "2025-05",
+    "products": 18,
+    "critical": 1,
+    "months_with_alerts": 23
+   },
+   {
+    "manufacturer_id": "M00013",
+    "manufacturer": "Himalaya Meditek Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 34,
+    "first": "2019-02",
+    "last": "2026-07",
+    "products": 24,
+    "critical": 1,
+    "months_with_alerts": 23
+   },
+   {
+    "manufacturer_id": "M00014",
+    "manufacturer": "Vivek Pharmachem (India) Ltd",
+    "state": "Rajasthan",
+    "findings": 34,
+    "first": "2019-07",
+    "last": "2026-07",
+    "products": 14,
+    "critical": 1,
+    "months_with_alerts": 27
+   },
+   {
+    "manufacturer_id": "M00015",
+    "manufacturer": "Digital Vision",
+    "state": "Himachal Pradesh",
+    "findings": 32,
+    "first": "2019-03",
+    "last": "2026-08",
+    "products": 25,
+    "critical": 6,
+    "months_with_alerts": 21
+   },
+   {
+    "manufacturer_id": "M00018",
+    "manufacturer": "Rivpra Formulation Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 30,
+    "first": "2020-03",
+    "last": "2026-08",
+    "products": 20,
+    "critical": 3,
+    "months_with_alerts": 20
+   },
+   {
+    "manufacturer_id": "M00036",
+    "manufacturer": "Alkem Health Science, A Unit of Alkem Laboratories Limited",
+    "state": "Sikkim",
+    "findings": 29,
+    "first": "2022-04",
+    "last": "2026-08",
+    "products": 12,
+    "critical": 12,
+    "months_with_alerts": 15
+   },
+   {
+    "manufacturer_id": "M00017",
+    "manufacturer": "Modern Laboratories",
+    "state": "Madhya Pradesh",
+    "findings": 29,
+    "first": "2020-02",
+    "last": "2026-07",
+    "products": 20,
+    "critical": 3,
+    "months_with_alerts": 15
+   },
+   {
+    "manufacturer_id": "M00020",
+    "manufacturer": "Pure & Cure Healthcare Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 29,
+    "first": "2019-09",
+    "last": "2026-08",
+    "products": 27,
+    "critical": 2,
+    "months_with_alerts": 21
+   },
+   {
+    "manufacturer_id": "M00021",
+    "manufacturer": "Laborate Pharmaceuticals India Ltd",
+    "state": "Himachal Pradesh",
+    "findings": 29,
+    "first": "2020-04",
+    "last": "2026-08",
+    "products": 23,
+    "critical": 2,
+    "months_with_alerts": 21
+   },
+   {
+    "manufacturer_id": "M00019",
+    "manufacturer": "Danish Health Care (P) Ltd",
+    "state": "Madhya Pradesh",
+    "findings": 29,
+    "first": "2019-01",
+    "last": "2026-08",
+    "products": 19,
+    "critical": 0,
+    "months_with_alerts": 23
+   },
+   {
+    "manufacturer_id": "M00022",
+    "manufacturer": "Revat Laboratories Pvt. Ltd",
+    "state": "Andhra Pradesh",
+    "findings": 28,
+    "first": "2019-10",
+    "last": "2026-05",
+    "products": 11,
+    "critical": 0,
+    "months_with_alerts": 13
+   },
+   {
+    "manufacturer_id": "M00024",
+    "manufacturer": "SAI Parenterals Limited",
+    "state": "Telangana",
+    "findings": 27,
+    "first": "2019-04",
+    "last": "2025-11",
+    "products": 15,
+    "critical": 4,
+    "months_with_alerts": 19
+   },
+   {
+    "manufacturer_id": "M00026",
+    "manufacturer": "Wings Biotech LLP",
+    "state": "Himachal Pradesh",
+    "findings": 27,
+    "first": "2019-10",
+    "last": "2026-08",
+    "products": 22,
+    "critical": 1,
+    "months_with_alerts": 22
+   },
+   {
+    "manufacturer_id": "M00023",
+    "manufacturer": "Paschim Banga Pharmaceuticals, (A Unit of Farista Vanijya Pvt. Ltd",
+    "state": "West Bengal",
+    "findings": 26,
+    "first": "2024-07",
+    "last": "2026-08",
+    "products": 7,
+    "critical": 24,
+    "months_with_alerts": 8
+   },
+   {
+    "manufacturer_id": "M00025",
+    "manufacturer": "Theon Pharmaceuticals Ltd",
+    "state": "Himachal Pradesh",
+    "findings": 26,
+    "first": "2019-02",
+    "last": "2025-12",
+    "products": 17,
+    "critical": 0,
+    "months_with_alerts": 21
+   },
+   {
+    "manufacturer_id": "M00027",
+    "manufacturer": "Swaroop Pharmaceuticals Pvt. Ltd",
+    "state": "Uttar Pradesh",
+    "findings": 25,
+    "first": "2022-07",
+    "last": "2025-09",
+    "products": 8,
+    "critical": 22,
+    "months_with_alerts": 11
+   },
+   {
+    "manufacturer_id": "M00029",
+    "manufacturer": "Hindustan Antibiotics Ltd",
+    "state": "Maharashtra",
+    "findings": 24,
+    "first": "2019-10",
+    "last": "2026-06",
+    "products": 14,
+    "critical": 3,
+    "months_with_alerts": 18
+   },
+   {
+    "manufacturer_id": "M00028",
+    "manufacturer": "Affy Parenterals",
+    "state": "Himachal Pradesh",
+    "findings": 24,
+    "first": "2023-10",
+    "last": "2026-05",
+    "products": 16,
+    "critical": 1,
+    "months_with_alerts": 14
+   },
+   {
+    "manufacturer_id": "M00030",
+    "manufacturer": "Agron Remedies Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 23,
+    "first": "2022-05",
+    "last": "2026-08",
+    "products": 17,
+    "critical": 1,
+    "months_with_alerts": 15
+   },
+   {
+    "manufacturer_id": "M00034",
+    "manufacturer": "Athens Life Sciences",
+    "state": "Himachal Pradesh",
+    "findings": 22,
+    "first": "2019-05",
+    "last": "2026-08",
+    "products": 13,
+    "critical": 4,
+    "months_with_alerts": 15
+   },
+   {
+    "manufacturer_id": "M00031",
+    "manufacturer": "Mancare Laboratories Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 22,
+    "first": "2024-03",
+    "last": "2026-08",
+    "products": 10,
+    "critical": 1,
+    "months_with_alerts": 11
+   },
+   {
+    "manufacturer_id": "M00032",
+    "manufacturer": "Hindustan Laboratories Limited",
+    "state": "Maharashtra",
+    "findings": 22,
+    "first": "2019-12",
+    "last": "2026-08",
+    "products": 13,
+    "critical": 0,
+    "months_with_alerts": 18
+   },
+   {
+    "manufacturer_id": "M00033",
+    "manufacturer": "Samkem",
+    "state": "Madhya Pradesh",
+    "findings": 22,
+    "first": "2025-03",
+    "last": "2026-06",
+    "products": 6,
+    "critical": 0,
+    "months_with_alerts": 6
+   },
+   {
+    "manufacturer_id": "M00038",
+    "manufacturer": "Argon Remedies Pvt. Ltd",
+    "state": "Uttarakhand",
+    "findings": 21,
+    "first": "2025-04",
+    "last": "2025-12",
+    "products": 4,
+    "critical": 2,
+    "months_with_alerts": 3
+   },
+   {
+    "manufacturer_id": "M00035",
+    "manufacturer": "Unicure India Ltd",
+    "state": "Uttarakhand",
+    "findings": 21,
+    "first": "2019-04",
+    "last": "2026-08",
+    "products": 15,
+    "critical": 1,
+    "months_with_alerts": 15
+   },
+   {
+    "manufacturer_id": "M00037",
+    "manufacturer": "Swiss Garnier Life Sciences",
+    "state": "Himachal Pradesh",
+    "findings": 21,
+    "first": "2023-08",
+    "last": "2026-08",
+    "products": 5,
+    "critical": 0,
+    "months_with_alerts": 13
+   },
+   {
+    "manufacturer_id": "M00046",
+    "manufacturer": "Super Formulations Pvt. Ltd",
+    "state": "Madhya Pradesh",
+    "findings": 21,
+    "first": "2021-07",
+    "last": "2026-08",
+    "products": 9,
+    "critical": 0,
+    "months_with_alerts": 11
+   }
+  ]
+ },
+ "rules": [
+  {
+   "if": [
+    "form=Injection",
+    "lab=CDSCO lab"
+   ],
+   "then": "failure=Particulate matter",
+   "support": 0.0324,
+   "confidence": 0.386,
+   "lift": 9.84
+  },
+  {
+   "if": [
+    "form=Injection"
+   ],
+   "then": "failure=Particulate matter",
+   "support": 0.0353,
+   "confidence": 0.304,
+   "lift": 7.76
+  },
+  {
+   "if": [
+    "form=Injection"
+   ],
+   "then": "failure=Sterility",
+   "support": 0.0227,
+   "confidence": 0.195,
+   "lift": 4.47
+  },
+  {
+   "if": [
+    "class=Antibiotic / anti-infective",
+    "form=Tablet",
+    "lab=CDSCO lab"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.027,
+   "confidence": 0.523,
+   "lift": 2.35
+  },
+  {
+   "if": [
+    "class=Antibiotic / anti-infective",
+    "form=Tablet"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0692,
+   "confidence": 0.487,
+   "lift": 2.18
+  },
+  {
+   "if": [
+    "form=Tablet",
+    "state=Gujarat"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0203,
+   "confidence": 0.477,
+   "lift": 2.14
+  },
+  {
+   "if": [
+    "form=Cream / ointment / gel"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0209,
+   "confidence": 0.76,
+   "lift": 2.1
+  },
+  {
+   "if": [
+    "class=Antibiotic / anti-infective",
+    "form=Tablet",
+    "lab=State lab"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0422,
+   "confidence": 0.467,
+   "lift": 2.09
+  },
+  {
+   "if": [
+    "form=Injection"
+   ],
+   "then": "severity=critical",
+   "support": 0.0317,
+   "confidence": 0.273,
+   "lift": 2.09
+  },
+  {
+   "if": [
+    "form=Syrup",
+    "lab=CDSCO lab"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.021,
+   "confidence": 0.757,
+   "lift": 2.09
+  },
+  {
+   "if": [
+    "class=Cough / cold / allergy",
+    "form=Syrup"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0362,
+   "confidence": 0.753,
+   "lift": 2.08
+  },
+  {
+   "if": [
+    "class=Cough / cold / allergy",
+    "form=Syrup",
+    "lab=State lab"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0206,
+   "confidence": 0.733,
+   "lift": 2.02
+  },
+  {
+   "if": [
+    "class=Antibiotic / anti-infective",
+    "form=Tablet",
+    "state=Himachal Pradesh"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0228,
+   "confidence": 0.442,
+   "lift": 1.98
+  },
+  {
+   "if": [
+    "class=Heart / blood pressure / lipids",
+    "form=Tablet"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0309,
+   "confidence": 0.44,
+   "lift": 1.98
+  },
+  {
+   "if": [
+    "form=Syrup"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0463,
+   "confidence": 0.71,
+   "lift": 1.96
+  },
+  {
+   "if": [
+    "class=Heart / blood pressure / lipids"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0314,
+   "confidence": 0.436,
+   "lift": 1.96
+  },
+  {
+   "if": [
+    "class=Other / unclassified",
+    "lab=CDSCO lab"
+   ],
+   "then": "severity=critical",
+   "support": 0.0261,
+   "confidence": 0.255,
+   "lift": 1.95
+  },
+  {
+   "if": [
+    "lab=CDSCO lab"
+   ],
+   "then": "failure=Particulate matter",
+   "support": 0.0356,
+   "confidence": 0.076,
+   "lift": 1.93
+  },
+  {
+   "if": [
+    "class=Pain / fever / inflammation",
+    "form=Tablet",
+    "lab=State lab"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0243,
+   "confidence": 0.419,
+   "lift": 1.88
+  },
+  {
+   "if": [
+    "form=Syrup",
+    "lab=State lab"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0252,
+   "confidence": 0.675,
+   "lift": 1.86
+  },
+  {
+   "if": [
+    "class=Pain / fever / inflammation",
+    "form=Tablet"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0353,
+   "confidence": 0.414,
+   "lift": 1.86
+  },
+  {
+   "if": [
+    "form=Suspension"
+   ],
+   "then": "failure=Assay (strength)",
+   "support": 0.0305,
+   "confidence": 0.655,
+   "lift": 1.81
+  },
+  {
+   "if": [
+    "class=Pain / fever / inflammation",
+    "form=Tablet"
+   ],
+   "then": "severity=minor",
+   "support": 0.0252,
+   "confidence": 0.296,
+   "lift": 1.78
+  },
+  {
+   "if": [
+    "form=Tablet",
+    "lab=CDSCO lab"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.088,
+   "confidence": 0.391,
+   "lift": 1.76
+  },
+  {
+   "if": [
+    "form=Tablet",
+    "lab=CDSCO lab",
+    "state=Himachal Pradesh"
+   ],
+   "then": "failure=Dissolution",
+   "support": 0.0246,
+   "confidence": 0.39,
+   "lift": 1.75
+  }
+ ],
+ "clusters": {
+  "summary": [
+   {
+    "archetype": "A few failures on record",
+    "manufacturers": 289,
+    "avg_findings": 1.71,
+    "avg_critical_share": 0.02,
+    "avg_products": 1.54
+   },
+   {
+    "archetype": "Many failures on record",
+    "manufacturers": 370,
+    "avg_findings": 10.58,
+    "avg_critical_share": 0.08,
+    "avg_products": 7.62
+   },
+   {
+    "archetype": "Mostly critical failures",
+    "manufacturers": 254,
+    "avg_findings": 2.01,
+    "avg_critical_share": 0.84,
+    "avg_products": 1.47
+   },
+   {
+    "archetype": "One failure on record",
+    "manufacturers": 1081,
+    "avg_findings": 1.51,
+    "avg_critical_share": 0.02,
+    "avg_products": 1.38
+   }
+  ],
+  "points": [
+   {
+    "manufacturer": "Onxy Biotec Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Akums Drugs & Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "CMG Biotech Pvt. Ltd",
+    "findings": 17,
+    "critical_share": 0.059,
+    "products": 16,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Orison Pharma International ( A WHO: GMP Certified Company)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dual Healthcare",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "NuGen Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Manja Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Abaris Healthcare Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.25,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Shivam Enterprises",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Accretion Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "GlaxoSmithKline Pharmaceuticals Limited",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Saudi Basic Industries Corporation",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "IBN Herbals (A unit of Curetech Formulations Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Macleods Pharmaceuticals Ltd",
+    "findings": 10,
+    "critical_share": 0.3,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Iosis Remedies Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cent Cure Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Disha Surgicals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Micro Labs Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Kilitch Drugs India Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Solace Biotech Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Global Formulations",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Elfin Drugs Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Alembic Pharmaceuticals Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "B. No.: LTPNB2810, Mfg dt: 07/2018, Exp dt: 06/2020, Mfd by: M/s. Samarth Life Sciences Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Mamta Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Neutec Healthcare Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Kanha Biogenetic Laboratories",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sarwal Laboratory",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Walllis Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vet-needa Labs",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Spectrum Formulation Pvt. Ltd",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Century Nova Drugs Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "NH Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shanti Surgicals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Keylink Global Exim Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Relief Biotech Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Psychotropics India Ltd",
+    "findings": 9,
+    "critical_share": 0.111,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ocean Organics Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Merril Pharma Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Changzhou New District Garson Medical Stent Apparatus Co",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Innova Captab Ltd",
+    "findings": 14,
+    "critical_share": 0.0,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Samyan Health Care Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Vikas Pharmaceutical Laboratoires",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vital Formulations Limited",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Konis Pharmaceuticals Krishna Nagar",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "A to Z Laboratories",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Care Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Nil",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Medinex Laboratories Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Karnal Pharmaceuticals Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cotec Healthcare Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Acro Lifesciences (India) Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "K. Ramakrishnan & Sons",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Legen Healthcare",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Biochem Healthcare Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Guangdong Rongsheng Bio- Technlogy Co Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "LV life Sciences VPO Gurumajra",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Zhejiang Medicines & Health Products Import & Export Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dr. ARS (India) Labs Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Espee Formulaion Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Himalaya Wellness Company",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Alexin Biosciences",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "SB Lifesciences",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Aristo Pharmaceuticals Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Middle Mist Pharmaceuticals Pvt., Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Premier Enterprises",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Biozenta Lifesciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Mednext Biotech Limited",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sabi Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Mapro Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sterisafe Health Solutions",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Sanctus Global Formulations Limited",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Alifecare Formulation",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Divine Medicare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Maxwell pharma",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Rockbrook Overseas Pvt Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Betamax Remedies Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shamshree Lifesciences Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Systochem Laboratories Ltd",
+    "findings": 4,
+    "critical_share": 0.5,
+    "products": 3,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Astamed Healthcare (I) Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "3F Industries Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "United Bioceuticals Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Nanz med Science Pharma Pvt Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Caspian Pharmaceuticals",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Quest Laboratories Pvt. Ltd",
+    "findings": 18,
+    "critical_share": 0.0,
+    "products": 16,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Puniska Injectables Pvt. Ltd",
+    "findings": 9,
+    "critical_share": 1.0,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Knox Life Sciences",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Candour Pharmaceuticals",
+    "findings": 7,
+    "critical_share": 0.286,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Acculife Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Teedeecol (India)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Tuttsan Pharma Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Kniss Laboratories Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Chemstellar Chemicals Pvt Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Maan Pharmaceuticals Ltd",
+    "findings": 11,
+    "critical_share": 0.455,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Medicure Enterprises",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Revive Formulation India Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Cadila Pharmaceuticals Limited",
+    "findings": 12,
+    "critical_share": 0.0,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Tiba Pharmaceuticals Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dr. Jee Pharma Pvt Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Arco Pharma Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Scott-Edil Pharmacia Ltd",
+    "findings": 20,
+    "critical_share": 0.0,
+    "products": 16,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Gujarat Ambuja Exports Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "A.N.D. Healthcare Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Repacked by Ganesh Eucalyptus Oil Disitillery",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rainbow Life Sciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Alicon Pharmaceutical Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Protech Telelinks",
+    "findings": 10,
+    "critical_share": 0.1,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Meha Pharma Private Limited",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rusan Pharma Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "DWD Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Esquire Drug",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Manfriday Lifesciences Khewat no",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Jainsons Healthcare (GMP Certified Company)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Medivin (India) Pharma Lab",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Swiss India Laboratories",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Ningxia Taiyicin Biotech Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Yuventis Life Sciences",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "McW Healthcare (P) Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Suprex Laboratories",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Asoj Soft Caps Pvt Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "B. No.: HC-834, Mfg dt: 05/2018, Exp dt: 04/2020, Mfd by: M/s. VIP PHARMACEUTICALS PVT. LTD",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Exotic Healthcare",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Sterlife Pharma Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Saibliss Drugs & Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Abil Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "S.K. Picglobal Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lark Laboratories (India) Ltd",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Andisons Pharmix",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Copmed Pharmaceuticals Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Abaris Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Conscaff India",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Nexkem Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Acumen Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Mls.Swefn Pharmaceuticals Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dial Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Dr. Puri Proprietory Product",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Altus Surgical Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Venkateshwara Hatcheries Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lyka Labs Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bhaskaravilasam Vaidyasala",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Hindustan Nutraceuticals INC",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Gujarat Ambuja Exports Ltd",
+    "findings": 7,
+    "critical_share": 0.857,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Polestar Power Industries",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vzoic Healthcare Pvt. Ltd",
+    "findings": 8,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Signature Phytochemical Industries",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Lenus Lifecare Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bethel Medipharma Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Cadila Pharmaceuticals Limited",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Bajaj Nutraceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Pure & Cure Heatlhcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cardiomac India (P.) Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Harsh Healthcare",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Apex Laboratories private ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Horizon Bioceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Morisons Lifecare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Zydus Healthcare Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Evertouch Bio Remedies",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "SGS Pharmaceutical Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Infallible Pharma Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Talent Healthcare",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Lifevision Healthcare",
+    "findings": 13,
+    "critical_share": 0.0,
+    "products": 13,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Aglomed Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Karnani Pharmaceuticals Pvt. Ltd",
+    "findings": 8,
+    "critical_share": 0.0,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Stallion Laboratories Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Sahika Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Baroque Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Haseeb Pharmaceuticals Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.5,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Aeron Lifescience Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "BRD Medilabs",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lifecare Neuro Products Limited",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Zee Laboratories Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Triveni Formulations Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Swift Life Sciences Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "M/.s Health Biotech Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Banson Pharmaceutical Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Saphnix Life Sciences (A WHO- GMP Certified Company)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Eastern Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Gujarat Ambuja Exports Ltd",
+    "findings": 3,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Tirupati Medicare Limited",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "PIL Pharmaceuticals Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sano-Cito Therapeutics Inc",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Balaji Enterprises",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Enicar Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "MG - Biotech Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Primesurge International",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Restech Formulation Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Rumy Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Kaptab Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Livin Formulations",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Life Max Cancer Laboratories",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Clever Formulations",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Symbiosis Pharmaceuticals Pvt. Ltd",
+    "findings": 14,
+    "critical_share": 0.143,
+    "products": 13,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Rachil Pharma",
+    "findings": 7,
+    "critical_share": 0.143,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Mitra Industries (P) Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Proceed Formulations",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Nexkem Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Harihar Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Global Formulations",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Cipla Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "CSD Lifesciences",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "P & B Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Associated Biotech",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Packsules",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Phaarmasia Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Supermax Drugs & Drugs Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dhawanilife care Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Near Railway Crossing",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Keron Lifesciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Goree Cosmetics (pvt)Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "United Biotech (P) Limited",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "RSH Global Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Pondchy Pharmaceuticals",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Herb Edge Healthcare Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Troikaa Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Pro-pharma Care Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Standard Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Inducare Pharma Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Biological E Ltd",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Pharma Force Lab",
+    "findings": 4,
+    "critical_share": 0.25,
+    "products": 3,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Blazon India",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vandana Surgi Pharma (P) Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Swiss Garnier Life Sciences",
+    "findings": 21,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ceego Labs Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Nitin Lifesciences Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Warner Hindusthan Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Gujarat Ambuja Export Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Pharma Chemico Laboratories Devghat",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Carewin Pharmaceuticals (Guj) Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.4,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ortin Laboratories Ltd",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dentiglow",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "IBN Herbals",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Punjab Chemical & Crop Protection Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dr. Reddy's Laboratories Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Orgello Herbal Care",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Verax Life Sciences Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Hygeia Pharmaceuticals MFG. (P) Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Labinduss Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Firstmed Therapeutics Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "IG Pharma Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Jakson Laboratories Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Nestor Pharmaceuticals Limited",
+    "findings": 38,
+    "critical_share": 0.079,
+    "products": 24,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Maiden Pharmaceuticals",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Raptakos, Brett & Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Apco Pharma Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Apex Formulations Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Arco Lifesciences (I) Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Inducare Pharmaceutical and Research Foundatiion",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Styrun Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Olive Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Uniplus Biotech (P) Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Jips Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cymer Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ultramark Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Arbro Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Alpex Pharma Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Mercury Pharmaceuticals",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "J.P. Industries Bhud",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Daffodills Pharmaceuticals Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Omega Pharma",
+    "findings": 16,
+    "critical_share": 0.0,
+    "products": 12,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ramom Healthcare Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "MSN Laboratories Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lividus Pharmaceuticals pvt.Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Mohsin Idustries",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Changethu Herbs & Drugs",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Zenomed Health Care Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Abbott India Limited",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Apshsri Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Eastern Healthcare",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Senses Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Medicamen Organics Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "SPM Drugs (P) Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Systole Remedies Pvt. Ltd",
+    "findings": 11,
+    "critical_share": 0.0,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Meg Lifesciences",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Smilax Healthcare Drug Co",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Prem Laboratories D.No",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Medinok Healthcare Pvt. Ltd",
+    "findings": 8,
+    "critical_share": 0.0,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Protech Telelinks Mauza Ogli",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Aries Drugs Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Accura Care Pharmaceuticals Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Samay Pharma India Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sanasan Formulation",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Mas Kashmik Formulation Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Everest Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Seldom Pharma Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "True Life Pharma PVt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Olicare Cosmoceuticals",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Rednex Pharmaceuticals Pvt. Ltd",
+    "findings": 12,
+    "critical_share": 0.0,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Aarge Healthcraft",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Axelus Pharma Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Magbro Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Terrace Pharmaceuticals (P) Ltd",
+    "findings": 11,
+    "critical_share": 0.091,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Kinesis Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "M.V. Vaze Consumer Products",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Dr. Edwin Lab",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Medicef Pharma",
+    "findings": 4,
+    "critical_share": 1.0,
+    "products": 3,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Macleods Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Safe Parenterals Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cis Life Care Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Chennai Oscar Bio Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bajaj Healthcare Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sangeeta Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Infinitive Pharmaceutical Industries",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "MDC Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Chemtex Speciality Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "S.M.G. PHARMACEUTICALS (Pvt) Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lars Medicare Private Limited",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Biodeal Pharmaceuticals Pvt. Ltd",
+    "findings": 9,
+    "critical_share": 0.111,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Bactolac Formulations Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shri Hari Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Accuwell Medics Pvt Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Vivek Pharmachem (India) Ltd",
+    "findings": 11,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Hebei Jainmin Starch Glucose Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Stanmax Laboratories Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Skymap Pharmaceuticals Pvt. Ltd",
+    "findings": 34,
+    "critical_share": 0.118,
+    "products": 25,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Orissa Drugs and Chemicals Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "VINI Cosmetics Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Martin & Brown Bio- Sciences Pvt. Ltd",
+    "findings": 17,
+    "critical_share": 0.235,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Thaiger Pharma",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Micro Formulations",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Kosmol Global",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Kite Formulation",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Mankind Pharma Ltd",
+    "findings": 4,
+    "critical_share": 0.25,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Zaneka Healthcare Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Manali Petrochemicals Limited",
+    "findings": 11,
+    "critical_share": 0.091,
+    "products": 1,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Res Sancta",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Deep Pharma",
+    "findings": 15,
+    "critical_share": 0.133,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "KamlaAmrut Pharmaceutical LLP",
+    "findings": 4,
+    "critical_share": 0.25,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Son Research Cosmetic",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Beta Drugs Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Allegedly manufactured by: M/s. Sun pharma laboratories ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Sunlife Sciences",
+    "findings": 8,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Organo Chem (India)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Tridus Remedies",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Lupin Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Curetech Skincare",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Bewell Labs Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Growmed Life Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rhydburg Pharmaceuticals Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Solac Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Reltsen Healthcare Spl",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cyano Pharma (P) Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Alco Formulation (India)",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Martin & Brown Bio-Sciences Pvt. Ltd",
+    "findings": 54,
+    "critical_share": 0.037,
+    "products": 18,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Consern Pharna Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Aqua Vitoe Laboratories",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Alpa Laboratories Ltd",
+    "findings": 5,
+    "critical_share": 0.6,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Win Trust Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Shubh Laxmi Traders (imported by)",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "S.DHOLE & Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Modern Laboratories",
+    "findings": 29,
+    "critical_share": 0.103,
+    "products": 20,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Kausikh Therapeutics (P) Ltd",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Azine Healthcare Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Concept Pharmaceuticals Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Globin Pharmaceuticals Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Pentagon Labs Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Ethicare Pharmaceuticals (P) Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Brij Healthcare Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "SMBJ Pharmaceuticals Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Alfansa Bio Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Maxtra Laboratories",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Orchid Bio-Tech Limited",
+    "findings": 6,
+    "critical_share": 0.333,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Wockhardt Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Srinija Parenterals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Tara Biosciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Aishwarya Healthcare",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Saphnix Life Sciences (A WHO-GMP",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Mac Royal Biotech Baddi",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Saphnix Life Sciences",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Romsons Group Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Johnson & Smith Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ravenbhel Healthcare Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Dr. Edwin Medilabs Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Konis Pharmaceuticals Krishna",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Omex Medical Technology",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Yacca Pharmaceutical Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Progressive Lifesciences Pvt. Ltd",
+    "findings": 9,
+    "critical_share": 0.222,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Amkon Pharmaceuticals",
+    "findings": 8,
+    "critical_share": 0.375,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Athens Lifesciences Mauza Rampur Jattan Nahan",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Maskon Life Sciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Health Biotech Ltd",
+    "findings": 18,
+    "critical_share": 0.222,
+    "products": 18,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Reliance Formulation Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lucent Biotech Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Addll Biotech Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Jineka Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Aculife Healthcare Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.667,
+    "products": 3,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Shashi Pharma",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Spansules formulation India Pvt Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sun Pharmaceuticals Ind. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Albro Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Ved Lifesavers (P) Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ultra Drugs Formulations Pvt Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "P.C. Cosmetics",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Swefn Pharmaceuticals Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "B. No.: RT-180380, Mfg dt: 03/2018, Exp dt: 02/2020, Mfd by: M/s. Relief Biotech Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ningbo Hi-Tech Biochemicals Co",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Jackson Laboratories Pvt. Ltd",
+    "findings": 88,
+    "critical_share": 0.159,
+    "products": 67,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "West Coast Pharmaceuticals Works Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Scott-Edil Advance Research Laboratories & Education Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "East West Pharma (India) Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Asian Pharma",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Verve Human Care Laboratories",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Relief Biotech Pvt. Ltd",
+    "findings": 11,
+    "critical_share": 0.091,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Themis Medicare Limited",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vidit Healthcare",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Stride Organics Private Limited",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Pioneer Agro Industries Sanvin Laboratories Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bal Pharma Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Malik Lifesciences Pvt. Ltd",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ethix Health Care",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Agron Remedies Pvt. Ltd",
+    "findings": 23,
+    "critical_share": 0.043,
+    "products": 17,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Jeneka Healthcaere Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lotus Surgicals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Zydus Healthcare Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Hidustan Antibitics Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rikon Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "B.M. Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Aurobindo Pharma Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Zenon Lifesciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Towa Pharma Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Pragati Udyog",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Aurio Pharma Laboratories Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.4,
+    "products": 3,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Shervotec Pharmaceuticals",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ethidrus Research Lab Pvt Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Vivimed Labs Limited",
+    "findings": 8,
+    "critical_share": 0.125,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Trugen Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cosmas Research Lab Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Krebs Biochemicals & Industries Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rhombus Pharma Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Aspen Lifescieces Pvt., Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Hetero Labs Limited",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Life Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Win Cure Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Galcare Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Karnani Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Salud Care (I) Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Jaiwik Biotech (P) Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sri Sanjeevi Natchiyar Surgicals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Technica Labs & Pharma Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "SVP Life Sciences",
+    "findings": 20,
+    "critical_share": 0.2,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Beauty Birds Cosmetics Bhatti Compound",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Bharat Biotech International Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Swiss Parenterals Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ultratech Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Hindustan Antibiotics Ltd",
+    "findings": 14,
+    "critical_share": 0.0,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Unital Formulations",
+    "findings": 4,
+    "critical_share": 0.25,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Sheen Pharmaceuticals Wariana",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Super Pharma Products",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Not Mentioned",
+    "findings": 11,
+    "critical_share": 0.455,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Devbhoomi Pharma Roorkee",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Forever LifeScience Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Herbs India",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Avalon Medicines Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Khandelwal Laboratories Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Astrica Healthcare Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Novazing Pharma Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Kaizen Research Labs India Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Spycaa Life care Sciences Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Himalaya Medical Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "The Swastik Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Repacked by :- Kerala State Drugs & Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Cmg Biotech Pvt. Lts",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Apex Medical Devices",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "APY Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shiva Biogenetic Laboratories Pvt. Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Mayford Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Steadfast edishield Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bioaltus Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Orchid Medlife Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Instant Remedies Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Anuh Pharma Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Mepro Pharmaceuticals Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Pranshav Health Care, Plot No. 824/16, Near Saint Gobin Glass India Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Eminent Remedies",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "OCT Therapies and Research Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Emmchak Formulations Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Ciphem Pharma",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Jeevanam Healthcare",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Prispag Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "C.I. Laboratories",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Capsoft Healthcare Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.2,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Yeluri Formulations Pvt Ltd",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Micropure Parenteral Private Limited",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "SB Lifesciences",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Siflon Drugs & Pharmaceuticals Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Nature?s Boon Ayurvedic Pharmacy",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "ShinestarPharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Kerala State Drugs and Pharmaceuticals Ltd",
+    "findings": 20,
+    "critical_share": 0.05,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Tulbros Formulations",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Helax Health Care Pvt. Ltd",
+    "findings": 16,
+    "critical_share": 0.0,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Crossasia Biotech Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Emcure Pharmaceutical s Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "MARS Medisoap",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Welcure Remedies",
+    "findings": 6,
+    "critical_share": 0.333,
+    "products": 4,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Greycross Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bengal Chemicals & Pharmaceuticals Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Franklin Laboratories (India) Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Systochem Laboratories Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Blazed Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sai Sarvaa Biotech Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.333,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Aucklane Life Sciences Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Torino Laboratories Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "GC Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Lupin Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "MMC Cosmetics Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Taurus Life Sciences Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sai Mirra Innopharm Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Vital Therapeutics & Formulations Pvt.Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Bio Neutraceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sun Pharma Laboratories Ltd",
+    "findings": 11,
+    "critical_share": 0.455,
+    "products": 10,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Coastal Medicare Pvt. Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Associated Biopharma Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Picasso Remedies",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Medifine Pharma Lab No",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Supermax Drugs & Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "CU-V-Kar Genetic Medicines Pvt Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Danish Health Care (P) Ltd",
+    "findings": 29,
+    "critical_share": 0.0,
+    "products": 19,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Kinesis Laboratories Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Goa Antibiotics & Pharmaceuticals Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Sun Pharmaceuticals Ind. Ltd",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Statmed Private Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Finemax Formulation Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Ipca Laboratories Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Suyassh Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Mft. by Not Mentioned Mkd. By M/s Safe Care Life Sciences",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Rhydburg Pharmaceuticals Ltd",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Bonsai Pharma",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Vrindha Biotech Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Salus Pharmaceuticals",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Grampus Laboratories",
+    "findings": 4,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Laborate Pharmaceuticals India Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Revat Laboratories Pvt. Ltd",
+    "findings": 28,
+    "critical_share": 0.0,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "L.V. Life Sciences",
+    "findings": 7,
+    "critical_share": 0.0,
+    "products": 6,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Crest Lifescoences Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Rivpra Formulation Pvt. Ltd",
+    "findings": 4,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Achemic Pharmaceuticals (INDIA) Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "RSK Pharmacy",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "D R Skincare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Chiros Pharma",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Yoluri Formulation Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shell Eastern Chemicals (S) Seraya Manufacturing Site",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bengal Chemicals & Pharmaceuticals Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Unimarck Healthcare Ltd",
+    "findings": 16,
+    "critical_share": 0.0,
+    "products": 11,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Mihika Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "J.M. Laboratories",
+    "findings": 18,
+    "critical_share": 0.0,
+    "products": 15,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "For Maxford Healthcare by Stafford Laboratories Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sai Tech Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Nector Lifesciences Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Anant Pharmaceuticals G.T",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Leeford Healthcare Ltd",
+    "findings": 11,
+    "critical_share": 0.0,
+    "products": 7,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Magic of Herbs Magic of Herbs",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Steadfast Medishield pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Sotac Healthcare Private Limited",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Acme Life Tech-LLP",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Acron Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Bharat Biotech",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Transflexjawaharnagar",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Enrico Pharmaceuticals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "BDR Pharmaceuticals Intl Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Megasys Biotek Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Arrow Pharma",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Maxchem Pharmaceuticals (P) Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Universal Chemicals & Pharmaceutical Industries",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Prem Green Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Cian Healthcare Ltd",
+    "findings": 8,
+    "critical_share": 0.0,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Super Vaishali",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Athens Life Sciences Mauza Rampur",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shiva Biogenetic Pharmaceuticals (P) Ltd",
+    "findings": 3,
+    "critical_share": 0.0,
+    "products": 3,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Advanced Pakiza Unani LLP",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Oyster Labs Limited",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Chalice Vitalchem Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "HSN International",
+    "findings": 5,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Elvia Care Pvt. Ltd",
+    "findings": 2,
+    "critical_share": 0.5,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Healer's Lab",
+    "findings": 47,
+    "critical_share": 0.021,
+    "products": 18,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Ross Robinz Biotech",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Bengal Chemicals & Pharmaceuticals Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "United Cotton",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Inven Pharmaceuticals Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Themis Medicare Limited",
+    "findings": 2,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "B.R.S. Chemical Works",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Athens Life Sciences Mauza Rampur Jattan",
+    "findings": 9,
+    "critical_share": 0.0,
+    "products": 9,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Piramal Enterprises Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Shree KrishnaKeshav Laboratories Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Maxtra Laboratoriestifindustrialpark",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Askon Health Care",
+    "findings": 6,
+    "critical_share": 0.0,
+    "products": 5,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "VTV Formulations India Pvt Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Northern India Chemical Works Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "Lifecare Surgicals",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Ortin Laboratories Ltd",
+    "findings": 12,
+    "critical_share": 0.083,
+    "products": 8,
+    "archetype": "Many failures on record"
+   },
+   {
+    "manufacturer": "Sun Pharmaceuticals Ind. Ltd",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Velnex Medicare India Pvt. Ltd",
+    "findings": 5,
+    "critical_share": 0.8,
+    "products": 5,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Lilium Cosmetics Pvt Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "VS Healthcare",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Carewell Steuart Pharma Pvt.Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Impulse Pharma Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "GCOS Products",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Biosearch Organics",
+    "findings": 1,
+    "critical_share": 0.0,
+    "products": 1,
+    "archetype": "A few failures on record"
+   },
+   {
+    "manufacturer": "A.S. Lifesciences",
+    "findings": 2,
+    "critical_share": 0.0,
+    "products": 2,
+    "archetype": "One failure on record"
+   },
+   {
+    "manufacturer": "Yacca Lifesciences Pvt. Ltd",
+    "findings": 19,
+    "critical_share": 0.842,
+    "products": 2,
+    "archetype": "Mostly critical failures"
+   },
+   {
+    "manufacturer": "Eurolife Healthcare Pvt. Ltd",
+    "findings": 1,
+    "critical_share": 1.0,
+    "products": 1,
+    "archetype": "Mostly critical failures"
+   }
+  ]
+ },
+ "anomalies": [
+  {
+   "dimension": "therapeutic_class",
+   "value": "Steroid / hormone",
+   "month": "2026-08",
+   "count": 12,
+   "expected": 4.2,
+   "z": 4.1
+  },
+  {
+   "dimension": "state",
+   "value": "Puducherry",
+   "month": "2026-07",
+   "count": 9,
+   "expected": 2.8,
+   "z": 3.9
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Antibiotic / anti-infective",
+   "month": "2026-07",
+   "count": 74,
+   "expected": 38.8,
+   "z": 5.6
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2026-01",
+   "count": 56,
+   "expected": 11.8,
+   "z": 3.6
+  },
+  {
+   "dimension": "state",
+   "value": "Rajasthan",
+   "month": "2026-01",
+   "count": 9,
+   "expected": 1.7,
+   "z": 4.9
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2025-12",
+   "count": 47,
+   "expected": 8.5,
+   "z": 6.9
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Nervous system / mental health",
+   "month": "2025-11",
+   "count": 11,
+   "expected": 3.2,
+   "z": 3.1
+  },
+  {
+   "dimension": "state",
+   "value": "Tamil Nadu",
+   "month": "2025-11",
+   "count": 17,
+   "expected": 4.9,
+   "z": 3.2
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Heart / blood pressure / lipids",
+   "month": "2025-11",
+   "count": 22,
+   "expected": 9.5,
+   "z": 3.7
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Diabetes",
+   "month": "2025-11",
+   "count": 12,
+   "expected": 3.8,
+   "z": 3.8
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Gastro-intestinal",
+   "month": "2025-11",
+   "count": 13,
+   "expected": 4.4,
+   "z": 4.8
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2025-11",
+   "count": 24,
+   "expected": 7.2,
+   "z": 6.0
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2025-10",
+   "count": 13,
+   "expected": 6.5,
+   "z": 3.0
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Vitamins / minerals / nutrition",
+   "month": "2025-10",
+   "count": 45,
+   "expected": 17.9,
+   "z": 3.7
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Pain / fever / inflammation",
+   "month": "2025-10",
+   "count": 40,
+   "expected": 13.6,
+   "z": 3.9
+  },
+  {
+   "dimension": "state",
+   "value": "Maharashtra",
+   "month": "2025-06",
+   "count": 15,
+   "expected": 3.8,
+   "z": 4.9
+  },
+  {
+   "dimension": "state",
+   "value": "Outside India",
+   "month": "2025-04",
+   "count": 8,
+   "expected": 1.8,
+   "z": 3.0
+  },
+  {
+   "dimension": "state",
+   "value": "Himachal Pradesh",
+   "month": "2025-04",
+   "count": 57,
+   "expected": 25.7,
+   "z": 3.1
+  },
+  {
+   "dimension": "state",
+   "value": "Gujarat",
+   "month": "2025-04",
+   "count": 26,
+   "expected": 8.2,
+   "z": 3.5
+  },
+  {
+   "dimension": "state",
+   "value": "Haryana",
+   "month": "2025-04",
+   "count": 10,
+   "expected": 2.5,
+   "z": 4.5
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Antibiotic / anti-infective",
+   "month": "2025-04",
+   "count": 60,
+   "expected": 23.9,
+   "z": 5.1
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Pain / fever / inflammation",
+   "month": "2025-04",
+   "count": 22,
+   "expected": 5.8,
+   "z": 5.2
+  },
+  {
+   "dimension": "state",
+   "value": "Madhya Pradesh",
+   "month": "2025-04",
+   "count": 19,
+   "expected": 4.1,
+   "z": 5.3
+  },
+  {
+   "dimension": "state",
+   "value": "Uttarakhand",
+   "month": "2025-04",
+   "count": 44,
+   "expected": 13.5,
+   "z": 5.3
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Vitamins / minerals / nutrition",
+   "month": "2025-03",
+   "count": 27,
+   "expected": 8.6,
+   "z": 3.5
+  },
+  {
+   "dimension": "state",
+   "value": "Maharashtra",
+   "month": "2025-03",
+   "count": 8,
+   "expected": 2.6,
+   "z": 3.6
+  },
+  {
+   "dimension": "state",
+   "value": "Gujarat",
+   "month": "2025-03",
+   "count": 21,
+   "expected": 6.8,
+   "z": 4.3
+  },
+  {
+   "dimension": "state",
+   "value": "Telangana",
+   "month": "2025-01",
+   "count": 8,
+   "expected": 2.3,
+   "z": 3.0
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Pain / fever / inflammation",
+   "month": "2025-01",
+   "count": 11,
+   "expected": 4.2,
+   "z": 3.3
+  },
+  {
+   "dimension": "state",
+   "value": "Puducherry",
+   "month": "2025-01",
+   "count": 9,
+   "expected": 1.1,
+   "z": 3.8
+  },
+  {
+   "dimension": "state",
+   "value": "West Bengal",
+   "month": "2025-01",
+   "count": 17,
+   "expected": 1.8,
+   "z": 9.6
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "IV fluids / electrolytes",
+   "month": "2025-01",
+   "count": 17,
+   "expected": 1.1,
+   "z": 10.6
+  },
+  {
+   "dimension": "state",
+   "value": "Punjab",
+   "month": "2024-12",
+   "count": 8,
+   "expected": 1.4,
+   "z": 4.4
+  },
+  {
+   "dimension": "state",
+   "value": "Uttarakhand",
+   "month": "2024-12",
+   "count": 27,
+   "expected": 11.0,
+   "z": 4.8
+  },
+  {
+   "dimension": "state",
+   "value": "Gujarat",
+   "month": "2024-11",
+   "count": 10,
+   "expected": 4.7,
+   "z": 3.0
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Other / unclassified",
+   "month": "2024-11",
+   "count": 46,
+   "expected": 15.2,
+   "z": 4.7
+  },
+  {
+   "dimension": "state",
+   "value": "Tamil Nadu",
+   "month": "2024-11",
+   "count": 13,
+   "expected": 0.7,
+   "z": 8.2
+  },
+  {
+   "dimension": "state",
+   "value": "Unknown",
+   "month": "2024-06",
+   "count": 23,
+   "expected": 0.5,
+   "z": 15.0
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2024-02",
+   "count": 20,
+   "expected": 4.1,
+   "z": 6.4
+  },
+  {
+   "dimension": "therapeutic_class",
+   "value": "Cough / cold / allergy",
+   "month": "2024-01",
+   "count": 11,
+   "expected": 3.7,
+   "z": 4.9
+  }
+ ],
+ "geography": [
+  {
+   "state": "Himachal Pradesh",
+   "findings": 2027,
+   "manufacturers": 500,
+   "critical": 179,
+   "critical_share": 0.088,
+   "share_of_india": 0.3044
+  },
+  {
+   "state": "Uttarakhand",
+   "findings": 1032,
+   "manufacturers": 216,
+   "critical": 96,
+   "critical_share": 0.093,
+   "share_of_india": 0.155
+  },
+  {
+   "state": "Gujarat",
+   "findings": 622,
+   "manufacturers": 237,
+   "critical": 104,
+   "critical_share": 0.167,
+   "share_of_india": 0.0934
+  },
+  {
+   "state": "Madhya Pradesh",
+   "findings": 354,
+   "manufacturers": 69,
+   "critical": 37,
+   "critical_share": 0.105,
+   "share_of_india": 0.0532
+  },
+  {
+   "state": "Maharashtra",
+   "findings": 292,
+   "manufacturers": 109,
+   "critical": 41,
+   "critical_share": 0.14,
+   "share_of_india": 0.0439
+  },
+  {
+   "state": "Punjab",
+   "findings": 262,
+   "manufacturers": 77,
+   "critical": 28,
+   "critical_share": 0.107,
+   "share_of_india": 0.0393
+  },
+  {
+   "state": "Haryana",
+   "findings": 249,
+   "manufacturers": 85,
+   "critical": 28,
+   "critical_share": 0.112,
+   "share_of_india": 0.0374
+  },
+  {
+   "state": "Tamil Nadu",
+   "findings": 194,
+   "manufacturers": 88,
+   "critical": 14,
+   "critical_share": 0.072,
+   "share_of_india": 0.0291
+  },
+  {
+   "state": "Uttar Pradesh",
+   "findings": 183,
+   "manufacturers": 55,
+   "critical": 41,
+   "critical_share": 0.224,
+   "share_of_india": 0.0275
+  },
+  {
+   "state": "Unknown",
+   "findings": 176,
+   "manufacturers": 80,
+   "critical": 77,
+   "critical_share": 0.438,
+   "share_of_india": 0.0264
+  },
+  {
+   "state": "Telangana",
+   "findings": 170,
+   "manufacturers": 76,
+   "critical": 19,
+   "critical_share": 0.112,
+   "share_of_india": 0.0255
+  },
+  {
+   "state": "Sikkim",
+   "findings": 135,
+   "manufacturers": 26,
+   "critical": 40,
+   "critical_share": 0.296,
+   "share_of_india": 0.0203
+  },
+  {
+   "state": "West Bengal",
+   "findings": 113,
+   "manufacturers": 34,
+   "critical": 47,
+   "critical_share": 0.416,
+   "share_of_india": 0.017
+  },
+  {
+   "state": "Outside India",
+   "findings": 112,
+   "manufacturers": 69,
+   "critical": 11,
+   "critical_share": 0.098,
+   "share_of_india": 0.0168
+  },
+  {
+   "state": "Rajasthan",
+   "findings": 105,
+   "manufacturers": 38,
+   "critical": 13,
+   "critical_share": 0.124,
+   "share_of_india": 0.0158
+  },
+  {
+   "state": "Karnataka",
+   "findings": 101,
+   "manufacturers": 29,
+   "critical": 16,
+   "critical_share": 0.158,
+   "share_of_india": 0.0152
+  },
+  {
+   "state": "Puducherry",
+   "findings": 98,
+   "manufacturers": 36,
+   "critical": 7,
+   "critical_share": 0.071,
+   "share_of_india": 0.0147
+  },
+  {
+   "state": "Delhi",
+   "findings": 79,
+   "manufacturers": 32,
+   "critical": 12,
+   "critical_share": 0.152,
+   "share_of_india": 0.0119
+  },
+  {
+   "state": "Kerala",
+   "findings": 74,
+   "manufacturers": 13,
+   "critical": 7,
+   "critical_share": 0.095,
+   "share_of_india": 0.0111
+  },
+  {
+   "state": "Andhra Pradesh",
+   "findings": 65,
+   "manufacturers": 28,
+   "critical": 1,
+   "critical_share": 0.015,
+   "share_of_india": 0.0098
+  },
+  {
+   "state": "Jammu & Kashmir",
+   "findings": 63,
+   "manufacturers": 20,
+   "critical": 10,
+   "critical_share": 0.159,
+   "share_of_india": 0.0095
+  },
+  {
+   "state": "Bihar",
+   "findings": 49,
+   "manufacturers": 18,
+   "critical": 11,
+   "critical_share": 0.224,
+   "share_of_india": 0.0074
+  },
+  {
+   "state": "Goa",
+   "findings": 28,
+   "manufacturers": 12,
+   "critical": 16,
+   "critical_share": 0.571,
+   "share_of_india": 0.0042
+  },
+  {
+   "state": "Assam",
+   "findings": 21,
+   "manufacturers": 10,
+   "critical": 4,
+   "critical_share": 0.19,
+   "share_of_india": 0.0032
+  },
+  {
+   "state": "Daman, Diu & DNH",
+   "findings": 18,
+   "manufacturers": 14,
+   "critical": 6,
+   "critical_share": 0.333,
+   "share_of_india": 0.0027
+  },
+  {
+   "state": "Odisha",
+   "findings": 14,
+   "manufacturers": 10,
+   "critical": 0,
+   "critical_share": 0.0,
+   "share_of_india": 0.0021
+  },
+  {
+   "state": "Chandigarh",
+   "findings": 10,
+   "manufacturers": 5,
+   "critical": 2,
+   "critical_share": 0.2,
+   "share_of_india": 0.0015
+  },
+  {
+   "state": "Jharkhand",
+   "findings": 9,
+   "manufacturers": 4,
+   "critical": 0,
+   "critical_share": 0.0,
+   "share_of_india": 0.0014
+  },
+  {
+   "state": "Chhattisgarh",
+   "findings": 4,
+   "manufacturers": 4,
+   "critical": 1,
+   "critical_share": 0.25,
+   "share_of_india": 0.0006
+  }
+ ],
+ "trends": {
+  "monthly": [
+   {
+    "month": "2017-07",
+    "critical": 1,
+    "major": 0,
+    "minor": 0,
+    "unclassified": 0
+   },
+   {
+    "month": "2017-09",
+    "critical": 0,
+    "major": 0,
+    "minor": 1,
+    "unclassified": 0
+   },
+   {
+    "month": "2018-01",
+    "critical": 0,
+    "major": 0,
+    "minor": 1,
+    "unclassified": 0
+   },
+   {
+    "month": "2018-02",
+    "critical": 0,
+    "major": 2,
+    "minor": 0,
+    "unclassified": 0
+   },
+   {
+    "month": "2018-04",
+    "critical": 0,
+    "major": 0,
+    "minor": 0,
+    "unclassified": 1
+   },
+   {
+    "month": "2018-09",
+    "critical": 1,
+    "major": 0,
+    "minor": 0,
+    "unclassified": 0
+   },
+   {
+    "month": "2019-01",
+    "critical": 4,
+    "major": 34,
+    "minor": 5,
+    "unclassified": 2
+   },
+   {
+    "month": "2019-02",
+    "critical": 1,
+    "major": 32,
+    "minor": 3,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-03",
+    "critical": 3,
+    "major": 41,
+    "minor": 7,
+    "unclassified": 0
+   },
+   {
+    "month": "2019-04",
+    "critical": 7,
+    "major": 19,
+    "minor": 3,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-05",
+    "critical": 0,
+    "major": 31,
+    "minor": 0,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-06",
+    "critical": 11,
+    "major": 12,
+    "minor": 1,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-07",
+    "critical": 1,
+    "major": 15,
+    "minor": 1,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-08",
+    "critical": 0,
+    "major": 23,
+    "minor": 4,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-09",
+    "critical": 1,
+    "major": 19,
+    "minor": 0,
+    "unclassified": 1
+   },
+   {
+    "month": "2019-10",
+    "critical": 7,
+    "major": 27,
+    "minor": 1,
+    "unclassified": 0
+   },
+   {
+    "month": "2019-11",
+    "critical": 5,
+    "major": 25,
+    "minor": 5,
+    "unclassified": 0
+   },
+   {
+    "month": "2019-12",
+    "critical": 5,
+    "major": 34,
+    "minor": 7,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-01",
+    "critical": 3,
+    "major": 26,
+    "minor": 5,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-02",
+    "critical": 4,
+    "major": 30,
+    "minor": 4,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-03",
+    "critical": 6,
+    "major": 29,
+    "minor": 8,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-04",
+    "critical": 9,
+    "major": 42,
+    "minor": 3,
+    "unclassified": 1
+   },
+   {
+    "month": "2020-05",
+    "critical": 2,
+    "major": 15,
+    "minor": 6,
+    "unclassified": 1
+   },
+   {
+    "month": "2020-06",
+    "critical": 1,
+    "major": 13,
+    "minor": 4,
+    "unclassified": 2
+   },
+   {
+    "month": "2020-07",
+    "critical": 7,
+    "major": 26,
+    "minor": 1,
+    "unclassified": 1
+   },
+   {
+    "month": "2020-08",
+    "critical": 6,
+    "major": 16,
+    "minor": 0,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-09",
+    "critical": 0,
+    "major": 7,
+    "minor": 2,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-10",
+    "critical": 0,
+    "major": 4,
+    "minor": 4,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-11",
+    "critical": 0,
+    "major": 11,
+    "minor": 3,
+    "unclassified": 0
+   },
+   {
+    "month": "2020-12",
+    "critical": 0,
+    "major": 15,
+    "minor": 0,
+    "unclassified": 0
+   },
+   {
+    "month": "2021-01",
+    "critical": 2,
+    "major": 10,
+    "minor": 3,
+    "unclassified": 1
+   },
+   {
+    "month": "2021-02",
+    "critical": 0,
+    "major": 12,
+    "minor": 1,
+    "unclassified": 2
+   },
+   {
+    "month": "2021-03",
+    "critical": 2,
+    "major": 14,
+    "minor": 0,
+    "unclassified": 2
+   },
+   {
+    "month": "2021-04",
+    "critical": 2,
+    "major": 17,
+    "minor": 1,
+    "unclassified": 2
+   },
+   {
+    "month": "2021-05",
+    "critical": 0,
+    "major": 16,
+    "minor": 2,
+    "unclassified": 1
+   },
+   {
+    "month": "2021-06",
+    "critical": 4,
+    "major": 31,
+    "minor": 3,
+    "unclassified": 1
+   },
+   {
+    "month": "2021-07",
+    "critical": 5,
+    "major": 32,
+    "minor": 6,
+    "unclassified": 2
+   },
+   {
+    "month": "2021-08",
+    "critical": 3,
+    "major": 21,
+    "minor": 10,
+    "unclassified": 2
+   },
+   {
+    "month": "2021-09",
+    "critical": 9,
+    "major": 28,
+    "minor": 5,
+    "unclassified": 0
+   },
+   {
+    "month": "2021-10",
+    "critical": 13,
+    "major": 20,
+    "minor": 3,
+    "unclassified": 0
+   },
+   {
+    "month": "2021-11",
+    "critical": 4,
+    "major": 16,
+    "minor": 2,
+    "unclassified": 0
+   },
+   {
+    "month": "2021-12",
+    "critical": 8,
+    "major": 17,
+    "minor": 10,
+    "unclassified": 0
+   },
+   {
+    "month": "2022-01",
+    "critical": 4,
+    "major": 18,
+    "minor": 4,
+    "unclassified": 0
+   },
+   {
+    "month": "2022-02",
+    "critical": 3,
+    "major": 31,
+    "minor": 5,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-03",
+    "critical": 8,
+    "major": 34,
+    "minor": 5,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-04",
+    "critical": 3,
+    "major": 23,
+    "minor": 1,
+    "unclassified": 0
+   },
+   {
+    "month": "2022-05",
+    "critical": 6,
+    "major": 34,
+    "minor": 1,
+    "unclassified": 0
+   },
+   {
+    "month": "2022-06",
+    "critical": 3,
+    "major": 21,
+    "minor": 4,
+    "unclassified": 0
+   },
+   {
+    "month": "2022-07",
+    "critical": 3,
+    "major": 42,
+    "minor": 8,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-08",
+    "critical": 7,
+    "major": 35,
+    "minor": 1,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-09",
+    "critical": 3,
+    "major": 41,
+    "minor": 13,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-10",
+    "critical": 18,
+    "major": 25,
+    "minor": 7,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-11",
+    "critical": 15,
+    "major": 56,
+    "minor": 11,
+    "unclassified": 1
+   },
+   {
+    "month": "2022-12",
+    "critical": 23,
+    "major": 36,
+    "minor": 10,
+    "unclassified": 1
+   },
+   {
+    "month": "2023-01",
+    "critical": 6,
+    "major": 39,
+    "minor": 20,
+    "unclassified": 1
+   },
+   {
+    "month": "2023-02",
+    "critical": 15,
+    "major": 37,
+    "minor": 7,
+    "unclassified": 0
+   },
+   {
+    "month": "2023-03",
+    "critical": 8,
+    "major": 37,
+    "minor": 2,
+    "unclassified": 1
+   },
+   {
+    "month": "2023-04",
+    "critical": 3,
+    "major": 28,
+    "minor": 3,
+    "unclassified": 2
+   },
+   {
+    "month": "2023-05",
+    "critical": 4,
+    "major": 20,
+    "minor": 4,
+    "unclassified": 0
+   },
+   {
+    "month": "2023-06",
+    "critical": 2,
+    "major": 41,
+    "minor": 5,
+    "unclassified": 0
+   },
+   {
+    "month": "2023-07",
+    "critical": 7,
+    "major": 38,
+    "minor": 6,
+    "unclassified": 0
+   },
+   {
+    "month": "2023-08",
+    "critical": 7,
+    "major": 31,
+    "minor": 5,
+    "unclassified": 5
+   },
+   {
+    "month": "2023-09",
+    "critical": 3,
+    "major": 43,
+    "minor": 8,
+    "unclassified": 5
+   },
+   {
+    "month": "2023-10",
+    "critical": 5,
+    "major": 39,
+    "minor": 14,
+    "unclassified": 1
+   },
+   {
+    "month": "2023-11",
+    "critical": 9,
+    "major": 40,
+    "minor": 15,
+    "unclassified": 0
+   },
+   {
+    "month": "2023-12",
+    "critical": 9,
+    "major": 63,
+    "minor": 6,
+    "unclassified": 0
+   },
+   {
+    "month": "2024-01",
+    "critical": 7,
+    "major": 29,
+    "minor": 5,
+    "unclassified": 5
+   },
+   {
+    "month": "2024-02",
+    "critical": 5,
+    "major": 41,
+    "minor": 9,
+    "unclassified": 3
+   },
+   {
+    "month": "2024-03",
+    "critical": 2,
+    "major": 44,
+    "minor": 12,
+    "unclassified": 1
+   },
+   {
+    "month": "2024-04",
+    "critical": 7,
+    "major": 31,
+    "minor": 12,
+    "unclassified": 5
+   },
+   {
+    "month": "2024-05",
+    "critical": 4,
+    "major": 34,
+    "minor": 7,
+    "unclassified": 7
+   },
+   {
+    "month": "2024-06",
+    "critical": 4,
+    "major": 43,
+    "minor": 6,
+    "unclassified": 8
+   },
+   {
+    "month": "2024-07",
+    "critical": 7,
+    "major": 46,
+    "minor": 11,
+    "unclassified": 6
+   },
+   {
+    "month": "2024-08",
+    "critical": 11,
+    "major": 37,
+    "minor": 8,
+    "unclassified": 5
+   },
+   {
+    "month": "2024-09",
+    "critical": 11,
+    "major": 51,
+    "minor": 5,
+    "unclassified": 4
+   },
+   {
+    "month": "2024-10",
+    "critical": 7,
+    "major": 53,
+    "minor": 26,
+    "unclassified": 6
+   },
+   {
+    "month": "2024-11",
+    "critical": 7,
+    "major": 80,
+    "minor": 17,
+    "unclassified": 8
+   },
+   {
+    "month": "2024-12",
+    "critical": 15,
+    "major": 104,
+    "minor": 12,
+    "unclassified": 4
+   },
+   {
+    "month": "2025-01",
+    "critical": 28,
+    "major": 80,
+    "minor": 29,
+    "unclassified": 8
+   },
+   {
+    "month": "2025-02",
+    "critical": 14,
+    "major": 58,
+    "minor": 21,
+    "unclassified": 10
+   },
+   {
+    "month": "2025-03",
+    "critical": 17,
+    "major": 94,
+    "minor": 12,
+    "unclassified": 8
+   },
+   {
+    "month": "2025-04",
+    "critical": 29,
+    "major": 131,
+    "minor": 29,
+    "unclassified": 6
+   },
+   {
+    "month": "2025-05",
+    "critical": 34,
+    "major": 108,
+    "minor": 39,
+    "unclassified": 7
+   },
+   {
+    "month": "2025-06",
+    "critical": 31,
+    "major": 104,
+    "minor": 50,
+    "unclassified": 3
+   },
+   {
+    "month": "2025-07",
+    "critical": 19,
+    "major": 84,
+    "minor": 45,
+    "unclassified": 2
+   },
+   {
+    "month": "2025-08",
+    "critical": 13,
+    "major": 51,
+    "minor": 33,
+    "unclassified": 0
+   },
+   {
+    "month": "2025-09",
+    "critical": 9,
+    "major": 75,
+    "minor": 27,
+    "unclassified": 2
+   },
+   {
+    "month": "2025-10",
+    "critical": 22,
+    "major": 156,
+    "minor": 25,
+    "unclassified": 11
+   },
+   {
+    "month": "2025-11",
+    "critical": 42,
+    "major": 131,
+    "minor": 39,
+    "unclassified": 6
+   },
+   {
+    "month": "2025-12",
+    "critical": 19,
+    "major": 125,
+    "minor": 30,
+    "unclassified": 10
+   },
+   {
+    "month": "2026-01",
+    "critical": 20,
+    "major": 160,
+    "minor": 37,
+    "unclassified": 5
+   },
+   {
+    "month": "2026-02",
+    "critical": 27,
+    "major": 139,
+    "minor": 43,
+    "unclassified": 12
+   },
+   {
+    "month": "2026-03",
+    "critical": 19,
+    "major": 111,
+    "minor": 53,
+    "unclassified": 8
+   },
+   {
+    "month": "2026-04",
+    "critical": 24,
+    "major": 73,
+    "minor": 20,
+    "unclassified": 6
+   },
+   {
+    "month": "2026-05",
+    "critical": 18,
+    "major": 98,
+    "minor": 38,
+    "unclassified": 10
+   },
+   {
+    "month": "2026-06",
+    "critical": 22,
+    "major": 122,
+    "minor": 43,
+    "unclassified": 6
+   },
+   {
+    "month": "2026-07",
+    "critical": 43,
+    "major": 141,
+    "minor": 38,
+    "unclassified": 18
+   },
+   {
+    "month": "2026-08",
+    "critical": 20,
+    "major": 152,
+    "minor": 38,
+    "unclassified": 11
+   }
+  ],
+  "by_year_failure": [
+   {
+    "year": 2017,
+    "Adulterated": 0,
+    "Assay (strength)": 0,
+    "DEG/EG contamination": 0,
+    "Description / appearance": 1,
+    "Disintegration": 0,
+    "Dissolution": 0,
+    "Endotoxin / pyrogen": 0,
+    "Identity test failed": 1,
+    "Impurities": 0,
+    "Labelling / misbranding": 0,
+    "Microbial contamination": 0,
+    "Other": 0,
+    "Particulate matter": 0,
+    "Spurious (fake)": 0,
+    "Sterility": 0,
+    "Uniformity": 0,
+    "Water / moisture": 0,
+    "Weight / volume": 0,
+    "pH": 0
+   },
+   {
+    "year": 2018,
+    "Adulterated": 0,
+    "Assay (strength)": 2,
+    "DEG/EG contamination": 0,
+    "Description / appearance": 1,
+    "Disintegration": 0,
+    "Dissolution": 0,
+    "Endotoxin / pyrogen": 0,
+    "Identity test failed": 1,
+    "Impurities": 0,
+    "Labelling / misbranding": 0,
+    "Microbial contamination": 0,
+    "Other": 1,
+    "Particulate matter": 0,
+    "Spurious (fake)": 0,
+    "Sterility": 0,
+    "Uniformity": 0,
+    "Water / moisture": 0,
+    "Weight / volume": 0,
+    "pH": 0
+   },
+   {
+    "year": 2019,
+    "Adulterated": 0,
+    "Assay (strength)": 136,
+    "DEG/EG contamination": 0,
+    "Description / appearance": 7,
+    "Disintegration": 13,
+    "Dissolution": 120,
+    "Endotoxin / pyrogen": 5,
+    "Identity test failed": 31,
+    "Impurities": 13,
+    "Labelling / misbranding": 1,
+    "Microbial contamination": 0,
+    "Other": 9,
+    "Particulate matter": 31,
+    "Spurious (fake)": 1,
+    "Sterility": 8,
+    "Uniformity": 12,
+    "Water / moisture": 8,
+    "Weight / volume": 2,
+    "pH": 6
+   },
+   {
+    "year": 2020,
+    "Adulterated": 1,
+    "Assay (strength)": 114,
+    "DEG/EG contamination": 3,
+    "Description / appearance": 14,
+    "Disintegration": 11,
+    "Dissolution": 91,
+    "Endotoxin / pyrogen": 2,
+    "Identity test failed": 19,
+    "Impurities": 11,
+    "Labelling / misbranding": 0,
+    "Microbial contamination": 2,
+    "Other": 5,
+    "Particulate matter": 10,
+    "Spurious (fake)": 0,
+    "Sterility": 11,
+    "Uniformity": 8,
+    "Water / moisture": 8,
+    "Weight / volume": 0,
+    "pH": 7
+   },
+   {
+    "year": 2021,
+    "Adulterated": 0,
+    "Assay (strength)": 103,
+    "DEG/EG contamination": 3,
+    "Description / appearance": 14,
+    "Disintegration": 17,
+    "Dissolution": 94,
+    "Endotoxin / pyrogen": 1,
+    "Identity test failed": 22,
+    "Impurities": 13,
+    "Labelling / misbranding": 4,
+    "Microbial contamination": 7,
+    "Other": 13,
+    "Particulate matter": 13,
+    "Spurious (fake)": 0,
+    "Sterility": 19,
+    "Uniformity": 11,
+    "Water / moisture": 5,
+    "Weight / volume": 3,
+    "pH": 3
+   },
+   {
+    "year": 2022,
+    "Adulterated": 0,
+    "Assay (strength)": 214,
+    "DEG/EG contamination": 0,
+    "Description / appearance": 35,
+    "Disintegration": 20,
+    "Dissolution": 141,
+    "Endotoxin / pyrogen": 7,
+    "Identity test failed": 37,
+    "Impurities": 20,
+    "Labelling / misbranding": 2,
+    "Microbial contamination": 1,
+    "Other": 8,
+    "Particulate matter": 11,
+    "Spurious (fake)": 2,
+    "Sterility": 49,
+    "Uniformity": 10,
+    "Water / moisture": 1,
+    "Weight / volume": 2,
+    "pH": 10
+   },
+   {
+    "year": 2023,
+    "Adulterated": 0,
+    "Assay (strength)": 238,
+    "DEG/EG contamination": 10,
+    "Description / appearance": 40,
+    "Disintegration": 17,
+    "Dissolution": 142,
+    "Endotoxin / pyrogen": 9,
+    "Identity test failed": 40,
+    "Impurities": 25,
+    "Labelling / misbranding": 8,
+    "Microbial contamination": 1,
+    "Other": 15,
+    "Particulate matter": 43,
+    "Spurious (fake)": 6,
+    "Sterility": 12,
+    "Uniformity": 8,
+    "Water / moisture": 13,
+    "Weight / volume": 5,
+    "pH": 12
+   },
+   {
+    "year": 2024,
+    "Adulterated": 0,
+    "Assay (strength)": 321,
+    "DEG/EG contamination": 3,
+    "Description / appearance": 59,
+    "Disintegration": 18,
+    "Dissolution": 191,
+    "Endotoxin / pyrogen": 7,
+    "Identity test failed": 27,
+    "Impurities": 17,
+    "Labelling / misbranding": 16,
+    "Microbial contamination": 7,
+    "Other": 62,
+    "Particulate matter": 49,
+    "Spurious (fake)": 13,
+    "Sterility": 30,
+    "Uniformity": 15,
+    "Water / moisture": 12,
+    "Weight / volume": 4,
+    "pH": 21
+   },
+   {
+    "year": 2025,
+    "Adulterated": 1,
+    "Assay (strength)": 671,
+    "DEG/EG contamination": 10,
+    "Description / appearance": 191,
+    "Disintegration": 41,
+    "Dissolution": 398,
+    "Endotoxin / pyrogen": 10,
+    "Identity test failed": 57,
+    "Impurities": 18,
+    "Labelling / misbranding": 74,
+    "Microbial contamination": 32,
+    "Other": 73,
+    "Particulate matter": 71,
+    "Spurious (fake)": 52,
+    "Sterility": 115,
+    "Uniformity": 39,
+    "Water / moisture": 12,
+    "Weight / volume": 20,
+    "pH": 41
+   },
+   {
+    "year": 2026,
+    "Adulterated": 0,
+    "Assay (strength)": 614,
+    "DEG/EG contamination": 8,
+    "Description / appearance": 149,
+    "Disintegration": 48,
+    "Dissolution": 307,
+    "Endotoxin / pyrogen": 15,
+    "Identity test failed": 62,
+    "Impurities": 12,
+    "Labelling / misbranding": 38,
+    "Microbial contamination": 33,
+    "Other": 76,
+    "Particulate matter": 33,
+    "Spurious (fake)": 28,
+    "Sterility": 47,
+    "Uniformity": 30,
+    "Water / moisture": 21,
+    "Weight / volume": 20,
+    "pH": 34
+   }
+  ],
+  "forms": {
+   "Tablet": 3474,
+   "Injection": 773,
+   "Other": 512,
+   "Syrup": 434,
+   "Capsule": 434,
+   "Suspension": 310,
+   "Cream / ointment / gel": 183,
+   "Oral solution / drops": 176,
+   "IV fluid": 142,
+   "Medical device / consumable": 92,
+   "Disinfectant": 54,
+   "Powder / sachet": 49,
+   "Vaccine / biological": 25,
+   "Inhaler / spray": 1
+  },
+  "classes": {
+   "Antibiotic / anti-infective": 1679,
+   "Other / unclassified": 1344,
+   "Pain / fever / inflammation": 765,
+   "Vitamins / minerals / nutrition": 705,
+   "Cough / cold / allergy": 553,
+   "Heart / blood pressure / lipids": 479,
+   "Gastro-intestinal": 242,
+   "Steroid / hormone": 181,
+   "Nervous system / mental health": 167,
+   "Diabetes": 165,
+   "IV fluids / electrolytes": 157,
+   "Disinfectant / antiseptic": 94,
+   "Anaesthesia / critical care": 73,
+   "Antimalarial / antiparasitic": 38,
+   "TB / HIV / antivirals": 17
+  },
+  "failures": {
+   "Assay (strength)": 2413,
+   "Dissolution": 1484,
+   "Description / appearance": 511,
+   "Identity test failed": 297,
+   "Sterility": 291,
+   "Other": 262,
+   "Particulate matter": 261,
+   "Disintegration": 185,
+   "Labelling / misbranding": 143,
+   "pH": 134,
+   "Uniformity": 133,
+   "Impurities": 129,
+   "Spurious (fake)": 102,
+   "Microbial contamination": 83,
+   "Water / moisture": 80,
+   "Endotoxin / pyrogen": 56,
+   "Weight / volume": 56,
+   "DEG/EG contamination": 37,
+   "Adulterated": 2
+  },
+  "severity": {
+   "major": 4420,
+   "minor": 1109,
+   "critical": 868,
+   "unclassified": 262
+  },
+  "sources": {
+   "State lab": 3520,
+   "CDSCO lab": 3134,
+   "Drugs inspector": 5
+  },
+  "spurious": 48
+ }
+}

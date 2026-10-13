@@ -1,0 +1,186 @@
+{
+ "audited_months": [
+  "2019-03",
+  "2019-04",
+  "2022-03",
+  "2022-06",
+  "2023-04",
+  "2024-04",
+  "2024-06",
+  "2024-07",
+  "2024-08",
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06"
+ ],
+ "pdf_documents": 27,
+ "pdf_rows": 1349,
+ "portal_rows_in_those_months": 1450,
+ "matched_rows": 1307,
+ "row_precision": 0.969,
+ "row_recall": 0.887,
+ "fields": {
+  "product_name": {
+   "agreement": 0.987,
+   "compared": 1307,
+   "missing_in_pdf": 0,
+   "examples_of_disagreement": [
+    {
+     "pdf": "Diphtheria,Tetanus,Pertussis( Whole cell) ,Hepatitis B (rDNA) & Haemophilus influenzae Typ",
+     "portal": "Diphtheria,Tetanus,Pertussis(Whole cell), Hepatitis B (DNA) & Haemophilus influenzae Type-"
+    },
+    {
+     "pdf": "Ond ansentron Tablets IP 4mg",
+     "portal": "Ondansentron Tablets IP 4mg"
+    },
+    {
+     "pdf": "Opiv as 10 tablets",
+     "portal": "Opivas 10 tablets"
+    },
+    {
+     "pdf": "ITRA DEL-200k",
+     "portal": "ITRADEL-200k"
+    },
+    {
+     "pdf": "Opir in-75 Tablets (Aspirin Tablets IP 75mg)",
+     "portal": "Opirin-75 Tablets (Aspirin Tablets IP\n75mg)"
+    }
+   ]
+  },
+  "manufacturer (name)": {
+   "agreement": 0.991,
+   "compared": 1307,
+   "missing_in_pdf": 0,
+   "examples_of_disagreement": [
+    {
+     "pdf": "M/s. Tas Med (India) P v t . l t d . PlotNo . phase IV, Industriael Area Himuda, Bhatoli K",
+     "portal": "M/s. Tas Med (India) Pvt.ltd. Plot No. phase IV, Industriael Area Himuda, Bhatoli Kalan, B"
+    },
+    {
+     "pdf": "M/s. Tas Med (India) P v t . l t d . PlotNo . phase IV, Industriael Area Himuda, Bhatoli K",
+     "portal": "M/s. Tas Med (India) Pvt.ltd. Plot No. phase IV, Industriael Area Himuda, Bhatoli Kalan, B"
+    },
+    {
+     "pdf": "M/s. 4Care Lifescience Pvt. Ltd. Survey No. 23/3P & 24, Opp. Jeans Factory, Daduram Vistar",
+     "portal": "M/s Aeron Lifesciences Pvt Ltd, Kathwada, Ahmedabad as per the Investigation Report"
+    },
+    {
+     "pdf": "M/s. Glenmark Pharmaceuticals Ltd., Solan H.P.",
+     "portal": "Under Investigation"
+    },
+    {
+     "pdf": "AccuraCarePharmaceut ic alsPvtLtd ( A Venture of Biochemix grop (Agmp& ISO Certified Co) V",
+     "portal": "Accura Care Pharmaceuticals Pvt Ltd ( A Venture of Biochemix grop (Agmp& ISO Certified Co)"
+    }
+   ]
+  },
+  "state (derived)": {
+   "agreement": 0.998,
+   "compared": 1307,
+   "missing_in_pdf": 0,
+   "examples_of_disagreement": [
+    {
+     "pdf": "Mohsin Idustries, Hyderabad Telangana State",
+     "portal": "Mohsin Idustries,"
+    },
+    {
+     "pdf": "Morepan Laboratories Ltd, Unit-V, Plot No. 12C, sector-2, Parwanoo, Dist.Solan (HP)- 173 2",
+     "portal": "Morepan Laboratories Ltd, Unit-V, Plot No. 12C, sector-2,"
+    },
+    {
+     "pdf": "M/s. Glenmark Pharmaceuticals Ltd., Solan H.P.",
+     "portal": "Under Investigation"
+    }
+   ]
+  },
+  "nsq_result": {
+   "agreement": 0.988,
+   "compared": 1307,
+   "missing_in_pdf": 0,
+   "examples_of_disagreement": [
+    {
+     "pdf": "It fails the test Dissolution’ and ‘Assay’ as per IP",
+     "portal": "It fails the test Dissolution? and ?Assay? as per IP"
+    },
+    {
+     "pdf": "NOT OF STANDARD QUALITY Sample does not meets the spec if icationswrt . to identification ",
+     "portal": "NOT OF STANDARD QUALITY\nSample does not meets the specifications wrt. To identification te"
+    },
+    {
+     "pdf": "It fails the tests ‘Weight per ml and ‘Light Absortion’ as per IP",
+     "portal": "It fails the tests ?Weight per ml and ?Light Absortion? as per\nIP"
+    },
+    {
+     "pdf": "For the received sample Telmisartan Tablets IP 40 mg (Leaftel-40), Capping defect was obse",
+     "portal": "Sheep Husbandry Supply / The sample  is found spurious as the Assay contents of Cloprosten"
+    },
+    {
+     "pdf": "Dissolution does not comp ly asperIP 2 0 2 2 .",
+     "portal": "Dissolution does not comply as per IP 2022."
+    }
+   ]
+  },
+  "mfg_date": {
+   "agreement": 0.977,
+   "compared": 1241,
+   "missing_in_pdf": 26,
+   "examples_of_disagreement": [
+    {
+     "pdf": "June, 2023",
+     "portal": "Jun-2023"
+    },
+    {
+     "pdf": "45200",
+     "portal": "Oct-2023"
+    },
+    {
+     "pdf": "45261",
+     "portal": "Dec-2023"
+    },
+    {
+     "pdf": "45200",
+     "portal": "Oct-2023"
+    },
+    {
+     "pdf": "45323",
+     "portal": "Feb-2024"
+    }
+   ]
+  },
+  "exp_date": {
+   "agreement": 0.967,
+   "compared": 1225,
+   "missing_in_pdf": 43,
+   "examples_of_disagreement": [
+    {
+     "pdf": "3 yrs from the date of mfg",
+     "portal": "Mar-2025"
+    },
+    {
+     "pdf": "3 yrs from mfg date",
+     "portal": "Mar-2025"
+    },
+    {
+     "pdf": "use befoe 36 months from packed",
+     "portal": "Jan-2027"
+    },
+    {
+     "pdf": "11-2026",
+     "portal": "Dec-2023"
+    },
+    {
+     "pdf": "36 months from packed",
+     "portal": "Apr-2027"
+    }
+   ]
+  }
+ },
+ "note": "Row recall is a lower bound: a PDF month and a portal month do not always hold the same set of alerts."
+}

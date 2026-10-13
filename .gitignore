@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
+# raw PDFs are re-downloadable with `python -m dawadrishti fetch`
+data/raw/pdfs/
+data/*.log
+*.duckdb.wal
+.env
+.DS_Store

@@ -1,0 +1,3227 @@
+{
+ "rules": {
+  "R1": {
+   "name": "Issued before quality clearance",
+   "why": "Untested medicine must not reach patients"
+  },
+  "R2": {
+   "name": "Failed batch already issued, not recalled within 2 days",
+   "why": "Failed medicine must come back"
+  },
+  "R3": {
+   "name": "Sample sent to lab without blind coding",
+   "why": "Blind testing prevents tampering"
+  },
+  "R4": {
+   "name": "Payment released before clearance",
+   "why": "No payment for stock that may fail"
+  },
+  "R5": {
+   "name": "Order placed with a supplier already debarred by another buyer",
+   "why": "A supplier debarred in one state should not win orders in another"
+  },
+  "R6": {
+   "name": "Lab turnaround over 21 days",
+   "why": "Slow tests create pressure to release untested stock"
+  }
+ },
+ "discovery": {
+  "activities": {
+   "PO created": 6100,
+   "PO approved": 6100,
+   "Goods received": 6100,
+   "Quarantined": 6100,
+   "Sample drawn": 6100,
+   "Sent to lab": 6100,
+   "Report received": 6100,
+   "Sample coded": 5971,
+   "Issued": 5748,
+   "Payment released": 5722,
+   "Cleared": 5712,
+   "Held": 388,
+   "Supplier notified": 388,
+   "Supplier debarred": 90,
+   "Recall started": 36,
+   "Recall closed": 36
+  },
+  "edges": [
+   {
+    "source": "Cleared",
+    "target": "Issued",
+    "count": 5120,
+    "mean_wait_days": 5.53
+   },
+   {
+    "source": "Cleared",
+    "target": "Payment released",
+    "count": 567,
+    "mean_wait_days": 29.68
+   },
+   {
+    "source": "Goods received",
+    "target": "Quarantined",
+    "count": 6100,
+    "mean_wait_days": 0.0
+   },
+   {
+    "source": "Held",
+    "target": "Recall started",
+    "count": 14,
+    "mean_wait_days": 0.59
+   },
+   {
+    "source": "Held",
+    "target": "Supplier notified",
+    "count": 374,
+    "mean_wait_days": 1.22
+   },
+   {
+    "source": "Issued",
+    "target": "Payment released",
+    "count": 4960,
+    "mean_wait_days": 24.6
+   },
+   {
+    "source": "Issued",
+    "target": "Report received",
+    "count": 524,
+    "mean_wait_days": 17.02
+   },
+   {
+    "source": "Issued",
+    "target": "Sample coded",
+    "count": 10,
+    "mean_wait_days": 0.13
+   },
+   {
+    "source": "Issued",
+    "target": "Sample drawn",
+    "count": 35,
+    "mean_wait_days": 0.63
+   },
+   {
+    "source": "Issued",
+    "target": "Sent to lab",
+    "count": 45,
+    "mean_wait_days": 0.56
+   },
+   {
+    "source": "PO approved",
+    "target": "Goods received",
+    "count": 6100,
+    "mean_wait_days": 19.95
+   },
+   {
+    "source": "PO created",
+    "target": "PO approved",
+    "count": 6100,
+    "mean_wait_days": 1.34
+   },
+   {
+    "source": "Payment released",
+    "target": "Issued",
+    "count": 9,
+    "mean_wait_days": 8.25
+   },
+   {
+    "source": "Payment released",
+    "target": "Report received",
+    "count": 191,
+    "mean_wait_days": 11.39
+   },
+   {
+    "source": "Payment released",
+    "target": "Sample coded",
+    "count": 1,
+    "mean_wait_days": 0.08
+   },
+   {
+    "source": "Payment released",
+    "target": "Sent to lab",
+    "count": 8,
+    "mean_wait_days": 0.5
+   },
+   {
+    "source": "Quarantined",
+    "target": "Issued",
+    "count": 35,
+    "mean_wait_days": 1.69
+   },
+   {
+    "source": "Quarantined",
+    "target": "Sample drawn",
+    "count": 6065,
+    "mean_wait_days": 1.6
+   },
+   {
+    "source": "Recall started",
+    "target": "Recall closed",
+    "count": 21,
+    "mean_wait_days": 12.05
+   },
+   {
+    "source": "Recall started",
+    "target": "Supplier debarred",
+    "count": 1,
+    "mean_wait_days": 2.09
+   },
+   {
+    "source": "Recall started",
+    "target": "Supplier notified",
+    "count": 14,
+    "mean_wait_days": 0.88
+   },
+   {
+    "source": "Report received",
+    "target": "Cleared",
+    "count": 5712,
+    "mean_wait_days": 1.73
+   },
+   {
+    "source": "Report received",
+    "target": "Held",
+    "count": 388,
+    "mean_wait_days": 1.71
+   },
+   {
+    "source": "Sample coded",
+    "target": "Issued",
+    "count": 85,
+    "mean_wait_days": 5.04
+   },
+   {
+    "source": "Sample coded",
+    "target": "Payment released",
+    "count": 16,
+    "mean_wait_days": 1.97
+   },
+   {
+    "source": "Sample coded",
+    "target": "Report received",
+    "count": 297,
+    "mean_wait_days": 14.68
+   },
+   {
+    "source": "Sample coded",
+    "target": "Sent to lab",
+    "count": 5573,
+    "mean_wait_days": 0.88
+   },
+   {
+    "source": "Sample drawn",
+    "target": "Issued",
+    "count": 11,
+    "mean_wait_days": 0.2
+   },
+   {
+    "source": "Sample drawn",
+    "target": "Payment released",
+    "count": 1,
+    "mean_wait_days": 0.38
+   },
+   {
+    "source": "Sample drawn",
+    "target": "Sample coded",
+    "count": 5614,
+    "mean_wait_days": 0.26
+   },
+   {
+    "source": "Sample drawn",
+    "target": "Sent to lab",
+    "count": 474,
+    "mean_wait_days": 0.52
+   },
+   {
+    "source": "Sent to lab",
+    "target": "Issued",
+    "count": 488,
+    "mean_wait_days": 9.02
+   },
+   {
+    "source": "Sent to lab",
+    "target": "Payment released",
+    "count": 178,
+    "mean_wait_days": 9.61
+   },
+   {
+    "source": "Sent to lab",
+    "target": "Report received",
+    "count": 5088,
+    "mean_wait_days": 14.94
+   },
+   {
+    "source": "Sent to lab",
+    "target": "Sample coded",
+    "count": 346,
+    "mean_wait_days": 0.1
+   },
+   {
+    "source": "Supplier debarred",
+    "target": "Recall closed",
+    "count": 3,
+    "mean_wait_days": 10.29
+   },
+   {
+    "source": "Supplier debarred",
+    "target": "Recall started",
+    "count": 1,
+    "mean_wait_days": 3.19
+   },
+   {
+    "source": "Supplier notified",
+    "target": "Recall closed",
+    "count": 12,
+    "mean_wait_days": 12.48
+   },
+   {
+    "source": "Supplier notified",
+    "target": "Recall started",
+    "count": 21,
+    "mean_wait_days": 3.1
+   },
+   {
+    "source": "Supplier notified",
+    "target": "Supplier debarred",
+    "count": 89,
+    "mean_wait_days": 6.5
+   }
+  ],
+  "start": {
+   "PO created": 6100
+  },
+  "end": {
+   "Payment released": 5513,
+   "Supplier notified": 266,
+   "Issued": 174,
+   "Supplier debarred": 86,
+   "Recall closed": 36,
+   "Cleared": 25
+  },
+  "cases": 6100,
+  "events": 66791
+ },
+ "discovery_by_buyer": {
+  "B1": {
+   "activities": {
+    "PO created": 1600,
+    "PO approved": 1600,
+    "Goods received": 1600,
+    "Quarantined": 1600,
+    "Sample drawn": 1600,
+    "Sent to lab": 1600,
+    "Report received": 1600,
+    "Sample coded": 1597,
+    "Issued": 1513,
+    "Payment released": 1511,
+    "Cleared": 1510,
+    "Held": 90,
+    "Supplier notified": 90,
+    "Supplier debarred": 23,
+    "Recall started": 3,
+    "Recall closed": 3
+   },
+   "edges": [
+    {
+     "source": "Cleared",
+     "target": "Issued",
+     "count": 1478,
+     "mean_wait_days": 5.49
+    },
+    {
+     "source": "Cleared",
+     "target": "Payment released",
+     "count": 32,
+     "mean_wait_days": 32.03
+    },
+    {
+     "source": "Goods received",
+     "target": "Quarantined",
+     "count": 1600,
+     "mean_wait_days": 0.0
+    },
+    {
+     "source": "Held",
+     "target": "Recall started",
+     "count": 2,
+     "mean_wait_days": 0.2
+    },
+    {
+     "source": "Held",
+     "target": "Supplier notified",
+     "count": 88,
+     "mean_wait_days": 1.25
+    },
+    {
+     "source": "Issued",
+     "target": "Payment released",
+     "count": 1460,
+     "mean_wait_days": 24.98
+    },
+    {
+     "source": "Issued",
+     "target": "Report received",
+     "count": 27,
+     "mean_wait_days": 8.11
+    },
+    {
+     "source": "Issued",
+     "target": "Sample drawn",
+     "count": 3,
+     "mean_wait_days": 0.48
+    },
+    {
+     "source": "Issued",
+     "target": "Sent to lab",
+     "count": 5,
+     "mean_wait_days": 0.74
+    },
+    {
+     "source": "PO approved",
+     "target": "Goods received",
+     "count": 1600,
+     "mean_wait_days": 19.91
+    },
+    {
+     "source": "PO created",
+     "target": "PO approved",
+     "count": 1600,
+     "mean_wait_days": 1.35
+    },
+    {
+     "source": "Payment released",
+     "target": "Report received",
+     "count": 16,
+     "mean_wait_days": 5.77
+    },
+    {
+     "source": "Payment released",
+     "target": "Sent to lab",
+     "count": 3,
+     "mean_wait_days": 0.82
+    },
+    {
+     "source": "Quarantined",
+     "target": "Issued",
+     "count": 3,
+     "mean_wait_days": 1.44
+    },
+    {
+     "source": "Quarantined",
+     "target": "Sample drawn",
+     "count": 1597,
+     "mean_wait_days": 1.59
+    },
+    {
+     "source": "Recall started",
+     "target": "Supplier debarred",
+     "count": 1,
+     "mean_wait_days": 2.09
+    },
+    {
+     "source": "Recall started",
+     "target": "Supplier notified",
+     "count": 2,
+     "mean_wait_days": 1.48
+    },
+    {
+     "source": "Report received",
+     "target": "Cleared",
+     "count": 1510,
+     "mean_wait_days": 1.75
+    },
+    {
+     "source": "Report received",
+     "target": "Held",
+     "count": 90,
+     "mean_wait_days": 1.59
+    },
+    {
+     "source": "Sample coded",
+     "target": "Issued",
+     "count": 7,
+     "mean_wait_days": 1.22
+    },
+    {
+     "source": "Sample coded",
+     "target": "Payment released",
+     "count": 5,
+     "mean_wait_days": 0.86
+    },
+    {
+     "source": "Sample coded",
+     "target": "Report received",
+     "count": 95,
+     "mean_wait_days": 10.03
+    },
+    {
+     "source": "Sample coded",
+     "target": "Sent to lab",
+     "count": 1490,
+     "mean_wait_days": 0.89
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sample coded",
+     "count": 1498,
+     "mean_wait_days": 0.26
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sent to lab",
+     "count": 102,
+     "mean_wait_days": 0.33
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Issued",
+     "count": 25,
+     "mean_wait_days": 3.39
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Payment released",
+     "count": 14,
+     "mean_wait_days": 3.06
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Report received",
+     "count": 1462,
+     "mean_wait_days": 9.4
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Sample coded",
+     "count": 99,
+     "mean_wait_days": 0.1
+    },
+    {
+     "source": "Supplier debarred",
+     "target": "Recall closed",
+     "count": 1,
+     "mean_wait_days": 17.81
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall closed",
+     "count": 2,
+     "mean_wait_days": 12.25
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall started",
+     "count": 1,
+     "mean_wait_days": 1.72
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Supplier debarred",
+     "count": 22,
+     "mean_wait_days": 5.83
+    }
+   ],
+   "start": {
+    "PO created": 1600
+   },
+   "end": {
+    "Payment released": 1492,
+    "Supplier notified": 65,
+    "Supplier debarred": 22,
+    "Issued": 18,
+    "Recall closed": 3
+   },
+   "cases": 1600,
+   "events": 17540
+  },
+  "B2": {
+   "activities": {
+    "PO created": 1100,
+    "PO approved": 1100,
+    "Goods received": 1100,
+    "Quarantined": 1100,
+    "Sample drawn": 1100,
+    "Sent to lab": 1100,
+    "Report received": 1100,
+    "Issued": 1039,
+    "Sample coded": 1034,
+    "Payment released": 1028,
+    "Cleared": 1023,
+    "Held": 77,
+    "Supplier notified": 77,
+    "Recall started": 16,
+    "Recall closed": 16,
+    "Supplier debarred": 12
+   },
+   "edges": [
+    {
+     "source": "Cleared",
+     "target": "Issued",
+     "count": 796,
+     "mean_wait_days": 5.62
+    },
+    {
+     "source": "Cleared",
+     "target": "Payment released",
+     "count": 211,
+     "mean_wait_days": 30.49
+    },
+    {
+     "source": "Goods received",
+     "target": "Quarantined",
+     "count": 1100,
+     "mean_wait_days": 0.0
+    },
+    {
+     "source": "Held",
+     "target": "Recall started",
+     "count": 6,
+     "mean_wait_days": 0.59
+    },
+    {
+     "source": "Held",
+     "target": "Supplier notified",
+     "count": 71,
+     "mean_wait_days": 1.14
+    },
+    {
+     "source": "Issued",
+     "target": "Payment released",
+     "count": 732,
+     "mean_wait_days": 24.23
+    },
+    {
+     "source": "Issued",
+     "target": "Report received",
+     "count": 204,
+     "mean_wait_days": 16.82
+    },
+    {
+     "source": "Issued",
+     "target": "Sample coded",
+     "count": 3,
+     "mean_wait_days": 0.15
+    },
+    {
+     "source": "Issued",
+     "target": "Sample drawn",
+     "count": 14,
+     "mean_wait_days": 0.64
+    },
+    {
+     "source": "Issued",
+     "target": "Sent to lab",
+     "count": 14,
+     "mean_wait_days": 0.63
+    },
+    {
+     "source": "PO approved",
+     "target": "Goods received",
+     "count": 1100,
+     "mean_wait_days": 19.93
+    },
+    {
+     "source": "PO created",
+     "target": "PO approved",
+     "count": 1100,
+     "mean_wait_days": 1.32
+    },
+    {
+     "source": "Payment released",
+     "target": "Issued",
+     "count": 6,
+     "mean_wait_days": 9.92
+    },
+    {
+     "source": "Payment released",
+     "target": "Report received",
+     "count": 86,
+     "mean_wait_days": 11.28
+    },
+    {
+     "source": "Payment released",
+     "target": "Sent to lab",
+     "count": 1,
+     "mean_wait_days": 0.74
+    },
+    {
+     "source": "Quarantined",
+     "target": "Issued",
+     "count": 14,
+     "mean_wait_days": 1.69
+    },
+    {
+     "source": "Quarantined",
+     "target": "Sample drawn",
+     "count": 1086,
+     "mean_wait_days": 1.58
+    },
+    {
+     "source": "Recall started",
+     "target": "Recall closed",
+     "count": 10,
+     "mean_wait_days": 12.73
+    },
+    {
+     "source": "Recall started",
+     "target": "Supplier notified",
+     "count": 6,
+     "mean_wait_days": 0.82
+    },
+    {
+     "source": "Report received",
+     "target": "Cleared",
+     "count": 1023,
+     "mean_wait_days": 1.72
+    },
+    {
+     "source": "Report received",
+     "target": "Held",
+     "count": 77,
+     "mean_wait_days": 1.69
+    },
+    {
+     "source": "Sample coded",
+     "target": "Issued",
+     "count": 29,
+     "mean_wait_days": 4.89
+    },
+    {
+     "source": "Sample coded",
+     "target": "Payment released",
+     "count": 3,
+     "mean_wait_days": 2.3
+    },
+    {
+     "source": "Sample coded",
+     "target": "Report received",
+     "count": 42,
+     "mean_wait_days": 21.59
+    },
+    {
+     "source": "Sample coded",
+     "target": "Sent to lab",
+     "count": 960,
+     "mean_wait_days": 0.88
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Issued",
+     "count": 4,
+     "mean_wait_days": 0.2
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sample coded",
+     "count": 971,
+     "mean_wait_days": 0.27
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sent to lab",
+     "count": 125,
+     "mean_wait_days": 0.72
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Issued",
+     "count": 190,
+     "mean_wait_days": 9.16
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Payment released",
+     "count": 82,
+     "mean_wait_days": 10.14
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Report received",
+     "count": 768,
+     "mean_wait_days": 21.61
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Sample coded",
+     "count": 60,
+     "mean_wait_days": 0.11
+    },
+    {
+     "source": "Supplier debarred",
+     "target": "Recall closed",
+     "count": 2,
+     "mean_wait_days": 6.52
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall closed",
+     "count": 4,
+     "mean_wait_days": 15.28
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall started",
+     "count": 10,
+     "mean_wait_days": 3.84
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Supplier debarred",
+     "count": 12,
+     "mean_wait_days": 6.36
+    }
+   ],
+   "start": {
+    "PO created": 1100
+   },
+   "end": {
+    "Payment released": 935,
+    "Issued": 72,
+    "Supplier notified": 51,
+    "Cleared": 16,
+    "Recall closed": 16,
+    "Supplier debarred": 10
+   },
+   "cases": 1100,
+   "events": 12022
+  },
+  "B3": {
+   "activities": {
+    "PO created": 1200,
+    "PO approved": 1200,
+    "Goods received": 1200,
+    "Quarantined": 1200,
+    "Sample drawn": 1200,
+    "Sent to lab": 1200,
+    "Report received": 1200,
+    "Sample coded": 1180,
+    "Issued": 1121,
+    "Cleared": 1114,
+    "Payment released": 1114,
+    "Held": 86,
+    "Supplier notified": 86,
+    "Supplier debarred": 26,
+    "Recall started": 7,
+    "Recall closed": 7
+   },
+   "edges": [
+    {
+     "source": "Cleared",
+     "target": "Issued",
+     "count": 995,
+     "mean_wait_days": 5.59
+    },
+    {
+     "source": "Cleared",
+     "target": "Payment released",
+     "count": 117,
+     "mean_wait_days": 29.05
+    },
+    {
+     "source": "Goods received",
+     "target": "Quarantined",
+     "count": 1200,
+     "mean_wait_days": 0.0
+    },
+    {
+     "source": "Held",
+     "target": "Recall started",
+     "count": 2,
+     "mean_wait_days": 0.57
+    },
+    {
+     "source": "Held",
+     "target": "Supplier notified",
+     "count": 84,
+     "mean_wait_days": 1.18
+    },
+    {
+     "source": "Issued",
+     "target": "Payment released",
+     "count": 966,
+     "mean_wait_days": 24.21
+    },
+    {
+     "source": "Issued",
+     "target": "Report received",
+     "count": 97,
+     "mean_wait_days": 11.62
+    },
+    {
+     "source": "Issued",
+     "target": "Sample coded",
+     "count": 3,
+     "mean_wait_days": 0.17
+    },
+    {
+     "source": "Issued",
+     "target": "Sample drawn",
+     "count": 8,
+     "mean_wait_days": 0.8
+    },
+    {
+     "source": "Issued",
+     "target": "Sent to lab",
+     "count": 16,
+     "mean_wait_days": 0.46
+    },
+    {
+     "source": "PO approved",
+     "target": "Goods received",
+     "count": 1200,
+     "mean_wait_days": 19.91
+    },
+    {
+     "source": "PO created",
+     "target": "PO approved",
+     "count": 1200,
+     "mean_wait_days": 1.34
+    },
+    {
+     "source": "Payment released",
+     "target": "Report received",
+     "count": 31,
+     "mean_wait_days": 9.47
+    },
+    {
+     "source": "Payment released",
+     "target": "Sent to lab",
+     "count": 2,
+     "mean_wait_days": 0.34
+    },
+    {
+     "source": "Quarantined",
+     "target": "Issued",
+     "count": 8,
+     "mean_wait_days": 1.78
+    },
+    {
+     "source": "Quarantined",
+     "target": "Sample drawn",
+     "count": 1192,
+     "mean_wait_days": 1.6
+    },
+    {
+     "source": "Recall started",
+     "target": "Recall closed",
+     "count": 5,
+     "mean_wait_days": 9.46
+    },
+    {
+     "source": "Recall started",
+     "target": "Supplier notified",
+     "count": 2,
+     "mean_wait_days": 0.86
+    },
+    {
+     "source": "Report received",
+     "target": "Cleared",
+     "count": 1114,
+     "mean_wait_days": 1.72
+    },
+    {
+     "source": "Report received",
+     "target": "Held",
+     "count": 86,
+     "mean_wait_days": 1.67
+    },
+    {
+     "source": "Sample coded",
+     "target": "Issued",
+     "count": 27,
+     "mean_wait_days": 2.74
+    },
+    {
+     "source": "Sample coded",
+     "target": "Payment released",
+     "count": 4,
+     "mean_wait_days": 2.28
+    },
+    {
+     "source": "Sample coded",
+     "target": "Report received",
+     "count": 49,
+     "mean_wait_days": 13.18
+    },
+    {
+     "source": "Sample coded",
+     "target": "Sent to lab",
+     "count": 1100,
+     "mean_wait_days": 0.9
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Issued",
+     "count": 3,
+     "mean_wait_days": 0.08
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sample coded",
+     "count": 1115,
+     "mean_wait_days": 0.26
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sent to lab",
+     "count": 82,
+     "mean_wait_days": 0.51
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Issued",
+     "count": 88,
+     "mean_wait_days": 5.38
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Payment released",
+     "count": 27,
+     "mean_wait_days": 6.98
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Report received",
+     "count": 1023,
+     "mean_wait_days": 14.65
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Sample coded",
+     "count": 62,
+     "mean_wait_days": 0.1
+    },
+    {
+     "source": "Supplier debarred",
+     "target": "Recall started",
+     "count": 1,
+     "mean_wait_days": 3.19
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall closed",
+     "count": 2,
+     "mean_wait_days": 8.23
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall started",
+     "count": 4,
+     "mean_wait_days": 2.07
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Supplier debarred",
+     "count": 26,
+     "mean_wait_days": 5.72
+    }
+   ],
+   "start": {
+    "PO created": 1200
+   },
+   "end": {
+    "Payment released": 1081,
+    "Supplier notified": 54,
+    "Issued": 31,
+    "Supplier debarred": 25,
+    "Recall closed": 7,
+    "Cleared": 2
+   },
+   "cases": 1200,
+   "events": 13141
+  },
+  "B4": {
+   "activities": {
+    "PO created": 1300,
+    "PO approved": 1300,
+    "Goods received": 1300,
+    "Quarantined": 1300,
+    "Sample drawn": 1300,
+    "Sent to lab": 1300,
+    "Report received": 1300,
+    "Sample coded": 1288,
+    "Issued": 1221,
+    "Cleared": 1220,
+    "Payment released": 1220,
+    "Held": 80,
+    "Supplier notified": 80,
+    "Supplier debarred": 22,
+    "Recall started": 1,
+    "Recall closed": 1
+   },
+   "edges": [
+    {
+     "source": "Cleared",
+     "target": "Issued",
+     "count": 1184,
+     "mean_wait_days": 5.5
+    },
+    {
+     "source": "Cleared",
+     "target": "Payment released",
+     "count": 36,
+     "mean_wait_days": 28.4
+    },
+    {
+     "source": "Goods received",
+     "target": "Quarantined",
+     "count": 1300,
+     "mean_wait_days": 0.0
+    },
+    {
+     "source": "Held",
+     "target": "Supplier notified",
+     "count": 80,
+     "mean_wait_days": 1.26
+    },
+    {
+     "source": "Issued",
+     "target": "Payment released",
+     "count": 1170,
+     "mean_wait_days": 24.87
+    },
+    {
+     "source": "Issued",
+     "target": "Report received",
+     "count": 27,
+     "mean_wait_days": 9.21
+    },
+    {
+     "source": "Issued",
+     "target": "Sample coded",
+     "count": 1,
+     "mean_wait_days": 0.05
+    },
+    {
+     "source": "Issued",
+     "target": "Sample drawn",
+     "count": 4,
+     "mean_wait_days": 0.37
+    },
+    {
+     "source": "Issued",
+     "target": "Sent to lab",
+     "count": 5,
+     "mean_wait_days": 0.82
+    },
+    {
+     "source": "PO approved",
+     "target": "Goods received",
+     "count": 1300,
+     "mean_wait_days": 19.94
+    },
+    {
+     "source": "PO created",
+     "target": "PO approved",
+     "count": 1300,
+     "mean_wait_days": 1.34
+    },
+    {
+     "source": "Payment released",
+     "target": "Report received",
+     "count": 12,
+     "mean_wait_days": 7.09
+    },
+    {
+     "source": "Payment released",
+     "target": "Sent to lab",
+     "count": 2,
+     "mean_wait_days": 0.05
+    },
+    {
+     "source": "Quarantined",
+     "target": "Issued",
+     "count": 4,
+     "mean_wait_days": 1.53
+    },
+    {
+     "source": "Quarantined",
+     "target": "Sample drawn",
+     "count": 1296,
+     "mean_wait_days": 1.59
+    },
+    {
+     "source": "Recall started",
+     "target": "Recall closed",
+     "count": 1,
+     "mean_wait_days": 6.21
+    },
+    {
+     "source": "Report received",
+     "target": "Cleared",
+     "count": 1220,
+     "mean_wait_days": 1.75
+    },
+    {
+     "source": "Report received",
+     "target": "Held",
+     "count": 80,
+     "mean_wait_days": 1.82
+    },
+    {
+     "source": "Sample coded",
+     "target": "Issued",
+     "count": 6,
+     "mean_wait_days": 0.62
+    },
+    {
+     "source": "Sample coded",
+     "target": "Payment released",
+     "count": 2,
+     "mean_wait_days": 1.24
+    },
+    {
+     "source": "Sample coded",
+     "target": "Report received",
+     "count": 71,
+     "mean_wait_days": 10.74
+    },
+    {
+     "source": "Sample coded",
+     "target": "Sent to lab",
+     "count": 1209,
+     "mean_wait_days": 0.88
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Issued",
+     "count": 1,
+     "mean_wait_days": 0.31
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sample coded",
+     "count": 1215,
+     "mean_wait_days": 0.26
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sent to lab",
+     "count": 84,
+     "mean_wait_days": 0.44
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Issued",
+     "count": 26,
+     "mean_wait_days": 3.76
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Payment released",
+     "count": 12,
+     "mean_wait_days": 3.28
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Report received",
+     "count": 1190,
+     "mean_wait_days": 10.95
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Sample coded",
+     "count": 72,
+     "mean_wait_days": 0.1
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall started",
+     "count": 1,
+     "mean_wait_days": 2.72
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Supplier debarred",
+     "count": 22,
+     "mean_wait_days": 7.41
+    }
+   ],
+   "start": {
+    "PO created": 1300
+   },
+   "end": {
+    "Payment released": 1206,
+    "Supplier notified": 57,
+    "Supplier debarred": 22,
+    "Issued": 14,
+    "Recall closed": 1
+   },
+   "cases": 1300,
+   "events": 14233
+  },
+  "B5": {
+   "activities": {
+    "PO created": 900,
+    "PO approved": 900,
+    "Goods received": 900,
+    "Quarantined": 900,
+    "Sample drawn": 900,
+    "Sent to lab": 900,
+    "Report received": 900,
+    "Sample coded": 872,
+    "Issued": 854,
+    "Payment released": 849,
+    "Cleared": 845,
+    "Held": 55,
+    "Supplier notified": 55,
+    "Recall started": 9,
+    "Recall closed": 9,
+    "Supplier debarred": 7
+   },
+   "edges": [
+    {
+     "source": "Cleared",
+     "target": "Issued",
+     "count": 667,
+     "mean_wait_days": 5.45
+    },
+    {
+     "source": "Cleared",
+     "target": "Payment released",
+     "count": 171,
+     "mean_wait_days": 28.95
+    },
+    {
+     "source": "Goods received",
+     "target": "Quarantined",
+     "count": 900,
+     "mean_wait_days": 0.0
+    },
+    {
+     "source": "Held",
+     "target": "Recall started",
+     "count": 4,
+     "mean_wait_days": 0.8
+    },
+    {
+     "source": "Held",
+     "target": "Supplier notified",
+     "count": 51,
+     "mean_wait_days": 1.3
+    },
+    {
+     "source": "Issued",
+     "target": "Payment released",
+     "count": 632,
+     "mean_wait_days": 24.27
+    },
+    {
+     "source": "Issued",
+     "target": "Report received",
+     "count": 169,
+     "mean_wait_days": 23.05
+    },
+    {
+     "source": "Issued",
+     "target": "Sample coded",
+     "count": 3,
+     "mean_wait_days": 0.11
+    },
+    {
+     "source": "Issued",
+     "target": "Sample drawn",
+     "count": 6,
+     "mean_wait_days": 0.67
+    },
+    {
+     "source": "Issued",
+     "target": "Sent to lab",
+     "count": 5,
+     "mean_wait_days": 0.28
+    },
+    {
+     "source": "PO approved",
+     "target": "Goods received",
+     "count": 900,
+     "mean_wait_days": 20.13
+    },
+    {
+     "source": "PO created",
+     "target": "PO approved",
+     "count": 900,
+     "mean_wait_days": 1.35
+    },
+    {
+     "source": "Payment released",
+     "target": "Issued",
+     "count": 3,
+     "mean_wait_days": 4.89
+    },
+    {
+     "source": "Payment released",
+     "target": "Report received",
+     "count": 46,
+     "mean_wait_days": 15.98
+    },
+    {
+     "source": "Payment released",
+     "target": "Sample coded",
+     "count": 1,
+     "mean_wait_days": 0.08
+    },
+    {
+     "source": "Quarantined",
+     "target": "Issued",
+     "count": 6,
+     "mean_wait_days": 1.83
+    },
+    {
+     "source": "Quarantined",
+     "target": "Sample drawn",
+     "count": 894,
+     "mean_wait_days": 1.65
+    },
+    {
+     "source": "Recall started",
+     "target": "Recall closed",
+     "count": 5,
+     "mean_wait_days": 14.46
+    },
+    {
+     "source": "Recall started",
+     "target": "Supplier notified",
+     "count": 4,
+     "mean_wait_days": 0.7
+    },
+    {
+     "source": "Report received",
+     "target": "Cleared",
+     "count": 845,
+     "mean_wait_days": 1.73
+    },
+    {
+     "source": "Report received",
+     "target": "Held",
+     "count": 55,
+     "mean_wait_days": 1.85
+    },
+    {
+     "source": "Sample coded",
+     "target": "Issued",
+     "count": 16,
+     "mean_wait_days": 12.52
+    },
+    {
+     "source": "Sample coded",
+     "target": "Payment released",
+     "count": 2,
+     "mean_wait_days": 4.35
+    },
+    {
+     "source": "Sample coded",
+     "target": "Report received",
+     "count": 40,
+     "mean_wait_days": 27.29
+    },
+    {
+     "source": "Sample coded",
+     "target": "Sent to lab",
+     "count": 814,
+     "mean_wait_days": 0.86
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Issued",
+     "count": 3,
+     "mean_wait_days": 0.29
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Payment released",
+     "count": 1,
+     "mean_wait_days": 0.38
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sample coded",
+     "count": 815,
+     "mean_wait_days": 0.27
+    },
+    {
+     "source": "Sample drawn",
+     "target": "Sent to lab",
+     "count": 81,
+     "mean_wait_days": 0.56
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Issued",
+     "count": 159,
+     "mean_wait_days": 12.61
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Payment released",
+     "count": 43,
+     "mean_wait_days": 14.18
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Report received",
+     "count": 645,
+     "mean_wait_days": 27.36
+    },
+    {
+     "source": "Sent to lab",
+     "target": "Sample coded",
+     "count": 53,
+     "mean_wait_days": 0.1
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall closed",
+     "count": 4,
+     "mean_wait_days": 11.92
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Recall started",
+     "count": 5,
+     "mean_wait_days": 2.81
+    },
+    {
+     "source": "Supplier notified",
+     "target": "Supplier debarred",
+     "count": 7,
+     "mean_wait_days": 8.84
+    }
+   ],
+   "start": {
+    "PO created": 900
+   },
+   "end": {
+    "Payment released": 799,
+    "Issued": 39,
+    "Supplier notified": 39,
+    "Recall closed": 9,
+    "Cleared": 7,
+    "Supplier debarred": 7
+   },
+   "cases": 900,
+   "events": 9855
+  }
+ },
+ "variants": [
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Report received \u2192 Cleared \u2192 Issued \u2192 Payment released",
+   "cases": 4583,
+   "share": 0.7513,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Issued \u2192 Report received \u2192 Cleared \u2192 Payment released",
+   "cases": 425,
+   "share": 0.0697,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sent to lab \u2192 Sample coded \u2192 Report received \u2192 Cleared \u2192 Issued \u2192 Payment released",
+   "cases": 276,
+   "share": 0.0452,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Report received \u2192 Held \u2192 Supplier notified",
+   "cases": 239,
+   "share": 0.0392,
+   "steps": 10
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Payment released \u2192 Report received \u2192 Cleared \u2192 Issued",
+   "cases": 153,
+   "share": 0.0251,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sent to lab \u2192 Report received \u2192 Cleared \u2192 Issued \u2192 Payment released",
+   "cases": 87,
+   "share": 0.0143,
+   "steps": 10
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Report received \u2192 Held \u2192 Supplier notified \u2192 Supplier debarred",
+   "cases": 77,
+   "share": 0.0126,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sent to lab \u2192 Sample coded \u2192 Issued \u2192 Report received \u2192 Cleared \u2192 Payment released",
+   "cases": 39,
+   "share": 0.0064,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Sample drawn \u2192 Sample coded \u2192 Issued \u2192 Sent to lab \u2192 Report received \u2192 Cleared \u2192 Payment released",
+   "cases": 36,
+   "share": 0.0059,
+   "steps": 11
+  },
+  {
+   "variant": "PO created \u2192 PO approved \u2192 Goods received \u2192 Quarantined \u2192 Issued \u2192 Sample drawn \u2192 Sample coded \u2192 Sent to lab \u2192 Report received \u2192 Cleared \u2192 Payment released",
+   "cases": 28,
+   "share": 0.0046,
+   "steps": 11
+  }
+ ],
+ "conformance_summary": [
+  {
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "cases": 628
+  },
+  {
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "cases": 18
+  },
+  {
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "cases": 129
+  },
+  {
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "cases": 209
+  },
+  {
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "cases": 818
+  },
+  {
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "cases": 1467
+  }
+ ],
+ "violations_sample": [
+  {
+   "case_id": "B1-BT00082",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Growmed Life Pharma",
+   "product": "Ofloxacin Ophthalmic Eye Drops",
+   "detail": "paid 03 Feb 2025; cleared 11 Feb 2025"
+  },
+  {
+   "case_id": "B1-BT00119",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Sabi Pharmaceuticals Pvt. Ltd",
+   "product": "Bupropion Hydrochloride",
+   "detail": "22 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT00133",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Dynamism Lab",
+   "product": "Mucoid-A Acetyl Cysteine & Ambroxol Hcl",
+   "detail": "22 days at NABL Lab Mumbai"
+  },
+  {
+   "case_id": "B1-BT00134",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supermax Drugs & Pharmaceuticals Pvt. Ltd",
+   "product": "Raybepoll-D",
+   "detail": "28 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT00255",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 005 (no national record)",
+   "product": "Lamic",
+   "detail": "30 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT00314",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Cipla Ltd",
+   "product": "Neocobal",
+   "detail": "21 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT00536",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 021 (no national record)",
+   "product": "Sucrazum-O",
+   "detail": "paid 19 Mar 2025; cleared 23 Mar 2025"
+  },
+  {
+   "case_id": "B1-BT00543",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Vidit Healthcare",
+   "product": "Radipace",
+   "detail": "issued 16 Mar 2025; cleared 29 Mar 2025"
+  },
+  {
+   "case_id": "B1-BT00639",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Inducare Pharmaceutical and Research Foundatiion",
+   "product": "Glimas- ,Glimepiride",
+   "detail": "paid 25 Mar 2025; cleared 02 Apr 2025"
+  },
+  {
+   "case_id": "B1-BT00831",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 008 (no national record)",
+   "product": "Poliomyelitis Vaccine Live Divalent",
+   "detail": "issued 02 Apr 2025; cleared 09 Apr 2025"
+  },
+  {
+   "case_id": "B1-BT00952",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Stanford Laboratories Private Limited",
+   "product": "Rabiriv",
+   "detail": "issued 12 Apr 2025; never cleared (failed)"
+  },
+  {
+   "case_id": "B1-BT00970",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Themis Medicare Limited",
+   "product": "Ondansetron",
+   "detail": "paid 01 May 2025; cleared 10 May 2025"
+  },
+  {
+   "case_id": "B1-BT01039",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "K.S. Surgical Pvt. Ltd",
+   "product": "Xeronac P , Paracetamol And Aceclofenac",
+   "detail": "24 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT01111",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Stanford Laboratories Private Limited",
+   "product": "Rabiriv",
+   "detail": "21 days at NABL Lab Mumbai"
+  },
+  {
+   "case_id": "B1-BT01115",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Sivanta Pharmaceuticals",
+   "product": "Pantoprazole Sodium Gr",
+   "detail": "issued 12 May 2025; cleared 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT01129",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 041 (no national record)",
+   "product": "Enzitec Digestive Enzyme",
+   "detail": "26 days at NABL Lab Delhi"
+  },
+  {
+   "case_id": "B1-BT01184",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Omish Laboratories Pvt. Ltd",
+   "product": "Ambroxol Hcl, Levosalbutamol & Guaiphenesin",
+   "detail": "issued 19 May 2025; cleared 29 May 2025"
+  },
+  {
+   "case_id": "B1-BT01334",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Acculife Healthcare Pvt. Ltd",
+   "product": "Azilium",
+   "detail": "22 days at NABL Lab Chennai"
+  },
+  {
+   "case_id": "B1-BT01393",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Poly Medicure Ltd",
+   "product": "Dart Analgesic",
+   "detail": "debarred by B4 on 15 Feb 2025"
+  },
+  {
+   "case_id": "B1-BT01490",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Maneesh Pharmaceuticals Ltd",
+   "product": "Metoclopramide Hydrochloride",
+   "detail": "issued 09 Jun 2025; cleared 17 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT01527",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 020 (no national record)",
+   "product": "Metoprolol Succinate & Amlodipine",
+   "detail": "issued 08 Jun 2025; cleared 14 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT01623",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Comed Chemicals Limited",
+   "product": "Lovega- M",
+   "detail": "24 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT01635",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Ortin Laboratories Ltd",
+   "product": "Cefixime / Dry",
+   "detail": "issued 23 Jun 2025; cleared 10 Jul 2025"
+  },
+  {
+   "case_id": "B1-BT01635",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Ortin Laboratories Ltd",
+   "product": "Cefixime / Dry",
+   "detail": "22 days at NABL Lab Mumbai"
+  },
+  {
+   "case_id": "B1-BT01696",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 001 (no national record)",
+   "product": "Oxytetracycline Hcl",
+   "detail": "23 days at NABL Lab Delhi"
+  },
+  {
+   "case_id": "B1-BT01776",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Ortin Laboratories Ltd",
+   "product": "Cefixime / Dry",
+   "detail": "issued 28 Jun 2025; cleared 13 Jul 2025"
+  },
+  {
+   "case_id": "B1-BT01779",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Sunvij Drugs Private Limited",
+   "product": "Cipladine Ointment",
+   "detail": "issued 22 Jun 2025; cleared 30 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT01799",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "debarred by B3 on 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT01858",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 001 (no national record)",
+   "product": "Oxytetracycline Hcl",
+   "detail": "24 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT01887",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Athens Life Sciences Mauza Rampur",
+   "product": "Aluminium Hydroxide , Magnesium Hydroxide And Oxetacaine Gel",
+   "detail": "paid 09 Jul 2025; cleared 15 Jul 2025"
+  },
+  {
+   "case_id": "B1-BT02006",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Omish Laboratories Pvt. Ltd",
+   "product": "Ambroxol Hcl, Levosalbutamol & Guaiphenesin",
+   "detail": "debarred by B4 on 17 Apr 2025"
+  },
+  {
+   "case_id": "B1-BT02077",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Vidit Healthcare",
+   "product": "Radipace",
+   "detail": "debarred by B3 on 22 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02112",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Vitamin B-Complex With Lysin & Calcium Pantothenate",
+   "detail": "debarred by B3 on 06 May 2025"
+  },
+  {
+   "case_id": "B1-BT02137",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Unital Formulations",
+   "product": "Nitrazepam",
+   "detail": "debarred by B3 on 28 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02138",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Unital Formulations",
+   "product": "Nitrazepam",
+   "detail": "debarred by B3 on 28 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02165",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Omish Laboratories Pvt. Ltd",
+   "product": "Ambroxol Hcl, Levosalbutamol & Guaiphenesin",
+   "detail": "debarred by B4 on 17 Apr 2025"
+  },
+  {
+   "case_id": "B1-BT02180",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 000 (no national record)",
+   "product": "Enoxaparin Sodium",
+   "detail": "22 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT02272",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "IBN Herbals",
+   "product": "Paradolo Paracetam Ol Tab",
+   "detail": "issued 09 Aug 2025; cleared 18 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02288",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Vitamin B-Complex With Lysin & Calcium Pantothenate",
+   "detail": "debarred by B3 on 06 May 2025"
+  },
+  {
+   "case_id": "B1-BT02305",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "debarred by B3 on 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT02314",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Vitamin B-Complex With Lysin & Calcium Pantothenate",
+   "detail": "issued 26 Aug 2025; cleared 02 Sep 2025"
+  },
+  {
+   "case_id": "B1-BT02314",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Vitamin B-Complex With Lysin & Calcium Pantothenate",
+   "detail": "debarred by B3 on 06 May 2025"
+  },
+  {
+   "case_id": "B1-BT02327",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Omish Laboratories Pvt. Ltd",
+   "product": "Ambroxol Hcl, Levosalbutamol & Guaiphenesin",
+   "detail": "debarred by B4 on 17 Apr 2025"
+  },
+  {
+   "case_id": "B1-BT02385",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "debarred by B3 on 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT02393",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Unital Formulations",
+   "product": "Nitrazepam",
+   "detail": "debarred by B3 on 28 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02405",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 007 (no national record)",
+   "product": "Gabaneuron Gel",
+   "detail": "21 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT02427",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "issued 23 Aug 2025; cleared 30 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02427",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "debarred by B3 on 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT02474",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 021 (no national record)",
+   "product": "Sucrazum-O",
+   "detail": "23 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT02495",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Beauty Birds Cosmetics Bhatti Compound",
+   "product": "Flexon",
+   "detail": "debarred by B3 on 23 Jul 2025"
+  },
+  {
+   "case_id": "B1-BT02499",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Poly Medicure Ltd",
+   "product": "Dart Analgesic",
+   "detail": "debarred by B4 on 15 Feb 2025"
+  },
+  {
+   "case_id": "B1-BT02542",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Unital Formulations",
+   "product": "Nitrazepam",
+   "detail": "debarred by B3 on 28 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02662",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Mayer Lab Chambaghat",
+   "product": "Azithromycintablets",
+   "detail": "26 days at NABL Lab Chennai"
+  },
+  {
+   "case_id": "B1-BT02675",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Supplier 057 (no national record)",
+   "product": "Hyprovan",
+   "detail": "debarred by B3 on 19 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02677",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Vidit Healthcare",
+   "product": "Radipace",
+   "detail": "debarred by B3 on 22 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02687",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Dynamism Lab",
+   "product": "Mucoid-A Acetyl Cysteine & Ambroxol Hcl",
+   "detail": "debarred by B2 on 10 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02696",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Dynamism Lab",
+   "product": "Mucoid-A Acetyl Cysteine & Ambroxol Hcl",
+   "detail": "debarred by B2 on 10 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02795",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "25 days at NABL Lab Delhi"
+  },
+  {
+   "case_id": "B1-BT02795",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Jackson Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "debarred by B3 on 23 May 2025"
+  },
+  {
+   "case_id": "B1-BT02806",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Vidit Healthcare",
+   "product": "Radipace",
+   "detail": "debarred by B3 on 22 Jun 2025"
+  },
+  {
+   "case_id": "B1-BT02842",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R5",
+   "rule_name": "Order placed with a supplier already debarred by another buyer",
+   "supplier": "Spoorthi Herbals",
+   "product": "Bortewin",
+   "detail": "debarred by B3 on 26 Aug 2025"
+  },
+  {
+   "case_id": "B1-BT02858",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 014 (no national record)",
+   "product": "Buprenorphine And Naloxone Sublingual",
+   "detail": "21 days at NABL Lab Hyderabad"
+  },
+  {
+   "case_id": "B1-BT02902",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Poly Medicure Ltd",
+   "product": "Dart Analgesic",
+   "detail": "31 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT02906",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Pushkar Pharma",
+   "product": "Ciprofloxacin Hcl",
+   "detail": "21 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT02907",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 045 (no national record)",
+   "product": "Ocupol Dx",
+   "detail": "23 days at NABL Lab Chennai"
+  },
+  {
+   "case_id": "B1-BT02909",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Mahys Pharmaceuticals",
+   "product": "Halmox Cv , Amoxcycillin And Potassium Clavulanate",
+   "detail": "paid 15 Oct 2025; cleared 21 Oct 2025"
+  },
+  {
+   "case_id": "B1-BT02948",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "IBN Herbals",
+   "product": "Sallaki",
+   "detail": "22 days at NABL Lab Delhi"
+  },
+  {
+   "case_id": "B1-BT02989",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Elegant Drugs Pvt. Ltd",
+   "product": "Colistimithate Sodium",
+   "detail": "paid 23 Oct 2025; cleared 06 Nov 2025"
+  },
+  {
+   "case_id": "B1-BT03019",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Lesanto Laboratories",
+   "product": "Multivitamin & Minerals",
+   "detail": "issued 14 Oct 2025; cleared 23 Oct 2025"
+  },
+  {
+   "case_id": "B1-BT03059",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Supplier 004 (no national record)",
+   "product": "Chlorpheniramine Maleate And Phenylephrine Hydrochloride",
+   "detail": "21 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT03074",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Mediosa Pharmaceuticals",
+   "product": "Polo- Lb",
+   "detail": "issued 05 Nov 2025; cleared 19 Nov 2025"
+  },
+  {
+   "case_id": "B1-BT03107",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 000 (no national record)",
+   "product": "Enoxaparin Sodium",
+   "detail": "issued 22 Oct 2025; cleared 30 Oct 2025"
+  },
+  {
+   "case_id": "B1-BT03128",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R6",
+   "rule_name": "Lab turnaround over 21 days",
+   "supplier": "Dynamism Lab",
+   "product": "Mucoid-A Acetyl Cysteine & Ambroxol Hcl",
+   "detail": "23 days at NABL Lab Kolkata"
+  },
+  {
+   "case_id": "B1-BT03198",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "East African (India) Overseas",
+   "product": "Amoxycillin And Potassium Calvulnate",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B1-BT03265",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 044 (no national record)",
+   "product": "Bupropion Hydrochloride",
+   "detail": "paid 16 Nov 2025; cleared 23 Nov 2025"
+  },
+  {
+   "case_id": "B1-BT03313",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Themis Medicare Limited",
+   "product": "Ondansetron",
+   "detail": "paid 22 Nov 2025; never cleared (failed)"
+  },
+  {
+   "case_id": "B1-BT03488",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Rajdip Pharmaceuticals",
+   "product": "Clavpark -Lb",
+   "detail": "issued 09 Dec 2025; cleared 18 Dec 2025"
+  },
+  {
+   "case_id": "B1-BT03626",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 007 (no national record)",
+   "product": "Gabaneuron Gel",
+   "detail": "issued 08 Dec 2025; cleared 20 Dec 2025"
+  },
+  {
+   "case_id": "B1-BT03671",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 021 (no national record)",
+   "product": "Sucrazum-O",
+   "detail": "issued 18 Dec 2025; cleared 23 Dec 2025"
+  },
+  {
+   "case_id": "B1-BT03851",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Mayer Lab Chambaghat",
+   "product": "Azithromycintablets",
+   "detail": "issued 01 Jan 2026; cleared 18 Jan 2026"
+  },
+  {
+   "case_id": "B1-BT03900",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 021 (no national record)",
+   "product": "Telmisartan And Metoprolol Succinate",
+   "detail": "issued 05 Jan 2026; cleared 19 Jan 2026"
+  },
+  {
+   "case_id": "B1-BT03917",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Growmed Life Pharma",
+   "product": "Ofloxacin Ophthalmic Eye Drops",
+   "detail": "issued 06 Jan 2026; cleared 10 Jan 2026"
+  },
+  {
+   "case_id": "B1-BT03968",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Elegant Drugs Pvt. Ltd",
+   "product": "Colistimithate Sodium",
+   "detail": "paid 11 Jan 2026; cleared 19 Jan 2026"
+  },
+  {
+   "case_id": "B1-BT04050",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Spoorthi Herbals",
+   "product": "Bortewin",
+   "detail": "issued 16 Jan 2026; never cleared (failed)"
+  },
+  {
+   "case_id": "B1-BT04085",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Inducare Pharmaceutical and Research Foundatiion",
+   "product": "Glimas- ,Glimepiride",
+   "detail": "issued 30 Jan 2026; cleared 06 Feb 2026"
+  },
+  {
+   "case_id": "B1-BT04167",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R1",
+   "rule_name": "Issued before quality clearance",
+   "supplier": "Supplier 045 (no national record)",
+   "product": "Ocupol Dx",
+   "detail": "issued 28 Jan 2026; never cleared (failed)"
+  },
+  {
+   "case_id": "B1-BT04167",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Supplier 045 (no national record)",
+   "product": "Ocupol Dx",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B1-BT04440",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 021 (no national record)",
+   "product": "Telmisartan And Metoprolol Succinate",
+   "detail": "paid 01 Mar 2026; cleared 06 Mar 2026"
+  },
+  {
+   "case_id": "B1-BT04623",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Acculife Healthcare Pvt. Ltd",
+   "product": "Azilium",
+   "detail": "paid 09 Mar 2026; cleared 14 Mar 2026"
+  },
+  {
+   "case_id": "B1-BT04775",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Accretion Pharmaceuticals",
+   "product": "Multiple Electrolytes And Dextrose Inj Type",
+   "detail": "sent to NABL Lab Delhi uncoded"
+  },
+  {
+   "case_id": "B1-BT05024",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Torrent Pharmaceuticals Ltd",
+   "product": "Bisacodyl",
+   "detail": "paid 15 Apr 2026; cleared 23 Apr 2026"
+  },
+  {
+   "case_id": "B1-BT05470",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 036 (no national record)",
+   "product": "Colistmethate Sodium Million",
+   "detail": "paid 30 May 2026; cleared 11 Jun 2026"
+  },
+  {
+   "case_id": "B1-BT05583",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Sunfine Healthcare",
+   "product": "Gliclazide & Metformin Hydrochloride",
+   "detail": "paid 14 Jun 2026; cleared 28 Jun 2026"
+  },
+  {
+   "case_id": "B1-BT05736",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 016 (no national record)",
+   "product": "Budecide Nebuliser",
+   "detail": "paid 01 Jul 2026; cleared 13 Jul 2026"
+  },
+  {
+   "case_id": "B1-BT05781",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Minil Laboratories Pvt. Ltd",
+   "product": "Zinc Gluconate",
+   "detail": "paid 06 Jul 2026; cleared 14 Jul 2026"
+  },
+  {
+   "case_id": "B1-BT05785",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Supplier 000 (no national record)",
+   "product": "Enoxaparin Sodium",
+   "detail": "paid 05 Jul 2026; cleared 10 Jul 2026"
+  },
+  {
+   "case_id": "B1-BT05788",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Beauty Birds Cosmetics Bhatti Compound",
+   "product": "Spironolactone",
+   "detail": "paid 05 Jul 2026; cleared 10 Jul 2026"
+  },
+  {
+   "case_id": "B1-BT05962",
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Supplier 042 (no national record)",
+   "product": "Chlorhexidine Gluconate",
+   "detail": "sent to NABL Lab Chennai uncoded"
+  },
+  {
+   "case_id": "B2-BT00065",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Paschim Banga Pharmaceutical",
+   "product": "Telmisartan And Metoprolol Succinate",
+   "detail": "sent to NABL Lab Mumbai uncoded"
+  },
+  {
+   "case_id": "B2-BT00074",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Lesanto Laboratories",
+   "product": "Aluminium Hydroxide , Magnesium Hydroxide And Oxetacaine Gel",
+   "detail": "paid 27 Jan 2025; cleared 15 Feb 2025"
+  },
+  {
+   "case_id": "B2-BT00096",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "P & B Pharmaceuticals Pvt. Ltd",
+   "product": "Dart Analgesic",
+   "detail": "sent to NABL Lab Kolkata uncoded"
+  },
+  {
+   "case_id": "B2-BT00149",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Mahys Pharmaceuticals",
+   "product": "Chlorpheniramine Maleate & Noscapine",
+   "detail": "paid 24 Mar 2025; cleared 30 Mar 2025"
+  },
+  {
+   "case_id": "B2-BT00177",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Sunvij Drugs Private Limited",
+   "product": "Nitrazepam",
+   "detail": "sent to NABL Lab Chennai uncoded"
+  },
+  {
+   "case_id": "B2-BT00209",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Espee Formulaion Pvt. Ltd",
+   "product": "Zinc Gluconate",
+   "detail": "paid 21 Feb 2025; cleared 02 Apr 2025"
+  },
+  {
+   "case_id": "B2-BT00210",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Bsr-Plus , Aceclofenac And Paracetaol",
+   "detail": "paid 10 Feb 2025; cleared 20 Feb 2025"
+  },
+  {
+   "case_id": "B2-BT00355",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Med Manor Organics Pvt. Ltd",
+   "product": "Polo- Lb",
+   "detail": "paid 12 Apr 2025; cleared 03 May 2025"
+  },
+  {
+   "case_id": "B2-BT00376",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R4",
+   "rule_name": "Payment released before clearance",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Bsr-Plus , Aceclofenac And Paracetaol",
+   "detail": "paid 04 Mar 2025; cleared 24 Mar 2025"
+  },
+  {
+   "case_id": "B2-BT00378",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Supplier 058 (no national record)",
+   "product": "Ferrous Assorbate, Folic Acid And Cyanocobalamin",
+   "detail": "sent to NABL Lab Chennai uncoded"
+  },
+  {
+   "case_id": "B2-BT00529",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Prispag Pharma",
+   "product": "Ambroxol Hcl, Levosalbutamol & Guaiphenesin",
+   "detail": "sent to NABL Lab Delhi uncoded"
+  },
+  {
+   "case_id": "B2-BT00547",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Supplier 058 (no national record)",
+   "product": "Ferrous Assorbate, Folic Acid And Cyanocobalamin",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT00591",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Prispag Pharma",
+   "product": "Colistimithate Sodium",
+   "detail": "recall started 13 days after failure"
+  },
+  {
+   "case_id": "B2-BT00669",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Zydus Healthcare Ltd",
+   "product": "Mithcoll",
+   "detail": "sent to NABL Lab Mumbai uncoded"
+  },
+  {
+   "case_id": "B2-BT00782",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Adsila Organics Pvt. Ltd",
+   "product": "Halmox Cv , Amoxcycillin And Potassium Clavulanate",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT00937",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Rednex Pharmaceuticals Pvt. Ltd",
+   "product": "Dexamethason E Sodium Phosphate",
+   "detail": "sent to NABL Lab Chennai uncoded"
+  },
+  {
+   "case_id": "B2-BT01165",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Health Biotech Ltd",
+   "product": "Gliclazide",
+   "detail": "sent to NABL Lab Mumbai uncoded"
+  },
+  {
+   "case_id": "B2-BT01170",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Mediosa Pharmaceuticals",
+   "product": "Lovega- M",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT01350",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Infinity Laboratories Pvt. Ltd",
+   "product": "Glucosamine Sulphate Potassium Chloride, Msm With Diacerein",
+   "detail": "sent to NABL Lab Delhi uncoded"
+  },
+  {
+   "case_id": "B2-BT01593",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Elikem Pharmaceuticals Pvt. Ltd",
+   "product": "Ibulip-P",
+   "detail": "sent to NABL Lab Kolkata uncoded"
+  },
+  {
+   "case_id": "B2-BT01740",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Supplier 024 (no national record)",
+   "product": "Bethadoxin- M",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT01780",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Bovine Health care D.No",
+   "product": "Suf-Dt",
+   "detail": "sent to NABL Lab Kolkata uncoded"
+  },
+  {
+   "case_id": "B2-BT01819",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Health Biotech Ltd",
+   "product": "Gliclazide",
+   "detail": "sent to NABL Lab Mumbai uncoded"
+  },
+  {
+   "case_id": "B2-BT01836",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Brussels Laboratories Pvt. Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT01894",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Prispag Pharma",
+   "product": "Colistimithate Sodium",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B2-BT01909",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Poly Medicure Ltd",
+   "product": "Vildagliptinand Metformin Hydrochloride",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT01934",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Mediosa Pharmaceuticals",
+   "product": "Lovega- M",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B2-BT01973",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Exotic Healthcare",
+   "product": "Budecide Nebuliser",
+   "detail": "sent to NABL Lab Chennai uncoded"
+  },
+  {
+   "case_id": "B2-BT01993",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Maxtra Laboratories TIF",
+   "product": "Bsr-Plus , Aceclofenac And Paracetaol",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B2-BT02001",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Ultra Laboratories Pvt. Ltd",
+   "product": "Multivitamin & Minerals",
+   "detail": "sent to NABL Lab Hyderabad uncoded"
+  },
+  {
+   "case_id": "B2-BT02069",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Espee Formulaion Pvt. Ltd",
+   "product": "Zinc Gluconate",
+   "detail": "sent to NABL Lab Kolkata uncoded"
+  },
+  {
+   "case_id": "B2-BT02107",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R3",
+   "rule_name": "Sample sent to lab without blind coding",
+   "supplier": "Nootan Pharmaceuticals",
+   "product": "Telmisartan And Metoprolol Succinate",
+   "detail": "sent to NABL Lab Kolkata uncoded"
+  },
+  {
+   "case_id": "B2-BT02631",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Crest Lifesciences Pvt. Ltd",
+   "product": "Poliomyelitis Vaccine Live Divalent",
+   "detail": "recall started 4 days after failure"
+  },
+  {
+   "case_id": "B2-BT03504",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Health Biotech Ltd",
+   "product": "Gliclazide",
+   "detail": "recall started 3 days after failure"
+  },
+  {
+   "case_id": "B2-BT04709",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Goa Antibiotics & Pharmaceuticals Ltd",
+   "product": "Azithromycintablets",
+   "detail": "recall started 3 days after failure"
+  },
+  {
+   "case_id": "B2-BT04913",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Rednex Pharmaceuticals Pvt. Ltd",
+   "product": "Dexamethason E Sodium Phosphate",
+   "detail": "recall started 6 days after failure"
+  },
+  {
+   "case_id": "B2-BT05040",
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Supplier 053 (no national record)",
+   "product": "Methycoblamin Disintegrating",
+   "detail": "recall started 9 days after failure"
+  },
+  {
+   "case_id": "B3-BT01027",
+   "buyer_id": "B3",
+   "buyer": "Western State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Vidit Healthcare",
+   "product": "Infusion Set",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B3-BT01403",
+   "buyer_id": "B3",
+   "buyer": "Western State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Vidit Healthcare",
+   "product": "Infusion Set",
+   "detail": "recall started 6 days after failure"
+  },
+  {
+   "case_id": "B3-BT05243",
+   "buyer_id": "B3",
+   "buyer": "Western State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Mars Therapeutics & Chemicals Ltd",
+   "product": "Colistmethate Sodium Million",
+   "detail": "recall started 2 days after failure"
+  },
+  {
+   "case_id": "B3-BT05816",
+   "buyer_id": "B3",
+   "buyer": "Western State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Minil Laboratories Pvt. Ltd",
+   "product": "Suf-Dt",
+   "detail": "recall started 5 days after failure"
+  },
+  {
+   "case_id": "B4-BT05748",
+   "buyer_id": "B4",
+   "buyer": "Southern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Linux Life Sciences Pvt Ltd",
+   "product": "Luliconazole Lotion Luzoran Lotion",
+   "detail": "recall started 3 days after failure"
+  },
+  {
+   "case_id": "B5-BT02790",
+   "buyer_id": "B5",
+   "buyer": "Eastern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Supplier 030 (no national record)",
+   "product": "Enzitec Digestive Enzyme",
+   "detail": "recall started 3 days after failure"
+  },
+  {
+   "case_id": "B5-BT03620",
+   "buyer_id": "B5",
+   "buyer": "Eastern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Stanford Laboratories Private Limited",
+   "product": "Bethadoxin- M",
+   "detail": "recall started 9 days after failure"
+  },
+  {
+   "case_id": "B5-BT04447",
+   "buyer_id": "B5",
+   "buyer": "Eastern State Corporation",
+   "rule": "R2",
+   "rule_name": "Failed batch already issued, not recalled within 2 days",
+   "supplier": "Rednex Pharmaceuticals Pvt. Ltd",
+   "product": "Metoprolol Succinate & Amlodipine",
+   "detail": "recall started 5 days after failure"
+  }
+ ],
+ "performance": {
+  "steps": [
+   {
+    "step": "Order to receipt",
+    "median_days": 21.2,
+    "p90_days": 29.3,
+    "cases": 6100
+   },
+   {
+    "step": "Receipt to sample",
+    "median_days": 1.6,
+    "p90_days": 2.7,
+    "cases": 6100
+   },
+   {
+    "step": "Lab turnaround",
+    "median_days": 13.0,
+    "p90_days": 30.8,
+    "cases": 6100
+   },
+   {
+    "step": "Report to decision",
+    "median_days": 1.7,
+    "p90_days": 2.7,
+    "cases": 6100
+   },
+   {
+    "step": "Clearance to issue",
+    "median_days": 5.5,
+    "p90_days": 9.1,
+    "cases": 5120
+   },
+   {
+    "step": "Time in quarantine",
+    "median_days": 17.4,
+    "p90_days": 35.5,
+    "cases": 5712
+   }
+  ],
+  "bottleneck": "Order to receipt",
+  "lab_turnaround": [
+   {
+    "lab": "NABL Lab Chennai",
+    "median": 12.1,
+    "mean": 15.1,
+    "count": 1233
+   },
+   {
+    "lab": "NABL Lab Delhi",
+    "median": 12.7,
+    "mean": 15.4,
+    "count": 1229
+   },
+   {
+    "lab": "NABL Lab Hyderabad",
+    "median": 12.7,
+    "mean": 15.5,
+    "count": 1215
+   },
+   {
+    "lab": "NABL Lab Kolkata",
+    "median": 15.9,
+    "mean": 19.5,
+    "count": 1208
+   },
+   {
+    "lab": "NABL Lab Mumbai",
+    "median": 12.4,
+    "mean": 15.1,
+    "count": 1215
+   }
+  ]
+ },
+ "benchmark": [
+  {
+   "buyer_id": "B1",
+   "buyer": "National Medicine Agency",
+   "cases": 1600,
+   "conformance": 0.7987,
+   "median_lab_tat_days": 8.5,
+   "median_quarantine_days": 13.1,
+   "R1": 35,
+   "R2": 1,
+   "R3": 3,
+   "R4": 19,
+   "R5": 231,
+   "R6": 52
+  },
+  {
+   "buyer_id": "B4",
+   "buyer": "Southern State Corporation",
+   "cases": 1300,
+   "conformance": 0.7946,
+   "median_lab_tat_days": 9.9,
+   "median_quarantine_days": 14.4,
+   "R1": 37,
+   "R2": 1,
+   "R3": 12,
+   "R4": 14,
+   "R5": 152,
+   "R6": 76
+  },
+  {
+   "buyer_id": "B3",
+   "buyer": "Western State Corporation",
+   "cases": 1200,
+   "conformance": 0.6383,
+   "median_lab_tat_days": 13.6,
+   "median_quarantine_days": 18.2,
+   "R1": 126,
+   "R2": 4,
+   "R3": 20,
+   "R4": 33,
+   "R5": 135,
+   "R6": 210
+  },
+  {
+   "buyer_id": "B2",
+   "buyer": "Northern State Corporation",
+   "cases": 1100,
+   "conformance": 0.3055,
+   "median_lab_tat_days": 20.3,
+   "median_quarantine_days": 25.2,
+   "R1": 243,
+   "R2": 9,
+   "R3": 66,
+   "R4": 93,
+   "R5": 172,
+   "R6": 526
+  },
+  {
+   "buyer_id": "B5",
+   "buyer": "Eastern State Corporation",
+   "cases": 900,
+   "conformance": 0.22,
+   "median_lab_tat_days": 26.5,
+   "median_quarantine_days": 30.9,
+   "R1": 187,
+   "R2": 3,
+   "R3": 28,
+   "R4": 50,
+   "R5": 128,
+   "R6": 603
+  }
+ ],
+ "root_cause": {
+  "early_issue_by_lab_tat": [
+   {
+    "band": "0-7",
+    "rate": 0.0277,
+    "cases": 1119
+   },
+   {
+    "band": "7-14",
+    "rate": 0.0565,
+    "cases": 2214
+   },
+   {
+    "band": "14-21",
+    "rate": 0.12,
+    "cases": 1300
+   },
+   {
+    "band": "21-28",
+    "rate": 0.1471,
+    "cases": 666
+   },
+   {
+    "band": "28-45",
+    "rate": 0.2516,
+    "cases": 632
+   },
+   {
+    "band": "45+",
+    "rate": 0.3491,
+    "cases": 169
+   }
+  ],
+  "drivers": [
+   {
+    "feature": "tat_days",
+    "importance": 0.761
+   },
+   {
+    "feature": "buyer_Northern State Corporation",
+    "importance": 0.181
+   },
+   {
+    "feature": "buyer_Eastern State Corporation",
+    "importance": 0.031
+   },
+   {
+    "feature": "dosage_form_Injection",
+    "importance": 0.027
+   }
+  ]
+ }
+}

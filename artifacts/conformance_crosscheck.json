@@ -1,0 +1,37 @@
+{
+ "cases": 6100,
+ "rules": [
+  {
+   "rule": "R1",
+   "name": "Issued before quality clearance",
+   "hand_written": 628,
+   "declarative": 628
+  },
+  {
+   "rule": "R2",
+   "name": "Failed batch already issued, not recalled within 2 days",
+   "hand_written": 18,
+   "declarative": 18
+  },
+  {
+   "rule": "R3",
+   "name": "Sample sent to lab without blind coding",
+   "hand_written": 129,
+   "declarative": 129
+  },
+  {
+   "rule": "R4",
+   "name": "Payment released before clearance",
+   "hand_written": 209,
+   "declarative": 209
+  },
+  {
+   "rule": "R6",
+   "name": "Lab turnaround over 21 days",
+   "hand_written": 1467,
+   "declarative": 1467
+  }
+ ],
+ "agree": true,
+ "note": "R5 needs the debarment register (a join outside the case), so it stays hand-written."
+}

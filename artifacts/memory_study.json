@@ -1,0 +1,181 @@
+{
+ "data": {
+  "source": "CDSCO NSQ alerts (portal JSON 2019-2026 + PDFs 2017-2018)",
+  "from": "2017-09",
+  "to": "2026-08",
+  "records_used": 6442,
+  "excluded": "records with unknown manufacturer, fakes whose named firm denied making them, and unknown state",
+  "outside_india_records": 112
+ },
+ "headline": {
+  "failed_batches": 6442,
+  "firms": 1914,
+  "repeat_share": 0.6494877367277243,
+  "repeat_share_critical": 0.5895806861499364,
+  "firms_with_repeat": 841,
+  "median_months_first_to_next": 8.04862023653088,
+  "median_months_between_failures": 3.9421813403416555,
+  "median_lead_months_for_repeats": 32.06307490144547,
+  "repeat_detected_by_new_lab": 0.5260516252390057,
+  "repeat_detected_in_new_state": 0.5282146160962072,
+  "repeats_with_state_known": 1081,
+  "top10pct_firms_share": 0.47547345544861847,
+  "gini": 0.5546641245717352,
+  "firms_by_failures": {
+   "1": 963,
+   "2-4": 627,
+   "5-9": 197,
+   "10+": 127
+  },
+  "repeat_share_ci95": [
+   0.6219075442201314,
+   0.674300283210471
+  ]
+ },
+ "ablation": {
+  "exact string": {
+   "failed_batches": 6442,
+   "firms": 5399,
+   "repeat_share": 0.04237814343371624,
+   "repeat_share_critical": 0.03430749682337993,
+   "firms_with_repeat": 187,
+   "median_months_first_to_next": 2.0039421813403417,
+   "median_months_between_failures": 2.0039421813403417,
+   "median_lead_months_for_repeats": 2.0039421813403417,
+   "repeat_detected_by_new_lab": 0.4542124542124542,
+   "repeat_detected_in_new_state": 0.04054054054054054,
+   "repeats_with_state_known": 74,
+   "top10pct_firms_share": 0.2331574045327538,
+   "gini": 0.1493356106340251,
+   "firms_by_failures": {
+    "1": 4778,
+    "2-4": 570,
+    "5-9": 45,
+    "10+": 6
+   }
+  },
+  "normalised name, same state": {
+   "failed_batches": 6442,
+   "firms": 2030,
+   "repeat_share": 0.6282210493635517,
+   "repeat_share_critical": 0.554002541296061,
+   "firms_with_repeat": 833,
+   "median_months_first_to_next": 8.04862023653088,
+   "median_months_between_failures": 3.9421813403416555,
+   "median_lead_months_for_repeats": 31.99737187910644,
+   "repeat_detected_by_new_lab": 0.5243390165554732,
+   "repeat_detected_in_new_state": 0.5341796875,
+   "repeats_with_state_known": 1024,
+   "top10pct_firms_share": 0.4770257683949084,
+   "gini": 0.5483281666037075,
+   "firms_by_failures": {
+    "1": 1077,
+    "2-4": 638,
+    "5-9": 190,
+    "10+": 125
+   }
+  },
+  "fuzzy \u226592, same state (default)": {
+   "failed_batches": 6442,
+   "firms": 1914,
+   "repeat_share": 0.6494877367277243,
+   "repeat_share_critical": 0.5895806861499364,
+   "firms_with_repeat": 841,
+   "median_months_first_to_next": 8.04862023653088,
+   "median_months_between_failures": 3.9421813403416555,
+   "median_lead_months_for_repeats": 32.06307490144547,
+   "repeat_detected_by_new_lab": 0.5260516252390057,
+   "repeat_detected_in_new_state": 0.5282146160962072,
+   "repeats_with_state_known": 1081,
+   "top10pct_firms_share": 0.47547345544861847,
+   "gini": 0.5546641245717352,
+   "firms_by_failures": {
+    "1": 963,
+    "2-4": 627,
+    "5-9": 197,
+    "10+": 127
+   }
+  },
+  "fuzzy \u226592, units joined across states (firm)": {
+   "failed_batches": 6442,
+   "firms": 1758,
+   "repeat_share": 0.6749456690468798,
+   "repeat_share_critical": 0.6149936467598475,
+   "firms_with_repeat": 812,
+   "median_months_first_to_next": 8.968462549277266,
+   "median_months_between_failures": 3.9421813403416555,
+   "median_lead_months_for_repeats": 33.96846254927726,
+   "repeat_detected_by_new_lab": 0.5239190432382704,
+   "repeat_detected_in_new_state": 0.5249780893952674,
+   "repeats_with_state_known": 1141,
+   "top10pct_firms_share": 0.4829245575908103,
+   "gini": 0.5682581494663681,
+   "firms_by_failures": {
+    "1": 844,
+    "2-4": 576,
+    "5-9": 203,
+    "10+": 135
+   }
+  },
+  "loose: fuzzy \u226585, any state (firm level)": {
+   "failed_batches": 6442,
+   "firms": 1740,
+   "repeat_share": 0.6778950636448308,
+   "repeat_share_critical": 0.6149936467598475,
+   "firms_with_repeat": 801,
+   "median_months_first_to_next": 8.968462549277266,
+   "median_months_between_failures": 3.0223390275952693,
+   "median_lead_months_for_repeats": 34.00131406044678,
+   "repeat_detected_by_new_lab": 0.5243874513395924,
+   "repeat_detected_in_new_state": 0.5285961871750433,
+   "repeats_with_state_known": 1154,
+   "top10pct_firms_share": 0.48416640794784227,
+   "gini": 0.5709647892601355,
+   "firms_by_failures": {
+    "1": 837,
+    "2-4": 560,
+    "5-9": 207,
+    "10+": 136
+   }
+  }
+ },
+ "worked_cases": [
+  {
+   "case": "Sresan Pharmaceutical (Coldrif)",
+   "incident": "2025-10",
+   "note": "Coldrif deaths reported from early Oct 2025",
+   "national_alerts": 11,
+   "alerts_before_incident": 0,
+   "first_alert": "2025-10",
+   "products": [
+    "(Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride ",
+    "Aceclofenac and Paracetamol Tablets",
+    "Coldrif Syrup (Paracetamol, Phenylephrine Hydrochloride, Chl",
+    "Cyproheptadine Hydrochloride Syrup",
+    "Cyproheptadine Hydrochloride Syrup I.P.",
+    "Cyproheptadine Hydrochloride Syrup IP"
+   ]
+  },
+  {
+   "case": "Maiden Pharmaceuticals (The Gambia)",
+   "incident": "2022-10",
+   "note": "WHO alert 5 Oct 2022",
+   "national_alerts": 6,
+   "alerts_before_incident": 0,
+   "first_alert": "2022-12",
+   "products": [
+    "CSP (Cough Syrup for Throat & Chesty Coughs) 100 ml",
+    "Orthorium - MSM (Diacerein, Glucosamine Sulphate & Methyl Su"
+   ]
+  },
+  {
+   "case": "Kaysons Pharma (Rajasthan)",
+   "incident": "2025-10",
+   "note": "40 samples failed in state testing 2021-23 (Down To Earth)",
+   "national_alerts": 0,
+   "alerts_before_incident": 0,
+   "first_alert": null,
+   "products": []
+  }
+ ]
+}

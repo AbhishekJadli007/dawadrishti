@@ -1,0 +1,778 @@
+{
+ "factory": {
+  "test": {
+   "cutoff": "2026-03-01",
+   "horizon_months": 6,
+   "universe": 1737,
+   "positives": 386,
+   "base_rate": 0.222,
+   "results": {
+    "Attention model (ML)": {
+     "auc": 0.774,
+     "top50": {
+      "precision": 0.76,
+      "recall": 0.098
+     },
+     "top100": {
+      "precision": 0.79,
+      "recall": 0.205
+     },
+     "top200": {
+      "precision": 0.62,
+      "recall": 0.321
+     }
+    },
+    "Most past failures": {
+     "auc": 0.745,
+     "top50": {
+      "precision": 0.72,
+      "recall": 0.093
+     },
+     "top100": {
+      "precision": 0.64,
+      "recall": 0.166
+     },
+     "top200": {
+      "precision": 0.585,
+      "recall": 0.303
+     }
+    },
+    "Most recent failure": {
+     "auc": 0.735,
+     "top50": {
+      "precision": 0.84,
+      "recall": 0.109
+     },
+     "top100": {
+      "precision": 0.73,
+      "recall": 0.189
+     },
+     "top200": {
+      "precision": 0.545,
+      "recall": 0.282
+     }
+    },
+    "Random": {
+     "auc": 0.5,
+     "top50": {
+      "precision": 0.18,
+      "recall": 0.023
+     },
+     "top100": {
+      "precision": 0.21,
+      "recall": 0.054
+     },
+     "top200": {
+      "precision": 0.22,
+      "recall": 0.114
+     }
+    }
+   },
+   "confound": {
+    "state_only_baseline_auc": 0.601,
+    "groups": [
+     {
+      "group": "units in HP, Uttarakhand, Gujarat (most sampled)",
+      "units": 832,
+      "base_rate": 0.287,
+      "model_auc": 0.758,
+      "most_recent_failure_auc": 0.705
+     },
+     {
+      "group": "units in all other states",
+      "units": 905,
+      "base_rate": 0.162,
+      "model_auc": 0.756,
+      "most_recent_failure_auc": 0.763
+     }
+    ]
+   }
+  },
+  "train_rows": 44047,
+  "inspect_next": [
+   {
+    "manufacturer_id": "M00002",
+    "canonical_name": "Zee Laboratories Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.986,
+    "n_total": 65,
+    "n_12m": 16.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "16 failures in 12 months, 0 critical; last 3 months ago; 52 products affected"
+   },
+   {
+    "manufacturer_id": "M00004",
+    "canonical_name": "Karnataka Antibiotics & Pharmaceuticals Limited",
+    "state": "Karnataka",
+    "risk": 0.984,
+    "n_total": 51,
+    "n_12m": 2.0,
+    "critical_12m": 0.0,
+    "months_since_last": 7.993,
+    "why": "2 failures in 12 months, 0 critical; last 8 months ago; 22 products affected"
+   },
+   {
+    "manufacturer_id": "M00046",
+    "canonical_name": "Super Formulations Pvt. Ltd",
+    "state": "Madhya Pradesh",
+    "risk": 0.983,
+    "n_total": 21,
+    "n_12m": 17.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "17 failures in 12 months, 0 critical; last 1 months ago; 9 products affected"
+   },
+   {
+    "manufacturer_id": "M00001",
+    "canonical_name": "Unicure India Ltd",
+    "state": "Uttar Pradesh",
+    "risk": 0.981,
+    "n_total": 68,
+    "n_12m": 22.0,
+    "critical_12m": 2.0,
+    "months_since_last": 1.02,
+    "why": "22 failures in 12 months, 2 critical; last 1 months ago; 38 products affected"
+   },
+   {
+    "manufacturer_id": "M00005",
+    "canonical_name": "Apple Formulations Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.979,
+    "n_total": 48,
+    "n_12m": 12.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "12 failures in 12 months, 0 critical; last 2 months ago; 23 products affected"
+   },
+   {
+    "manufacturer_id": "M00007",
+    "canonical_name": "Mascot Health Series Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.974,
+    "n_total": 44,
+    "n_12m": 3.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "3 failures in 12 months, 0 critical; last 3 months ago; 37 products affected"
+   },
+   {
+    "manufacturer_id": "M00003",
+    "canonical_name": "Martin & Brown Bio-Sciences Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.974,
+    "n_total": 54,
+    "n_12m": 19.0,
+    "critical_12m": 2.0,
+    "months_since_last": 1.02,
+    "why": "19 failures in 12 months, 2 critical; last 1 months ago; 18 products affected"
+   },
+   {
+    "manufacturer_id": "M00016",
+    "canonical_name": "Healer's Lab",
+    "state": "Himachal Pradesh",
+    "risk": 0.974,
+    "n_total": 47,
+    "n_12m": 26.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "26 failures in 12 months, 0 critical; last 1 months ago; 18 products affected"
+   },
+   {
+    "manufacturer_id": "M00008",
+    "canonical_name": "Nestor Pharmaceuticals Limited",
+    "state": "Haryana",
+    "risk": 0.965,
+    "n_total": 38,
+    "n_12m": 10.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "10 failures in 12 months, 0 critical; last 1 months ago; 24 products affected"
+   },
+   {
+    "manufacturer_id": "M00000",
+    "canonical_name": "Jackson Laboratories Pvt. Ltd",
+    "state": "Punjab",
+    "risk": 0.956,
+    "n_total": 88,
+    "n_12m": 18.0,
+    "critical_12m": 4.0,
+    "months_since_last": 1.02,
+    "why": "18 failures in 12 months, 4 critical; last 1 months ago; 67 products affected"
+   },
+   {
+    "manufacturer_id": "M00029",
+    "canonical_name": "Hindustan Antibiotics Ltd",
+    "state": "Maharashtra",
+    "risk": 0.95,
+    "n_total": 24,
+    "n_12m": 6.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "6 failures in 12 months, 0 critical; last 3 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00047",
+    "canonical_name": "Scott-Edil Pharmacia Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.95,
+    "n_total": 20,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "4 failures in 12 months, 0 critical; last 3 months ago; 16 products affected"
+   },
+   {
+    "manufacturer_id": "M00025",
+    "canonical_name": "Theon Pharmaceuticals Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.949,
+    "n_total": 26,
+    "n_12m": 7.0,
+    "critical_12m": 0.0,
+    "months_since_last": 9.013,
+    "why": "7 failures in 12 months, 0 critical; last 9 months ago; 17 products affected"
+   },
+   {
+    "manufacturer_id": "M00024",
+    "canonical_name": "SAI Parenterals Limited",
+    "state": "Telangana",
+    "risk": 0.948,
+    "n_total": 27,
+    "n_12m": 3.0,
+    "critical_12m": 1.0,
+    "months_since_last": 10.0,
+    "why": "3 failures in 12 months, 1 critical; last 10 months ago; 15 products affected"
+   },
+   {
+    "manufacturer_id": "M00009",
+    "canonical_name": "Ridley Life Science Pvt. Ltd",
+    "state": "Delhi",
+    "risk": 0.948,
+    "n_total": 36,
+    "n_12m": 1.0,
+    "critical_12m": 0.0,
+    "months_since_last": 9.013,
+    "why": "1 failures in 12 months, 0 critical; last 9 months ago; 27 products affected"
+   },
+   {
+    "manufacturer_id": "M00028",
+    "canonical_name": "Affy Parenterals",
+    "state": "Himachal Pradesh",
+    "risk": 0.942,
+    "n_total": 24,
+    "n_12m": 6.0,
+    "critical_12m": 1.0,
+    "months_since_last": 4.046,
+    "why": "6 failures in 12 months, 1 critical; last 4 months ago; 16 products affected"
+   },
+   {
+    "manufacturer_id": "M00030",
+    "canonical_name": "Agron Remedies Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.942,
+    "n_total": 23,
+    "n_12m": 11.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "11 failures in 12 months, 0 critical; last 1 months ago; 17 products affected"
+   },
+   {
+    "manufacturer_id": "M00034",
+    "canonical_name": "Athens Life Sciences",
+    "state": "Himachal Pradesh",
+    "risk": 0.941,
+    "n_total": 22,
+    "n_12m": 9.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "9 failures in 12 months, 0 critical; last 1 months ago; 13 products affected"
+   },
+   {
+    "manufacturer_id": "M00021",
+    "canonical_name": "Laborate Pharmaceuticals India Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.94,
+    "n_total": 29,
+    "n_12m": 16.0,
+    "critical_12m": 2.0,
+    "months_since_last": 1.02,
+    "why": "16 failures in 12 months, 2 critical; last 1 months ago; 23 products affected"
+   },
+   {
+    "manufacturer_id": "M00032",
+    "canonical_name": "Hindustan Laboratories Limited",
+    "state": "Maharashtra",
+    "risk": 0.939,
+    "n_total": 22,
+    "n_12m": 12.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "12 failures in 12 months, 0 critical; last 1 months ago; 13 products affected"
+   },
+   {
+    "manufacturer_id": "M00014",
+    "canonical_name": "Vivek Pharmachem (India) Ltd",
+    "state": "Rajasthan",
+    "risk": 0.938,
+    "n_total": 34,
+    "n_12m": 10.0,
+    "critical_12m": 1.0,
+    "months_since_last": 2.039,
+    "why": "10 failures in 12 months, 1 critical; last 2 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00040",
+    "canonical_name": "Kerala State Drugs and Pharmaceuticals Ltd",
+    "state": "Kerala",
+    "risk": 0.936,
+    "n_total": 20,
+    "n_12m": 13.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "13 failures in 12 months, 0 critical; last 1 months ago; 10 products affected"
+   },
+   {
+    "manufacturer_id": "M00019",
+    "canonical_name": "Danish Health Care (P) Ltd",
+    "state": "Madhya Pradesh",
+    "risk": 0.927,
+    "n_total": 29,
+    "n_12m": 11.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "11 failures in 12 months, 0 critical; last 1 months ago; 19 products affected"
+   },
+   {
+    "manufacturer_id": "M00039",
+    "canonical_name": "SVP Life Sciences",
+    "state": "Uttarakhand",
+    "risk": 0.926,
+    "n_total": 20,
+    "n_12m": 2.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "2 failures in 12 months, 1 critical; last 1 months ago; 11 products affected"
+   },
+   {
+    "manufacturer_id": "M00037",
+    "canonical_name": "Swiss Garnier Life Sciences",
+    "state": "Himachal Pradesh",
+    "risk": 0.925,
+    "n_total": 21,
+    "n_12m": 16.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "16 failures in 12 months, 0 critical; last 1 months ago; 5 products affected"
+   },
+   {
+    "manufacturer_id": "M00022",
+    "canonical_name": "Revat Laboratories Pvt. Ltd",
+    "state": "Andhra Pradesh",
+    "risk": 0.924,
+    "n_total": 28,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 4.046,
+    "why": "4 failures in 12 months, 0 critical; last 4 months ago; 11 products affected"
+   },
+   {
+    "manufacturer_id": "M00035",
+    "canonical_name": "Unicure India Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.924,
+    "n_total": 21,
+    "n_12m": 9.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "9 failures in 12 months, 0 critical; last 1 months ago; 15 products affected"
+   },
+   {
+    "manufacturer_id": "M00015",
+    "canonical_name": "Digital Vision",
+    "state": "Himachal Pradesh",
+    "risk": 0.891,
+    "n_total": 32,
+    "n_12m": 8.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "8 failures in 12 months, 0 critical; last 1 months ago; 25 products affected"
+   },
+   {
+    "manufacturer_id": "M00031",
+    "canonical_name": "Mancare Laboratories Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.89,
+    "n_total": 22,
+    "n_12m": 18.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "18 failures in 12 months, 1 critical; last 1 months ago; 10 products affected"
+   },
+   {
+    "manufacturer_id": "M00044",
+    "canonical_name": "Zenith Drugs Ltd",
+    "state": "Madhya Pradesh",
+    "risk": 0.89,
+    "n_total": 19,
+    "n_12m": 12.0,
+    "critical_12m": 2.0,
+    "months_since_last": 1.02,
+    "why": "12 failures in 12 months, 2 critical; last 1 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00051",
+    "canonical_name": "J.M. Laboratories",
+    "state": "Himachal Pradesh",
+    "risk": 0.89,
+    "n_total": 18,
+    "n_12m": 11.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "11 failures in 12 months, 0 critical; last 1 months ago; 15 products affected"
+   },
+   {
+    "manufacturer_id": "M00036",
+    "canonical_name": "Alkem Health Science, A Unit of Alkem Laboratories Limited",
+    "state": "Sikkim",
+    "risk": 0.881,
+    "n_total": 29,
+    "n_12m": 13.0,
+    "critical_12m": 5.0,
+    "months_since_last": 1.02,
+    "why": "13 failures in 12 months, 5 critical; last 1 months ago; 12 products affected"
+   },
+   {
+    "manufacturer_id": "M00017",
+    "canonical_name": "Modern Laboratories",
+    "state": "Madhya Pradesh",
+    "risk": 0.879,
+    "n_total": 29,
+    "n_12m": 11.0,
+    "critical_12m": 1.0,
+    "months_since_last": 2.039,
+    "why": "11 failures in 12 months, 1 critical; last 2 months ago; 20 products affected"
+   },
+   {
+    "manufacturer_id": "M00027",
+    "canonical_name": "Swaroop Pharmaceuticals Pvt. Ltd",
+    "state": "Uttar Pradesh",
+    "risk": 0.879,
+    "n_total": 25,
+    "n_12m": 1.0,
+    "critical_12m": 0.0,
+    "months_since_last": 12.007,
+    "why": "1 failures in 12 months, 0 critical; last 12 months ago; 8 products affected"
+   },
+   {
+    "manufacturer_id": "M00010",
+    "canonical_name": "Life Max Cancer Laboratories",
+    "state": "Uttarakhand",
+    "risk": 0.876,
+    "n_total": 34,
+    "n_12m": 1.0,
+    "critical_12m": 0.0,
+    "months_since_last": 11.02,
+    "why": "1 failures in 12 months, 0 critical; last 11 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00063",
+    "canonical_name": "Ultra Drugs Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.876,
+    "n_total": 16,
+    "n_12m": 8.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "8 failures in 12 months, 1 critical; last 1 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00055",
+    "canonical_name": "Cotec Healthcare Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.868,
+    "n_total": 17,
+    "n_12m": 5.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "5 failures in 12 months, 1 critical; last 1 months ago; 15 products affected"
+   },
+   {
+    "manufacturer_id": "M00043",
+    "canonical_name": "Medipol Pharmaceutical India Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.862,
+    "n_total": 19,
+    "n_12m": 0.0,
+    "critical_12m": 0.0,
+    "months_since_last": 16.053,
+    "why": "0 failures in 12 months, 0 critical; last 16 months ago; 13 products affected"
+   },
+   {
+    "manufacturer_id": "M00011",
+    "canonical_name": "Skymap Pharmaceuticals Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.856,
+    "n_total": 34,
+    "n_12m": 5.0,
+    "critical_12m": 1.0,
+    "months_since_last": 2.039,
+    "why": "5 failures in 12 months, 1 critical; last 2 months ago; 25 products affected"
+   },
+   {
+    "manufacturer_id": "M00080",
+    "canonical_name": "Gnosis Pharmaceuticals Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.855,
+    "n_total": 13,
+    "n_12m": 6.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "6 failures in 12 months, 0 critical; last 1 months ago; 12 products affected"
+   },
+   {
+    "manufacturer_id": "M00112",
+    "canonical_name": "Protech Telelinks",
+    "state": "Himachal Pradesh",
+    "risk": 0.855,
+    "n_total": 10,
+    "n_12m": 5.0,
+    "critical_12m": 0.0,
+    "months_since_last": 10.0,
+    "why": "5 failures in 12 months, 0 critical; last 10 months ago; 7 products affected"
+   },
+   {
+    "manufacturer_id": "M00026",
+    "canonical_name": "Wings Biotech LLP",
+    "state": "Himachal Pradesh",
+    "risk": 0.854,
+    "n_total": 27,
+    "n_12m": 7.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "7 failures in 12 months, 0 critical; last 1 months ago; 22 products affected"
+   },
+   {
+    "manufacturer_id": "M00072",
+    "canonical_name": "Cureza Healthcare Pvt. Ltd",
+    "state": "Madhya Pradesh",
+    "risk": 0.853,
+    "n_total": 14,
+    "n_12m": 10.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "10 failures in 12 months, 0 critical; last 1 months ago; 9 products affected"
+   },
+   {
+    "manufacturer_id": "M00135",
+    "canonical_name": "Windlas Biotech Limited",
+    "state": "Uttarakhand",
+    "risk": 0.852,
+    "n_total": 9,
+    "n_12m": 5.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "5 failures in 12 months, 0 critical; last 2 months ago; 9 products affected"
+   },
+   {
+    "manufacturer_id": "M00033",
+    "canonical_name": "Samkem",
+    "state": "Madhya Pradesh",
+    "risk": 0.852,
+    "n_total": 22,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "4 failures in 12 months, 0 critical; last 3 months ago; 6 products affected"
+   },
+   {
+    "manufacturer_id": "M00065",
+    "canonical_name": "Saintlife Pharmaceuticals Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.844,
+    "n_total": 15,
+    "n_12m": 8.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "8 failures in 12 months, 0 critical; last 2 months ago; 9 products affected"
+   },
+   {
+    "manufacturer_id": "M00062",
+    "canonical_name": "Pharmaroots Healthcare",
+    "state": "Himachal Pradesh",
+    "risk": 0.842,
+    "n_total": 18,
+    "n_12m": 8.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "8 failures in 12 months, 1 critical; last 1 months ago; 14 products affected"
+   },
+   {
+    "manufacturer_id": "M00272",
+    "canonical_name": "Daffohils Laboratories Pvt. Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.834,
+    "n_total": 6,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 4.046,
+    "why": "4 failures in 12 months, 0 critical; last 4 months ago; 6 products affected"
+   },
+   {
+    "manufacturer_id": "M00012",
+    "canonical_name": "ANG Lifesciences India Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.831,
+    "n_total": 34,
+    "n_12m": 0.0,
+    "critical_12m": 0.0,
+    "months_since_last": 16.053,
+    "why": "0 failures in 12 months, 0 critical; last 16 months ago; 18 products affected"
+   },
+   {
+    "manufacturer_id": "M00076",
+    "canonical_name": "Symbiosis Pharmaceuticals Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.823,
+    "n_total": 14,
+    "n_12m": 6.0,
+    "critical_12m": 1.0,
+    "months_since_last": 1.02,
+    "why": "6 failures in 12 months, 1 critical; last 1 months ago; 13 products affected"
+   },
+   {
+    "manufacturer_id": "M00070",
+    "canonical_name": "Akums Drugs & Pharmaceuticals Ltd",
+    "state": "Uttarakhand",
+    "risk": 0.822,
+    "n_total": 15,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "4 failures in 12 months, 0 critical; last 1 months ago; 15 products affected"
+   },
+   {
+    "manufacturer_id": "M00109",
+    "canonical_name": "Innova Captab Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.819,
+    "n_total": 14,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "4 failures in 12 months, 0 critical; last 3 months ago; 11 products affected"
+   },
+   {
+    "manufacturer_id": "M00246",
+    "canonical_name": "ZRS Pharmaceuticals India Pvt. Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.813,
+    "n_total": 6,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 3.026,
+    "why": "4 failures in 12 months, 0 critical; last 3 months ago; 6 products affected"
+   },
+   {
+    "manufacturer_id": "M00093",
+    "canonical_name": "Eurokem Laboratories Pvt ltd",
+    "state": "Tamil Nadu",
+    "risk": 0.811,
+    "n_total": 11,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "4 failures in 12 months, 0 critical; last 1 months ago; 7 products affected"
+   },
+   {
+    "manufacturer_id": "M00048",
+    "canonical_name": "Quest Laboratories Pvt. Ltd",
+    "state": "Madhya Pradesh",
+    "risk": 0.803,
+    "n_total": 18,
+    "n_12m": 2.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "2 failures in 12 months, 0 critical; last 2 months ago; 16 products affected"
+   },
+   {
+    "manufacturer_id": "M00123",
+    "canonical_name": "Nest Healthcare Private Limited",
+    "state": "Gujarat",
+    "risk": 0.8,
+    "n_total": 10,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "4 failures in 12 months, 0 critical; last 1 months ago; 10 products affected"
+   },
+   {
+    "manufacturer_id": "M00132",
+    "canonical_name": "Bonn Schtering Bio Sciences",
+    "state": "Puducherry",
+    "risk": 0.799,
+    "n_total": 13,
+    "n_12m": 4.0,
+    "critical_12m": 0.0,
+    "months_since_last": 1.02,
+    "why": "4 failures in 12 months, 0 critical; last 1 months ago; 12 products affected"
+   },
+   {
+    "manufacturer_id": "M00068",
+    "canonical_name": "VADSP Pharmaceuticals",
+    "state": "Himachal Pradesh",
+    "risk": 0.799,
+    "n_total": 15,
+    "n_12m": 9.0,
+    "critical_12m": 2.0,
+    "months_since_last": 2.039,
+    "why": "9 failures in 12 months, 2 critical; last 2 months ago; 13 products affected"
+   },
+   {
+    "manufacturer_id": "M00095",
+    "canonical_name": "Leeford Healthcare Ltd",
+    "state": "Himachal Pradesh",
+    "risk": 0.798,
+    "n_total": 11,
+    "n_12m": 8.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "8 failures in 12 months, 0 critical; last 2 months ago; 7 products affected"
+   },
+   {
+    "manufacturer_id": "M00177",
+    "canonical_name": "Bajaj Formulations",
+    "state": "Outside India",
+    "risk": 0.797,
+    "n_total": 7,
+    "n_12m": 3.0,
+    "critical_12m": 0.0,
+    "months_since_last": 2.039,
+    "why": "3 failures in 12 months, 0 critical; last 2 months ago; 7 products affected"
+   }
+  ],
+  "as_of": "2026-09-01"
+ },
+ "batch": {
+  "test": {
+   "period": "2026-01 to 2026-08",
+   "batches": 2196,
+   "failed": 149,
+   "lab_capacity_first": "30% of batches",
+   "results": {
+    "DawaDrishti risk order": {
+     "auc": 0.748,
+     "caught_in_first_30pct": 0.691
+    },
+    "First in, first out": {
+     "auc": 0.486,
+     "caught_in_first_30pct": 0.275
+    },
+    "Random": {
+     "auc": 0.476,
+     "caught_in_first_30pct": 0.228
+    }
+   }
+  }
+ }
+}

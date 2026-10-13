@@ -1,0 +1,24 @@
+{
+  "isolated": {
+    "orders_after_failure_elsewhere": 2036,
+    "orders_flagged_by_network": 0,
+    "orders_to_debarred": 847,
+    "batches": 6100,
+    "failed_batches": 388,
+    "events": 66791,
+    "debarred_suppliers": 80,
+    "debarred_at_end": 49,
+    "network": false
+  },
+  "network": {
+    "orders_after_failure_elsewhere": 1583,
+    "orders_flagged_by_network": 1743,
+    "orders_to_debarred": 157,
+    "batches": 6100,
+    "failed_batches": 273,
+    "events": 66873,
+    "debarred_suppliers": 63,
+    "debarred_at_end": 40,
+    "network": true
+  }
+}
