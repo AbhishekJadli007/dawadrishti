@@ -218,7 +218,8 @@ def parse_llm(q: str) -> tuple[str, dict]:
               "molecule (a generic drug name), since/until (YYYY or YYYY-MM), min_alerts, months, limit.\n"
               f"states: {v['state']}\ndosage_form: {v['dosage_form']}\ntherapeutic_class: {v['therapeutic_class']}\n"
               f"Data covers {v['months'][0][0]} to {v['months'][0][1]}.\nQuestion: {q}")
-    client = genai.Client(api_key=C.GEMINI_KEY)
+    from google.genai import types
+    client = genai.Client(api_key=C.GEMINI_KEY, http_options=types.HttpOptions(timeout=15000))   # ms; slower -> rules
     resp = client.models.generate_content(model=C.GEMINI_MODEL, contents=prompt)
     m = re.search(r"\{.*\}", resp.text or "", re.S)
     if not m:
@@ -233,8 +234,13 @@ def ask(question: str) -> dict:
         t, p = PRESETS[q]
         src = "preset"
     elif C.GEMINI_KEY:
-        t, p = parse_llm(q)
-        src = f"template chosen by {C.GEMINI_MODEL}"
+        try:
+            t, p = parse_llm(q)
+            validate(t, p)
+            src = f"template chosen by {C.GEMINI_MODEL}"
+        except Exception as e:   # model retired, quota, network, or an invalid choice: fall back, and say so
+            t, p = parse_rules(q)
+            src = f"template chosen by keyword rules ({C.GEMINI_MODEL} unavailable: {str(e)[:80]})"
     else:
         t, p = parse_rules(q)
         src = "template chosen by keyword rules (no LLM key set)"

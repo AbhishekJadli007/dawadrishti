@@ -51,6 +51,7 @@ def main(argv=None):
     elif a.cmd == "ask":
         from .ai.ask import ask
         r = ask(a.question)
+        print(f"{r['source']} -> template {r['template']} {r['params']}")
         print(r["sql"])
         print(r["columns"])
         for row in r["rows"][:20]:

@@ -67,23 +67,24 @@ def test_a_received_batch_already_on_the_national_list_is_held(client):
     assert client.post("/api/erp/receive", json={"case_id": po2["case_id"], "batch_no": "NOT-A-REAL-BATCH-1"}).json()["status"] == "quarantine"
 
 
-def test_llm_only_chooses_a_template_and_bad_choices_are_rejected(monkeypatch):
+def test_llm_only_chooses_a_template_and_bad_choices_are_never_run(monkeypatch):
     from dawadrishti.ai import ask as A
     replies = iter(['{"template": "top_units", "params": {"state": "gujarat", "since": "2024"}}',
                     '{"template": "top_units", "params": {"state": "Gujarat\'; drop table v_findings; --"}}',
                     'SELECT * FROM v_findings'])
 
     class FakeClient:
-        def __init__(self, api_key):
+        def __init__(self, api_key, **kw):
             self.models = types.SimpleNamespace(generate_content=lambda model, contents: types.SimpleNamespace(text=next(replies)))
     monkeypatch.setattr(C, "GEMINI_KEY", "test")
     monkeypatch.setattr("google.genai.Client", FakeClient)
     r = A.ask("Which Gujarat factories failed most since 2024?")
     assert r["template"] == "top_units" and r["params"]["state"] == "Gujarat" and r["rows"]
-    with pytest.raises(ValueError):
-        A.ask("anything")                       # parameter not in the data
-    with pytest.raises(ValueError):
-        A.ask("anything else")                  # model tried to answer with SQL: no template chosen
+    assert "gemini" in r["source"] or C.GEMINI_MODEL in r["source"]
+    # a parameter that is not in the data, or a reply that is SQL, is never run: the keyword rules answer instead
+    for q in ("Which units in Gujarat failed most?", "Which units failed most nationally?"):
+        r = A.ask(q)
+        assert "keyword rules" in r["source"] and "drop" not in str(r["params"]).lower()
 
 
 def test_reviewer_decisions_override_the_matcher():
