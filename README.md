@@ -10,9 +10,11 @@ The record exists, but no buyer's ERP reads it. DawaDrishti turns it into a **lo
 
 Open source (MIT) · Python · DuckDB · scikit-learn · FastAPI · React · COMMIT FOR GOOD 2026 (AI for Resilient and Sustainable Supply Chains)
 
-<!-- LIVE_DEMO -->
+**Live demo: [dawadrishti.onrender.com](https://dawadrishti.onrender.com)** (free hosting: the first visit can take about a minute to wake up)
 
-[Proposal (PDF)](docs/pdf/DawaDrishti_Proposal.pdf) · [Evaluation](docs/EVALUATION.md) · [Entity resolution](docs/ENTITY_RESOLUTION.md) · [Naming policy](docs/NAMING_POLICY.md) · [Assumptions](docs/ASSUMPTIONS.md) · [Architecture](docs/ARCHITECTURE.md)
+**Submission:** [Solution document (PDF)](docs/pdf/DawaDrishti_Solution_Document.pdf) · [2-page brief (PDF)](docs/pdf/DawaDrishti_Solution_Brief.pdf) · [Presentation (PDF)](docs/pdf/DawaDrishti_Presentation.pdf) · [Demo script](docs/DEMO_SCRIPT.md)
+
+**Docs:** [Proposal (PDF)](docs/pdf/DawaDrishti_Proposal.pdf) · [Evaluation](docs/EVALUATION.md) · [Entity resolution](docs/ENTITY_RESOLUTION.md) · [Naming policy](docs/NAMING_POLICY.md) · [Assumptions](docs/ASSUMPTIONS.md) · [Architecture](docs/ARCHITECTURE.md)
 
 ---
 

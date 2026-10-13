@@ -137,8 +137,8 @@ function EngineCheck({ x, bpi }: { x: any; bpi: any }) {
           <p className="text-xs text-muted mt-1">{fmtInt(bpi.events)} events, {fmtInt(bpi.cases)} purchase-order items from a multinational's SAP system (public, 4TU.ResearchData). Same engine, purchase-to-pay rules.
             {bpi.reader_check?.all_match && <> Our reader reproduces the published counts exactly (events, cases, {fmtInt(bpi.purchase_documents)} purchase documents, {bpi.activities} activities).</>}</p>
           <table className="w-full text-xs num mt-3">
-            <thead className="text-faint"><tr><th className="text-left font-normal">Rule</th><th className="text-right font-normal">Violating</th><th className="text-right font-normal">Share</th></tr></thead>
-            <tbody>{bpi.rules.map((r: any) => <tr key={r.id} className="border-t border-line/50"><td className="py-1">{r.id} {r.name}</td><td className="text-right">{fmtInt(r.violating_cases)}</td><td className="text-right">{(100 * r.share).toFixed(1)}%</td></tr>)}</tbody>
+            <thead className="text-faint"><tr><th className="text-left font-normal">Rule</th><th className="text-right font-normal px-3">Violating</th><th className="text-right font-normal">Share</th></tr></thead>
+            <tbody>{bpi.rules.map((r: any) => <tr key={r.id} className="border-t border-line/50"><td className="py-1.5">{r.id} {r.name}</td><td className="text-right px-3">{fmtInt(r.violating_cases)}</td><td className="text-right">{(100 * r.share).toFixed(1)}%</td></tr>)}</tbody>
           </table>
           {bpi.reading && <p className="text-[11px] text-faint mt-2">{bpi.reading}</p>}
         </>) : (

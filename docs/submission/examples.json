@@ -1,0 +1,80 @@
+{
+ "lookup_example": {
+  "identity": {
+   "manufacturer_id": "M00008",
+   "match": "exact",
+   "score": 100.0
+  },
+  "record": {
+   "unit": {
+    "manufacturer_id": "M00008",
+    "name": "Nestor Pharmaceuticals Limited",
+    "state": "Haryana"
+   },
+   "alerts": 38,
+   "first_alert": "2019-01",
+   "last_alert": "2026-08",
+   "by_severity": {
+    "major": 31,
+    "minor": 3,
+    "critical": 3,
+    "unclassified": 1
+   },
+   "entries": [
+    {
+     "month": "2026-08",
+     "generic_name": "Calcium And Vitamin D",
+     "dosage_form": "Tablet",
+     "primary_failure": "Dissolution",
+     "severity": "major",
+     "reporting_lab": "RDTL, EKM",
+     "reporting_source": "State lab",
+     "batch_no": "CUTC-39",
+     "is_spurious": false,
+     "state": "Haryana"
+    }
+   ],
+   "regulatory_action": null
+  },
+  "batch_check": {
+   "batch": "CITB-02",
+   "this_batch_failed": true
+  },
+  "buyer": {
+   "graded_response": {
+    "level": 2,
+    "label": "Test every batch"
+   },
+   "future_regulatory_attention": {
+    "probability_next_6_months": 0.965
+   }
+  },
+  "data_as_of": "2026-08",
+  "data_does_not_contain": [
+   "Batches that were tested and passed. The alerts list failures only, so a failure rate cannot be computed.",
+   "Licence suspensions, cancellations, prosecutions or court outcomes. The regulatory-action field is filled only from a cited order.",
+   "\u2026"
+  ]
+ },
+ "spellings": {
+  "unit": "Martin & Brown Bio-Sciences Pvt. Ltd",
+  "state": "Himachal Pradesh",
+  "count": 14,
+  "names": [
+   "Martin & Brown Bio-Sciences Pvt. Ltd",
+   "Martin & brown bio-sciences pvt. Ltd",
+   "Martin& Brown Biosciences Pvt. Ltd",
+   "Martin & Brown Bio Sciences",
+   "Martin & Brown Bio-Sciences",
+   "Martin & Brown Bio-sciences",
+   "Martin & Brown Biosciences Pvt. Ltd",
+   "Martin &Brown Bio-Sciences Pvt. Ltd",
+   "Martin & Brown Bio Science Pvt Ltd",
+   "Martin and Brown Biosciences",
+   "Martin & Brown Bio-sciences K. No",
+   "Martin & Brown Bio-Sciences Pvt.Ltd",
+   "Martin And Brown Bio-Sciences Pvt. Ltd",
+   "Martin And Brown Bio-Sciences Pvt.Ltd"
+  ]
+ }
+}
