@@ -158,12 +158,12 @@ A solo project: every task is owned by Abhishek Jadli.
 | 6–8 | Lookup API, graded response, naming policy in the UI | Abhishek | Done |
 | 8–9 | Reference buyer console; declarative conformance engine, validated on BPI Challenge 2019 | Abhishek | Done |
 | 9–10 | Attention model and confound check; question templates | Abhishek | Done |
-| 10–12 | Documentation, deployment (Hugging Face Space), demo video | Abhishek | In progress |
+| 10–12 | Documentation, deployment (Docker image on Render), demo video | Abhishek | In progress |
 | After | Human review of the labels; contribution route; one-state pilot with a DVDMS export | Abhishek, with a state partner | Planned |
 
 ## 12. Deployment and cost
 
-- **Hosting.** Everything runs on free tiers: GitHub (code), and a Hugging Face Space on CPU basic (app and API).
+- **Hosting.** Everything runs on free tiers. The code is on GitHub. The app and API run as one Docker image on a free Render web service, using about 190 MB of the 512 MB allowed.
 - **Database.** The warehouse is a single DuckDB file. A national refresh (fetch + build) takes about 7 minutes on a laptop.
 - **LLM.** The optional LLM step uses Gemini's free tier. Without a key, a keyword parser chooses the question templates, so nothing breaks.
 

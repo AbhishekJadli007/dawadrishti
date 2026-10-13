@@ -1,0 +1,12 @@
+# Render blueprint: New -> Blueprint -> pick this repo. Free web service; it sleeps after 15 idle minutes
+# and takes about a minute to wake on the next visit.
+services:
+  - type: web
+    name: dawadrishti
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    # optional, add later under Environment: GEMINI_API_KEY (Gemini picks question templates),
+    # DAWADRISHTI_BUYER_KEY (require a key for the buyer view)

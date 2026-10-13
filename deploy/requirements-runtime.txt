@@ -1,0 +1,11 @@
+# Serving only (Docker / Render). Same pins as requirements.txt so the saved models load without version warnings.
+numpy==2.4.6
+pandas==3.0.6
+duckdb==1.5.6
+rapidfuzz==3.14.6
+scikit-learn==1.9.1
+joblib==1.6.0
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+google-genai==2.29.0

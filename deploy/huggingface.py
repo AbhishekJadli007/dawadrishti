@@ -104,7 +104,10 @@ def main():
     repo_id = f"{a.user or me}/{a.space}"
     print(f"logged in as {me}; deploying to {repo_id}")
     ensure_free_hardware(api, repo_id)
-    api.create_repo(repo_id, repo_type="space", space_sdk="gradio", space_hardware="cpu-basic", exist_ok=True)
+    api.create_repo(repo_id, repo_type="space", space_sdk="gradio", space_hardware="cpu-basic", private=False, exist_ok=True)
+    if api.space_info(repo_id).private:          # some accounts default new repos to private; a demo must be public
+        print("  making the Space public")
+        api.update_repo_settings(repo_id, private=False, repo_type="space")
     api.upload_folder(folder_path=str(dst), repo_id=repo_id, repo_type="space", commit_message=f"Deploy {sha}", delete_patterns=["*"])
     rt = api.get_space_runtime(repo_id)
     if rt.requested_hardware != "cpu-basic":
@@ -116,7 +119,9 @@ def main():
                      "(bottom of the page) and run this script again; it will be re-created on free CPU.")
     shutil.rmtree(dst, ignore_errors=True)
     sub = repo_id.lower().replace("/", "-").replace("_", "-").replace(".", "-")
-    print(f"\nUploaded. Build log: https://huggingface.co/spaces/{repo_id}\nLive app:  https://{sub}.hf.space")
+    info = api.space_info(repo_id)
+    print(f"\nUploaded. Visibility: {'PRIVATE' if info.private else 'public'}; hardware: {rt.requested_hardware or 'cpu-basic'}")
+    print(f"Build log: https://huggingface.co/spaces/{repo_id}  (first build takes 3-5 minutes)\nLive app:  https://{sub}.hf.space")
 
 
 if __name__ == "__main__":

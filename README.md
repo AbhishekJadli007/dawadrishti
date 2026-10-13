@@ -74,6 +74,14 @@ python -m dawadrishti.mining.conformance --bpi BPI_Challenge_2019.xes   # extern
 pytest                                               # 22 tests
 ```
 
+Or run everything in one container (the same image the live demo uses):
+
+```bash
+docker build -t dawadrishti . && docker run -p 8000:8000 dawadrishti      # http://localhost:8000
+```
+
+**Free hosting.** `render.yaml` deploys the Docker image as a free Render web service. On render.com choose New → Blueprint, then pick this repo. The free service sleeps after 15 idle minutes and takes about a minute to wake. It uses about 190 MB of the 512 MB allowed. `deploy/huggingface.py` targets Hugging Face Spaces, which now need a PRO plan for Python apps.
+
 Optional: put `GEMINI_API_KEY=...` in `.env` (free key at aistudio.google.com/apikey) to let Gemini choose question templates. Everything works without it.
 
 ```bash
@@ -109,7 +117,7 @@ dawadrishti/memory.py   lookup API (record, graded response, alternatives)
 dawadrishti/erp/        schema.py · service.py · simulate.py   (reference buyer console)
 dawadrishti/mining/     conformance.py · process.py · patterns.py · risk.py
 dawadrishti/ai/ask.py   question templates      dawadrishti/warehouse.py  DuckDB star schema
-api/main.py             FastAPI · web/ React app · tests/ pytest · deploy/ Hugging Face Space
+api/main.py             FastAPI · web/ React app · tests/ pytest · Dockerfile + render.yaml (deployment)
 ```
 
 ## Author
